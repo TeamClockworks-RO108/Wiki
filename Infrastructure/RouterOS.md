@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2025-05-22T15:32:36.667Z
+date: 2025-06-28T23:41:40.875Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -33,4 +33,13 @@ Configure this script to run every minute or so.
         :log info ("Added LTE interface " . $ifaceName . " to list " . $interfaceListName)
     }
 }
+```
+
+## Wipe all pulumi resources by a prefix
+
+Can happen that pulumi loses connection details and resources need to be wiped en-masse. In this example `A-` is the prefix we're searching for.
+
+
+```bash
+pulumi stack --show-urns | grep URN | grep A- | awk '{print $3}' | xargs -I {} pulumi state delete {}
 ```
