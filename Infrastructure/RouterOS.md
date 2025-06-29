@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2025-06-28T23:41:40.875Z
+date: 2025-06-29T23:29:14.723Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -42,4 +42,19 @@ Can happen that pulumi loses connection details and resources need to be wiped e
 
 ```bash
 pulumi stack --show-urns | grep URN | grep A- | awk '{print $3}' | xargs -I {} pulumi state delete {}
+```
+
+
+## Get information about printers, profiles and filaments
+
+```bash
+# Get a printer profile name. will list one printer per line
+prusa-slicer --query-printer-models | grep -v 'error' | jq '.printer_models.[] | .variants[] | select (.user_printer_profiles != null) | .user_printer_profiles[] | select (.name | startswith("Iron")).name' -r
+
+# Get print profiles for a printer
+prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep -v error | jq '.user_print_profiles[].name' -r
+
+# Get filament profiles for a printer
+prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep -v error | jq '.user_print_profiles[] | select (.user_filament_profiles != null) | .user_filament_profiles[]' | jq -s 'sort | unique | .[]' -r
+
 ```
