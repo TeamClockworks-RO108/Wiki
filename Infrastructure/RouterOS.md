@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2025-06-29T23:29:14.723Z
+date: 2025-06-30T01:03:58.347Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -58,3 +58,5 @@ prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep
 prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep -v error | jq '.user_print_profiles[] | select (.user_filament_profiles != null) | .user_filament_profiles[]' | jq -s 'sort | unique | .[]' -r
 
 ```
+
+
