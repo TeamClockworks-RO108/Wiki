@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2025-06-30T01:03:58.347Z
+date: 2025-08-28T22:57:30.516Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -60,3 +60,5 @@ prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep
 ```
 
 
+Replace R7 (20k, code 30C) with 22k. Size is imperial 0603
+Tme link: https://www.tme.eu/ro/details/smd0603-22k-1%25/rezistente-smd/royalohm/0603saf2202t5e/
