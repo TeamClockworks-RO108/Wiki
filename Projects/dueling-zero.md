@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2025-09-04T00:49:35.544Z
+date: 2025-09-04T00:53:05.978Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z
@@ -145,16 +145,10 @@ Piesele pentru ecranul pe retea sunt:
  * [PoE Hat](https://www.emag.ro/modul-raspberry-pi-poe-hat-g-40-pini-gpio-5v-5a-56-5-64-98-mm-compatible-cu-ieee-802-3af-at-ao2/pd/DQ2SR1YBM/)
  
  
-### References
+## References
  
-#### Octopus V1.1
-
-![octopus_pinout.png](/octopus_pinout.png)
-
-#### EBB36 CAN
-
-![ebb36_pinout.png](/ebb36_pinout.png)
-
-#### SB2209 CAN
- 
-![sb2209_pinout.png](/sb2209_pinout.png)
+| Board | Pinout |
+| --- | --- | 
+| Octopus V1.1 | ![octopus_pinout.png](/octopus_pinout.png) | 
+| EBB36 CAN | ![ebb36_pinout.png](/ebb36_pinout.png) | 
+| SB2209 CAN | ![sb2209_pinout.png](/sb2209_pinout.png) | 
