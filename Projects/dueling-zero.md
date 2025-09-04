@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2025-06-05T17:17:03.619Z
+date: 2025-09-04T00:46:16.220Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z
@@ -143,4 +143,9 @@ Piesele pentru ecranul pe retea sunt:
  * [Ecran](https://www.emag.ro/display-ips-waveshare-10-1-inch-800x1280-touch-capacitiv-interfata-dsi-compatibil-raspberry-pi-sticla-temperata-10-8-mm-10-1-dsi-touch-awaveshare30052/pd/D4HRQN3BM/)
  * [Raspberry pi 5](https://www.emag.ro/placa-de-baza-raspberry-pi-5-4-gb-multicolor-rpi5-4gb-single/pd/DD298KYBM/)
  * [PoE Hat](https://www.emag.ro/modul-raspberry-pi-poe-hat-g-40-pini-gpio-5v-5a-56-5-64-98-mm-compatible-cu-ieee-802-3af-at-ao2/pd/DQ2SR1YBM/)
+ 
+ 
+ ### References
+ 
+ | 
 
