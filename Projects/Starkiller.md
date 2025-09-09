@@ -1,8 +1,8 @@
 ---
-title: Starkiller
+title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T02:01:12.433Z
+date: 2025-09-09T02:05:26.232Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
