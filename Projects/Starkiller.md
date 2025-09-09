@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T02:43:21.914Z
+date: 2025-09-09T20:17:46.819Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -70,9 +70,9 @@ The CAD file contains lots of parameters that can be configured. The most import
 
 ## Example CAD configurations
 
-| `SK11111` | `SK11717` | `SK21117` | `SK21711` | `SK31717` |
+| `SK11111` | `SK11717` | `SK21117` | `SK21711` | `SK31111` | `SK31717` |
 | -- |
-| ![sk11111.png](/sk11111.png) | ![sk11717.png](/sk11717.png) | ![sk21117.png](/sk21117.png) | ![sk21711.png](/sk21711.png) | ![sk31717.png](/sk31717.png) |
+| ![sk11111.png](/sk11111.png) | ![sk11717.png](/sk11717.png) | ![sk21117.png](/sk21117.png) | ![sk21711.png](/sk21711.png) | ![sk31111.png](/sk31111.png) | ![sk31717.png](/sk31717.png) |
 
 
 
