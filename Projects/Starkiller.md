@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T20:50:37.880Z
+date: 2025-09-09T23:27:51.993Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -102,8 +102,8 @@ Set the seam placing mode to aligned. This will place the seam in the teardrop s
 
 # Example modded motor
 
-Here we have modded a 84 RPM motor to provide 435 RPM by replacing the center planetary stage with `SK11111`. The motor is shown without the planetary jacket.
-
-![whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg](/whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg)
+| Conversion from 84 RPM to 6000 RPM by replacing the center planetary with `SK11111` | Conversion from 84 RPM to 6000 RPM by replacing all the stages with `SK31717` |
+| --- | --- |
+| ![whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg](/whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg) | ![a621a223-65ee-466a-a40c-f7464d2646ec.jpeg](/a621a223-65ee-466a-a40c-f7464d2646ec.jpeg) |
 
 
