@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T20:39:51.858Z
+date: 2025-09-09T20:44:28.974Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -95,5 +95,11 @@ The `SK1` series parts cand be printed flat on the bed on nearly any orientation
 The `SK2` and `SK3` series must be printed upside-down due to having a hole at the center. The hole makes it easy to remove the gear when dissasembling the modded gearbox by pushing with a M4 screw. 
 
 A high (5-6) number of walls is recommended. To ensure stability at high RPM's, the infill should be as uniform as possible. We suggest going for Gyroid 30% with a small line width (105% of nozzle size). No supports are required for any configuration.
+
+# Example modded motor
+
+Here we have modded a 84 RPM motor to provide 435 RPM by replacing the center planetary stage with `SK11111`. The motor is shown without the planetary jacket.
+
+![whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg](/whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg)
 
 
