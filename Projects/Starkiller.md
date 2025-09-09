@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T02:39:17.446Z
+date: 2025-09-09T02:43:21.914Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -11,6 +11,8 @@ dateCreated: 2025-09-09T01:20:59.160Z
 # Description
 
 Starkiller is a 3D printed file that allows a Gobilda Yellow Jacket 84 RPM motor to transform to any of the following speeds: 6000 RPM, 1620 RPM, 1150 RPM, 435 RPM, 312 RPM. It works by replacing parts of the planetary gearbox with fixed stages. 
+
+The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starkiller, you must also make the modified CAD available to users. In the case of assemblies (derivative works), the whole assembly must be also licensed under the same license of Starkiller.  
 
 # Part types
 
