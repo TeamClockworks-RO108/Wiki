@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T20:44:28.974Z
+date: 2025-09-09T20:50:37.880Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -90,11 +90,15 @@ While calibrating the 17T and 11T gears, you can also adjust `prongHoleRadiusOff
 
 ## Print orientation
 
+ABS is strongly recommended for this application. It has both wear and temperature resistance. It is not unusual for FTC motors to get hot, and we fear that PLA might soften and fail.
+
 The `SK1` series parts cand be printed flat on the bed on nearly any orientation. We prefer to print them exactly as in CAD, as the first layer squish can be compensated by the chamfer of the bottom gear.
 
 The `SK2` and `SK3` series must be printed upside-down due to having a hole at the center. The hole makes it easy to remove the gear when dissasembling the modded gearbox by pushing with a M4 screw. 
 
 A high (5-6) number of walls is recommended. To ensure stability at high RPM's, the infill should be as uniform as possible. We suggest going for Gyroid 30% with a small line width (105% of nozzle size). No supports are required for any configuration.
+
+Set the seam placing mode to aligned. This will place the seam in the teardrop shape of the prongs hole and improve tolerances for prong contact. 
 
 # Example modded motor
 
