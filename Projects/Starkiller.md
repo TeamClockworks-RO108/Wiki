@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T02:05:26.232Z
+date: 2025-09-09T02:39:17.446Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -48,6 +48,8 @@ To obtain different configuration, we can lock one or more of the planetary stag
 | Stage 1 (Motor)| :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
 
 # Configuring the CAD
+
+We recomend that you grab the CAD file from our [github repository](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller). Even though we also provide STL files, the tolerances might not fit well depending on your printer and you might have to re-configure the CAD for your specific setup. 
 
 The CAD file contains lots of parameters that can be configured. The most important are set to favourites and should be configured to your setup:
 
