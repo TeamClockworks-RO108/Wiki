@@ -2,7 +2,7 @@
 title: Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T01:27:19.051Z
+date: 2025-09-09T01:33:02.671Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -30,7 +30,7 @@ The 84 RPM motor has the following planetary configuration:
 | Stages | Motor | Stage 1 | Stage 2 | Stage 3 | Shaft |
 | -- |
 | **Sun gear** | | 17 | 11 | 17 | |
-| **Ratio** |  | 3.7 | 5.2 | 3.7| | 
+| **Ratio** |  | 3.7 | 5.2 | 3.7 | | 
 
 
 # Motor Modding
