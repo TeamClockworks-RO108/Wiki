@@ -2,7 +2,7 @@
 title: Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T01:33:02.671Z
+date: 2025-09-09T01:44:03.609Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -42,3 +42,23 @@ To obtain different configuration, we can lock one or more of the planetary stag
 | Stage 3 (Shaft) | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: |
 | Stage 2 | :ballot_box_with_check: | :ballot_box_with_check: | Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: | :stop_sign: |
 | Stage 1 (Motor)| :ballot_box_with_check: | Replace with `SK11717` | :ballot_box_with_check: | Replace with `SK11717` | Replace with `SK21117` | Replace with `SK31717` |
+
+# Configuring the CAD
+
+The CAD file contains lots of parameters that can be configured. The most important are set to favourites and should be configured to your setup:
+
+![screenshot_20250909_043537.png](/screenshot_20250909_043537.png)
+
+| Parameter | Meaning |
+| --- | --- |
+| `stages` | Number of stages to replace (`N` variable) |
+| `bottomStageTeeth` | Number of teeth on the bottom stage sun gear (`B` variable) |
+| `topStageTeeth` | Number of teeth on the bottom stage sun gear (`T` variable) |
+| `bottomStageHoleRadiusOffset` | A radius offset added to bottom gear hole, to aid with tolerance and part fir |
+| `prongHoleRadiusOffset` | A radius offset added to top prongs hole, to aid with tolerance and part fit |
+| `bridgeExtraRoom` | Amount of material to remove at the end of holes to compensate bridge sag |
+| `gearInsertHeight` | Height of the tooth making contact with the bottom gear |
+| `gearInsertPcOfAngle` | How thick the tooth making contact with the bottom gear should be. Must be between 0 and 1. |
+
+
+
