@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T23:27:51.993Z
+date: 2025-09-09T23:33:59.406Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -39,15 +39,19 @@ The 84 RPM motor has the following planetary configuration:
 | **Ratio** |  | 3.7 | 5.2 | 3.7 | | 
 
 
-# Motor Modding
+# Motor Modding and Configuration
 
 To obtain different configuration, we can lock one or more of the planetary stages to 1:1 ratio.
 
+## 84 RPM Motor
+
+
+
 | Output RPM | 84  | 312  | 435  | 1150  | 1620  | 6000  |
 | --- | --- | --- | --- | --- | --- | --- | 
-| Stage 3 (Shaft) | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
-| Stage 2 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: Remove | :stop_sign: Remove |
-| Stage 1 (Motor)| :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
+| Stage 3 (Shaft) <br> 17T 3.7:1 | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
+| Stage 2 <br> 11T 5.2:1 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: Remove | :stop_sign: Remove |
+| Stage 1 (Motor) <br> 17T 3.7:1| :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
 
 # Configuring the CAD
 
