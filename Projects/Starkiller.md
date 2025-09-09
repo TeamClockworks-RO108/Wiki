@@ -2,7 +2,7 @@
 title: Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T01:44:03.609Z
+date: 2025-09-09T01:53:27.037Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -59,6 +59,12 @@ The CAD file contains lots of parameters that can be configured. The most import
 | `bridgeExtraRoom` | Amount of material to remove at the end of holes to compensate bridge sag |
 | `gearInsertHeight` | Height of the tooth making contact with the bottom gear |
 | `gearInsertPcOfAngle` | How thick the tooth making contact with the bottom gear should be. Must be between 0 and 1. |
+
+## Example CAD configurations
+
+| `SK11111` | `SK11717` | `SK21117` | `SK21711` | `SK31717` |
+| -- |
+| ![sk11111.png](/sk11111.png) | ![sk11717.png](/sk11717.png) | ![sk21117.png](/sk21117.png) | ![sk21711.png](/sk21711.png) | ![sk31717.png](/sk31717.png) |
 
 
 
