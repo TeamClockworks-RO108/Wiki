@@ -2,7 +2,7 @@
 title: Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T01:56:39.854Z
+date: 2025-09-09T02:01:12.433Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -22,6 +22,10 @@ Variables `N` `T` and `B` configure the different options:
 | N | Number of stages to replace | 1-3 |
 | T | Number of teeth of the sun gear of the **top** stage (towards the **output**) | 11, 17 |
 | B | Number of teeth of the sun gear of the **bottom** (towards the **motor**) | 11, 17 |
+
+> If N is 1, then B and T must be the same as we are replacing a single planetary stage. It is not possible to have, for example, part SK11117 or SK11711.
+{.is-warning}
+
 
 # 84 Motor Configuration
 
