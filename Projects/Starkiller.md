@@ -2,7 +2,7 @@
 title: Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T01:53:27.037Z
+date: 2025-09-09T01:56:39.854Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -39,9 +39,9 @@ To obtain different configuration, we can lock one or more of the planetary stag
 
 | Output RPM | 84  | 312  | 435  | 1150  | 1620  | 6000  |
 | --- | --- | --- | --- | --- | --- | --- | 
-| Stage 3 (Shaft) | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: |
-| Stage 2 | :ballot_box_with_check: | :ballot_box_with_check: | Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: | :stop_sign: |
-| Stage 1 (Motor)| :ballot_box_with_check: | Replace with `SK11717` | :ballot_box_with_check: | Replace with `SK11717` | Replace with `SK21117` | Replace with `SK31717` |
+| Stage 3 (Shaft) | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
+| Stage 2 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: Remove | :stop_sign: Remove |
+| Stage 1 (Motor)| :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
 
 # Configuring the CAD
 
