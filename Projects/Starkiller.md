@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T00:45:44.744Z
+date: 2025-09-10T00:59:05.203Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -16,6 +16,8 @@ The system also fits any other planetary gearbox from gobilda (not neccessarily 
 
 The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starkiller, you must also make the modified CAD available to users. In the case of assemblies (derivative works), the whole assembly must be also licensed under the same license of Starkiller.  
 
+The repository for this project can be found [here](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller). 
+
 # Part types
 
 The Starkiller parts use the follosing maning scheme: `SK{N}{T}{B}`
@@ -24,11 +26,11 @@ Variables `N` `T` and `B` configure the different options:
 | Name variable | Meaning | Possible values |
 | --- | --- | --- |
 | N | Number of stages to replace | 1-3 |
-| T | Number of teeth of the sun gear of the **top** stage (towards the **output**) | 11, 17 |
+| T | Number of teeth of the sun gear of the **top** stage (towards the **shaft**) | 11, 17 |
 | B | Number of teeth of the sun gear of the **bottom** (towards the **motor**) | 11, 17 |
 
 > If N is 1, then B and T must be the same as we are replacing a single planetary stage. It is not possible to have, for example, part SK11117 or SK11711.
-{.is-warning}
+{.is-info}
 
 
 # Motor Modding and Configuration
