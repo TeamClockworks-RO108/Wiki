@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T01:16:01.944Z
+date: 2025-09-10T01:21:20.511Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -147,9 +147,17 @@ Set the seam placing mode to aligned. This will place the seam in the teardrop s
 
 # Post-assembly steps
 
-During dissasembly, the factory grease on the geard might catch dust or other particles
+During dissasembly, the factory grease on the gears might catch dust or other particles.
 
-To ensure smooth operation, we need to 
+To ensure smooth operation, we need to clean the mechanism of the old, dirty grease and add new lubricant.
+
+We have found that Isopropyl alcohol and a plastic brush work well for cleaning out the old grease. 
+
+
+
+Don't forget to grease both the gears and the prongs! The gears rotate around the prongs and if this interface is not lubed, it will wear out causing backlash in the system, or even locking up completely due to metal chips.
+
+Any kind of thick, tacky grease should be good. 
 
 # Example modded motor
 
