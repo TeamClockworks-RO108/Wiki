@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T01:00:58.430Z
+date: 2025-09-10T01:16:01.944Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -144,6 +144,12 @@ The `SK2` and `SK3` series must be printed upside-down due to having a hole at t
 A high (5-6) number of walls is recommended. To ensure stability at high RPM's, the infill should be as uniform as possible. We suggest going for Gyroid 30% with a small line width (105% of nozzle size). No supports are required for any configuration.
 
 Set the seam placing mode to aligned. This will place the seam in the teardrop shape of the prongs hole and improve tolerances for prong contact. 
+
+# Post-assembly steps
+
+During dissasembly, the factory grease on the geard might catch dust or other particles
+
+To ensure smooth operation, we need to 
 
 # Example modded motor
 
