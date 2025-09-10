@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T01:31:31.221Z
+date: 2025-09-10T01:32:43.122Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -154,7 +154,7 @@ To ensure smooth operation, we need to clean the mechanism of the old, dirty gre
 We have found that Isopropyl alcohol and a plastic brush work well for cleaning out the old grease. 
 
 | ![img_20250910_041538411~2.jpg](/img_20250910_041538411~2.jpg) |
-| --- |
+|:---:|
 | Clean gears |
 
 Avoid leaving the gears ungreased for a long time. Rust might form on the surface due to oxygen and humidity, especially that we do not know what grade of steel Gobilda uses for these gears.
