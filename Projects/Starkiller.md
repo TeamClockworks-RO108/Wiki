@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T00:20:23.240Z
+date: 2025-09-10T00:45:44.744Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -104,9 +104,10 @@ The CAD file contains lots of parameters that can be configured. The most import
 | `gearInsertHeight` | Height of the tooth making contact with the bottom gear |
 | `gearInsertPcOfAngle` | How thick the tooth making contact with the bottom gear should be. Must be between 0 and 1. |
 
-> Fusion360 will show warnings and errors when switching from `N=1` to `N=2|3` and back. These warnings and errors are safe to ignore. They happen because various features are present only in one of the configurations, and the CAD file is designed to produce all of the configurations.
-{.is-info}
+You do not need to set the N, T and B variables manually in the Parameters window. You can use the Configuration menu to switch between part profiles. This setting only changes the first three parameters described above and is a shortcut to switch between the different part numbers.
 
+| ![screenshot_20250910_033509.png](/screenshot_20250910_033509.png) |
+| --- |
 
 ## Example CAD configurations
 
@@ -116,12 +117,19 @@ The CAD file contains lots of parameters that can be configured. The most import
 
 ## Print settings
 
+> We **STRONGLY** recommend that you tune your tolerances by modifying the CAD parameters. If you **MUST** use the pre-exported STL files to print, use the horizontal expansion (often also called XY compensation) setting in your slicer to adjust the fit. Prioritize getting a good fit for the bottom gear. Loose prongs are OK (will just introduce play) but a loose gear will not work. 
+> In the future, we will provide STL's with oversized prong holes for cases where a good gear fit will mean the prong holes are much to small. 
+{.is-warning}
+
+
 To properly assemble, we must tailor the tolerances to your printer. We want a good contact with the gears without any backlask or too much tightness. 
-Having the print too tight around the gear can cause the gear to "dig" into one side of the print and sit off-center. Backlash will cause the fit to wear over time and become loose. 
+Having the print too tight around the gear can cause the gear to "dig" into one side of the print and sit off-center. Backlash on the gear will cause the fit to wear over time and become loose. 
 
 You should first calibrate your 17T gear fit. Print the `SK11717`, adjusting the `bottomStageHoleRadiusOffset` CAD parameter until it fits. After you get a good fit (relatively tight, not require hammer or power tools to assemble, no play) you can move on to calibrate the 11T gear fit using the `SK11111` configuration and adjusting `bottomStageHoleSmallGearRadiusOffsetComp`.
 
 While calibrating the 17T and 11T gears, you can also adjust `prongHoleRadiusOffset` to calibrate the planetary prongs hole size. Same rules apply here: no play, easy to assemble by hand.
+
+If your printer has very aggressive smoothing due to input shapers, you can decrease `gearInsertPcOfAngle` to about 0.7 to get sharper teeth in the internal gear. 
 
 ## Print orientation
 
