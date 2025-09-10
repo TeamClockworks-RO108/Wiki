@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-09T23:33:59.406Z
+date: 2025-09-10T00:05:11.668Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -29,29 +29,42 @@ Variables `N` `T` and `B` configure the different options:
 {.is-warning}
 
 
-# 84 Motor Configuration
-
-The 84 RPM motor has the following planetary configuration:
-
-| Stages | Motor | Stage 1 | Stage 2 | Stage 3 | Shaft |
-| -- |
-| **Sun gear** | | 17 | 11 | 17 | |
-| **Ratio** |  | 3.7 | 5.2 | 3.7 | | 
-
-
 # Motor Modding and Configuration
 
 To obtain different configuration, we can lock one or more of the planetary stages to 1:1 ratio.
 
 ## 84 RPM Motor
 
-
-
 | Output RPM | 84  | 312  | 435  | 1150  | 1620  | 6000  |
 | --- | --- | --- | --- | --- | --- | --- | 
 | Stage 3 (Shaft) <br> 17T 3.7:1 | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
 | Stage 2 <br> 11T 5.2:1 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :ballot_box_with_check: | :stop_sign: Remove | :stop_sign: Remove |
-| Stage 1 (Motor) <br> 17T 3.7:1| :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
+| Stage 1 (Motor) <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21117` | :hammer_and_wrench: Replace with `SK31717` |
+
+## 312 RPM Motor
+
+| Output RPM | 312 | 1150 | 1620 | 6000 | 
+| --- | --- | --- | --- | --- |
+| Stage 2 (Shaft) <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
+| Stage 1 (Motor) <br> 11T 5.2:1 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :hammer_and_wrench: Replace with `SK21111` |
+
+
+## 435 RPM Motor
+
+| Output RPM | 435 | 1620 | 6000 |
+| --- | --- | --- | --- |
+| Stage 2 (Shaft) <br> 17T 3.7:1 | :ballot_box_with_check: | :ballot_box_with_check: | :stop_sign: Remove |
+| Stage 1 (Motor) <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :hammer_and_wrench: Replace with `SK21717` |
+
+## 1150 RPM Motor
+| Output RPM | 1150 | 6000 |
+| --- | --- | --- |
+| Stage 1 <br> 11T 5.2:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` |
+
+## 1620 RPM Motor
+| Output RPM | 1620 | 6000 |
+| --- | --- | --- |
+| Stage 1 <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` |
 
 # Configuring the CAD
 
