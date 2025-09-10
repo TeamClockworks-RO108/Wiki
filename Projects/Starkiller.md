@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-10T01:21:20.511Z
+date: 2025-09-10T01:24:48.036Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -157,7 +157,7 @@ We have found that Isopropyl alcohol and a plastic brush work well for cleaning 
 
 Don't forget to grease both the gears and the prongs! The gears rotate around the prongs and if this interface is not lubed, it will wear out causing backlash in the system, or even locking up completely due to metal chips.
 
-Any kind of thick, tacky grease should be good. 
+Any kind of thick, tacky grease should be good. We prefer LiquiMoly LM47.
 
 # Example modded motor
 
