@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-11T00:16:40.181Z
+date: 2025-09-11T00:17:56.053Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -120,7 +120,7 @@ You do not need to set the N, T and B variables manually in the Parameters windo
 ## Print settings
 
 > We **STRONGLY** recommend that you tune your tolerances by modifying the CAD parameters. If you **MUST** use the pre-exported STL files to print, use the horizontal expansion (often also called XY compensation) setting in your slicer to adjust the fit. Prioritize getting a good fit for the bottom gear. Loose prongs are OK (will just introduce play) but a loose gear will not work. 
-> In the future, we will provide STL's with oversized prong holes for cases where a good gear fit will mean the prong holes are much to small. 
+> We also provide STL's with oversized prong holes for cases where a good gear fit will mean the prong holes are much to small. Consult the [STL folder](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller/tree/master/STL) in the repository for the files.
 {.is-warning}
 
 
