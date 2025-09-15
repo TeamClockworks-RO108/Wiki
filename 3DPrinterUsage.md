@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-09-10T23:23:22.389Z
+date: 2025-09-15T00:10:40.508Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -70,3 +70,13 @@ For more general information about the PrusaMk3S+ printers you can consult the [
 -   When the nozzle temperature matches that of the preset, you can select the “Unload” option from the menu and wait for the printer to push the filament outside the extruder.
 -   Simply grab the filament from the printer and store the spool somewhere else.
 
+
+# Updating your slicer configuration
+
+It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
+
+1. Download the newest configurations from our [github repository](https://github.com/TeamClockworks-RO108/PrusaSlicerConfig). To download, press the green button and click `Download ZIP`.
+2. Extract the contents of the zip file in your PrusaSlicer's config folder. The possible locations are outlined below:
+  * Linux: `~/.config/PrusaSlicer`
+  * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
+  
