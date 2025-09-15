@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-09-15T00:10:40.508Z
+date: 2025-09-15T00:10:51.829Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -15,6 +15,16 @@ Please read this page and follow the steps here when using the 3D Printers
 3D printers are devices that are able to turn filament into functional components. They work by intaking the filament with the extruder and pushing it into the hotend, where it gets melted and pushed through the nozzle, where it gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
 
 The thinness of the layers, as well as many other print settings can be adjusted from PrusaSlicer, which is the software we use to prepare the components for production with our printers. More information about the PrusaSlicer can be found in this [article](https://help.prusa3d.com/product/prusaslicer).
+
+# Updating your slicer configuration
+
+It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
+
+1. Download the newest configurations from our [github repository](https://github.com/TeamClockworks-RO108/PrusaSlicerConfig). To download, press the green button and click `Download ZIP`.
+2. Extract the contents of the zip file in your PrusaSlicer's config folder. The possible locations are outlined below:
+  * Linux: `~/.config/PrusaSlicer`
+  * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
+  
 
 ## Voron 2.4
 
@@ -71,12 +81,4 @@ For more general information about the PrusaMk3S+ printers you can consult the [
 -   Simply grab the filament from the printer and store the spool somewhere else.
 
 
-# Updating your slicer configuration
 
-It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
-
-1. Download the newest configurations from our [github repository](https://github.com/TeamClockworks-RO108/PrusaSlicerConfig). To download, press the green button and click `Download ZIP`.
-2. Extract the contents of the zip file in your PrusaSlicer's config folder. The possible locations are outlined below:
-  * Linux: `~/.config/PrusaSlicer`
-  * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
-  
