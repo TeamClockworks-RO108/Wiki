@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2025-09-26T19:36:07.409Z
+date: 2025-09-26T19:45:50.464Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z
@@ -18,4 +18,28 @@ Fiecare cablu este rulat pe un disc, iar capetele rămân fixate în partea de s
 
  # **Obiective:**
  
- 
+> Crearea unui organizator funcțional și eficient ca spațiu pentru diverse tipuri de cabluri USB.
+{.is-info}
+
+
+> Reducerea dezordinii cauzate de cabluri pe birou.
+{.is-info}
+
+
+> Asigurarea accesului rapid, a depozitării ordonate și a utilizării simple.
+> {.is-info}
+
+# **Construcție:**
+
+Structura este formată din două suporturi laterale și mai multe discuri circulare pe care se rulează cablurile.
+
+Discurile sunt montate pe o axă, ceea ce le permite să se rotească, astfel încât cablul să poată fi tras sau strâns cu ușurință.
+
+Modelul este realizat în Fusion 360 și este destinat printării 3D.
+
+# **Următorii pași:**
+
+1.Finalizarea axului pe care se montează discurile.
+2.Testarea modelului prin printare 3D și ajustarea unde este nevoie.
+
+
