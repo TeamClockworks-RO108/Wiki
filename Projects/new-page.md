@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2025-09-28T18:25:37.989Z
+date: 2025-09-28T18:26:06.030Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z
@@ -42,6 +42,6 @@ Structura organizatorului este compusă din două suporturi laterale robuste și
 # **Următorii pași:**
 
 1.Finalizarea axului pe care se montează discurile.
-2.Testarea modelului prin printare 3D și ajustarea unde este nevoie.
+2.Testarea modelului prin printare 3D și ajustarea daca este necesara.
 
 
