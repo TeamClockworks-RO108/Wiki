@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2025-09-26T19:49:06.392Z
+date: 2025-09-28T18:10:32.230Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z
@@ -19,15 +19,15 @@ Fiecare cablu este rulat pe un disc, iar capetele rămân fixate în partea de s
  # **Obiective:**
  
 > Crearea unui organizator funcțional și eficient ca spațiu pentru diverse tipuri de cabluri USB.
-{.is-info}
+{.is-danger}
 
 
 > Reducerea dezordinii cauzate de cabluri pe birou.
-{.is-info}
+{.is-danger}
 
 
 > Asigurarea accesului rapid, a depozitării ordonate și a utilizării simple.
-> {.is-info}
+{.is-danger}
 
 # **Construcție:**
 
