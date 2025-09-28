@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2025-09-28T18:20:11.777Z
+date: 2025-09-28T18:25:37.989Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z
@@ -11,9 +11,9 @@ dateCreated: 2025-09-26T19:36:07.409Z
 
 # **Descriere:**
 
-Wire Nest este un suport eficient și practic pentru organizarea cablurilor, conceput să le mențină bine fixate, fără încurcături, și ușor de accesat. Fiecare cablu este înfășurat individual pe un disc special, oferind un sistem clar și ordonat de depozitare. Capetele cablurilor sunt prinse în partea superioară a suportului, astfel încât acestea să poată fi utilizate rapid, fără a fi nevoie să desfaci tot cablul.
+Wire Nest este un suport practic și eficient, conceput special pentru a menține cablurile bine organizate, fixe și ușor accesibile. Fiecare cablu se înfășoară în jurul unui disc circular, iar capetele cablurilor sunt fixate în partea superioară a suportului, oferind astfel un acces rapid și simplificat fără riscul de încurcare sau deteriorare a cablurilor.
 
-Acest design reduce aglomerarea de fire de pe birou sau din sertare, fiind ideal atât pentru spații de lucru digitale (birouri, ateliere), cât și pentru utilizarea în locuințe sau în zone unde este nevoie de ordine și acces rapid la diverse tipuri de cabluri (USB, audio, alimentare etc).
+Acest organizator este ideal pentru orice spațiu de lucru, fie el birou, atelier sau acasă, unde ordinea cablurilor poate face diferența între un mediu productiv și unul haotic.
 
 
 
@@ -38,11 +38,7 @@ Acest design reduce aglomerarea de fire de pe birou sau din sertare, fiind ideal
 
 # **Construcție:**
 
-Structura organizatorului este compusă din două suporturi laterale solide, care susțin o serie de discuri circulare, special concepute pentru înfășurarea cablurilor. Aceste discuri funcționează ca mici tamburi pe care cablurile se pot rula ordonat, reducând încurcăturile și ocupând un spațiu minim.
-
-Discurile sunt montate pe o axă centrală, ceea ce le oferă libertate de rotație. Acest mecanism permite utilizatorului să tragă sau să strângă cablul în funcție de nevoi, fără efort și fără a afecta celelalte cabluri înfășurate pe celelalte discuri.
-
-Întregul model a fost proiectat digital folosind software-ul Fusion 360, care a permis o construcție precisă, modulară și adaptabilă. Designul este optimizat pentru a fi printat 3D, folosind materiale precum PLA , oferind astfel posibilitatea realizării rapide și eficiente a suportului, chiar și acasă, cu o imprimantă 3D standard.
+Structura organizatorului este compusă din două suporturi laterale robuste și mai multe discuri circulare, care sunt montate pe o axă centrală. Această axă permite discurilor să se rotească liber, oferind posibilitatea de a strânge sau desfășura cablurile cu ușurință. Fiecare disc este proiectat să poată susține două cabluri în paralel, asigurând o organizare compactă și eficientă. Modelul a fost realizat în Fusion 360 și este optimizat pentru printare 3D, fiind adaptabil în funcție de nevoile utilizatorului.
 # **Următorii pași:**
 
 1.Finalizarea axului pe care se montează discurile.
