@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2025-09-28T18:18:39.784Z
+date: 2025-09-28T18:20:11.777Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z
@@ -15,24 +15,26 @@ Wire Nest este un suport eficient și practic pentru organizarea cablurilor, con
 
 Acest design reduce aglomerarea de fire de pe birou sau din sertare, fiind ideal atât pentru spații de lucru digitale (birouri, ateliere), cât și pentru utilizarea în locuințe sau în zone unde este nevoie de ordine și acces rapid la diverse tipuri de cabluri (USB, audio, alimentare etc).
 
+
+
 ![captură_de_ecran_2025-09-26_223100.png](/captură_de_ecran_2025-09-26_223100.png){.align-center}
 
  # **Obiective:**
  Proiectul Wire Nest are ca scop realizarea unui organizator funcțional și eficient, destinat gestionării diverselor tipuri de cabluri USB și nu numai. Acesta urmărește:
  
 > Reducerea dezordinii provocate de cablurile lăsate liber pe birou sau în sertare.
-{.is-danger}
+{.is-success}
 
 
 > Optimizarea spațiului de lucru, oferind o soluție compactă și ordonată pentru stocarea cablurilor.
-{.is-danger}
+{.is-success}
 
 
 > Facilitarea accesului rapid la cablurile necesare, fără încurcături sau pierderi de timp.
-{.is-danger}
+{.is-success}
 
 > Simplificarea utilizării zilnice, printr-un design intuitiv, adaptat nevoilor reale ale utilizatorilor.
-{.is-danger}
+{.is-success}
 
 # **Construcție:**
 
