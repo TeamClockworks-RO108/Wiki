@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T00:16:44.497Z
+date: 2025-10-09T00:43:01.287Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -12,9 +12,14 @@ dateCreated: 2024-11-11T18:42:21.941Z
 
 Please read this page and follow the steps here when using the 3D Printers
 
-3D printers are devices that are able to turn filament into functional components. They work by intaking the filament with the extruder and pushing it into the hotend, where it gets melted and pushed through the nozzle, where it gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
+3D printers are devices that are able to turn filament into functional components. They work by pushing the filament with the extruder and into the hotend, where it gets melted and pushed through the nozzle. It gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
 
-The thinness of the layers, as well as many other print settings can be adjusted from PrusaSlicer, which is the software we use to prepare the components for production with our printers. More information about the PrusaSlicer can be found in this [article](https://help.prusa3d.com/product/prusaslicer).
+# Slicer setup
+
+Our slicer of choice is [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/). After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
+
+> Do not select any of the team's printers in the configuration wizard. We maintain a custom repository of configuration and it is ideal we do not stray from it. They will be imported in the next section of this page.
+{.is-info}
 
 # Updating your slicer configuration
 
@@ -26,24 +31,37 @@ It is very important to update your slicer configuration to the latest version. 
   * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
   
   
+# Pre-flight checks
 
-## Voron 2.4
+Before printing, please have a look at the printer to ensure that it is operating normally.
 
-Gates and tools are numbered from 0 to 7 on the printer and from 1 to 8 on the slicer. Keep that in mind when counting.
+- [ ] The printer's mechanics do not look damaged, bent or broken
+- [ ] There is filament loaded and it is the same type of filament as in the slicer. 
+- [ ] The filament is compatible with the printer
 
-Gate/Tool 0 is the one near the red belt motor.
+> Before the print, always wipe the bed with Isopropanol. 
+{.is-info}
 
-Gate/Tool 7 is the one near the electronics box (where the big black connector goes in)
 
-#### Pre-Print Checklist
+> When in doubt, ***PLEASE*** ask Alex to help figure the issue out.
+{.is-warning}
 
--   [ ] Wipe the bed with isopropyl alcohol (***ALWAYS!!!!!!***)
--   [ ] Check that slicer's material list is the same with real life material list. Filaments 1, 4 and 8 should say “UNUSED GATE” and should ***NOT*** be printed with.
--   [ ] Check TTG Map on the device. T0, T3 and T7 should be mapped to gate 7 (unused). All other tools should map directly to their own gates.
--   [ ] There is no PLA loaded in the printer
--   [ ] There is no PETG loaded in the printer
--   [ ] All filaments loop exactly 6 times inside the buffer wheels
--   [ ] If printing with HIPS support, check that HIPS filament is loaded
+For filament compatibility, as a general rule:
+ * Enclosed printers only use ABS and ASA
+ * Open printers only use PLA and PETG
+ * HIPS can be used as support material on multi-material enclosed printers
+ 
+If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
+
+## Medina (Voron 2.4 350^3^)
+
+Medina is a large format, enclosed Voron 2.4 printer. It only uses ABS and ASA.
+
+The print sheet should always be used on the smooth side.
+
+Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
+
+To control the printer, use the [webpage](printer.lucaciresearch.net) or the Ironport terminal. 
 
 ## Prusa Mk3S+
 
