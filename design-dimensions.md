@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-05-21T23:38:34.646Z
+date: 2025-10-09T01:40:54.275Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -10,7 +10,7 @@ dateCreated: 2024-11-13T00:40:19.306Z
 
 # Design Dimensions
 
-## SHCS - DIN912 ISO4672
+## Socket Head - SHCS - DIN912 / ISO4762
 
 This is the most common screw type we use.
 
@@ -28,7 +28,23 @@ Length is measured from head bottom to screw end.
 | __M6__   | 6 | 10 | 6 | 5 |
 | __M8__   | 8 | 13 | 8 | 6 |
 
-## FHCS - DIN7991 ISO10642
+## Button Head - BHCS - ISO7380
+
+Button head screws are mostly found on Voron Zero and Dueling printers.
+Length is measured from head bottom to screw end.
+
+![iso7380-reference.png](/iso7380-reference.png)
+
+| Type | Diameter (d) | Head diameter (dk) | Head height (k) | Hex Key (s) |
+| --   | -- | -- | - |  - |
+| __M2__   | 2 | ? | ? |  ? |
+| __M3__   | 3 | 5.7 | 1.7 |  2 |
+| __M4__   | 4 | 7.6 | 2.2 | 2.5 |
+| __M5__   | 5 | 9.5 | 2.8 | 3 |
+| __M6__   | 6 | 10.5 | 3.3 | 4 |
+| __M8__   | 8 | 14 | 4.4 | 5 |
+
+## Flat Head - FHCS - DIN7991 
 
 We use this screw when we want to hide the head inside the part and the part is not think enough to dig the whole SHCS head in and still maintain resistance. They have a very shallow head but it is much wider that SHCS.
 
