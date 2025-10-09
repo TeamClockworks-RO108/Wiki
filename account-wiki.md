@@ -2,7 +2,7 @@
 title: Account & Wiki
 description: 
 published: true
-date: 2025-10-09T01:24:34.156Z
+date: 2025-10-09T01:26:17.619Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-01T21:34:11.812Z
@@ -10,7 +10,7 @@ dateCreated: 2025-07-01T21:34:11.812Z
 
 # General information
 
-Your account on [auth.lucaciresearch.net](https://auth.lucaciresearch.net) is used to access all of our online services. 
+Your account on [auth.lucaciresearch.net](https://auth.lucaciresearch.net) is used to access all of our online services. It is tied to your discord user data, so be sure to set a nickname we all understand before accessing systems.
 
 All the services are enrolled in the [Dashboard](https://clockworks-dashboard.lucres.net) so you do not have to memorize all the URL's. Please bookmark the dashboard address!
 
