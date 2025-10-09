@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-09-15T00:10:51.829Z
+date: 2025-10-09T00:16:44.497Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -21,9 +21,10 @@ The thinness of the layers, as well as many other print settings can be adjusted
 It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
 
 1. Download the newest configurations from our [github repository](https://github.com/TeamClockworks-RO108/PrusaSlicerConfig). To download, press the green button and click `Download ZIP`.
-2. Extract the contents of the zip file in your PrusaSlicer's config folder. The possible locations are outlined below:
+2. Extract the contents of the zip file in your PrusaSlicer's config folder. If asked, overwrite any files folders. The possible locations are outlined below:
   * Linux: `~/.config/PrusaSlicer`
   * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
+  
   
 
 ## Voron 2.4
