@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T02:14:57.836Z
+date: 2025-10-09T02:20:20.488Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -91,10 +91,12 @@ All Klipper printers are connected to a data collection system called Prometheus
 > We use Grafana to create fancy graphs 
 {.is-info}
 
-After you open Grafana, you will see an empty welcome page. In the left menu, go to `Dashboards` then select the `Printers` dashboard. You will see a similar dashboard to this:
+After you open Grafana, you will see an empty welcome page. In the left menu, go to `Dashboards` then select the `Printers` dashboard. You will see a page with overview of the fleet status.
+
+Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
 ![screenshot_20251009_051254.png](/screenshot_20251009_051254.png)
 
-Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
+
 
 
