@@ -2,11 +2,44 @@
 title: Account & Wiki
 description: 
 published: true
-date: 2025-07-01T21:34:11.812Z
+date: 2025-10-09T01:24:34.156Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-01T21:34:11.812Z
 ---
+
+# General information
+
+Your account on [auth.lucaciresearch.net](https://auth.lucaciresearch.net) is used to access all of our online services. 
+
+All the services are enrolled in the [Dashboard](https://clockworks-dashboard.lucres.net) so you do not have to memorize all the URL's. Please bookmark the dashboard address!
+
+![screenshot_20251009_041224.png](/screenshot_20251009_041224.png)
+
+When you access the dashboard, you will be asked to login. Instead of entering an username or email, login using the Discord button as shown below. You need to be present on the Discord server and have the Member role to be able to enter.
+
+![screenshot_20251009_041503.png](/screenshot_20251009_041503.png)
+
+When you visit a service from the dashboard, you will be logged in automatically.
+
+There are a few exceptions: 
+ * **Wiki**: See the login details in the section below
+ * **Email**: Ask team leaders for credentials
+ * **Network routers**: Ask team leaders for credentials
+ 
+## How to login to the Wiki
+
+
+Open the [Wiki page](https://wiki.teamclockworks.ro) in your browser. Head over the login button on the wiki, go to the LR Discord provider (do **NOT** use the email & password fields, they will not work!).
+
+Once you arrive on the Authentik's page, login as usual using the Discord provider. If you are already logged in, this steo should be automatic.
+
+If you have configured a password and username for your account, like in the next section, you can use that on the LucaciResearch login page instead of Discord.
+
+| ![screenshot_20250702_002600.png](/screenshot_20250702_002600.png) | ![screenshot_20251009_041503.png](/screenshot_20251009_041503.png) |
+| --- | --- |
+
+
 
 # How do I set a password for my account?
 
@@ -39,10 +72,3 @@ Enter a new password twice and click **Continue**
 
 Logout of the authentication server, then try to login. The logout button is in the upper right corner.
 
-## How to login to the wiki
-
-Head over the login button on the wiki, go to the LR Discord provider as usual (do **NOT** use the email & password fields, they will not work!).
-
-![screenshot_20250702_002600.png](/screenshot_20250702_002600.png)
-
-Once you arrive on the Authentik's page, enter your credentials and then should be logged in.
