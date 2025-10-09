@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T00:43:01.287Z
+date: 2025-10-09T00:59:30.141Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -14,6 +14,15 @@ Please read this page and follow the steps here when using the 3D Printers
 
 3D printers are devices that are able to turn filament into functional components. They work by pushing the filament with the extruder and into the hotend, where it gets melted and pushed through the nozzle. It gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
 
+All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net)
+
+| ![screenshot_20251009_035232.png](/screenshot_20251009_035232.png) |
+| --- |
+
+
+| Medina | Iron | Envy | Malice | Supermodel | Kraftmaschine |
+| --- | --- | --- | --- | --- |
+| Voron 2.4 350^3^ | Voron Zero 120^3^ | Prusa i3 MK3S+ | Prusa i3 MK3S+ | DuelingZ | DuelingZ |
 # Slicer setup
 
 Our slicer of choice is [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/). After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
