@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-07T00:54:49.380Z
+date: 2025-10-09T19:07:02.237Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -30,3 +30,13 @@ The PSU will be MeanWell, from the UHP range, but for budgeting purposes we can 
 
 To prevent overheating of the wires, everyting will work at 24v. Electronics will be controlled using a Shelly Plus RGBW PM (ABSOLUTE MAX 10A, 4A per ch, 4ch)
 
+# Parts List
+
+| Part | P/N | Price | Notes | 
+| -- | -- | -- | -- |
+| Shelly controller | Shelly Plus RGBW PM | | |
+| Wall socket | Gewiss GW 62 393 | | |
+| Potentiometru 10k | Tayieei LA42DWG-22 | | for 22mm bore |
+| 10m white neutral strip | | | At most 10A/240W |
+
+The strip has 10m and must be divided on 5 equal sides, so each side must use up to 2m
