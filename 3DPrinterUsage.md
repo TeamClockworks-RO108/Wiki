@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T00:59:30.141Z
+date: 2025-10-09T01:27:07.299Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -14,7 +14,7 @@ Please read this page and follow the steps here when using the 3D Printers
 
 3D printers are devices that are able to turn filament into functional components. They work by pushing the filament with the extruder and into the hotend, where it gets melted and pushed through the nozzle. It gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
 
-All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net)
+All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
 
 | ![screenshot_20251009_035232.png](/screenshot_20251009_035232.png) |
 | --- |
