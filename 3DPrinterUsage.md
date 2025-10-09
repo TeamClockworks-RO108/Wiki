@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T01:27:07.299Z
+date: 2025-10-09T02:14:57.836Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -74,39 +74,27 @@ To control the printer, use the [webpage](printer.lucaciresearch.net) or the Iro
 
 ## Prusa Mk3S+
 
-Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. 
+Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
 
-The Prusa Mk3S+ printers are cartesian printers, also known as bedslingers, meaning that the movement in each direction is independently powered by a respective stepper motor and they have an open design. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
-
-They offer a print volume of 25 cm x 21 cm x 21 cm and we use them for PLA prints, with the smooth sheet, and PETG prints, with the textured sheet. The sheets can attach magnetically to the bed and can be changed with our other sheets stored near the printers. For more information about the materials that can be printed on Prusa Sheets, you can consult [Prusa’s Material Guide](https://help.prusa3d.com/filament-material-guide)
+The bed sheets attach magnetically to the bed and can be changed with our other sheets stored near the printers. For more information about the materials that can be printed on Prusa Sheets, you can consult [Prusa’s Material Guide](https://help.prusa3d.com/filament-material-guide).
+We print PLA on the smooth sheet and PETG on the textured sheet.
 
 For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
 
+To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
 
-#### Pre-Print Checklist
+# Observability
 
--   [ ] Always wipe the bed with isopropyl alcohol.
--   [ ] Check that the material used in the slicer is the same as the one loaded in the printer.
--   [ ] Check that the right steel sheet is loaded on the printer: Smooth Sheet for PLA prints and Textured Sheet for PETG prints.
--   [ ] Check that an SD card is loaded on the left of the LCD screen.
+All Klipper printers are connected to a data collection system called Prometheus. To view the status of the fleet, access the Grafana application from the [Dashboard](https://clockworks-dashboard.lucres.net/). When you open Grafana from the Dashboard, you should be automatically logged in.
 
-#### Loading material 
+> Grafana is a tool that can create visualisations from any given data. It is able to read data from Prometheus, SQL databases, time series databases, log collection systems like Loki and more.
+> We use Grafana to create fancy graphs 
+{.is-info}
 
--   Access the menu by pressing the knob located on the right of the LCD screen.
--   From the menu, select the “Preheat” option, then choose the material that you want to print with; the printer will heat the bed and the nozzle to the preset temperatures for that material. Be very careful to touch neither of them unless necessary because they can get extremely hot and can cause burns!
--   When the nozzle temperature matches that of the preset, you can take the filament and push it into the extruder, then the printer will grab it and push it into the nozzle. The printer will ask you to confirm if the filament exiting the nozzle is the same as the one you loaded to make sure that any old filament has been properly removed.
+After you open Grafana, you will see an empty welcome page. In the left menu, go to `Dashboards` then select the `Printers` dashboard. You will see a similar dashboard to this:
 
-#### Starting a print
+![screenshot_20251009_051254.png](/screenshot_20251009_051254.png)
 
--   Take the sd card located on the left of the LCD screen.
--   Use the usb to sd card adapter to load the gcode of the component created in PrusaSlicer from a laptop to the sd card. It’s recommended to leave the material name and time in the name of the gcode as generated by the slicer.
--   Insert the sd card back into the printer and access the menu, then select the “Print from sd” option and find the file you just loaded and select it.
-
-#### Unloading material
-
--   Access the menu, then select the “Preheat” option, then choose the material that you want to remove; the printer will heat the bed and the nozzle to the preset temperatures for that material.
--   When the nozzle temperature matches that of the preset, you can select the “Unload” option from the menu and wait for the printer to push the filament outside the extruder.
--   Simply grab the filament from the printer and store the spool somewhere else.
-
+Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
 
