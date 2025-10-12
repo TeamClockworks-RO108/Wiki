@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-12T14:25:37.269Z
+date: 2025-10-12T14:27:45.042Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -72,8 +72,9 @@ You will find the following components in the motors:
 
 The 4200 RPM configuration is assembled as follows:
 
-![4200-2-2.png](/4200-2-2.png)
 
+
+| ![4200-2-2.png](/4200-2-2.png) ||||||||
 | Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | ---        | - | - | - | - | - | - | - |
 | Any motor | `D11T`^1150^ | 3x `P17T`^84^ | `SPx1117` | 3x `P14T`^84^ | `P11G17`^84^ | `SPc1117` | `O11`^1150^ |
