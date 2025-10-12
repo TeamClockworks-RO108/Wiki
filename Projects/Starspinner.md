@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-12T14:28:26.173Z
+date: 2025-10-12T23:51:01.742Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -74,7 +74,7 @@ The 4200 RPM configuration is assembled as follows:
 
 
 
-| ![4200-2-2.png](/4200-2-2.png) ||||||||
+| ![staspinner-4200-annotated.png](/staspinner-4200-annotated.png) ||||||||
 | Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | ---        | - | - | - | - | - | - | - |
 | Any motor | `D11T`^1150^ | 3x `P17T`^84^ | `SPx1117` | 3x `P14T`^84^ | `P11G17`^84^ | `SPc1117` | `O11`^1150^ |
@@ -88,5 +88,24 @@ You will be left with the following components:
  
 Using the spare motor and a few of the left components (`D17T`^84^, 3x `P14T`^84^, `O17`^84^) you can easily assemble another 1620 RPM Motor from the 1150 RPM we sacrificed. 
 
+# Assembling 8000 RPM
 
+To make 8000 RPM, we will only need a 84 RPM motor. We achieve this by leaving the 17T Sun stage unchanged and reversing the 11T stage. The last 11T stage is completely removed.
+
+You will find the following components in the 84 RPM motor:
+
+| `D17T` | 6x `P14T` | 3x `P17T` | `P17G11` | `P11G17` | `O17` |
+| --- | --- | 
+| 17T Motor D gear | 14T Planet gears (17T Sun) | 17T Planet gears (11T Sun) | 11T-Sun to 17T Carrier | 17T-Sun to 11T Carrier | 17T Output carrier |
+
+The 8000 RPM configuration is assembled as follows:
+
+| ![staspinner-4200-annotated.png](/staspinner-8000-annotated.png) ||||||||
+| Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| ---        | - | - | - | - | - | - | - |
+| Any motor | `D17T` | 3x `P14T` | `SPx1117` | 3x `P17T` | `P17G11` | `SPc1717` | `O17` |
+
+You will be left with the following parts:
+ * 3x `P14T`
+ * `P17G11`
 
