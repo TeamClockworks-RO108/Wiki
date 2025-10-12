@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-12T13:44:35.955Z
+date: 2025-10-12T14:25:37.269Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -57,8 +57,35 @@ The `SPc` parts should be fabricated by 3D printing. Extra care should be taken 
 
 # Assembling 4200 RPM
 
+To make this configuration, we will combine a 84 RPM motor with a 1150 RPM motor to produce 4200 RPM and 1620 RPM. I will use superscript on this page to mark where each part is coming from.
+
+You will find the following components in the motors:
+
+| `D17T`^84^ | 6x `P14T`^84^ | 3x `P17T`^84^ | `P17G11`^84^ | `P11G17`^84^ | `O17`^84^ |
+| --- | --- | 
+| 17T Motor D gear | 14T Planet gears (17T Sun) | 17T Planet gears (11T Sun) | 11T-Sun to 17T Carrier | 17T-Sun to 11T Carrier | 17T Output carrier |
 
 
+| `D11T`^1150^ | 3x `P17T`^1150^ | `O11`^1150^ |
+| --- |
+| 11T Motor D gear | 17T Planet gears (11T Sun) | 11T Output carrier |
+
+The 4200 RPM configuration is assembled as follows:
+
+![4200-2-2.png](/4200-2-2.png)
+
+| Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| ---        | - | - | - | - | - | - | - |
+| Any motor | `D11T`^1150^ | 3x `P17T`^84^ | `SPx1117` | 3x `P14T`^84^ | `P11G17`^84^ | `SPc1117` | `O11`^1150^ |
+
+You will be left with the following components:
+ * `D17T`^84^
+ * 3x `P14T`^84^
+ * 3x `P17T`^1150^
+ * `P17G11`^84^
+ * `O17`^84^
+ 
+Using the spare motor and a few of the left components (`D17T`^84^, 3x `P14T`^84^, `O17`^84^) you can easily assemble another 1620 RPM Motor from the 1150 RPM we sacrificed. 
 
 
 
