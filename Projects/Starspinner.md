@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:56:13.588Z
+date: 2025-10-13T02:06:48.849Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -83,6 +83,9 @@ After reassembly, it is very important to lubricate the entire gearbox with thic
 # Assembling 4200 RPM
 
 To make this configuration, we will combine a 84 RPM motor with a 1150 RPM motor to produce 4200 RPM and 1620 RPM. I will use superscript on this page to mark where each part is coming from.
+
+> 84 + 1150 = 4200 + 1620
+> -- <cite>Pythagoras</cite>
 
 You will find the following components in the motors:
 
