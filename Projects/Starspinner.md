@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T00:00:51.412Z
+date: 2025-10-13T00:12:16.969Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -14,6 +14,8 @@ Planetary Starspinner is a project that allows to modify the 84 RPM goBILDA Yell
 Starspinner works by inserting a part that connects the planets of two stages together. This way, all the subsequent stages of the planetary reducer are reversed (instead of reducing, they amplify speed). This project includes a bit of parts machining, so it's best to read it twice before starting to build.
 
 From our prototyping and testing we found that 2700-3500 RPM is the ideal speed for launching elements, so we set out to find an elegant way to obtain this speed while maintaining maximum torque (and speedup time). After designing, we found that the same motor can be assembled a bit differently to yield 8000 RPM (and also 31200 RPM and 22200 RPM at extremely low torques). We think 8000 RPM would be suitable for launchers with small diameter flywheels.
+
+The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starspinner, you must also make the modified CAD available to users. 
 
 # Parts list
 
