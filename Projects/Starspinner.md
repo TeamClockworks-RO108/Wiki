@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:14:22.949Z
+date: 2025-10-13T01:25:22.356Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -11,13 +11,23 @@ dateCreated: 2025-10-12T12:35:21.952Z
 # Description
 Planetary Starspinner is a project that allows to modify the 84 RPM goBILDA Yellow Jacket Planetary motor to create either 4200 RPM or 8000 RPM. The entire conversion happens inside the planetary housing, allowing you to mount the motor as you would with a standard goBILDA motor.
 
-Starspinner works by inserting a part that connects the planets of two stages together. This way, all the subsequent stages of the planetary reducer are reversed (instead of reducing, they amplify speed). This project includes a bit of parts machining, so it's best to read it twice before starting to build.
-
-From our prototyping and testing we found that 2700-3500 RPM is the ideal speed for launching elements, so we set out to find an elegant way to obtain this speed while maintaining maximum torque (and speedup time). After designing, we found that the same motor can be assembled a bit differently to yield 8000 RPM (and also 31200 RPM and 22200 RPM at extremely low torques). We think 8000 RPM would be suitable for launchers with small diameter flywheels.
+From our prototyping and testing we found that 2700-3500 RPM is the ideal speed for launching elements, so we set out to find an elegant way to obtain this speed while maintaining maximum torque (and speedup time). After analysis, we found that the planetary stages could be reversed, opening a new world of possibilities. We can produce 4200, 8000 and even unreal speeds of 22200 and 31200 (at extremely low torques)!
 
 The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starspinner, you must also make the modified CAD available to users. 
 
 Source (CAD) files are available on our [Github repository](https://github.com/TeamClockworks-RO108/PlanetaryStarspinner).
+
+# Design philosophy
+
+When we set out to work on this project, it was imperative that the entirety of modifications happen inside the factory enclosure. We wanted to prove that it is possible to obtain an intermediate ratio between 1620 and 6000 while looking identical to stock motors.
+
+Starspinner works by inserting a custom connector that binds the planets of two stages together. 
+
+This way, all the subsequent stages of after the connector are reversed (instead of reducing, they amplify speed). 
+
+Even though 3D printing is our *magna carta*, we realized that sitting in the confines of the stock motor is not possible with plastic parts. Therefore, we settled on custom metal part that can be both milled and turned.
+
+This project includes a bit of parts machining, so it's best to read it twice before starting to build.
 
 # Parts list
 
