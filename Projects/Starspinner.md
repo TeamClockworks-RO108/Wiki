@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:25:22.356Z
+date: 2025-10-13T01:32:34.861Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -74,7 +74,7 @@ The `SPc` parts should be fabricated by 3D printing. Extra care should be taken 
 
 The gearboxes from goBILDA come factory packed with grease. After disassembly of the motors, it is recommended to clean the old grease. We have had success to clean old grease a nylon brush (toothbrush is ok) and adequate solvent like WD-40 or brake cleaner fluid.
 
-After reassembly, it is very important to lubricate the entire gearbox with thick, tacky grease. Thin lubricating oils (or dry lubricants) are not suitable for planetary gearboxes. Our grease of choice is the **LiquiMoly LM47**.
+After reassembly, it is very important to lubricate the entire gearbox with thick, tacky grease. Thin lubricating oils (or dry lubricants) are not suitable for planetary gearboxes. Lubricate both the teeth and the prongs interface of the planets. Our grease of choice is the **LiquiMoly LM47**.
 
 > Do ***NOT*** use WD-40 as a grease replacement in any mechanism. WD-40 is meant to be used as a penerating agent in rusty mechanism and can also be used as degreasing solvent.
 {.is-warning}
