@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T00:13:11.142Z
+date: 2025-10-13T01:14:22.949Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -29,7 +29,7 @@ For this project, you will need two fabricate two different parts: `SPx` and `SP
 
 
 
-# SPx1117
+## SPx1117
 
 `SPx1117` is the connector that reverses the planetary ratio. Its ending comes from it connecting 17-teeth center planetary stage to 11-teeth center planetary stage.
 
@@ -38,14 +38,16 @@ For this project, you will need two fabricate two different parts: `SPx` and `SP
 
 We strongly advise to machine this part out of aluminium or better. The dimensions are modelled after goBILDA carriers, so the gears should fit nicely on the prongs.
 
-Extra care should be taken to machine this part with precise tolerances. The prongs diameters are exactly 4mm and the holes of goBILDA gears are slightly bit larger.
+For fabrication, please refer to the CAD file and [technical drawing]( https://github.com/TeamClockworks-RO108/PlanetaryStarspinner/blob/master/CAD/SPx1117%20Drawing.pdf) in the repository. 
+
+Extra care should be taken to machine this part with precise tolerances. The prongs diameters are exactly 4mm and the holes of goBILDA gears are slightly bit larger. Concentricity of the top and bottom side is very important for smooth operation.
 
 If you decide to mill this part on a CNC mill, take into condiferation the capabilities of the machine. It is very important the the diameter of the prongs do not exceed 4mm. It might be beneficial to resize the prongs in the CAD to about 3.95mm.
 
 We got this part fabricated by making all the segments (6 pins and the base) on a precision lathe and then asembling by press-fitting. You can see the additional chamfers in the photo above that aided in press assembly. 
 
 
-# SPc
+## SPc
 
 `SPc` parts connect the output prongs of two different planetary motors together in a 1:1 ratio. They server to connect the output shaft of the motor to the reversed amplification stages created by `SPx1117`.
 The number of teeth in the naming scheme represent the count of the associated **center** gear that would fit in between the planetary stage.
@@ -57,6 +59,15 @@ The `SPc` parts should be fabricated by 3D printing. Extra care should be taken 
 | `SPc1111` | ![spc1111.png](/spc1111.png) | Connect 11-teeth prongs to 11-teeth prongs | 
 | `SPc1117` | ![spc1117.png](/spc1117.png) | Connect 11-teeth prongs to 17-teeth prongs | 
 | `SPc1717` | ![spc1717.png](/spc1717.png) | Connect 17-teeth prongs to 17-teeth prongs | 
+
+# Assembly
+
+The gearboxes from goBILDA come factory packed with grease. After disassembly of the motors, it is recommended to clean the old grease. We have had success to clean old grease a nylon brush (toothbrush is ok) and adequate solvent like WD-40 or brake cleaner fluid.
+
+After reassembly, it is very important to lubricate the entire gearbox with thick, tacky grease. Thin lubricating oils (or dry lubricants) are not suitable for planetary gearboxes. Our grease of choice is the **LiquiMoly LM47**.
+
+> Do ***NOT*** use WD-40 as a grease replacement in any mechanism. WD-40 is meant to be used as a penerating agent in rusty mechanism and can also be used as degreasing solvent.
+{.is-warning}
 
 
 # Assembling 4200 RPM
