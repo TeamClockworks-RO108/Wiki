@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-10-13T14:57:40.062Z
+date: 2025-10-13T22:08:35.291Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -89,6 +89,10 @@ To obtain different configuration, we can lock one or more of the planetary stag
 | Stage 1 <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` |
 
 # Configuring the CAD
+
+> The CAD provided in our repository is modelled in Fusion360 and makes heavy use of the parametric features and presets. While we recommend using Fusion360 parameters for tuning, we also provide STEP files for use in other CAD software. 
+{.is-info}
+
 
 We recomend that you grab the CAD file from our [github repository](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller). Even though we also provide STL files, the tolerances might not fit well depending on your printer and you might have to re-configure the CAD for your specific setup. 
 
