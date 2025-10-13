@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-09-11T00:18:29.125Z
+date: 2025-10-13T14:57:40.062Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -17,6 +17,8 @@ The system also fits any other planetary gearbox from gobilda (not neccessarily 
 The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starkiller, you must also make the modified CAD available to users. 
 
 The repository for this project can be found [here](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller). 
+|  ![starkilller.png](/starkilller.png)  |
+| -- |
 
 # Part types
 
