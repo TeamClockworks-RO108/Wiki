@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:53:53.148Z
+date: 2025-10-13T01:56:13.588Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -115,7 +115,7 @@ Using the spare motor and a few of the left components (`D17T`^84^, 3x `P14T`^84
 
 # Assembling 8000 RPM
 
-To make 8000 RPM, we will only need a 84 RPM motor. We achieve this by leaving the 17T Sun stage unchanged and reversing the 11T stage. The last 11T stage is completely removed.
+To make 8000 RPM, we will only need a 84 RPM motor. We achieve this by leaving the 17T Sun stage unchanged and reversing the 11T stage. The last 17T stage is completely removed.
 
 You will find the following components in the 84 RPM motor:
 
