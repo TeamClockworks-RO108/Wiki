@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:32:34.861Z
+date: 2025-10-13T01:53:06.090Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -133,4 +133,22 @@ The 8000 RPM configuration is assembled as follows:
 You will be left with the following parts:
  * 3x `P14T`
  * `P17G11`
+
+
+# Closing thoughts
+
+We believe that the 4200 RPM motor is a great base for DECODE launchers. It offers better torque and PID stability than 6000 RPM and is much more elegant for quick prototypes than external gearing.
+
+The 8000 RPM one can be useful too for low-diameter flywheels but we are not sure about the launching consistency of such flywheels. 
+
+
+Modding the planetary carriers was a great way to learn about how planetary gearboxes work and about different ways to bend then to our will. [Starkiller](/Projects/Starkiller) taught us work with what already exists. Starspinner was an opportunity to completely rearrange the system while keeping the cost down and the project easy to reproduce.
+
+Part of our inspiration for the Planetary projects was our interaction with rural teams from RO and MD which have very little resources to work with. These two projects allow teams to flip between planetary configurations, thus allowing to save both time and a lot of money. Owning 8x 84 RPM motors can completely satisfy the team's need for any kind of speed ratios. 
+
+It is our belief that such open-source projects help alleviate financial resource requirements in FTC, thus putting the spotlight on creativity and innovation.
+
+Our own team went from worrying about not affording 435 RPM drive train motors to prototyping more mechanisms faster because the motor issue has been completely eliminated.
+
+
 
