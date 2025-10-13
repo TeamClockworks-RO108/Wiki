@@ -2,7 +2,7 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T01:53:06.090Z
+date: 2025-10-13T01:53:53.148Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
@@ -146,9 +146,10 @@ Modding the planetary carriers was a great way to learn about how planetary gear
 
 Part of our inspiration for the Planetary projects was our interaction with rural teams from RO and MD which have very little resources to work with. These two projects allow teams to flip between planetary configurations, thus allowing to save both time and a lot of money. Owning 8x 84 RPM motors can completely satisfy the team's need for any kind of speed ratios. 
 
+Our own team went from worrying about not affording 435 RPM drive train motors to prototyping more mechanisms faster because the motor issue has been completely eliminated.
+
 It is our belief that such open-source projects help alleviate financial resource requirements in FTC, thus putting the spotlight on creativity and innovation.
 
-Our own team went from worrying about not affording 435 RPM drive train motors to prototyping more mechanisms faster because the motor issue has been completely eliminated.
 
 
 
