@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-10-13T22:08:35.291Z
+date: 2025-10-14T03:12:04.004Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -22,7 +22,7 @@ The repository for this project can be found [here](https://github.com/TeamClock
 
 # Part types
 
-The Starkiller parts use the following maning scheme: `SK{N}{T}{B}`
+The Starkiller parts use the following naming scheme: `SK{N}{T}{B}`
 Variables `N` `T` and `B` configure the different options:
 
 | Name variable | Meaning | Possible values |
