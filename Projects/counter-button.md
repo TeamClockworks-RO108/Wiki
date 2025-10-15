@@ -2,7 +2,7 @@
 title: Counter Button 
 description: 
 published: true
-date: 2025-10-15T13:39:21.515Z
+date: 2025-10-15T14:01:12.742Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-01T21:37:56.641Z
@@ -53,3 +53,7 @@ Va fi nevoie de un server local (de care va face rost Alex) care sa contina cont
 Ca sa evitam sa tragem cabluri de power, toata contraptia va primi putere prin cablu de ethernet (de aici si hat-ul de PoE). 
 La RPi vom lega butonul cu o rezistenta de pullup. Buzzer-ul se leaga standard (5V, GND, signal). 
 Pentru tinerea corecta a timpului vom folosi feature-ul de ceas din sistemul de operare, si vom da drumul si la daemon-ul de NTP. 
+
+# Progres
+
+Am instalat OS-ul pe cardil SD pentru Raspberry Pi
