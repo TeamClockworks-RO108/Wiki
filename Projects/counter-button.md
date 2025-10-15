@@ -2,7 +2,7 @@
 title: Counter Button 
 description: 
 published: true
-date: 2025-09-01T21:37:56.641Z
+date: 2025-10-15T13:39:21.515Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-01T21:37:56.641Z
@@ -21,8 +21,8 @@ dateCreated: 2025-09-01T21:37:56.641Z
  
 ## Phase One
 
-In prima faza a proiectului, vom numara cate apasari se fac pe buton. 
-Va exista o pagina HTML servita local care va contine numarul de apasari din acea zi. Informatia se reseteaza la 10PM, cand teoretic toata lumea a plecat.
+In prima faza a proiectului, vom numara cate apasari se fac pe buton.
+La fiecare apasare de buton se va accesa un fisier unde se va specifica numarul de apasari din,apoi va fi transpus intr-o pagina HTML servita local care va contine totalul pentru acea zi . Informatia se reseteaza la 12AM, cand teoretic toata lumea a plecat.
 
 Piesele necesare sunt:
 
