@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2025-05-27T18:25:03.355Z
+date: 2025-10-17T04:51:31.315Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z
@@ -12,7 +12,7 @@ dateCreated: 2024-11-11T20:49:35.696Z
 
 Un cos de gunoi inteligent ce sorteaza intre patru ambalaje: metale, plastic, gunoi menajer si sticla.
 
-Aparatul foloseste o combinatie de senzori plus citire de cod de bare pentru a putea determina materialul din care este facut obiectul
+Aparatul foloseste o combinatie de senzori, plus in viitor citire de cod de bare pentru a putea determina materialul din care este facut obiectul
 
 Cosul trebuie sa poată procesa suficient de repede ambalajele cât sa fie considerat satisfăcător in termeni de viteza. Va fi suficient de compact cât sa poată fii atașat unui cos de gunoi usor modificat, tetracameral.
 
