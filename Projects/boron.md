@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T16:24:42.719Z
+date: 2025-10-28T20:41:14.645Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -42,6 +42,14 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | 24V PSU | Meanwell UHP-350-24 | 370 | |
 | Frame | | TBD | |
 | Panels | | TBD | | 
+| _**FASTENERS**_ |Only for frame, not electronics yet|||
+| M3 Voron threaded inserts || 40 ||
+| M3 BHCS (DIN 7380) 8mm || 48 ||
+| M3 BHCS (DIN 7380) 16mm || 32 ||
+| M3 BHCS (DIN 7380) 10mm || 16 ||
+| M3 FHCS (DIN 7991) 8mm || 8 || 
+| M3 SHCS (DIN 912) 16mm || 40 ||
+| Makerbeam T-Nut XL || 32 ||
 
 
 The strip has 10m and must be divided on 5 equal sides, so each side must use up to 2m
