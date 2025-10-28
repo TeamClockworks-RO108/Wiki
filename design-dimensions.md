@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T17:02:04.026Z
+date: 2025-10-28T17:36:31.626Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -33,6 +33,9 @@ The fasteners are inserted as special components under the top-level **Fasteners
 | ![screenshot_20251028_044242.png](/screenshot_20251028_044242.png) | ![screenshot_20251028_044632.png](/screenshot_20251028_044632.png) |
 | -- | -- |
 
+# Fusion hole tool
+
+The hole tool is capable of creating more complex holes 
 
 # Screw Acquisition
 
