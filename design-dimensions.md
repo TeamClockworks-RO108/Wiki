@@ -2,69 +2,25 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T15:50:40.953Z
+date: 2025-10-28T16:13:06.526Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
 ---
 
 # Design Dimensions
-| Socket Head | DIN 912 | ISO 4762 | Button Head | DIN 7380 | ISO 7380 | Flat Head | DIN 7991 |
-| ![screenshot_20251028_174458.png](/screenshot_20251028_174458.png) ||| ![screenshot_20251028_174518.png](/screenshot_20251028_174518.png) ||| ![screenshot_20251028_174506.png](/screenshot_20251028_174506.png)  ||
-| -- | -- | -- |
-
-
-## Socket Head - SHCS - DIN912 / ISO4762
-
-This is the most common screw type we use.
-
-![din912-reference.png](/din912-reference.png)
-
-Screw diameter and head diameter are always equal.
-Length is measured from head bottom to screw end. 
-
-| Type | Diameter (d1) | Head diameter (d2) | Head height (k) | Hex Key (s) |
-| --   | -- | -- | - |  - |
-| __M2__   | 2 | 3.8 | 2 |  1.5 |
-| __M3__   | 3 | 5.5 | 3 |  2.5 |
-| __M4__   | 4 | 7 | 4 | 3 |
-| __M5__   | 5 | 8.5 | 5 | 4 |
-| __M6__   | 6 | 10 | 6 | 5 |
-| __M8__   | 8 | 13 | 8 | 6 |
-
-## Button Head - BHCS - ISO7380
-
-Button head screws are mostly found on Voron Zero and Dueling printers.
-Length is measured from head bottom to screw end.
-
-![iso7380-reference.png](/iso7380-reference.png)
-
-| Type | Diameter (d) | Head diameter (dk) | Head height (k) | Hex Key (s) |
-| --   | -- | -- | - |  - |
-| __M2__   | 2 | ? | ? |  ? |
-| __M3__   | 3 | 5.7 | 1.7 |  2 |
-| __M4__   | 4 | 7.6 | 2.2 | 2.5 |
-| __M5__   | 5 | 9.5 | 2.8 | 3 |
-| __M6__   | 6 | 10.5 | 3.3 | 4 |
-| __M8__   | 8 | 14 | 4.4 | 5 |
-
-## Flat Head - FHCS - DIN7991 
-
-We use this screw when we want to hide the head inside the part and the part is not think enough to dig the whole SHCS head in and still maintain resistance. They have a very shallow head but it is much wider that SHCS.
-
-![din7991-reference.png](/din7991-reference.png)
-
-Head angle (a) is always 90 degrees.
-Length is measured for the whole screw, head included.
-
-| Type | Diameter (d1) | Head diameter (d2) | Head height (k) | Hex Key (s) |
-| --   | -- | -- | - |  - |
-| __M2__   | 2 | 4 | 1.2 |  1.3 |
-| __M3__   | 3 | 6 | 1.7 |  2 |
-| __M4__   | 4 | 8 | 2.3 | 2.5 |
-| __M5__   | 5 | 10 | 2.8 | 3 |
-| __M6__   | 6 | 12 | 3.3 | 4 |
-| __M8__   | 8 | 16 | 4.4 | 5 |
+| Size | Socket Head | DIN 912 | ISO 4762 | Button Head | DIN 7380 | ISO 7380 | Flat Head | DIN 7991 | ISO 10642 |
+| | ![screenshot_20251028_174458.png](/screenshot_20251028_174458.png) ||| ![screenshot_20251028_174518.png](/screenshot_20251028_174518.png) ||| ![screenshot_20251028_174506.png](/screenshot_20251028_174506.png)  |||
+|  | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) |  
+| -- |
+| **M2** | 2 | 3.8 | 2 | 2 | ? | ? | 2 | 4 | 1.2 |
+| **M2.5** | | ? | ? |  
+| **M3** | 3 | 5.5 | 3 | 3 | 5.7 | 1.7 | 3 | 6 | 1.7 |
+| **M4** | 4 | 7 | 4 | 4 | 7.6 | 2.2 | 4 | 8 | 2.3 |
+| **M5** | 5 | 8.5 | 5 | 5 |10.5 | 3.3 | 5 | 10 | 2.8 |
+| **M6** | 6 | 10 | 6 | 6 | 10.5 | 3.3 | 6 | 12 | 3.3 |
+| **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
+| Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
 
 # Fusion fastener tool
 
