@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T17:01:24.797Z
+date: 2025-10-28T17:02:04.026Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -32,45 +32,6 @@ The fasteners are inserted as special components under the top-level **Fasteners
 
 | ![screenshot_20251028_044242.png](/screenshot_20251028_044242.png) | ![screenshot_20251028_044632.png](/screenshot_20251028_044632.png) |
 | -- | -- |
-
-
-
-## Printed hole screw tolerances
-
-When printing a hole it often comes out a different (smaller) diameter than specified in the CAD software. Here is a table to help with diameters for screw holes.
-
-Ideally we should be able to have the same values across all printers and materials and the tuning must be done on a per-material/printer basis in the slicer's hole compensation algorithm.
-Until then, we shall keep separate tables. 
-
-### Prusa MK3S+
-
-| Material | Type        | M2 | M3 | M4 | M5 | M6 | M8 |
-| --       |          -- | -- | -- | -- | -- | -- | -- |
-| ABS      | Pass-trough |
-| ^^       | Threaded    | 
-| ASA      | Pass-trough |
-| ^^       | Threaded    | 
-| Prusa PC | Pass-trough |
-| ^^       | Threaded    | 
-| PETG     | Pass-trough |
-| ^^       | Threaded    | 
-| PLA      | Pass-trough |
-| ^^       | Threaded    | 
-
-### Voron (Dragon HF)
-
-| Material | Type        | M2 | M3 | M4 | M5 | M6 | M8 |
-| --       |          -- | -- | -- | -- | -- | -- | -- |
-| ABS      | Pass-trough |
-| ^^       | Threaded    | 
-| ASA      | Pass-trough |
-| ^^       | Threaded    | 
-| Prusa PC | Pass-trough |
-| ^^       | Threaded    | 
-| PETG     | Pass-trough |
-| ^^       | Threaded    | 
-| PLA      | Pass-trough | Not able to print |||||||
-| ^^       | Threaded    | ^^                |||||||
 
 
 # Screw Acquisition
