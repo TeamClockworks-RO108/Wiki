@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T16:13:06.526Z
+date: 2025-10-28T17:01:24.797Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -13,8 +13,8 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | | ![screenshot_20251028_174458.png](/screenshot_20251028_174458.png) ||| ![screenshot_20251028_174518.png](/screenshot_20251028_174518.png) ||| ![screenshot_20251028_174506.png](/screenshot_20251028_174506.png)  |||
 |  | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) |  
 | -- |
-| **M2** | 2 | 3.8 | 2 | 2 | ? | ? | 2 | 4 | 1.2 |
-| **M2.5** | | ? | ? |  
+| **M2** | 2 | 3.8 | 2 | 2 |   |   | 2 | 4 | 1.2 |
+| **M2.5** | 2.5 |   |   |  2.5 |  |  | 2.5 |  |  | 
 | **M3** | 3 | 5.5 | 3 | 3 | 5.7 | 1.7 | 3 | 6 | 1.7 |
 | **M4** | 4 | 7 | 4 | 4 | 7.6 | 2.2 | 4 | 8 | 2.3 |
 | **M5** | 5 | 8.5 | 5 | 5 |10.5 | 3.3 | 5 | 10 | 2.8 |
