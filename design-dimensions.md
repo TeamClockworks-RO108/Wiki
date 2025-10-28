@@ -2,13 +2,17 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T14:24:30.932Z
+date: 2025-10-28T15:50:40.953Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
 ---
 
 # Design Dimensions
+| Socket Head | DIN 912 | ISO 4762 | Button Head | DIN 7380 | ISO 7380 | Flat Head | DIN 7991 |
+| ![screenshot_20251028_174458.png](/screenshot_20251028_174458.png) ||| ![screenshot_20251028_174518.png](/screenshot_20251028_174518.png) ||| ![screenshot_20251028_174506.png](/screenshot_20251028_174506.png)  ||
+| -- | -- | -- |
+
 
 ## Socket Head - SHCS - DIN912 / ISO4762
 
