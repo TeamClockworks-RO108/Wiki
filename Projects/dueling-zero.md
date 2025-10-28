@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2025-09-04T00:53:05.978Z
+date: 2025-10-28T18:48:18.916Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z
@@ -109,6 +109,16 @@ Inlocuirea nu necesita nici o modificare la imprimanta. EBB36 este mai compact s
 | **TOTAL** |  |  |  | **6888** |  | This price includes shipping costs. |
 
 # Expansiune viitoare
+
+# New Frame
+
+Vertical beams: 4x 450mm
+Horizontal long beams: 7x 350mm
+Horizontal short beams: 4x 260mm
+Gantry short beams: 2x 158mm
+Gantry center beams: 2x 248mm
+Bottom short beams: 4x 250mm
+
 
 ### Adaugam un sistem de schimbare de filament pe unul din extrudere
 
