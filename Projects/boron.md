@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T22:42:59.903Z
+date: 2025-10-28T22:43:28.597Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -44,7 +44,7 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | 24V PSU | Meanwell UHP-350-24 | 370 | |
 | Frame | | TBD | |
 | Panels | | TBD | | 
-| _**FASTENERS**_ |Only for frame, not electronics yet|||
+| _**FASTENERS**_ | Only for frame and power, PSU and shelly not included yet |||
 | M3 Voron threaded inserts || 54 ||
 | M3 BHCS (DIN 7380) 8mm || 48 ||
 | M3 BHCS (DIN 7380) 16mm || 46 ||
