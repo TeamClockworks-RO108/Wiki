@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T22:20:06.434Z
+date: 2025-10-28T22:24:34.337Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -45,7 +45,7 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | Frame | | TBD | |
 | Panels | | TBD | | 
 | _**FASTENERS**_ |Only for frame, not electronics yet|||
-| M3 Voron threaded inserts || 52 ||
+| M3 Voron threaded inserts || 54 ||
 | M3 BHCS (DIN 7380) 8mm || 48 ||
 | M3 BHCS (DIN 7380) 16mm || 34 ||
 | M3 BHCS (DIN 7380) 10mm || 16 ||
