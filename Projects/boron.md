@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T22:42:49.373Z
+date: 2025-10-28T22:42:59.903Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -16,7 +16,7 @@ Boron (Box-Voron) is an open-source light cube that can be built for relatively 
 
 The structure is constructed similarly to a Voron frame. There are 4 vertical beams measuring 500mm and 8 horizontal beams measuring 470mm.
 
-The 8 smaller beams are ordered from [Makerbeam](makerbeam.com) as longer 500mm exrusions and you should add to the cart 8 cuts and specify to cut them to 470mm.
+The 8 smaller beams are ordered from [Makerbeam](makerbeam.com) as longer 500mm extrusions and you should add to the cart 8 cuts and specify to cut them to 470mm.
 
 All of the extrusions should be of type MakerbeamXL.
 
