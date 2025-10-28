@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T17:36:31.626Z
+date: 2025-10-28T20:30:17.536Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -35,7 +35,16 @@ The fasteners are inserted as special components under the top-level **Fasteners
 
 # Fusion hole tool
 
-The hole tool is capable of creating more complex holes 
+The hole tool is capable of creating more complex holes. It can do countersunks, couterbores, hole tipping and many other options.
+
+To use, create a sketch with a point (can be a circle, diameter does not matter) where we want to drill the hole. Open the hole tool and select the placement method to `On sketch (Multiple holes)` and select all your desired hole points.  Select your distance (we recommend to use the `To Object` tool).
+
+There are multiple hole types to choose from. You can do standard, counterbores, countersunken and specify different threads and drill point types.
+
+We do not reccomend using the built-in thread and clearance tap types because we require specific tolerances on our printers. Just create your hole as you would normally.
+
+| ![screenshot_20251028_220615.png](/screenshot_20251028_220615.png) | ![screenshot_20251028_221255.png](/screenshot_20251028_221255.png) |
+| -- | -- |
 
 # Screw Acquisition
 
