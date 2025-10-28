@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T02:47:49.113Z
+date: 2025-10-28T14:24:30.932Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -112,6 +112,12 @@ Until then, we shall keep separate tables.
 | PLA      | Pass-trough | Not able to print |||||||
 | ^^       | Threaded    | ^^                |||||||
 
+
+# Screw Acquisition
+
+Go to [tme.eu](https://tme.eu) and login with the team account. Navigate to **Elemente Mecanice** -> **Suruburi cu piulita** and select the correct type in filters **Norma DIN** or **Norma ISO**. Check **Valabile in stoc**. **KRAFTBERG** is the prefferred producer.
+
+A2 stainless steel screws are good. Do not splurge on A4.  
 
 # Flexible materials:
 
