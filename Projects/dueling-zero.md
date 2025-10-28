@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2025-10-28T18:48:18.916Z
+date: 2025-10-28T19:20:07.487Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z
@@ -117,7 +117,17 @@ Horizontal long beams: 7x 350mm
 Horizontal short beams: 4x 260mm
 Gantry short beams: 2x 158mm
 Gantry center beams: 2x 248mm
-Bottom short beams: 4x 250mm
+Bottom short beams: 2x 250mm
+
+2m 450+450+260+260+250+250
+2m 450+450+260+260+248+248
+2m 350+350+350+350+350+158
+1m 350+350+158
+
+we already have 4x450 and 8x 350, therefore new cutting scheme will be:
+2m 260+260+260+260+158+158+248+248
+1m 250+250+400 (400 is extra for future expansion)
+
 
 
 ### Adaugam un sistem de schimbare de filament pe unul din extrudere
