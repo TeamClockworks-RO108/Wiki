@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-09T19:07:02.237Z
+date: 2025-10-28T16:24:42.719Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -34,9 +34,14 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 
 | Part | P/N | Price | Notes | 
 | -- | -- | -- | -- |
-| Shelly controller | Shelly Plus RGBW PM | | |
-| Wall socket | Gewiss GW 62 393 | | |
-| Potentiometru 10k | Tayieei LA42DWG-22 | | for 22mm bore |
-| 10m white neutral strip | | | At most 10A/240W |
+| Shelly controller | Shelly Plus RGBW PM | 140 | |
+| Wall socket | Gewiss GW 62 393 | 30 | |
+| Potentiometru 10k | Tayieei LA42DWG-22 | 30 | For 22mm bore |
+| 10m white neutral strip | | 120 | At most 10A/240W |
+| IEC C13 Socket |  | 6 | | 
+| 24V PSU | Meanwell UHP-350-24 | 370 | |
+| Frame | | TBD | |
+| Panels | | TBD | | 
+
 
 The strip has 10m and must be divided on 5 equal sides, so each side must use up to 2m
