@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T20:41:14.645Z
+date: 2025-10-28T21:14:27.059Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -39,6 +39,7 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | Potentiometru 10k | Tayieei LA42DWG-22 | 30 | For 22mm bore |
 | 10m white neutral strip | | 120 | At most 10A/240W |
 | IEC C13 Socket |  | 6 | | 
+| IEC C13 Cable with 90* bend |  | 30 | | 
 | 24V PSU | Meanwell UHP-350-24 | 370 | |
 | Frame | | TBD | |
 | Panels | | TBD | | 
