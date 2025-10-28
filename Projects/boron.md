@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T21:14:27.059Z
+date: 2025-10-28T22:20:06.434Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -38,17 +38,19 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | Wall socket | Gewiss GW 62 393 | 30 | |
 | Potentiometru 10k | Tayieei LA42DWG-22 | 30 | For 22mm bore |
 | 10m white neutral strip | | 120 | At most 10A/240W |
+| 3x Wago 221 415 5-wire | | 30 | |
 | IEC C13 Socket |  | 6 | | 
 | IEC C13 Cable with 90* bend |  | 30 | | 
 | 24V PSU | Meanwell UHP-350-24 | 370 | |
 | Frame | | TBD | |
 | Panels | | TBD | | 
 | _**FASTENERS**_ |Only for frame, not electronics yet|||
-| M3 Voron threaded inserts || 40 ||
+| M3 Voron threaded inserts || 52 ||
 | M3 BHCS (DIN 7380) 8mm || 48 ||
-| M3 BHCS (DIN 7380) 16mm || 32 ||
+| M3 BHCS (DIN 7380) 16mm || 34 ||
 | M3 BHCS (DIN 7380) 10mm || 16 ||
-| M3 FHCS (DIN 7991) 8mm || 8 || 
+| M3 BHCS (DIN 7380) 40mm || 3 ||
+| M3 FHCS (DIN 7991) 8mm || 18 || 
 | M3 SHCS (DIN 912) 16mm || 40 ||
 | Makerbeam T-Nut XL || 32 ||
 
