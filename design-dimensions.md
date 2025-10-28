@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-09T01:40:54.275Z
+date: 2025-10-28T02:47:49.113Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -61,6 +61,18 @@ Length is measured for the whole screw, head included.
 | __M5__   | 5 | 10 | 2.8 | 3 |
 | __M6__   | 6 | 12 | 3.3 | 4 |
 | __M8__   | 8 | 16 | 4.4 | 5 |
+
+# Fusion fastener tool
+
+Fusion 360 has an integrated tool to insert fasteners of any kind. Use the `Insert fastener` tool (from the **Solid** toolbar, **Insert** category) and select what kind of fastener you need. We recommend to search by DIN codes. 
+
+Then, configure the type of screw or nut (size, length, material) and select the holes to be filled. 
+
+The fasteners are inserted as special components under the top-level **Fasteners** directory. They will be automatically rigid jointed to the selected features. 
+
+| ![screenshot_20251028_044242.png](/screenshot_20251028_044242.png) | ![screenshot_20251028_044632.png](/screenshot_20251028_044632.png) |
+| -- | -- |
+
 
 
 ## Printed hole screw tolerances
