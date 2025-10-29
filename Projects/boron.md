@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T01:08:17.839Z
+date: 2025-10-29T01:43:30.402Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -65,6 +65,15 @@ Final assembled frame
  
 
 ## LED Structure
+
+Assemble the main LED structure using 32x 16mm BHCS screws. Connect the brackets to the main pillars and use the two crosses to fasten the 4 corners.
+
+The two crosses **are not identical**! The top cross contains heated inserts on the upper side that will later be used to mount the top face LED channels. Install this part on the same side with the filleted pillars. 
+
+The bottom cross has only 4 regular holes for mounting of the PSU and electronics. 
+
+| ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) |
+| -- | -- |
 
 The structure is constructed similarly to a Voron frame. There are 4 vertical beams measuring 500mm and 8 horizontal beams measuring 470mm.
 
