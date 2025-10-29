@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-28T23:48:11.712Z
+date: 2025-10-29T00:06:44.499Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -10,7 +10,17 @@ dateCreated: 2025-10-07T00:54:49.380Z
 
 # Description
 
-Boron (Box-Voron) is an open-source light cube that can be built for relatively cheap. The sides graphics are interchangeable and allow for quick reconfiguration.
+Boron (Box-Voron) is an open-source light cube that can be built for relatively cheap. The sides graphics are interchangeable and allow for quick reconfiguration. It allows us to display a large logo on a structure very similar to Voron printers.
+
+The project is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Boron, you must also make the modified CAD available to users. 
+
+The design is built so that minimal electronics and soldering work is required. A 10-meter LED strip is cut into 4 equal sections and is wrapped around the cube's guide channels. Each strip's end arrives at the top of the cube, where it transitions to the top face.
+
+The bottom of the cube contains two output wall sockets to aid with wiring. (Maybe chain more Borons?).
+
+
+| ![screenshot_20251029_015652.png](/screenshot_20251029_015652.png) | ![screenshot_20251029_015722.png](/screenshot_20251029_015722.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
+| -- | -- | -- | -- |
 
 # Structure
 
@@ -44,7 +54,7 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | 24V PSU | Meanwell UHP-350-24 | 370 | |
 | Frame | | TBD | |
 | Panels | | TBD | | 
-| _**FASTENERS**_ | Only for frame and power, PSU and shelly not included yet |||
+| _**FASTENERS**_ ||||
 | M3 Voron threaded inserts || 54 ||
 | M3 BHCS (DIN 7380) 8mm || 48 ||
 | M3 BHCS (DIN 7380) 16mm || 46 ||
