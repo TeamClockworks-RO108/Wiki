@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T00:06:44.499Z
+date: 2025-10-29T00:07:16.057Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -10,7 +10,7 @@ dateCreated: 2025-10-07T00:54:49.380Z
 
 # Description
 
-Boron (Box-Voron) is an open-source light cube that can be built for relatively cheap. The sides graphics are interchangeable and allow for quick reconfiguration. It allows us to display a large logo on a structure very similar to Voron printers.
+Boron (Box-Voron) is an open-source light cube that can be built for relatively cheap. The sides graphics are interchangeable and allow for quick reconfiguration by unscrewing the top of the frame. It allows us to display a large logo on a structure very similar to Voron printers.
 
 The project is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Boron, you must also make the modified CAD available to users. 
 
