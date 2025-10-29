@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T00:56:19.830Z
+date: 2025-10-29T01:08:17.839Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -50,7 +50,18 @@ A total of 27 nuts must be preloaded.
  
 | ![screenshot_20251029_024344.png](/screenshot_20251029_024344.png) | ![screenshot_20251029_025219.png](/screenshot_20251029_025219.png) |
 | -- | -- |
- 
+
+Mount the external feet using 3x 16mm BHCS and the internal feet using 4x 16mm BHCS.
+The middle screw of the external foot threads into the extrusion. 
+Use the preloaded nuts in the earlier steps.
+
+| ![screenshot_20251029_030341.png](/screenshot_20251029_030341.png) | ![screenshot_20251029_030245.png](/screenshot_20251029_030245.png) |
+| -- | -- |
+
+Final assembled frame
+
+| ![screenshot_20251029_030642.png](/screenshot_20251029_030642.png) |
+| -- |
  
 
 ## LED Structure
@@ -87,9 +98,9 @@ To prevent overheating of the wires, everyting will work at 24v. Electronics wil
 | Panels | | TBD | | 
 | _**FASTENERS**_ ||||
 | M3 Voron threaded inserts || 54 ||
-| M3 BHCS (DIN 7380) 8mm || 48 ||
+| M3 BHCS (DIN 7380) 8mm || 64 ||
 | M3 BHCS (DIN 7380) 16mm || 46 ||
-| M3 BHCS (DIN 7380) 10mm || 26 ||
+| M3 BHCS (DIN 7380) 10mm || 10 ||
 | M3 BHCS (DIN 7380) 40mm || 3 ||
 | M3 FHCS (DIN 7991) 8mm || 18 || 
 | M3 SHCS (DIN 912) 16mm || 40 ||
