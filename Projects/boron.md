@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T01:58:51.772Z
+date: 2025-10-29T02:06:33.709Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -41,7 +41,7 @@ At the end, we will combine both and wire up the electronics.
 
 Use the extrusion drill guide to drill access holes for blind joints into all of the 500mm extrusions. You should drill 4 holes for each extrusion (a cross at each end). Use a 3mm drill bit.
 
-Assemble the frame using 8mm BHCS. Use a flat surface to ensure the frame will be perfectly square.
+Assemble the frame using 16x 8mm M3 BHCS. Use a flat surface to ensure the frame will be perfectly square.
 When assembling the bttom face, preload the following Makerbeam XL Nuts:
  * 2 nuts on each extrusion on the bottom side
  * 4 nuts on each extrusion on the inside of the cube. On one side (that will be the back side) preload 7 nuts. 
@@ -51,7 +51,7 @@ A total of 27 nuts must be preloaded.
 | ![screenshot_20251029_024344.png](/screenshot_20251029_024344.png) | ![screenshot_20251029_025219.png](/screenshot_20251029_025219.png) |
 | -- | -- |
 
-Mount the external feet using 3x 16mm BHCS and the internal feet using 4x 16mm BHCS.
+Mount the external feet using 3x 16mm M3 BHCS and the internal feet using 4x 16mm M3 BHCS.
 The middle screw of the external foot threads into the extrusion. 
 Use the preloaded nuts in the earlier steps.
 
@@ -66,28 +66,31 @@ Final assembled frame
 
 ## LED Structure
 
-Assemble the main LED structure using 32x 16mm BHCS screws. Connect the brackets to the main pillars and use the two crosses to fasten the 4 corners.
+Assemble the main LED structure using 32x 16mm M4 SHCS screws. Connect the brackets to the main pillars and use the two crosses to fasten the 4 corners.
 
 The two crosses **are not identical**! The top cross contains heated inserts on the upper side that will later be used to mount the top face LED channels. Install this part on the same side with the filleted pillars. 
 
 The bottom cross has only 4 regular holes for mounting of the PSU and electronics. 
 
-Afterwards, install the rigity supports at the top using 16x 16mm BHCS screws. These beams help stabilize our build. 
+Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws. These beams help stabilize our build. 
 
 | ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) | ![screenshot_20251029_035000.png](/screenshot_20251029_035000.png) |
 | -- | -- | -- |
 
 
-Install the 20 lateral LED channels. Mount them with 40x 8mm BHCS screws. The channels have slots that allow good mounting even if the frame is not prefectly square. 
+Install the 20 lateral LED channels. Mount them with 40x 8mm M3 BHCS screws. The channels have slots that allow good mounting even if the frame is not prefectly square. 
 
-Afterwards, mount the top face LED channel using 4x 8mm FHCS. These screws will go in the heatset inserts inside the top cross. 
+Afterwards, mount the top face LED channel using 4x 8mm M3 FHCS. These screws will go in the heatset inserts inside the top cross. 
 
 | ![screenshot_20251029_035526.png](/screenshot_20251029_035526.png) |  ![screenshot_20251029_035542.png](/screenshot_20251029_035542.png)|
 | -- | -- |
 
-The LED structure is now ready for mounting inside the main frame. 
+The LED structure is now ready for mounting inside the main frame. Use 16x 16mm M4 SHCS.
 
-## 
+| ![screenshot_20251029_040306.png](/screenshot_20251029_040306.png) | ![screenshot_20251029_040338.png](/screenshot_20251029_040338.png) |
+| -- | -- |
+
+## Electronics
 
 # Old description
 
