@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T01:43:30.402Z
+date: 2025-10-29T01:58:51.772Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -72,8 +72,24 @@ The two crosses **are not identical**! The top cross contains heated inserts on 
 
 The bottom cross has only 4 regular holes for mounting of the PSU and electronics. 
 
-| ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) |
+Afterwards, install the rigity supports at the top using 16x 16mm BHCS screws. These beams help stabilize our build. 
+
+| ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) | ![screenshot_20251029_035000.png](/screenshot_20251029_035000.png) |
+| -- | -- | -- |
+
+
+Install the 20 lateral LED channels. Mount them with 40x 8mm BHCS screws. The channels have slots that allow good mounting even if the frame is not prefectly square. 
+
+Afterwards, mount the top face LED channel using 4x 8mm FHCS. These screws will go in the heatset inserts inside the top cross. 
+
+| ![screenshot_20251029_035526.png](/screenshot_20251029_035526.png) |  ![screenshot_20251029_035542.png](/screenshot_20251029_035542.png)|
 | -- | -- |
+
+The LED structure is now ready for mounting inside the main frame. 
+
+## 
+
+# Old description
 
 The structure is constructed similarly to a Voron frame. There are 4 vertical beams measuring 500mm and 8 horizontal beams measuring 470mm.
 
