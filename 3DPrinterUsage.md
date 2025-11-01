@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-10-09T02:20:20.488Z
+date: 2025-11-01T12:47:48.480Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -97,6 +97,10 @@ Full history is available for analysys in Grafana. Select your time interval in 
 
 ![screenshot_20251009_051254.png](/screenshot_20251009_051254.png)
 
+# Shortcuts
 
+Conversion between filament units:
+ * 1 mm = 2.40528 mm^3^
+ * 1 mm^3^ = 1 mm
 
 
