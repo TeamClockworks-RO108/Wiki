@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2025-11-02T17:26:39.941Z
+date: 2025-11-05T15:12:19.520Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z
@@ -83,7 +83,7 @@ Senzorul de distanta mai are și un al 2lea rol: acesta functioneaza și ca senz
 ### 5. Senzor capacitiv de proximitate
 Acest senzor are rolul de a detecta prezent lichidelor in interiorul ambalajelor. Procesul este automatizat, astfel incat dupa ce se stabileste ca ambalajul este de tip "sticla", ansamblul incepe sa "impunga" sticla pentru a facilita contactul dintre senzor si ambalaj. In cazul in care este detectat lichid in interiorul sticlei, aceasta este imediat trimisa catre compartimentul de gunoaie menajere, fara a fi nevoie de interventie din exterior pentru indepartarea obiectului. Cu toate acestea, pentru o reciclare cat mai corecta, utilizatorii vor fi rugati sa indeparteze orice lichid din interiorul sticlelor inainte de introducerea acestora in ansamblu. Senzorul capacitiv este un senzor ce detecteaza schimbarea in indicele dielectric din mediul inconjurator, materialele conductive (precum metale/apa) avand o constanta dielectrica mult mai ridicata.
 
-nota: v_out al senzorului este, initial, aproximativ 20V, egala cu valoarea voltajului furnizat de sursa (lrs 50-24 meanwell). Senzorul foloseste un optocuplor și câteva rezistoare pentru a schimba voltajul de ieșire de la 20v la 3.3v când e high, și aprox. 600mv low. Astfel, este folosit nivelul de voltaj logic necesar pentru detectia raspberry pi ului. Ambalajul este "împins" de senzor de 2 ori pentru a asigura un contact bun pentru detectia lichidului in ambalaj.
+nota: v_out al senzorului este, initial, aproximativ 20V, egala cu valoarea voltajului furnizat de sursa (lrs 50-24 meanwell). Senzorul foloseste un optocuplor, semnalul de intrare fiind asigurat de outputul senzorului capacitiv (0/20v), fiind folosit intr-o configuratie simpla de tranzistor npn cu vcc=3.3v (asigurat de raspberryPi), astfel asigurand un voltaj de iesire de 0/3.3v, un nivel sigur pentru utilizarea cu gpio urile de pe placa de dezvoltare.
 
 
 |![051135_5_522_1024x1024.webp](/051135_5_522_1024x1024.webp)|![whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg](/whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg)|
