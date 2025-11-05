@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2025-11-05T18:12:40.023Z
+date: 2025-11-05T18:13:14.024Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z
@@ -193,7 +193,60 @@ Aceasta structura, comparativ cu piciorul de raft din [proiectul de cercetare](h
  Astfel, in urma efectuarii si repetarii simularilor, piesa originala a fost modificata pentru a putea beneficia atat de o printabilitate mai usoara, cat si de avntajele obtinute prin reducerea masei piesei, in cazul modelelor mari, tool-ul putand fi de ajutor pentru a reduce cantitatea de filament folosit.
  
  
+ # In context social
  
+ Echipa noastră, Clockworks, promovează conștientizarea importanței protecției mediului, dezvoltând proiecte precum WALLE_E Smart Trashcan pentru a genera un impact real atât în comunitate, cât și în mediul STEM. „Viitorul se scrie prin ideile tale. Transformă‑le în soluții care contează și lasă‑ți amprenta asupra generației tale.” Această viziune devine concretă prin proiecte care transformă tehnologia într-un aliat al planetei, reducând poluarea și încurajând reciclarea responsabilă.
+
+Viziune și integrare în comunități
+Proiectul WALLE_E poate fi integrat în spații rezidențiale sau publice, cu scopul de a limita poluarea mediului, în special în zone unde reciclarea conștientă nu este încă posibilă. Imaginează-ți un complex rezidențial în care locatarii aruncă ambalajele într-un coș inteligent, iar acestea sunt sortate automat și eficient – reducând risipa, economisind timp și resurse.
+La o scară mai largă, proiectul poate atinge o performanță satisfăcătoare, similară cu cea a echipamentelor RVM utilizate de companii consacrate, însă la un nivel mai mic, care are potențial de creștere în viitor. Această flexibilitate face ca sistemul să fie accesibil și scalabil, oferind o alternativă practică pentru comunități și spații rezidențiale, cu posibilitatea de a fi îmbunătățit și extins pe măsură ce tehnologia și cerințele comunității evoluează.
+Mai mult, spre deosebire de sistemele actuale care acceptă doar anumite tipuri de ambalaje, WALLE_E are potențialul de a sorta orice tip de material – plastic, metal, sticlă sau gunoi menajer – crescând semnificativ gradul de reciclare și flexibilitatea implementării.
+
+Context european și relevanță
+În Europa, studiile arată că schemele de returnare a ambalajelor (DRS) cresc considerabil ratele de reciclare: în Germania, de exemplu, 98% dintre recipiente sunt colectate prin astfel de programe, în timp ce media de reciclare a deșeurilor municipale în UE este sub 50%. Aceasta evidențiază potențialul major de creștere și necesitatea unor soluții inovative la nivel local.
+Proiectul WALLE_E Smart Trashcan se înscrie direct în acest context, oferind o soluție descentralizată, accesibilă și eficientă, care poate sprijini comunitățile în atingerea unor rate de reciclare similare cu cele ale programelor industriale, dar într-un mod integrat, educativ și prietenos cu utilizatorul.
+
+Impactul asupra mediului și comunității
+Prin utilizarea WALLE_E, impactul proiectului este multiplu:
+
+
+Reducerea deșeurilor care ajung la groapa de gunoi sau sunt incinerate, protejând mediul înconjurător;
+
+
+Creșterea gradului de reciclare în spații publice și rezidențiale, unde infrastructura tradițională este limitată;
+
+
+Educație și responsabilizare – fiecare ambalaj introdus devine un act de conștientizare și implicare;
+
+
+Accesibilitate economică – un sistem inteligent cu cost redus comparativ cu aparatura industrială;
+
+
+Scalabilitate reală – de la un bloc, la un cartier sau comunitate extinsă, proiectul poate fi multiplicat rapid și eficient.
+
+
+Prin aceste beneficii, WALLE_E nu doar facilitează reciclarea, ci și creează o cultură a responsabilității ecologice, influențând pozitiv comportamentul comunităților și generând un impact durabil.
+
+Concluzie
+WALLE_E Smart Trashcan demonstrează că tehnologia poate transforma reciclarea dintr-o obligație într-o experiență integrată și responsabilă, care să devină parte din viața cotidiană. Acest proiect combină:
+
+
+Inovație tehnologică – sortare inteligentă a ambalajelor;
+
+
+Impact ecologic – reducerea deșeurilor și protecția mediului;
+
+
+Rol educativ – stimularea unui comportament responsabil;
+
+
+Eficiență economică – accesibilitate și scalabilitate.
+
+
+Proiectul arată că protecția mediului poate fi realizată cu mijloace inteligente, eficiente și accesibile, demonstrând că fiecare ambalaj sortat corect reprezintă un pas către un viitor mai verde și sustenabil.
+
+Viitorul nu este predestinat. El se construiește prin ideile și acțiunile noastre, prin soluții care contează și prin amprenta pe care alegem să o lăsăm generațiilor viitoare.
+
  # Urmatorii pasi
  
 * (versiuni viitoare:) In interior se va afla o pereche de perii/rotite ce au rolul sa preseze usor ambalajul. Un microfon aflat in partea superioara a structurii de sustinere va recepta sunetul produs. Pe urma, cu ajutorul unei librarii de python va fi efectuata o analiza fourier a sunetului (fft), fiind astfel diferentiate sunetele produse de ambalaje din carton fata de ambalaje din pastic. Cartonul produce un sunet de intensitate mai mica si frecventa mai joasa, pe cand plasticul produce un sunet mai intens si de frecenta mai inalta, astfel reprezentand o metoda ce merita explorata si posibil implementata pentru sortarea plasticului vs cartonului.
