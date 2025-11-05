@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2025-11-05T18:13:14.024Z
+date: 2025-11-05T18:14:14.852Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z
@@ -12,13 +12,13 @@ dateCreated: 2024-11-11T20:49:35.696Z
 
 Coșul de gunoi inteligent WALLE_E smart trashcan este un dispozitiv modern capabil să sorteze automat patru tipuri de ambalaje:
 
-metale – doze și conserve,
+* metale – doze și conserve,
 
-plastic – sticle și ambalaje SGR,
+* plastic – sticle și ambalaje SGR,
 
-deșeuri menajere,
+* deșeuri menajere,
 
-sticlă – recipiente din sticlă.
+* sticlă – recipiente din sticlă.
 
 Funcționarea sa nu necesită intervenție umană, aparatul utilizând o combinație de senzori pentru a identifica tipul de material introdus.
 
