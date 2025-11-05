@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2025-11-05T15:12:19.520Z
+date: 2025-11-05T17:36:14.001Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z
@@ -10,11 +10,20 @@ dateCreated: 2024-11-11T20:49:35.696Z
 
 # Descriere
 
-Un cos de gunoi inteligent ce sorteaza patru tipuri de ambalaje(metale-doze si conserve, plastic-sticle/SGR-uri, gunoi menajer si sticle din sticla), fara a fi nevoie de interventie umana.
+Coșul de gunoi inteligent WALLE_E smart trashcan este un dispozitiv modern capabil să sorteze automat patru tipuri de ambalaje:
 
-Aparatul foloseste o combinatie de senzori pentru a discerne tipul de ambalaj introdus in aparat.
+metale – doze și conserve,
 
-Cosul este rapid, determinand o detectie eficienta ce faciliteaza reciclarea a multiple ambalaje intr-o durata scurta de timp. Aparatul este suficient de compact cât sa poată fii atașat unui cos de gunoi usor modificat, tetracameral.
+plastic – sticle și ambalaje SGR,
+
+deșeuri menajere,
+
+sticlă – recipiente din sticlă.
+
+Funcționarea sa nu necesită intervenție umană, aparatul utilizând o combinație de senzori pentru a identifica tipul de material introdus.
+
+Dispozitivul asigură o detecție rapidă și precisă, contribuind la o reciclare eficientă a mai multor ambalaje într-un timp redus.
+Datorită designului compact, coșul poate fi atașat unui recipient de gunoi tetracameral cu modificări minime, oferind o soluție practică și inteligentă pentru gestionarea deșeurilor.
 
 | ![screenshot_2025-05-25_140819.png](/screenshot_2025-05-25_140819.png) |
 | -- |
@@ -22,14 +31,18 @@ Cosul este rapid, determinand o detectie eficienta ce faciliteaza reciclarea a m
 
 # Obiective
 
-* Construirea unui cos compact ce poate fi folosit in spatii publice, plaje/spatii de birouri/blocuri etc. unde acest dispozitiv poate fi folosit pentru eficientizarea procesului de reciclare si salvarea de timp.
-* Proliferara unui comportament responsabil si limitarea poluarii.
-* reciclarea ambalajelor din cadrul atelierului nostru si crearea unei baze de date ce 
+* Dezvoltarea unui coș de gunoi compact și inteligent, adaptat pentru utilizarea în spații publice, birouri, plaje sau ansambluri rezidențiale, cu scopul de a eficientiza procesul de reciclare și de a economisi timp.
+
+* Promovarea unui comportament responsabil față de mediu și reducerea nivelului de poluare.
+
+* Reciclarea ambalajelor generate în cadrul atelierului și crearea unei baze de date care monitorizează tipurile și cantitățile de materiale reciclate.
 
 
 # Constructie
 
-Cosul consta dintr-un cilindru rotativ aflat la o inclinatie de 30 de grade, cosul in sine fiind compus dintr-un cos normal, cu gura fie rotunda fie patrata, impartit in 4 camere de depozitare pe diagonalele cosului. Astfel, proiectul si device-ul in sine reprezinta mai mult un "accesoriu" compact ce poate fi usor integrat in orice spatiu de functionare.
+Dispozitivul este alcătuit dintr-un cilindru rotativ înclinat la 30°, integrat într-un coș de gunoi compartimentat în patru camere de depozitare, dispuse pe diagonalele structurii. Gura de acces poate fi rotundă sau pătrată, în funcție de spațiul de amplasare și de preferințele de design.
+
+Prin designul său modular și compact, proiectul funcționează ca un accesoriu inteligent și adaptabil, ce poate fi integrat cu ușurință în diverse medii — de la spații publice și birouri până la zone rezidențiale.
   
 ![proiect_walle.jpg](/proiect_walle.jpg)
 
@@ -37,10 +50,17 @@ Cosul consta dintr-un cilindru rotativ aflat la o inclinatie de 30 de grade, cos
 
  Pentru inceput, este important sa se precizeze faptul ca cilindrul ocupa un volum adaptat pentru o sticla de 2L (aceasta reprezentand volumul maxim ce poate fi gazduit de catre ansamblu fara a exista riscul sa cedeze structura cosului din cauza greutatii excesive).
  
-### 1.  CANTARUL
-Cantarul are 3 roluri importante: detecteaza intrarea unui ambalaj in cilindru, incepand procesul de detectie. 2-masoara masa ambalajului si 3-mentine in loc obiectul pentru a putea fi continuat procesul de scanare, pana la sortarea acestuia intr-unul dn cele 4 compartimente.
+### 1.  SISTEMUL DE CANTARIRE
+Cântarul integrat îndeplinește trei funcții esențiale:
 
- La baza cantarului sta un loadcell, aflat intr-o configuratie de parghie, in combinatie cu un amplificator digital hx711. Acesta functioneaza ca un rezistor a carui valoare se modifica in urma aplicarii unei forte exterioare. Astfel, cantarul masoara magnitudinea fortei si o transforma in unitati de masa.
+detectarea introducerii ambalajului, activând procesul de analiză;
+
+măsurarea masei obiectului;
+
+stabilizarea ambalajului pe durata procesului de scanare, până la direcționarea acestuia către compartimentul corespunzător.
+
+Mecanismul de cântărire este bazat pe un senzor de sarcină (load cell) configurat sub formă de pârghie, conectat la un amplificator digital HX711.
+Prin variația rezistenței electrice generate la aplicarea unei forțe, sistemul convertește valoarea acesteia în unități de masă, oferind o citire precisă și stabilă.
  
 |![screenshot_2025-05-25_131221.png](/screenshot_2025-05-25_131221.png)| ![load-cell-diagram-72.png](/load-cell-diagram-72.png)|
 | -- | -- |
@@ -49,26 +69,23 @@ Cantarul are 3 roluri importante: detecteaza intrarea unui ambalaj in cilindru, 
  
 ### 3. Detectorul de metale
  
-1. Folosim un detector de metale custom format dintr-o bobina ce incojoara cilindrul.
+1. Sistemul utilizează un detector de metale personalizat, constând într-o bobină care înconjoară cilindrul coșului.
 
+### Circuit de detecție metale
 
-##### Circuit custom de detectie metale
+Detectorul se bazează pe un filtru LR high-pass (L – inductor, R – rezistor), alimentat cu un semnal AC de aproximativ 10 kHz.
+Inductorul este o bobină cu diametru de 10–11 cm, formată din aproximativ 100 de spire de cupru de 0,4 mm (inductanță ≈ 625 μH).
 
-Circuitul consta dintr-un filtru LR highpass (L-inductor si R-rezistor) prin care trece un curent AC de eprox. 10kHz. Inductorul este format dintr-o bobina cu un diametru de aprox. 10-11cm si aprox. 100 de ture de cupru cu diametru de 0.4mm (L aprox.= 625 uH).
-  Pe urma, semnalul trece printr-o dioda simpla de semnal la care este legat un condensator de poliester de 100nf.
-  
-  La introducerea unui obiect metalic in intriorul detectorului, inductanta fie scade, fie creste, caz in care valoarea de referinta de pe condensator de eprox. 530mV se va modifica. Precizia detectorului se bazeaza cel mai mult pe geometria ambalajului, nu pe masa acestuia sau grosimea materialului metalic. Astfel, pentru acuitate marita este nevoie ca linile campului magnetic sa fie perpendiculare pe suprafata metalica. Astfel, ambalajele de aluminiu ce sunt considerate ca fiind "gunoi menajer" sunt sortate cu succes, fara a fi confundate de aparat ca fiind doze metalice.
-  Amplificatorul digital folosit este tot hx711, fiind folosita setarea de gain de 32biti.
+Semnalul indus trece printr-o diodă de semnal, urmată de un condensator de poliester de 100 nF, care stabilește valoarea de referință a tensiunii (aprox. 530 mV).
 
-| ![schema circuitului](/aaa.webp) |
- 
+Introducerea unui obiect metalic modifică inductanța bobinei, determinând schimbarea tensiunii pe condensator. Detectorul se bazează mai ales pe forma ambalajului, nu pe greutatea sau grosimea materialului. Pentru precizie sporită, câmpul magnetic trebuie să fie perpendicular pe suprafața metalică.
 
-  
-Astfel, legand valoarea condensatorului la un amplificator digital, se poate obtine precizie mai mare pentru obiecte metalice mai mici si, de asemenea, se poate comunica valoarea mai departe raspberry pi-ului.
-Avantajele detectorului sunt multe: precizie mai ridicata, comparativ cu senzorul inductiv, design mai compact, lipsa nevoii de a stii exact locatia ambalajului in cos etc.
-Un dezavantaj ar fi riscul ca obiectul reciclat sa ramana blocat in cadrul detectorului, lucru ce a fost rezolvat din cod prin "impringerea" ambalajului in momentul soratrii de catre "falcile" ce suporta greutatea ambalajului. De asemenea, se poate mari usor diametrul detectorului si poate fi adaugat un fillet/chamber pe partea interioara pentru a putea impune ambalajului sa alunece/rastogoleasca in mmentul inclinarii cilindrului.
+Această configurare permite sortarea corectă a ambalajelor de aluminiu considerate „gunoi menajer”, fără a le confunda cu dozele metalice.
 
-![detectormetale_walle.jpg](/detectormetale_walle.jpg)
+Amplificatorul digital HX711 este utilizat pentru măsurători, cu un gain de 32 biți, asigurând o detecție precisă.
+
+|![schema circuitului](/aaa.webp)| ![detectormetale_walle.jpg](/detectormetale_walle.jpg)|
+| -- | -- |
    
 ### 5. Lidar
   
@@ -76,15 +93,32 @@ Un dezavantaj ar fi riscul ca obiectul reciclat sa ramana blocat in cadrul detec
 
   ![drawing1.jpg](/drawing1.jpg)
 
-note post teste: lidarul are suport doar pentru librărie de python și de c++, neexistând nici o librărie ce implementează pi4j. Din acest motiv, am înlocuit lidar ul cu un simplu senzor de distanta tof de la rev de 2m, acesta citind suficient de  precis distanta catre vârful ambalajului care sa nu afecteze detectie. in versiunile viitoare, codul va fi cel mai probabil rescris în c++ sau python, iar lidar ul va fi folosit în detrimentul senzorului de la rev pentru precizia sa mai ridicata de detectie.
+**Note post-teste:**
 
-Senzorul de distanta mai are și un al 2lea rol: acesta functioneaza și ca senzorul de proximitate. senzorul, fiind amplasat in partea superioara a cilindrului, la întrarea ambalajelor în ansamblu, este destul de sensibil la orice introducerea în cos al unui ambalaj, indiferent de mărimea acestuia, in cod valorile inregistrate de acest senzor fiind folosite pentru începerea procesului de detecție. De asemenea, daca ambalajul introdus este prea mic/usor pentru a putea fi detectat de alt senzor, înregistrarea intrarea unui astfel de ambalaj in ansamblu de catre senzorul tof permite sortarea acestuia în compartimentul de gunoaie menajere.
+Lidarul utilizat are suport doar pentru librării Python și C++, neexistând nicio librărie care să implementeze Pi4J. Din acest motiv, am înlocuit lidarul cu un senzor de distanță TOF de la REV, cu rază de acțiune de 2 m. Acesta măsoară suficient de precis distanța până la vârful ambalajului, fără a afecta procesul de detecție.
+
+În versiunile viitoare, codul va fi cel mai probabil rescris în C++ sau Python, iar lidarul va fi folosit în locul senzorului TOF, pentru precizia mai ridicată a detecției.
+
+**Roluri senzor TOF:**
+
+Senzorul de distanță are și un al doilea rol: funcționează și ca senzor de proximitate. Amplasat în partea superioară a cilindrului, la intrarea ambalajelor, senzorul detectează introducerea oricărui obiect în coș, indiferent de dimensiune. Valorile înregistrate de senzor sunt folosite în cod pentru a iniția procesul de detecție.
+
+De asemenea, dacă ambalajul introdus este prea mic sau ușor pentru a fi detectat de alt senzor, semnalul generat de TOF permite sortarea acestuia în compartimentul de gunoi menajer.
 
 ### 5. Senzor capacitiv de proximitate
-Acest senzor are rolul de a detecta prezent lichidelor in interiorul ambalajelor. Procesul este automatizat, astfel incat dupa ce se stabileste ca ambalajul este de tip "sticla", ansamblul incepe sa "impunga" sticla pentru a facilita contactul dintre senzor si ambalaj. In cazul in care este detectat lichid in interiorul sticlei, aceasta este imediat trimisa catre compartimentul de gunoaie menajere, fara a fi nevoie de interventie din exterior pentru indepartarea obiectului. Cu toate acestea, pentru o reciclare cat mai corecta, utilizatorii vor fi rugati sa indeparteze orice lichid din interiorul sticlelor inainte de introducerea acestora in ansamblu. Senzorul capacitiv este un senzor ce detecteaza schimbarea in indicele dielectric din mediul inconjurator, materialele conductive (precum metale/apa) avand o constanta dielectrica mult mai ridicata.
+Acest senzor are rolul de a detecta prezența lichidelor în interiorul ambalajelor. Procesul este automatizat, astfel încât, după ce se stabilește că ambalajul este de tip „sticlă”, ansamblul începe să impungă sticla, pentru a facilita contactul dintre senzor și ambalaj.
 
-nota: v_out al senzorului este, initial, aproximativ 20V, egala cu valoarea voltajului furnizat de sursa (lrs 50-24 meanwell). Senzorul foloseste un optocuplor, semnalul de intrare fiind asigurat de outputul senzorului capacitiv (0/20v), fiind folosit intr-o configuratie simpla de tranzistor npn cu vcc=3.3v (asigurat de raspberryPi), astfel asigurand un voltaj de iesire de 0/3.3v, un nivel sigur pentru utilizarea cu gpio urile de pe placa de dezvoltare.
+În cazul în care este detectat lichid în interiorul sticlei, aceasta este direcționată imediat către compartimentul de gunoi menajer, fără a fi nevoie de intervenție manuală. Cu toate acestea, pentru o reciclare cât mai corectă, utilizatorii vor fi rugați să scoată orice lichid din sticle înainte de introducerea acestora în ansamblu.
 
+Senzorul capacitiv funcționează prin detectarea schimbării indicelui dielectric din mediul înconjurător. Materialele conductive, precum metalele sau apa, au o constantă dielectrică mult mai ridicată, ceea ce permite senzorului să identifice prezența lichidului.
+
+**Notă tehnică:**
+
+* V_out inițial al senzorului: aproximativ 20 V, egal cu tensiunea furnizată de sursa LRS-50-24 Meanwell.
+
+* Senzorul utilizează un optocuplor, semnalul de intrare fiind furnizat de output-ul senzorului capacitiv (0/20 V).
+
+* Semnalul trece printr-o configurație simplă cu tranzistor NPN, alimentat cu Vcc = 3,3 V (asigurat de Raspberry Pi), ceea ce permite obținerea unui nivel de ieșire sigur de 0/3,3 V, compatibil cu GPIO-urile plăcii de dezvoltare.
 
 |![051135_5_522_1024x1024.webp](/051135_5_522_1024x1024.webp)|![whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg](/whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg)|
 | -- | -- |
@@ -92,11 +126,35 @@ nota: v_out al senzorului este, initial, aproximativ 20V, egala cu valoarea volt
 
 # Metoda de detectie
 
-  Cantarul masoara schimbarea treptata a valorii de referinta a cantarului in momentul intrarii unui obiect in ansamblu. In acest fel, sunt evitate masuratorile false aproape spre 0, schimbarile bruste care pot fi atribuite fie introducerii unui ambalaj cu o masa respectiv mare, fie unor spike-rui in voltajul de linie al sursei fiind verificate de doua ori pentru stabilirea naturii acestora. Schimbarile relativ mici, aflate sub un anumit prag stabilit empiric sunt considerate ca fiind rezultatul introducerii unui ambalaj cu masa mica, precum un servetel sau o hartie mototolita, acestea fiind detectate imediat si trimise mai departe prin tot circuitul de scanare.
-  
-  In continuare, este masurata inaltimea ambalajului, fiind stabilit daca acesta este de tip menajer (ambalaj usor, hartie mototlita/servetel/celofan), sau de tip sticla (doza, sticla de sticla/plastic etc.). Daca inaltimea ambalajului este sub un anumit prag (in general, 40mm), atunci acesta este sortat automat la gunoaie menajere. Altfel, este continuat procesul de scanare.
-  
-  In aceslasi timp, este masurata masa ambalajului, fiind pusa in raport cu inaltimea ambalajului. Astfel, este calculata o contanta k = masa/inaltimea ambalajului. Aceasta constanta ne ajuta in stabilirea naturii ambalajului, constanta fiind mai mare pentru ambalaje mai grele, cum ar fi sticle de sticla, comarativ cu alte ambalaje cum ar fi sticlele de plastic. Astfel, pot fi sortate cu precizie sticlele de sticla fata de cele de alt material, fiind gasit un prag numeric empiric sub care se afla sticlele si ambalajele de plastic sau carton si peste care se afla ambalajele de sticla. Aceasta constanta empirica, T este egala cu 0.5 din multiple teste efectuate. k normal pentru o sticla de plastic este intre 0.15-0.3, pentru sticle este minim 0.7 si maxim aprox. 2.5 . Astfel, orice ambalaj aflat sub 0.1 este clar menajer, peste 2.5 este un ambalaj plin cu apa care este sortat automat la menajere.
+  Cântarul măsoară schimbarea treptată a valorii de referință în momentul introducerii unui obiect în ansamblu. În acest fel sunt evitate măsurătorile false aproape de zero sau schimbările bruște, care pot fi cauzate fie de introducerea unui ambalaj cu masă mare, fie de variații tranzitorii ale tensiunii sursei. Aceste variații sunt verificate de două ori pentru a stabili natura lor.
+
+Schimbările relativ mici, sub un prag stabilit empiric, sunt considerate rezultatul introducerii unor ambalaje ușoare, precum șervețele sau hârtie mototolită. Acestea sunt detectate imediat și trimise mai departe prin circuitul de scanare.
+
+În continuare, este măsurată înălțimea ambalajului, pentru a determina dacă acesta este de tip menajer (ambalaje ușoare: hârtie mototolită, șervețel, celofan) sau sticlă (doze, sticlă de sticlă/plastic etc.).
+
+Dacă înălțimea ambalajului este sub un prag de aproximativ 40 mm, acesta este sortat automat la gunoi menajer.
+
+Altfel,  *procesul de scanare continuă*.
+
+În același timp, este măsurată masa ambalajului și este pusă în raport cu înălțimea acestuia, calculându-se o constantă:
+
+Această constantă ajută la determinarea naturii ambalajului:
+
+Ambalajele mai grele, precum sticlele de sticlă, au valori mai mari ale lui k, comparativ cu sticlele de plastic sau ambalajele din carton.
+
+Pragul numeric empiric, T, stabilit după multiple teste, este egal cu 0,5.
+
+**Intervale tipice pentru k:**
+
+* Sticle de plastic: 0,15 – 0,3
+
+* Sticle de sticlă: 0,7 – 2,5
+
+* Ambalaje menajere: < 0,1
+
+* Ambalaje cu lichid plin: > 2,5 (sunt sortate automat la menajere)
+
+Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alte materiale și să elimine corect ambalajele ușoare sau pline cu lichid.
 
 
 |![chatgpt_image_nov_2_2025_07_01_45_pm.png](/chatgpt_image_nov_2_2025_07_01_45_pm.png)|![chatgpt_image_nov_2_2025_07_13_04_pm.png](/chatgpt_image_nov_2_2025_07_13_04_pm.png)|
@@ -105,21 +163,17 @@ nota: v_out al senzorului este, initial, aproximativ 20V, egala cu valoarea volt
 
 ”
 
-In acelasi timp, detectorul de metale va incepe sa functioneze, citind datele primite de la acesta. Daca valoarea inregistrata difera fata de valoarea de referinta, atunci ambalajul va fi categorisit ca fiind metal, fiind trimis in compartimentul de metale. Din fericire, atat senzorul inductiv cat si detector de metale poate diferentia atat metalele feroase, cat si cele neferoase, putand fii cu usurinta diferentiate.
-  
-Daca ambalajul este menajer,a tunci cantarul se va roti in partea stanga aprox. 60 de grade pentru a permite produsului sa cada in interiorul structurii de sustinere.
+În același timp, detectorul de metale începe să funcționeze, citind datele primite. Dacă valoarea înregistrată diferă de valoarea de referință, ambalajul este clasificat ca metalic și trimis în compartimentul corespunzător. Atât senzorul inductiv, cât și detectorul de metale pot diferenția metalele feroase de cele neferoase, fiind astfel ușor de identificat.
 
-In cazul in care ambalajul este sticla, cilindrul se va roti 90 de grade spre stanga in timp ce actioneaza "falcile" pentru a impinge si a depozita obiectul.
+* Dacă ambalajul este menajer, cântarul se rotește aproximativ 60° spre stânga, pentru ca produsul să cadă în interiorul structurii de susținere.
 
-Daca ambalajul este metalic (doza) , atunci cilindrul se va roti 90 de grade spre dreapta pentru a sorta ambalajul.
+* Dacă ambalajul este sticlă, cilindrul se rotește 90° spre stânga, în timp ce falcile acționează pentru a împinge și depozita obiectul.
 
-Daca ambalajul este sticla de plastic, atunci falcile ce sustin obiectul se vor deschide si vor lasa ambalajul sa cada in interior.
+* Dacă ambalajul este metal (doză), cilindrul se rotește 90° spre dreapta pentru a sorta ambalajul în compartimentul destinat metalelor.
 
+* Dacă ambalajul este sticlă de plastic, falcile ce susțin obiectul se deschid, lăsând ambalajul să cadă în interior.
 ![screenshot_2025-05-25_135908.png](/screenshot_2025-05-25_135908.png)
 
- (versiuni viitoare:) In interior se va afla o pereche de perii/rotite ce au rolul sa preseze usor ambalajul. Un microfon aflat in partea superioara a structurii de sustinere va recepta sunetul produs. Pe urma, cu ajutorul unei librarii de python va fi efectuata o analiza fourier a sunetului (fft), fiind astfel diferentiate sunetele produse de ambalaje din carton fata de ambalaje din pastic. Cartonul produce un sunet de intensitate mai mica si frecventa mai joasa, pe cand plasticul produce un sunet mai intens si de frecenta mai inalta, astfel reprezentand o metoda ce merita explorata si posibil implementata pentru sortarea plasticului vs cartonului.
-
-In cazul in care ambalajul este de tip carton, acesta va fi trecut mai departe prin perii, fiind sortat in compartimentul pentru gunoaie menajere. Sticla, fiind mai rezistenta, va cadea in interiorul cilindrului, "falcile" ce mentin structura deschizandu-se la 45 de grade fiecare pentru a permite ca ambalajul sa cada in interior. Astfel, periile nu trebuie sa aiba putere foarte mare, acestea presand doar usor ambalajul.
   
 |![screenshot_2025-05-25_141411.png](/screenshot_2025-05-25_141411.png)|![screenshot_2025-05-25_141800.png](/screenshot_2025-05-25_141800.png)|
 | -- | -- |
@@ -129,7 +183,7 @@ In cazul in care ambalajul este de tip carton, acesta va fi trecut mai departe p
 
 
 # Folosirea optimizarii topologice in design
-Piciorul de sustinere fost optimizat topologic, folosind uneltele de simulare din fusion pentru a-i reduce masa si pentru a obtine rezistenta maxima.
+Piciorul de susținere a fost optimizat topologic, utilizând uneltele de simulare din Fusion 360, pentru a reduce masa și a obține rezistența structurală maximă.
 
 
 |![screenshot_2025-05-13_202210.png](/screenshot_2025-05-13_202210.png)|![screenshot_2025-05-25_161333.png](/screenshot_2025-05-25_161333.png)|![screenshot_2025-05-25_161348.png](/screenshot_2025-05-25_161348.png)|
@@ -142,14 +196,7 @@ Aceasta structura, comparativ cu piciorul de raft din [proiectul de cercetare](h
  
  # Urmatorii pasi
  
- 1. Stuctura - suportul alb e done, trebuie aliniat servo in cadru
- ax rev cu 2 rulmenti in suport, ingropat in piesa portocalie.
- piesele porticalii sunt legate structural cu 2 profile extrudate 2020 in partea de sus
- tot caruciorul este rotit de un servo. D3e adaugat o rotata dintata sudata de carucior, care see cupleaza cu roata dintata din servo (1:1). In centrul rotii dintate iese un ax identic cu cel de jos si se sprijina in suportul de sus.
- rolele vor fi statice pentru primul prototip, separate fata de falci, cu prindere cu surub M3 in centru. Falcile vor fi prinse in carucior cu surub pe post de ax
- Falcile trebuie umplute pentru ca sunt foarte fragile. 
- De facut un triunghi din piese tetrix/rev care suporta cele doua parti
- Adaugat detectorul de cod de bare in pozitie statica
- 
-Estimat 1st proto: final de iunie
+* (versiuni viitoare:) In interior se va afla o pereche de perii/rotite ce au rolul sa preseze usor ambalajul. Un microfon aflat in partea superioara a structurii de sustinere va recepta sunetul produs. Pe urma, cu ajutorul unei librarii de python va fi efectuata o analiza fourier a sunetului (fft), fiind astfel diferentiate sunetele produse de ambalaje din carton fata de ambalaje din pastic. Cartonul produce un sunet de intensitate mai mica si frecventa mai joasa, pe cand plasticul produce un sunet mai intens si de frecenta mai inalta, astfel reprezentand o metoda ce merita explorata si posibil implementata pentru sortarea plasticului vs cartonului.
+
+* In cazul in care ambalajul este de tip carton, acesta va fi trecut mai departe prin perii, fiind sortat in compartimentul pentru gunoaie menajere. Sticla, fiind mai rezistenta, va cadea in interiorul cilindrului, "falcile" ce mentin structura deschizandu-se la 45 de grade fiecare pentru a permite ca ambalajul sa cada in interior. Astfel, periile nu trebuie sa aiba putere foarte mare, acestea presand doar usor ambalajul.
  
