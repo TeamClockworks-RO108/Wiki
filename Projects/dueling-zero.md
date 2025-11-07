@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2025-10-28T19:20:07.487Z
+date: 2025-11-07T01:50:29.305Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z
@@ -169,6 +169,6 @@ Piesele pentru ecranul pe retea sunt:
  
 | Board | Pinout |
 | --- | --- | 
-| Octopus V1.1 | ![octopus_pinout.png](/octopus_pinout.png) | 
+| Octopus V1.1 | ![octopus_pinout.png](/octopus_pinout.png) <br> ![octopus-pinout-2.png](/octopus-pinout-2.png) | 
 | EBB36 CAN | ![ebb36_pinout.png](/ebb36_pinout.png) | 
 | SB2209 CAN | ![sb2209_pinout.png](/sb2209_pinout.png) | 
