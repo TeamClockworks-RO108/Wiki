@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-13T01:58:35.747Z
+date: 2025-11-13T02:02:25.957Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -39,7 +39,11 @@ At the end, we will combine both and wire up the electronics.
 
 ## Frame
 
-Use the extrusion drill guide to drill access holes for blind joints into all of the 500mm extrusions. You should drill 4 holes for each extrusion (a cross at each end). Use a 3mm drill bit.
+## Access holes
+
+Use the extrusion drill guide to drill access holes for blind joints into all of the 500mm extrusions (4). You should drill 4 holes for each extrusion (a cross at each end). Use a 3mm drill bit. 
+
+In total, 16 holes need to be drilled (4 beams x 2 ends x 2 holes).
 
 Assemble the frame using 16x 8mm M3 BHCS. Use a flat surface to ensure the frame will be perfectly square.
 When assembling the bttom face, preload the following Makerbeam XL Nuts:
