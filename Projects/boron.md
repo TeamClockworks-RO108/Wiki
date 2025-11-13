@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-10-29T02:06:33.709Z
+date: 2025-11-13T01:58:35.747Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -43,8 +43,8 @@ Use the extrusion drill guide to drill access holes for blind joints into all of
 
 Assemble the frame using 16x 8mm M3 BHCS. Use a flat surface to ensure the frame will be perfectly square.
 When assembling the bttom face, preload the following Makerbeam XL Nuts:
- * 2 nuts on each extrusion on the bottom side
- * 4 nuts on each extrusion on the inside of the cube. On one side (that will be the back side) preload 7 nuts. 
+ * 2 nuts on **each** extrusion on the bottom side
+ * 4 nuts on **each** extrusion on the inside of the cube. On one side (that will be the back side) preload 7 nuts. 
  
 A total of 27 nuts must be preloaded. 
  
