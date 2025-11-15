@@ -2,7 +2,7 @@
 title: Counter Button 
 description: 
 published: true
-date: 2025-10-15T14:01:12.742Z
+date: 2025-11-15T21:19:19.887Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-01T21:37:56.641Z
@@ -56,4 +56,4 @@ Pentru tinerea corecta a timpului vom folosi feature-ul de ceas din sistemul de 
 
 # Progres
 
-Am instalat OS-ul pe cardil SD pentru Raspberry Pi
+Am instalat OS-ul pe cardul SD pentru Raspberry Pi
