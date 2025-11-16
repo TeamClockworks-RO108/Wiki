@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-16T02:50:40.108Z
+date: 2025-11-16T02:50:48.371Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -70,7 +70,7 @@ The print sheet to be used is the **PrusaXL Satin sheet**.
 
 Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
 
-To control the printer, use the [webpage](printer.lucaciresearch.net) or the Ironport terminal. 
+To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the Ironport terminal. 
 
 > The **Satin** sheet does not provide excellent adhesion for large parts. 
 > If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
