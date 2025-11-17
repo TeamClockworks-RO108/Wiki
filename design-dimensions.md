@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-17T03:22:04.375Z
+date: 2025-11-17T03:23:34.716Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -22,7 +22,7 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
 | Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
 
-## Choosing a fastener
+## Choosing a fastener style
 
 For the most part, SHCS should be used for most designs that do not call for speciality fasteners. 
 
@@ -33,6 +33,10 @@ In M3 land, BHCS are sometimes preferred over SHCS because the head diameter is 
 FHCS screws can be used to hide the screw in the surface of the part. Take care to design the screw length **with** the head included. 
 
 For M2 and smaller, prefer to always use SHCS. The other screw styles hav very small hex heads and will strip easily. 
+
+## Material selection
+
+
 
 # Fusion fastener tool
 
