@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-17T03:01:36.679Z
+date: 2025-11-17T03:21:29.138Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -21,6 +21,18 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | **M6** | 6 | 10 | 6 | 6 | 10.5 | 3.3 | 6 | 12 | 3.3 |
 | **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
 | Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
+
+## Choosing a fastener
+
+For the most part, SHCS should be used for most designs that do not call for speciality fasteners. 
+
+For FTC, M4 screws are almost all SHCS, because BHCS(button head) are much easier to strip with their smaller hex key head.
+
+In M3 land, BHCS are sometimes preferred over SHCS because the head diameter is a bit larger and this leads to better pressure distribution on the material. This is only applicable in 3D printed parts, where SHCS can get loose over time due to plastic creep. 
+
+FHCS screws can be used to hide the screw in the surface of the part. Take care to design the screw length **with** the head included. 
+
+For M2 and smaller, prefer to always use SHCS. The other screw styles hav very small hex heads and will strip easily. 
 
 # Fusion fastener tool
 
