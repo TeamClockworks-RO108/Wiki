@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-10-28T20:30:17.536Z
+date: 2025-11-17T03:01:36.679Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -45,6 +45,78 @@ We do not reccomend using the built-in thread and clearance tap types because we
 
 | ![screenshot_20251028_220615.png](/screenshot_20251028_220615.png) | ![screenshot_20251028_221255.png](/screenshot_20251028_221255.png) |
 | -- | -- |
+
+# Fastener Availability
+
+| Type |||| Count | Notes |
+| -- |
+| M2 |  | | | |  To be counted |
+| ||||||
+| M2.5 | SHCS |A2| 16mm | 100 | |
+| M2.5 | SHCS |A2| 20mm | 100 | |
+| ||||||
+| M3 | FHCS |A2| 4mm | 300 | |
+| M3 | FHCS |A2| 5mm | 200 | |
+| M3 | FHCS |A2| 6mm | 300 | |
+| M3 | FHCS |A2| 8mm | 300 | |
+| M3 | FHCS |A2| 10mm | 300 | |
+| M3 | FHCS |A2| 12mm | 200 | |
+| M3 | FHCS |A2| 16mm | 100 | |
+| M3 | FHCS |A2| 20mm | 100 | |
+| ||||||
+| M3 | SHCS |A2| 6mm | To be counted | |
+| M3 | SHCS |A2| 8mm | 500 | |
+| M3 | SHCS |A2| 10mm | 200 | |
+| M3 | SHCS |A2| 12mm | 200 | |
+| M3 | SHCS |A2| 14mm | 100 | |
+| M3 | SHCS |A2| 16mm | 200 | |
+| M3 | SHCS |A2| 20mm | 100 | |
+| M3 | SHCS |A2| 25mm | 100 | |
+| M3 | SHCS |A2| 30mm | 100 | |
+| M3 | SHCS |A2| 35mm | To be counted | |
+| M3 | SHCS |A2| 40mm | To be counted | |
+| M3 | SHCS |A2| 50mm | To be counted | |
+| ||||||
+| M3 | BHCS |A2| 8mm | 400 | |
+| M3 | BHCS |A2| 10mm | 200 | |
+| M3 | BHCS |A2| 12mm | 200 | |
+| M3 | BHCS |Steel| 16mm | 200 | |
+| M3 | BHCS |A2| 20mm | 200 | |
+| M3 | BHCS |Steel| 25mm | 200 | |
+| M3 | BHCS |A2| 30mm | 200 | |
+| M3 | BHCS |A2| 35mm | To be counted | |
+| M3 | BHCS |A2| 40mm | To be counted | |
+| ||||||
+| M3 | Hex Nut ||| To be counted, 500 in makerbeam order | |
+| M3 | Lock Nut ||| To be counted | |
+| M3 | MakerbeamXL Nut ||| 400 | |
+| M3 | Heat inerts ||| 200 | |
+| M3 | 2020 Post-install nut ||| To be counted | |
+| ||||||
+| M4 | SHCS |A2| 6mm | 200 | |
+| M4 | SHCS |A2| 8mm | 400 | |
+| M4 | SHCS |A2| 10mm | 200 | |
+| M4 | SHCS |A2| 12mm | 200 | |
+| M4 | SHCS |A2| 16mm | 400 | |
+| M4 | SHCS |A2| 20mm | 200 | |
+| M4 | SHCS |A2| 25mm | 200 | |
+| M4 | SHCS |A2| 30mm | 100 | |
+| M4 | SHCS |A2| 35mm | 100 | |
+| M4 | SHCS |A2| 40mm | 100 | |
+| ||||||
+| M4 | Hex Nut ||| To be counted | |
+| M4 | Lock Nut ||| To be counted | |
+| ||||||
+| M5 | 2020 Post-install nut ||| To be counted | |
+| ||||||
+| M3 | Grub |A2| 5mm | 10 | |
+| M4 | Grub |A2| 4mm | 800 | Check count, sounds unreasonable |
+| M5 | Grub |A2| 4mm | 100 | |
+
+
+
+
+
 
 # Screw Acquisition
 
