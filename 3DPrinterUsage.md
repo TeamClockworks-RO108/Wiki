@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-16T02:50:48.371Z
+date: 2025-11-17T12:26:43.815Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -59,6 +59,7 @@ For filament compatibility, as a general rule:
  * Enclosed printers only use ABS and ASA
  * Open printers only use PLA and PETG
  * HIPS can be used as support material on multi-material enclosed printers
+ * PC will be printed only on enclosed printers and after careful evaluation of the design. Due to severe adhesion and warping, it can damage PEI sheets. It is a good idea to print it on multimaterial printers (Palmyr) to allow for ABS strain relief features. 
  
 If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
 
