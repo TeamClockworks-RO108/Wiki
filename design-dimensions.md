@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-17T03:21:29.138Z
+date: 2025-11-17T03:22:04.375Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
