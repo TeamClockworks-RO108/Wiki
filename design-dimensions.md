@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-17T03:23:34.716Z
+date: 2025-11-17T03:31:02.319Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -36,7 +36,12 @@ For M2 and smaller, prefer to always use SHCS. The other screw styles hav very s
 
 ## Material selection
 
+**A2 Stainless steel** is a very good choice for fastener material. It offers good mechanical properties and will not develop rust even in demanding conditions. 
+Unfortunately, it is not magnetic. It will not stick to magnetic trays and might not be detected by inductive probes. 
 
+**Steel** has beter mechanical properties than A2, but can rust if exposed to elements and heat.
+Screws are often coated with a protective layer: Zinc, Black oxide. 
+It attracts well magnets and can be used for induction detection. 
 
 # Fusion fastener tool
 
