@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-21T01:22:27.577Z
+date: 2025-11-21T01:23:46.601Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -51,7 +51,12 @@ Connect the UART adapter to the shelly as follows:
 | U0RXD | TX | 
 | GND | GND |
 | GPIO0 | GND |
-| +3.3_ESP | +3.3v | 
+| +3.3_ESP | +3.3v |
+
+
+| ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
+| -- |
+
 
 # Assembly
 
@@ -169,20 +174,10 @@ Connect the +24V wires from shelly circuit to the PSU's DC side, respecting pola
 
 Cut your 10m strip into 4 equal 2.5m sections and solder one end of each strip to the LED wires coming from the shelly circuit. 
 
-## Power on & Flashing ESPHOME on Shelly
+## Power on & Check circuit.
 
 > Before connecting power to the assembly, `ENSURE` that all AC connections are properly done and there are no exposed wires. There should be no connection between the AC circuit and DC circuit `EXCEPT` trough the PSU itself. 
 {.is-warning}
-
-Power on the electrical assembly. You should see a small green LED on the shelly flash and after a few minutes, an open WiFi network will appear. If the network exists, we have successfully powered the shelly and can continue with the flashing process.
-
-
-
-
-
-| ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
-| -- |
-
 
 
 # Old description
