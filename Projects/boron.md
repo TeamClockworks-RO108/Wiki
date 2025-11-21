@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-21T01:13:29.646Z
+date: 2025-11-21T01:22:27.577Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -31,6 +31,27 @@ Use 3-4 perimeters for all parts and 25% gyroid infill. A thicker line width for
 For the external and internal feet, we recommend at least 5 perimeters to ensure these will not creep over time. 
 
 Many holes for M3 screws are dimensioned at 4.7mm. Insert heatset threaded inserts into these holes with a soldering iron. Perfect centering is not crucial because the design makes use of slots in many places where heat inserts are placed. In total, you should use 54 inserts.
+
+# Flashing ESPHome on the Shelly controller
+
+For this step, you will need a standard USB-UART converter. CH340 or FT232 modules work perfectly. A computer with linux environment is strongly recommended.
+
+Flash the firmware onto the Shelly controller before assembling the electronics. Doing so after will complicate the setup a lot. 
+
+## Connecting UART wires
+
+A breadboard can be very useful for making connections because we will have to connect GND to two different places. The back of the shelly contains a few pins for flashing. The slots for pins are very small, therefore use wires from inside a CAT5A network cable that have solid copper cores. 
+
+Ensure that your UART adapter is set to work at 3.3v levels, as the ESP inside shelly does not tolerate 5v signaling. 
+
+Connect the UART adapter to the shelly as follows:
+| Shelly | UART Adapter | 
+| --- | --- |
+| U0TXD | RX | 
+| U0RXD | TX | 
+| GND | GND |
+| GPIO0 | GND |
+| +3.3_ESP | +3.3v | 
 
 # Assembly
 
@@ -155,9 +176,9 @@ Cut your 10m strip into 4 equal 2.5m sections and solder one end of each strip t
 
 Power on the electrical assembly. You should see a small green LED on the shelly flash and after a few minutes, an open WiFi network will appear. If the network exists, we have successfully powered the shelly and can continue with the flashing process.
 
-### Connecting UART wires
 
-For this step, you will need a standard USB-UART converter. CH340 or FT232 modules work perfectly. A computer with linux environment is strongly recommended. 
+
+
 
 | ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
 | -- |
