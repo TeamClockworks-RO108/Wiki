@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-21T02:09:50.813Z
+date: 2025-11-21T02:12:27.154Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -210,6 +210,7 @@ Cut your 10m strip into 4 equal 2.5m sections and solder one end of each strip t
 ## Power on & Check circuit.
 
 > Before connecting power to the assembly, `ENSURE` that all AC connections are properly done and there are no exposed wires. There should be no connection between the AC circuit and DC circuit `EXCEPT` trough the PSU itself. 
+> The DC section is relatively safe to touch, but please take care. Do `NOT` touch the AC side of the circuit in `ANY` circumstance.
 {.is-warning}
 
 
