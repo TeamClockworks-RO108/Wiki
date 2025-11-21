@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-13T02:02:25.957Z
+date: 2025-11-21T01:13:29.646Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -95,6 +95,74 @@ The LED structure is now ready for mounting inside the main frame. Use 16x 16mm 
 | -- | -- |
 
 ## Electronics
+
+Start by inserting the 6 heat inserts. Then, fix in place the sockets and the C13 power plug using 10x 10mm M3 FHCS. 
+To install the potentiometer, unscrew the included nut and put it trough the hole. Then, screw back the included plastic nut.
+
+Secure the WAGO holder into the utility panel body using 2x 16mm M3 BHCS. To make the WAGO connectors stay in place, we can use Cyanoacrylate glue or hot glue. 
+
+| ![screenshot_20251121_023725.png](/screenshot_20251121_023725.png) | ![screenshot_20251121_023804.png](/screenshot_20251121_023804.png) |
+| -- |
+
+Assemble the Shelly holder by sliding the shelly relay inside and securing it into place with its small bracket and 2x 10mm M3 BHCS. 
+Use the same glue technique as above to install the 4 WAGO connectors.
+
+| ![screenshot_20251121_024231.png](/screenshot_20251121_024231.png) |
+| -- |
+
+## Wiring
+
+To properly program the elctronics, we will assemble and test the **wiring** outside the cube!
+The wires between individual components nearby should be small. Eyeball each length to your preference. Wire lengths between different places inside the cube should be:
+ * Utility panel (potentiometer) to shelly circuit - **300mm**
+ * Utility panel to PSU (AC side) - **130mm**
+ * PSU (DC side) to shelly circuit - **270mm**
+ * Shelly circuit to LED strip start - **360mm**
+ 
+All screw terminal connections (on the shelly relay or power sockets) should use crimped ferrules to prevent accidental disconnections.
+Wires connected to wago terminals do not ferrules, but ensure that about 8-11mm of wire length is unsheathed. 
+
+### Utility panel
+
+When wiring the utility panel, take extra care to ensure that the neutral line (yellow, often found as yellow-green) does not mix with the two power lines. 
+
+The potentiometer has three connection points: two ends and one center tap. We will wire one single end and the center tap, wires which will go to the shelly circuit. Dimension the wire accordingly. 
+
+| ![screenshot_20251121_015217.png](/screenshot_20251121_015217.png) |
+| -- |
+
+### Shelly circuit
+
+Follow the diagram below to wire the shelly circuit.
+
+| ![screenshot_20251121_020634.png](/screenshot_20251121_020634.png) |
+| -- |
+
+### PSU
+
+Connect the power wires coming from the utility panel to the PSU's AC side. Take extra care to find the right connector for the neutral wire.
+
+Connect the +24V wires from shelly circuit to the PSU's DC side, respecting polarity. 
+
+### LED Strips
+
+Cut your 10m strip into 4 equal 2.5m sections and solder one end of each strip to the LED wires coming from the shelly circuit. 
+
+## Power on & Flashing ESPHOME on Shelly
+
+> Before connecting power to the assembly, `ENSURE` that all AC connections are properly done and there are no exposed wires. There should be no connection between the AC circuit and DC circuit `EXCEPT` trough the PSU itself. 
+{.is-warning}
+
+Power on the electrical assembly. You should see a small green LED on the shelly flash and after a few minutes, an open WiFi network will appear. If the network exists, we have successfully powered the shelly and can continue with the flashing process.
+
+### Connecting UART wires
+
+For this step, you will need a standard USB-UART converter. CH340 or FT232 modules work perfectly. A computer with linux environment is strongly recommended. 
+
+| ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
+| -- |
+
+
 
 # Old description
 
