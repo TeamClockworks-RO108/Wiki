@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T14:23:03.709Z
+date: 2025-11-23T14:26:35.539Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -40,7 +40,7 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| MakerbeamXL 470mm beam | 8 |^^|^^|
 |^^| ABS/ASA Filament | 3kg | The prints are a bit heavy on filament usage. The recommended quantity takes into account possible print failures for the very big parts that are susceptible to warp.<br> The cube will put out about 20k lumens and consume upwards of 240W, therefore it might heat up a bit. ABS or ASA is strongly recommended to withstand the heat.<br>Source from your favourite local european filament factory. | [Prusa](https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/)<br>[RepRapMania](https://www.reprapmania.ro/cumpara/filament-3dpower-abs-black-1kg-3290) | 
 | Electronics | Shelly Plus RGBW PM | 1 | | [EMAG](https://www.emag.ro/shelly-plus-rgbw-pm-controler-wi-fi-inteligent-pentru-benzi-led-de-o-singura-culoare-rgb-sau-rgbw-all-rel-plusrgbwpm/pd/D80D3CYBM/) |
-|^^| Wall Socket<br>Gewiss GW 62 393 | 2 | | [EMAG](https://www.emag.ro/priza-schuko-cu-montaj-pe-panou-16a-gw62393/pd/DJXD50MBM/?ref=history-shopping_443134287_18719_1) |
+|^^| Wall Socket<br>Gewiss GW 62393 | 2 | | [EMAG](https://www.emag.ro/priza-schuko-cu-montaj-pe-panou-16a-gw62393/pd/DJXD50MBM/?ref=history-shopping_443134287_18719_1) |
 |^^| 10k Potentiometer with 22mm bore<br>Tayieei LA42DWG-22 | 1 | | [EMAG](https://www.emag.ro/potentiometru-rotativ-de-viteza-la42dwq-22-10k-k0276-2025715-1/pd/DWXNDCYBM/?ref=history-shopping_443134122_221614_1) |
 |^^| LED Strip (10m) | 10m | At most 10A/240W, minimum 10m<br>Neutral white is preferred | [EMAG](https://www.emag.ro/banda-led-profesionala-24v-4000k-lumina-alb-neutru-240-led-m-ip20-rola-10-metri-iluminat-uniform-pentru-interioare-moderne-wta-il035/pd/DCRZF03BM/?ref=history-shopping_442780262_197857_1) |
 |^^| Wago 221 415 5-wire | 7 | | [EMAG](https://www.emag.ro/clema-wago-25-bucati-5-poli-4-0mm-450v-32a-221-415/pd/DS79ZSYBM/?ref=history-shopping_452049525_6569_1) | 
