@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T02:25:50.552Z
+date: 2025-11-23T02:51:33.120Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -32,7 +32,30 @@ The side panels should follow this specification:
 The graphics elements should cover the entire usable visible area, but the background must continue up to the edges of the panel.
 The panel is phisically slightly smaller than the available area to acount for manufacturing inaccuracies.
 
+# Parts List & Sourcing Guide
 
+| Category | Part | Quantity | Notes | Distributor |
+| -- | -- | -- | -- |
+| Frame | MakerbeamXL 500mm beam | 4 | Order 12x 500mm MakerbeamXL beams and also add 8x Cut&Tap services to the cart. Specify in the description that 8 of the 500mm beams need to be cut to 470mm | [Beams](https://www.makerbeam.com/500mm-1p-black-makerbeamxl-15mmx15mm.html) <br> [Cut&Tap](https://www.makerbeam.com/custom-cut-length-beams.html) |
+|^^| MakerbeamXL 470mm beam | 8 |^^|^^|
+| Electronics | Shelly Plus RGBW PM | 1 | | [EMAG](https://www.emag.ro/shelly-plus-rgbw-pm-controler-wi-fi-inteligent-pentru-benzi-led-de-o-singura-culoare-rgb-sau-rgbw-all-rel-plusrgbwpm/pd/D80D3CYBM/) |
+|^^| Wall Socket<br>Gewiss GW 62 393 | 2 | | [EMAG](https://www.emag.ro/priza-schuko-cu-montaj-pe-panou-16a-gw62393/pd/DJXD50MBM/?ref=history-shopping_443134287_18719_1) |
+|^^| 10k Potentiometer with 22mm bore<br>Tayieei LA42DWG-22 | 1 | | [EMAG](https://www.emag.ro/potentiometru-rotativ-de-viteza-la42dwq-22-10k-k0276-2025715-1/pd/DWXNDCYBM/?ref=history-shopping_443134122_221614_1) |
+|^^| LED Strip (10m) | 10m | At most 10A/240W, minimum 10m<br>Neutral white is preferred | [EMAG](https://www.emag.ro/banda-led-profesionala-24v-4000k-lumina-alb-neutru-240-led-m-ip20-rola-10-metri-iluminat-uniform-pentru-interioare-moderne-wta-il035/pd/DCRZF03BM/?ref=history-shopping_442780262_197857_1) |
+|^^| Wago 221 415 5-wire | 7 | | [EMAG](https://www.emag.ro/clema-wago-25-bucati-5-poli-4-0mm-450v-32a-221-415/pd/DS79ZSYBM/?ref=history-shopping_452049525_6569_1) | 
+|^^| IEC C13 Socket | 1 | | [EAMG](https://www.emag.ro/mufa-alimentare-pc-tip-tata-montare-panou-iec-320-c14-24040708/pd/DJ1YXYYBM/?ref=history-shopping_443134287_7099_1) | 
+|^^| IEC C13 Cable with 90* bend | 1 | | [EMAG](https://www.emag.ro/cablu-de-alimentare-pc-si-ups-schuko-cee-7-7-la-iec320-c13-90-grade-lanberg-43644-250v-10a-3m-lungime-vde-negru-negru-3-m-ca-c13c-12cc-0030-bk/pd/D53W9QMBM/?ref=history-shopping_452046853_63000_1) |
+|^^| 24V PSU<br>Meanwell UHP-350-24 | 1 | | [TME.EU](https://www.tme.eu/ro/en/details/uhp-350-24/built-in-power-supplies/mean-well/) |
+
+| Fasteners | M3 Voron brass inserts | 54 | | [CNC Kitchen](https://cnckitchen.store/products/made-for-voron-gewindeeinsatz-threaded-insert-m3x5x4-100-stk-pcs) |
+|^^| M3 BHCS (DIN 7380) 8mm | 64 | Any kind of screw grade can be used. We prefer A2 because it is relatively resistant to rust. | |
+|^^| M3 BHCS (DIN 7380) 16mm | 46 |^^| |
+|^^| M3 BHCS (DIN 7380) 10mm | 10 |^^| |
+|^^| M3 BHCS (DIN 7380) 40mm | 3 |^^| |
+|^^| M3 FHCS (DIN 7991) 8mm | 18 |^^| |
+|^^| M3 SHCS (DIN 912) 16mm | 40 |^^| |
+|^^| Makerbeam T-Nut XL | 27 | | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
+| Panels |  TBD | 
 
 # Printing
 
@@ -281,29 +304,4 @@ The PSU will be MeanWell, from the UHP range, but for budgeting purposes we can 
 
 To prevent overheating of the wires, everyting will work at 24v. Electronics will be controlled using a Shelly Plus RGBW PM (ABSOLUTE MAX 10A, 4A per ch, 4ch)
 
-# Parts List & Sourcing Guide
 
-| Part | P/N | Price | Notes | 
-| -- | -- | -- | -- |
-| Shelly controller | Shelly Plus RGBW PM | 140 | |
-| Wall socket | Gewiss GW 62 393 | 30 | |
-| Potentiometru 10k | Tayieei LA42DWG-22 | 30 | For 22mm bore |
-| 10m white neutral strip | | 120 | At most 10A/240W |
-| 7x Wago 221 415 5-wire | | 70 | |
-| IEC C13 Socket |  | 6 | | 
-| IEC C13 Cable with 90* bend |  | 30 | | 
-| 24V PSU | Meanwell UHP-350-24 | 370 | |
-| Frame | | TBD | |
-| Panels | | TBD | | 
-| _**FASTENERS**_ ||||
-| M3 Voron threaded inserts || 54 ||
-| M3 BHCS (DIN 7380) 8mm || 64 ||
-| M3 BHCS (DIN 7380) 16mm || 46 ||
-| M3 BHCS (DIN 7380) 10mm || 10 ||
-| M3 BHCS (DIN 7380) 40mm || 3 ||
-| M3 FHCS (DIN 7991) 8mm || 18 || 
-| M3 SHCS (DIN 912) 16mm || 40 ||
-| Makerbeam T-Nut XL || 27 ||
-
-
-The strip has 10m and must be divided on 5 equal sides, so each side must use up to 2m
