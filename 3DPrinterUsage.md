@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-17T12:26:43.815Z
+date: 2025-11-23T20:31:31.512Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -105,6 +105,21 @@ After you open Grafana, you will see an empty welcome page. In the left menu, go
 Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
 ![screenshot_20251009_051254.png](/screenshot_20251009_051254.png)
+
+# Extruder Multiplier Calibration
+
+Create a 55mm^3^ cube in the slicer. Do the following settings:
+ * Layer height: 0.2mm
+ * Bottom layers: 3
+ * Top layers: 269
+ * Infill: Gyroid, 15%
+ * Perimeters: 3
+ * Filament Extrusion Multiplier: 1
+ 
+Print the cube. After it has finished doing infill layers, lower the EM until there are gaps between the lines. Then, slowly raise it, waiting 5-6 layers between each change. When the EM is too much, you will start to see extra filament buildup on the layers.
+Perfect EM will have a nice finish of fused lines at the **center of the surface**. Disregard the edges where material builds up because of movement changes.
+
+
 
 # Shortcuts
 
