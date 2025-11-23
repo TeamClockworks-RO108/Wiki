@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T02:51:33.120Z
+date: 2025-11-23T03:04:09.612Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -38,6 +38,7 @@ The panel is phisically slightly smaller than the available area to acount for m
 | -- | -- | -- | -- |
 | Frame | MakerbeamXL 500mm beam | 4 | Order 12x 500mm MakerbeamXL beams and also add 8x Cut&Tap services to the cart. Specify in the description that 8 of the 500mm beams need to be cut to 470mm | [Beams](https://www.makerbeam.com/500mm-1p-black-makerbeamxl-15mmx15mm.html) <br> [Cut&Tap](https://www.makerbeam.com/custom-cut-length-beams.html) |
 |^^| MakerbeamXL 470mm beam | 8 |^^|^^|
+|^^| ABS/ASA Filament | 3kg | The prints are a bit heavy on filament usage. The recommended quantity takes into account possible print failures for the very big parts that are susceptible to warp.<br> The cube will put out about 20k lumens and consume upwards of 240W, therefore it might heat up a bit. ABS or ASA is strongly recommended to withstand the heat.<br>Source from your favourite local european filament factory. | [Prusa](https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/)<br>[RepRapMania](https://www.reprapmania.ro/cumpara/filament-3dpower-abs-black-1kg-3290) | 
 | Electronics | Shelly Plus RGBW PM | 1 | | [EMAG](https://www.emag.ro/shelly-plus-rgbw-pm-controler-wi-fi-inteligent-pentru-benzi-led-de-o-singura-culoare-rgb-sau-rgbw-all-rel-plusrgbwpm/pd/D80D3CYBM/) |
 |^^| Wall Socket<br>Gewiss GW 62 393 | 2 | | [EMAG](https://www.emag.ro/priza-schuko-cu-montaj-pe-panou-16a-gw62393/pd/DJXD50MBM/?ref=history-shopping_443134287_18719_1) |
 |^^| 10k Potentiometer with 22mm bore<br>Tayieei LA42DWG-22 | 1 | | [EMAG](https://www.emag.ro/potentiometru-rotativ-de-viteza-la42dwq-22-10k-k0276-2025715-1/pd/DWXNDCYBM/?ref=history-shopping_443134122_221614_1) |
