@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-22T20:39:54.126Z
+date: 2025-11-23T00:14:55.080Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -51,6 +51,7 @@ Connect the UART adapter to the shelly as follows:
 | U0RXD | TX | 
 | GND | GND |
 | GPIO0 | GND |
+| RESET | EN/DTR |
 | +3.3_ESP | +3.3v |
 
 
@@ -89,6 +90,7 @@ cd Boron/firmware
 # Flash. Replace /dev/tty<port> with your serial port obtained above.
 esphome run boron-basic.yaml --device /dev/tty<port>
 ```
+
 
 
 # Assembly
