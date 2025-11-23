@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T00:15:21.263Z
+date: 2025-11-23T01:35:35.032Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -18,10 +18,21 @@ The design is built so that minimal electronics and soldering work is required. 
 
 The bottom of the cube contains two output wall sockets to aid with wiring. (Maybe chain more Borons?).
 
-
-
 | ![screenshot_20251029_015652.png](/screenshot_20251029_015652.png) | ![screenshot_20251029_015722.png](/screenshot_20251029_015722.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
 | -- | -- | -- | -- |
+
+# Graphics panels
+
+The side panels should follow this specification:
+ * Theoretical visible area: 470mm x 470mm
+ * Physical panel size: 477mm x 477mm
+ * Usable visible area: 467mm x 467mm
+ * Hidden border background: 5mm on each side of the usable visible area
+ 
+The graphics elements should cover the entire usable visible area, but the background must continue up to the edges of the panel.
+The panel is phisically slightly smaller than the available area to acount for manufacturing inaccuracies.
+
+
 
 # Printing
 
@@ -91,16 +102,12 @@ cd Boron/firmware
 esphome run boron-basic.yaml --device /dev/tty<port>
 ```
 
-
-
 # Assembly
 
 We will assemble the frame first, together with its internal and external feet and then build the inner LED cube.
 At the end, we will combine both and wire up the electronics. 
 
 ## Frame
-
-## Access holes
 
 Use the extrusion drill guide to drill access holes for blind joints into all of the 500mm extrusions (4). You should drill 4 holes for each extrusion (a cross at each end). Use a 3mm drill bit. 
 
