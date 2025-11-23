@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T01:35:35.032Z
+date: 2025-11-23T02:25:50.552Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -140,9 +140,7 @@ Final assembled frame
 
 Assemble the main LED structure using 32x 16mm M4 SHCS screws. Connect the brackets to the main pillars and use the two crosses to fasten the 4 corners.
 
-The two crosses **are not identical**! The top cross contains heated inserts on the upper side that will later be used to mount the top face LED channels. Install this part on the same side with the filleted pillars. 
-
-The bottom cross has only 4 regular holes for mounting of the PSU and electronics. 
+The two crosses **are not identical**! The top cross contains heated inserts on the upper side that will later be used to mount the top face LED channels. Install this part on the same side with the filleted pillars. The bottom cross has only 4 regular holes for mounting of the PSU and electronics. 
 
 Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws. These beams help stabilize our build. 
 
@@ -222,6 +220,48 @@ Cut your 10m strip into 4 equal 2.5m sections and solder one end of each strip t
 > The DC section is relatively safe to touch, but please take care. Do `NOT` touch the AC side of the circuit in `ANY` circumstance.
 {.is-warning}
 
+> Repeat: Do `NOT` touch the AC side of the circuit in `ANY` circumstance.
+{.is-danger}
+
+
+Plug in the power outlet. You should see a green light on the shelly controller. By turning the potentiometer, you should be able to adjust the intensity of the LED strips. All LED strips should light up at the same intensity.
+
+## Mount electronics inside the cube
+
+Take off the bottom three LED supports from the **back** of of the cube. The **back** is the side where we preloaded 3 more (total 7) channel nuts in the bottom extrusion. We will be using these nuts to mount the utility panel we just wired. 
+
+| ![screenshot_20251123_034631.png](/screenshot_20251123_034631.png) |
+| -- |
+
+It's time to add the electronics:
+ * Mount the UHP-350-Mount to the bottom cross using 2x 10mm M3 FHCS
+ * Mount the UHP-350 to its mount using 4x 10mm M3 FHCS
+ * Secure the shelly carrier to the bottom cross using 2x 10mm M3 FHCS
+ * Secure the utility panel to the back extrusion using 3x 40mm M3 FHCS. Use the three extra preloaded nuts.
+ 
+| ![screenshot_20251123_035700.png](/screenshot_20251123_035700.png) | ![screenshot_20251123_035917.png](/screenshot_20251123_035917.png) | ![screenshot_20251123_040013.png](/screenshot_20251123_040013.png) | ![screenshot_20251123_040134.png](/screenshot_20251123_040134.png) |
+| -- |
+
+Install back the three LED supports you just took off to aid in electronics mounting
+
+| ![screenshot_20251123_040627.png](/screenshot_20251123_040627.png) |
+| -- |
+
+## Wrap the LED strips around the cube
+
+Take each LED strip and direct one towards each vertical post. We will wrap each strip on the track that starts at the bottom of each post. After 5 segments, you will arrive at a top of a vertical post, where we will continue towards the top support track. 
+
+This is how one of the strips wrap. Repeat this pattern for all 4.
+At the bottom of the post there is a ziptie loop to help you keep the cables in place. 
+
+| ![screenshot_20251123_041212-1.png](/screenshot_20251123_041212-1.png) |
+| -- |
+
+If you are having trouble keeping the strip in place at the top corners, install one of the strip clips using an 8mm M3 FHCS screw. 
+This screw threads inside a brass insert, so don't forget to install that too.
+
+| ![screenshot_20251123_042257.png](/screenshot_20251123_042257.png) |
+| -- |
 
 # Old description
 
@@ -241,7 +281,7 @@ The PSU will be MeanWell, from the UHP range, but for budgeting purposes we can 
 
 To prevent overheating of the wires, everyting will work at 24v. Electronics will be controlled using a Shelly Plus RGBW PM (ABSOLUTE MAX 10A, 4A per ch, 4ch)
 
-# Parts List
+# Parts List & Sourcing Guide
 
 | Part | P/N | Price | Notes | 
 | -- | -- | -- | -- |
