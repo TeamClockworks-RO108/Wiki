@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T04:28:40.957Z
+date: 2025-11-23T14:23:03.709Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -56,7 +56,7 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| M3 FHCS (DIN 7991) 8mm | 18 |^^| |
 |^^| M3 SHCS (DIN 912) 16mm | 40 |^^| |
 |^^| Makerbeam T-Nut XL | 27 | | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
-| Panels |  TBD | 
+| Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
 
 # Printing
 
