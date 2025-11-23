@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T03:16:54.059Z
+date: 2025-11-23T04:28:40.957Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -127,6 +127,8 @@ esphome run boron-basic.yaml --device /dev/tty<port>
 ```
 
 # Assembly
+
+It's advised to have the CAD file open during the assembly process. We have included many photos and highlights in this guide, but it's always useful to be able to check details with the CAD.
 
 We will assemble the frame first, together with its internal and external feet and then build the inner LED cube.
 At the end, we will combine both and wire up the electronics. 
