@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T23:19:22.666Z
+date: 2025-11-24T23:30:27.168Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -47,7 +47,7 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| IEC C13 Socket | 1 | | [EAMG](https://www.emag.ro/mufa-alimentare-pc-tip-tata-montare-panou-iec-320-c14-24040708/pd/DJ1YXYYBM/?ref=history-shopping_443134287_7099_1) | 
 |^^| IEC C13 Cable with 90* bend | 1 | | [EMAG](https://www.emag.ro/cablu-de-alimentare-pc-si-ups-schuko-cee-7-7-la-iec320-c13-90-grade-lanberg-43644-250v-10a-3m-lungime-vde-negru-negru-3-m-ca-c13c-12cc-0030-bk/pd/D53W9QMBM/?ref=history-shopping_452046853_63000_1) |
 |^^| 24V PSU<br>Meanwell UHP-350-24 | 1 | | [TME.EU](https://www.tme.eu/ro/en/details/uhp-350-24/built-in-power-supplies/mean-well/) |
-
+|^^| 20AWG or 0.5mm^2^ multistrand silicone insulated wire | 8m | Get at least 2 colors | [TME.EU](https://www.tme.eu/ro/en/details/siff0.50-b/silicone-cables-single-core/helukabel/45201/) | 
 | Fasteners | M3 Voron brass inserts | 54 | 6x for utility panel<br>8x for top led<br>40x for LED channels | [CNC Kitchen](https://cnckitchen.store/products/made-for-voron-gewindeeinsatz-threaded-insert-m3x5x4-100-stk-pcs) |
 |^^| M3 BHCS (DIN 7380) 8mm | 56 | 40x for LED channels<br>16x for frame | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/linsenkopf-iso-7380/iso-7380-edelstahl-a2/iso-7380-a2-m3) |
 |^^| M3 BHCS (DIN 7380) 16mm | 30 | 2x for utility panel<br>12x for feet<br>16x for internal feet | ^^ |
