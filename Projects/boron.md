@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T22:52:56.659Z
+date: 2025-11-24T23:19:22.666Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -48,14 +48,14 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| IEC C13 Cable with 90* bend | 1 | | [EMAG](https://www.emag.ro/cablu-de-alimentare-pc-si-ups-schuko-cee-7-7-la-iec320-c13-90-grade-lanberg-43644-250v-10a-3m-lungime-vde-negru-negru-3-m-ca-c13c-12cc-0030-bk/pd/D53W9QMBM/?ref=history-shopping_452046853_63000_1) |
 |^^| 24V PSU<br>Meanwell UHP-350-24 | 1 | | [TME.EU](https://www.tme.eu/ro/en/details/uhp-350-24/built-in-power-supplies/mean-well/) |
 
-| Fasteners | M3 Voron brass inserts | 54 | | [CNC Kitchen](https://cnckitchen.store/products/made-for-voron-gewindeeinsatz-threaded-insert-m3x5x4-100-stk-pcs) |
-|^^| M3 BHCS (DIN 7380) 8mm | 64 | Any kind of screw grade can be used. We prefer A2 because it is relatively resistant to rust. | |
-|^^| M3 BHCS (DIN 7380) 16mm | 46 |^^| |
-|^^| M3 BHCS (DIN 7380) 10mm | 10 |^^| |
-|^^| M3 BHCS (DIN 7380) 40mm | 3 |^^| |
-|^^| M3 FHCS (DIN 7991) 8mm | 18(98)* |^^| |
-|^^| M3 SHCS (DIN 912) 16mm | 40 |^^| |
-|^^| Makerbeam T-Nut XL | 27 | | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
+| Fasteners | M3 Voron brass inserts | 54 | 6x for utility panel<br>8x for top led<br>40x for LED channels | [CNC Kitchen](https://cnckitchen.store/products/made-for-voron-gewindeeinsatz-threaded-insert-m3x5x4-100-stk-pcs) |
+|^^| M3 BHCS (DIN 7380) 8mm | 56 | 40x for LED channels<br>16x for frame | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/linsenkopf-iso-7380/iso-7380-edelstahl-a2/iso-7380-a2-m3) |
+|^^| M3 BHCS (DIN 7380) 16mm | 30 | 2x for utility panel<br>12x for feet<br>16x for internal feet | ^^ |
+|^^| M3 BHCS (DIN 7380) 10mm | 10 | 6x for PSU mount<br> 4x for shelly mount<br> | ^^ |
+|^^| M3 BHCS (DIN 7380) 40mm | 3 | 3x for utility panel | ^^ |
+|^^| M3 FHCS (DIN 7991) 8mm | 18(98*) | 8x for top led<br>10x for utility panel<br>80x for modular channels | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/senkkopf-din-7991/din-7991-edelstahl-a2/din-7991-a2-m3/din-7991-a2-m3x8) |
+|^^| M4 SHCS (DIN 912) 16mm | 64 | 64x (8 per corner, 8 corners) | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/zylinderkopf-din-912/din-912-edelstahl-a2/din-912-a2-m4/din-912-a2-m4x16)
+|^^| Makerbeam T-Nut XL | 27 | 16x for internal feet<br>8x for feet<br>3x for utility panel | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
 | Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
 
 > `*` For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the alternative (modular) LED channels, 80 more screws will be required to assemble channels. 
