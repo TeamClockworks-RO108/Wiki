@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-23T20:31:31.512Z
+date: 2025-11-24T00:14:30.152Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -119,7 +119,19 @@ Create a 55mm^3^ cube in the slicer. Do the following settings:
 Print the cube. After it has finished doing infill layers, lower the EM until there are gaps between the lines. Then, slowly raise it, waiting 5-6 layers between each change. When the EM is too much, you will start to see extra filament buildup on the layers.
 Perfect EM will have a nice finish of fused lines at the **center of the surface**. Disregard the edges where material builds up because of movement changes.
 
+## Calibrating the `rotation_distance` printer (hardware) value
 
+Do the sequence above with the **REFERENCE ABS** roll loaded. This roll is a blue Everfil filament that is **only** used for reference calibration across printers. To save the value, go to the printer configuration and replace the value of `rotation_distance` with the new calculated value by this formula:
+
+```java
+rotation_distance = rotation_distance * 100 / EM 
+```
+
+## Calibrating the extrusion multiplier slicer value
+
+To be able to obtain accurate values from this test, the printer's `rotation_distance` should be calibrated first. 
+
+This process should be done with **every type and brand** of filament we own. Save the value in the slicer's filament extrusion multiplier setting (scale 0-100% to 0-1).
 
 # Shortcuts
 
