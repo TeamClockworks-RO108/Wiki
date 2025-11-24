@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T23:31:03.819Z
+date: 2025-11-24T23:52:07.038Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -41,11 +41,11 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| ABS/ASA Filament | 3kg | The prints are a bit heavy on filament usage. The recommended quantity takes into account possible print failures for the very big parts that are susceptible to warp.<br> The cube will put out about 20k lumens and consume upwards of 240W, therefore it might heat up a bit. ABS or ASA is strongly recommended to withstand the heat.<br>Source from your favourite local european filament factory. | [Prusa](https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/)<br>[RepRapMania](https://www.reprapmania.ro/cumpara/filament-3dpower-abs-black-1kg-3290) | 
 | Electronics | Shelly Plus RGBW PM | 1 | | [EMAG](https://www.emag.ro/shelly-plus-rgbw-pm-controler-wi-fi-inteligent-pentru-benzi-led-de-o-singura-culoare-rgb-sau-rgbw-all-rel-plusrgbwpm/pd/D80D3CYBM/) |
 |^^| Wall Socket<br>Gewiss GW 62393 | 2 | | [EMAG](https://www.emag.ro/priza-schuko-cu-montaj-pe-panou-16a-gw62393/pd/DJXD50MBM/?ref=history-shopping_443134287_18719_1) |
-|^^| 10k Potentiometer with 22mm bore<br>Tayieei LA42DWG-22 | 1 | | [EMAG](https://www.emag.ro/potentiometru-rotativ-de-viteza-la42dwq-22-10k-k0276-2025715-1/pd/DWXNDCYBM/?ref=history-shopping_443134122_221614_1) |
-|^^| LED Strip (10m) | 10m | At most 10A/240W, minimum 10m<br>Neutral white is preferred | [EMAG](https://www.emag.ro/banda-led-profesionala-24v-4000k-lumina-alb-neutru-240-led-m-ip20-rola-10-metri-iluminat-uniform-pentru-interioare-moderne-wta-il035/pd/DCRZF03BM/?ref=history-shopping_442780262_197857_1) |
-|^^| Wago 221 415 5-wire | 7 | | [EMAG](https://www.emag.ro/clema-wago-25-bucati-5-poli-4-0mm-450v-32a-221-415/pd/DS79ZSYBM/?ref=history-shopping_452049525_6569_1) | 
-|^^| IEC C13 Socket | 1 | | [EAMG](https://www.emag.ro/mufa-alimentare-pc-tip-tata-montare-panou-iec-320-c14-24040708/pd/DJ1YXYYBM/?ref=history-shopping_443134287_7099_1) | 
-|^^| IEC C13 Cable with 90* bend | 1 | | [EMAG](https://www.emag.ro/cablu-de-alimentare-pc-si-ups-schuko-cee-7-7-la-iec320-c13-90-grade-lanberg-43644-250v-10a-3m-lungime-vde-negru-negru-3-m-ca-c13c-12cc-0030-bk/pd/D53W9QMBM/?ref=history-shopping_452046853_63000_1) |
+|^^| 10k Potentiometer with 22mm bore<br>Tayieei LA42DWG-22 | 1 | | [EMAG](https://www.emag.ro/potentiometru-rotativ-de-viteza-la42dwq-22-10k-k0276-2025715-1/pd/DWXNDCYBM/?ref=history-shopping_443134122_221614_1)<br>[Aliespress](https://www.aliexpress.com/item/1005005813967778.html?spm=a2g0o.tesla.0.0.5d31CytICytIf6&afTraceInfo=1005005813967778__pc__c_ppc_item_bridge_pc_main__04W3qil__1764027303021) |
+|^^| LED Strip (10m) | 10m | At most 10A/240W, minimum 10m<br>Neutral white is preferred | [TME.EU](https://www.tme.eu/ro/details/hh-40kyi-3528gwaa/surse-de-lumina-benzi-cu-led-uri/wisva-optoelectronics/hh-s240f010-3528-24-nw-white-pcb-ip65a/)<br>[EMAG](https://www.emag.ro/banda-led-profesionala-24v-4000k-lumina-alb-neutru-240-led-m-ip20-rola-10-metri-iluminat-uniform-pentru-interioare-moderne-wta-il035/pd/DCRZF03BM/?ref=history-shopping_442780262_197857_1) |
+|^^| Wago 221 415 5-wire | 7 | | [TME.EU](https://www.tme.eu/ro/details/221-415/conectori-rapizi/wago/)<br>[EMAG](https://www.emag.ro/clema-wago-25-bucati-5-poli-4-0mm-450v-32a-221-415/pd/DS79ZSYBM/?ref=history-shopping_452049525_6569_1) | 
+|^^| IEC C13 Socket | 1 | | [TME.EU](https://www.tme.eu/ro/details/ks102/conectori-iec-60320/canal-electronic/ks-102/)<br>[EAMG](https://www.emag.ro/mufa-alimentare-pc-tip-tata-montare-panou-iec-320-c14-24040708/pd/DJ1YXYYBM/?ref=history-shopping_443134287_7099_1) | 
+|^^| IEC C13 Cable with 90* bend | 1 | | [TME.EU](https://www.tme.eu/ro/details/sn320-3_10_3bk/cabluri-alim-pt-computer-si-universale/lian-dung/lt-312-511r-h05vv-f-1-0-3c-bl-3m/)<br>[EMAG](https://www.emag.ro/cablu-de-alimentare-pc-si-ups-schuko-cee-7-7-la-iec320-c13-90-grade-lanberg-43644-250v-10a-3m-lungime-vde-negru-negru-3-m-ca-c13c-12cc-0030-bk/pd/D53W9QMBM/?ref=history-shopping_452046853_63000_1) |
 |^^| 24V PSU<br>Meanwell UHP-350-24 | 1 | | [TME.EU](https://www.tme.eu/ro/en/details/uhp-350-24/built-in-power-supplies/mean-well/) |
 |^^| 20AWG or 0.5mm^2^ multistrand silicone insulated wire | 8m | Get at least 2 colors | [TME.EU](https://www.tme.eu/ro/en/details/siff0.50-b/silicone-cables-single-core/helukabel/45201/) | 
 | Fasteners | M3 Voron brass inserts | 54 | 6x for utility panel<br>8x for top led<br>40x for LED channels | [CNC Kitchen](https://cnckitchen.store/products/made-for-voron-gewindeeinsatz-threaded-insert-m3x5x4-100-stk-pcs) |
