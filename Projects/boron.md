@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-23T14:26:35.539Z
+date: 2025-11-24T17:38:45.088Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -86,7 +86,6 @@ Connect the UART adapter to the shelly as follows:
 | U0RXD | TX | 
 | GND | GND |
 | GPIO0 | GND |
-| RESET | EN/DTR, please check if this is needed |
 | +3.3_ESP | +3.3v |
 
 
