@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T22:43:24.045Z
+date: 2025-11-24T22:52:56.659Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -58,7 +58,9 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| Makerbeam T-Nut XL | 27 | | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
 | Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
 
-> For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the alternative (modular) LED channels, 80 more screws will be required to assemble channels. 
+> `*` For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the alternative (modular) LED channels, 80 more screws will be required to assemble channels. 
+{.is-info}
+
 
 # Printing
 
@@ -84,7 +86,8 @@ For the external and internal feet, we recommend at least 5 perimeters to ensure
 | ^^ | `UHP-350-Mount.stl` | 1 | |
 | LED Channels | `LEDChannelTop.stl` | 1 | 350^3^ print area required.
 | ^^ | `LEDChannel.stl` | 20 | 350^3^ print area required. If you want to print this on a smaller printer, we have an option below.
-| Alternative LED Channels | 
+| Alternative LED Channels | `HalfChannel.stl` | 40 | If you do not want to print the **LEDChannel** file because it takes a lot of bed space, print these two files instead. Two **HalfChannel** and one **CenterChannel** are assembled together with 4x 8mm M3 FHCS to yield an equivalent part.<br>If printing the regular channels, do **not** print this. |
+| ^^ | `CenterChannel.stl` | 20 | ^^ |  
 
 
 Many holes for M3 screws are dimensioned at 4.7mm. Insert heatset threaded inserts into these holes with a soldering iron. Perfect centering is not crucial because the design makes use of slots in many places where heat inserts are placed. In total, you should use 54 inserts.
@@ -194,6 +197,14 @@ Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws
 | ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) | ![screenshot_20251029_035000.png](/screenshot_20251029_035000.png) |
 | -- | -- | -- |
 
+### Alternative LED Channels
+
+If you opted for the alternative channels (3 piece part instead of single piece), then it is time to assemble them now. Join two halved with the center piece using 4x 8mm M3 FHCS. Repeat this step 20 times.
+
+| ![screenshot_20251125_005058.png](/screenshot_20251125_005058.png) |
+| -- |
+
+### LED Channels
 
 Install the 20 lateral LED channels. Mount them with 40x 8mm M3 BHCS screws. The channels have slots that allow good mounting even if the frame is not prefectly square. 
 
