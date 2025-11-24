@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T17:38:45.088Z
+date: 2025-11-24T22:43:24.045Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -53,10 +53,12 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| M3 BHCS (DIN 7380) 16mm | 46 |^^| |
 |^^| M3 BHCS (DIN 7380) 10mm | 10 |^^| |
 |^^| M3 BHCS (DIN 7380) 40mm | 3 |^^| |
-|^^| M3 FHCS (DIN 7991) 8mm | 18 |^^| |
+|^^| M3 FHCS (DIN 7991) 8mm | 18(98)* |^^| |
 |^^| M3 SHCS (DIN 912) 16mm | 40 |^^| |
 |^^| Makerbeam T-Nut XL | 27 | | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
 | Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
+
+> For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the alternative (modular) LED channels, 80 more screws will be required to assemble channels. 
 
 # Printing
 
@@ -64,6 +66,26 @@ Most of the parts fit on a 300^3^ printer, but the bottom and top crossbars shou
 Use 3-4 perimeters for all parts and 25% gyroid infill. A thicker line width for infill will speed up the print a lot and add extra strangth. 
 
 For the external and internal feet, we recommend at least 5 perimeters to ensure these will not creep over time. 
+
+| Category | File | Amount | Notes |
+| --- |
+| Structure | `Foot.stl` | 4 | Use at least 5 perimeters to ensure parts will not creep over time.  |
+| ^^ | `InternalFoot.stl` | 4 | ^^ |
+| ^^ | `Post.stl` | 4 | 350^3^ print area required.
+| ^^ | `TopCrossbar.stl` | 1 | ^^ |
+| ^^ | `BottomCrossbar.stl` | 1 | ^^ |
+| ^^ | `Corner.stl` | 8 | |
+| ^^ | `TopBar.stl` | 4 | |
+| Electronics | `ShellyBase.stl` | 1 | |
+| ^^ | `ShellyStrap.stl` | 1 | |
+| ^^ | `ShellyStrap.stl` | 1 | |
+| ^^ | `UtilityPanel.stl` | 1 | |
+| ^^ | `WagoHolder.stl` | 1 | |
+| ^^ | `UHP-350-Mount.stl` | 1 | |
+| LED Channels | `LEDChannelTop.stl` | 1 | 350^3^ print area required.
+| ^^ | `LEDChannel.stl` | 20 | 350^3^ print area required. If you want to print this on a smaller printer, we have an option below.
+| Alternative LED Channels | 
+
 
 Many holes for M3 screws are dimensioned at 4.7mm. Insert heatset threaded inserts into these holes with a soldering iron. Perfect centering is not crucial because the design makes use of slots in many places where heat inserts are placed. In total, you should use 54 inserts.
 
