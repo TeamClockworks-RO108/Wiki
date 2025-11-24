@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-24T00:14:30.152Z
+date: 2025-11-24T00:49:47.094Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -132,6 +132,8 @@ rotation_distance = rotation_distance * 100 / EM
 To be able to obtain accurate values from this test, the printer's `rotation_distance` should be calibrated first. 
 
 This process should be done with **every type and brand** of filament we own. Save the value in the slicer's filament extrusion multiplier setting (scale 0-100% to 0-1).
+
+![emprints-coarse-annotated.png](/emprints-coarse-annotated.png)
 
 # Shortcuts
 
