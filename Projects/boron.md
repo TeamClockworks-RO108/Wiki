@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T23:30:27.168Z
+date: 2025-11-24T23:31:03.819Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
