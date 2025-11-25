@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-25T02:59:12.281Z
+date: 2025-11-25T03:07:50.008Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -81,7 +81,6 @@ For the external and internal feet, we recommend at least 5 perimeters to ensure
 | ^^ | `Corner.stl` | 8 | |
 | ^^ | `TopBar.stl` | 4 | |
 | Electronics | `ShellyBase.stl` | 1 | |
-| ^^ | `ShellyStrap.stl` | 1 | |
 | ^^ | `ShellyStrap.stl` | 1 | |
 | ^^ | `UtilityPanel.stl` | 1 | |
 | ^^ | `WagoHolder.stl` | 1 | |
