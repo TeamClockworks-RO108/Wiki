@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-24T23:52:07.038Z
+date: 2025-11-25T00:01:53.892Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -17,6 +17,8 @@ The project is licensed under [GNU General Public License Version 3](https://www
 The design is built so that minimal electronics and soldering work is required. A 10-meter LED strip is cut into 4 equal sections and is wrapped around the cube's guide channels. Each strip's end arrives at the top of the cube, where it transitions to the top face. The electronics operate at 24V to allow the Shelly controller to switch more power for the same current.  
 
 The bottom of the cube contains two output wall sockets to aid with wiring. (Maybe chain more Borons?).
+
+CAD files, STL files and firmware can be found in the [Github repository](https://github.com/TeamClockworks-RO108/Boron).
 
 | ![screenshot_20251029_015652.png](/screenshot_20251029_015652.png) | ![screenshot_20251029_015722.png](/screenshot_20251029_015722.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
 | -- | -- | -- | -- |
