@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-25T00:25:55.354Z
+date: 2025-11-25T02:59:12.281Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -143,6 +143,11 @@ Clone the repository with ESPHome config files and start flashing:
 # Clone the repo
 git clone https://github.com/TeamClockworks-RO108/Boron.git
 cd Boron/firmware
+
+# If you wish to have network control over boron's state, edit the secets.yaml file
+# Replace wifi1_ssid and wifi1_password with your network credentials.
+# You can configure up to 4 wifi networks.
+vim secrets.yaml
 
 # Flash. Replace /dev/tty<port> with your serial port obtained above.
 esphome run boron-basic.yaml --device /dev/tty<port>
