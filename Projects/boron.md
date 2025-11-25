@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-25T00:01:53.892Z
+date: 2025-11-25T00:25:55.354Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -107,17 +107,13 @@ A breadboard can be very useful for making connections because we will have to c
 Ensure that your UART adapter is set to work at 3.3v levels, as the ESP inside shelly does not tolerate 5v signaling. 
 
 Connect the UART adapter to the shelly as follows:
-| Shelly | UART Adapter | 
-| --- | --- |
-| U0TXD | RX | 
-| U0RXD | TX | 
-| GND | GND |
-| GPIO0 | GND |
-| +3.3_ESP | +3.3v |
-
-
-| ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
-| -- |
+| Shelly | UART Adapter | Diagram |
+| --- | --- | --- | 
+| U0TXD | RX | ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
+| U0RXD | TX |^^|
+| GND | GND |^^|
+| GPIO0 | GND |^^|
+| +3.3_ESP | +3.3v |^^|
 
 ## Flashing
 
