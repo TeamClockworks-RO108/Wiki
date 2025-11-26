@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-26T01:12:01.271Z
+date: 2025-11-26T01:12:31.543Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -60,7 +60,7 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| Makerbeam T-Nut XL | 27 | 16x for internal feet<br>8x for feet<br>3x for utility panel | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
 | Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
 
-> `*` For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the alternative (modular) LED channels, 80 more screws will be required to assemble channels. 
+> `*` For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the Alternate (modular) LED channels, 80 more screws will be required to assemble channels. 
 {.is-info}
 
 
@@ -91,7 +91,7 @@ For the external and internal feet, we recommend at least 5 perimeters to ensure
 | ^^ | `UHP-350-Mount.stl` | 1 | |
 | LED Channels | `LEDChannelTop.stl` | 1 | 350^3^ print area required.
 | ^^ | `LEDChannel.stl` | 20 | 350^3^ print area required. If you want to print this on a smaller printer, we have an option below.
-| Alternative LED Channels | `HalfChannel.stl` | 40 | If you do not want to print the **LEDChannel** file because it takes a lot of bed space, print these two files instead. Two **HalfChannel** and one **CenterChannel** are assembled together with 4x 8mm M3 FHCS to yield an equivalent part.<br>If printing the regular channels, do **not** print this. |
+| Alternate LED Channels | `HalfChannel.stl` | 40 | If you do not want to print the **LEDChannel** file because it takes a lot of bed space, print these two files instead. Two **HalfChannel** and one **CenterChannel** are assembled together with 4x 8mm M3 FHCS to yield an equivalent part.<br>If printing the regular channels, do **not** print this. |
 | ^^ | `CenterChannel.stl` | 20 | ^^ |  
 
 
