@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-17T03:31:02.319Z
+date: 2025-11-26T02:00:45.228Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -144,6 +144,10 @@ We do not reccomend using the built-in thread and clearance tap types because we
 Go to [tme.eu](https://tme.eu) and login with the team account. Navigate to **Elemente Mecanice** -> **Suruburi cu piulita** and select the correct type in filters **Norma DIN** or **Norma ISO**. Check **Valabile in stoc**. **KRAFTBERG** is the prefferred producer.
 
 A2 stainless steel screws are good. Do not splurge on A4.  
+
+# Very nice pogo connectors:
+686C02222030C1E EDAC mates with 685C02212021C1E EDAC
+
 
 # Flexible materials:
 
