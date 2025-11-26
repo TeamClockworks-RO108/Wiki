@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-25T03:07:50.008Z
+date: 2025-11-26T01:12:01.271Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -69,12 +69,16 @@ The panel is phisically slightly smaller than the available area to acount for m
 Most of the parts fit on a 300^3^ printer, but the bottom and top crossbars should be printed on a 350^3^ machine. 
 Use 3-4 perimeters for all parts and 25% gyroid infill. A thicker line width for infill will speed up the print a lot and add extra strangth. 
 
+
 For the external and internal feet, we recommend at least 5 perimeters to ensure these will not creep over time. 
+
+> All parts are already oriented in the best position for printing.
+{.is-success}
 
 | Category | File | Amount | Notes |
 | --- |
-| Structure | `Foot.stl` | 4 | Use at least 5 perimeters to ensure parts will not creep over time.  |
-| ^^ | `InternalFoot.stl` | 4 | ^^ |
+| Structure | `Foot.stl` | 4 | 5+ perimeters.  |
+| ^^ | `InternalFoot.stl` | 4 | Add supports for the steep overhanging area.<br>5+ perimeters. |
 | ^^ | `Post.stl` | 4 | 350^3^ print area required.
 | ^^ | `TopCrossbar.stl` | 1 | ^^ |
 | ^^ | `BottomCrossbar.stl` | 1 | ^^ |
