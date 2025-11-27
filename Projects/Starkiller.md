@@ -2,7 +2,7 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2025-10-14T03:12:04.004Z
+date: 2025-11-27T20:01:38.528Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
@@ -65,10 +65,18 @@ To obtain different configuration, we can lock one or more of the planetary stag
 
 ## 312 RPM Motor
 
+This motor ships in two different stacking options. Open up your motor to see which you have.
+
 | Output RPM | 312 | 1150 | 1620 | 6000 | 
 | --- | --- | --- | --- | --- |
 | Stage 2 (Shaft) <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: | :stop_sign: Remove |
 | Stage 1 (Motor) <br> 11T 5.2:1 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :hammer_and_wrench: Replace with `SK21711` |
+
+
+| Output RPM | 312 | 1150 | 1620 | 6000 | 
+| --- | --- | --- | --- | --- |
+| Stage 2 (Shaft) <br> 11T 5.2:1 | :ballot_box_with_check: | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11111` | :stop_sign: Remove |
+| Stage 1 (Motor) <br> 17T 3.7:1 | :ballot_box_with_check: | :hammer_and_wrench: Replace with `SK11717` | :ballot_box_with_check: |  :hammer_and_wrench: Replace with `SK21117` |
 
 
 ## 435 RPM Motor
