@@ -2,18 +2,27 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-28T02:35:40.898Z
+date: 2025-11-28T02:48:28.114Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
 ---
 
 # Design Dimensions
+
+> **Reading printing tolerances**
+> Notations like 2^2.2^*/*~1.9~ should be read the following way:
+> **Size** (2): Nominal diameter or size of the fastener.
+> **Superscript** (2.2): Printed hole diameter for pass-trough holes
+> **Subscript** (1.9): Printed hole diameter for threaded, unmodelled holes. If the feature is not threaded, only the superscript will appear. 
+{.is-info}
+
+
 | Size | Socket Head | DIN 912 | ISO 4762 | Button Head | DIN 7380 | ISO 7380 | Flat Head | DIN 7991 | ISO 10642 |
 | | ![screenshot_20251028_174458.png](/screenshot_20251028_174458.png) ||| ![screenshot_20251028_174518.png](/screenshot_20251028_174518.png) ||| ![screenshot_20251028_174506.png](/screenshot_20251028_174506.png)  |||
 |  | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) |  
 | -- |
-| **M2** | 2 | 3.8 | 2 | 2 |   |   | 2 | 4 | 1.2 |
+| **M2** | 2^2.2^*/*~1.9~ | 3.8 | 2 | 2 |   |   | 2 | 4 | 1.2 |
 | **M2.5** | 2.5 |   |   |  2.5 |  |  | 2.5 |  |  | 
 | **M3** | 3 | 5.5 | 3 | 3 | 5.7 | 1.7 | 3 | 6 | 1.7 |
 | **M4** | 4 | 7 | 4 | 4 | 7.6 | 2.2 | 4 | 8 | 2.3 |
@@ -28,7 +37,6 @@ dateCreated: 2024-11-13T00:40:19.306Z
 > * Voron inserts.
 > * MakerbeamXL Nuts.
 > * Printed dimensions for all of the above. 
-{.is-warning}
 
 
 ## Choosing a fastener style
