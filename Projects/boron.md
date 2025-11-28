@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-26T01:12:31.543Z
+date: 2025-11-28T01:30:30.460Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -55,12 +55,13 @@ The panel is phisically slightly smaller than the available area to acount for m
 |^^| M3 BHCS (DIN 7380) 16mm | 30 | 2x for utility panel<br>12x for feet<br>16x for internal feet | ^^ |
 |^^| M3 BHCS (DIN 7380) 10mm | 10 | 6x for PSU mount<br> 4x for shelly mount<br> | ^^ |
 |^^| M3 BHCS (DIN 7380) 40mm | 3 | 3x for utility panel | ^^ |
-|^^| M3 FHCS (DIN 7991) 8mm | 18(98*) | 8x for top led<br>10x for utility panel<br>80x for modular channels | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/senkkopf-din-7991/din-7991-edelstahl-a2/din-7991-a2-m3/din-7991-a2-m3x8) |
+|^^| M3 FHCS (DIN 7991) 8mm | 34(114*) | 8x for top led<br>10x for utility panel<br>16x for top corners<br>80x for modular channels | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/senkkopf-din-7991/din-7991-edelstahl-a2/din-7991-a2-m3) |
+|^^| M3 FHCS (DIN 7991) 4mm | 4 | 4x for top corners<br>This part is aesthetic and optional | ^^ |
 |^^| M4 SHCS (DIN 912) 16mm | 64 | 64x (8 per corner, 8 corners) | [Screwsandmore.de](https://www.screwsandmore.de/sortiment/schrauben-und-bolzen/innensechskantschrauben/zylinderkopf-din-912/din-912-edelstahl-a2/din-912-a2-m4/din-912-a2-m4x16)
-|^^| Makerbeam T-Nut XL | 27 | 16x for internal feet<br>8x for feet<br>3x for utility panel | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
+|^^| Makerbeam T-Nut XL | 43 | 16x for internal feet<br>8x for feet<br>3x for utility panel | [Makerbeam](https://www.makerbeam.com/t-slot-nuts-for-makerbeamxl-50p.html) |
 | Panels |  Painted polycarbonate sheets<br>477mm x 477mm<br> 3mm thick | 5 | Use your local supplier of panels. Paint them with your logo or graphics. | [headprint.ro](https://www.headprint.ro/print-plexiglas) |
 
-> `*` For M3 FHCS (DIN 7991) 8mm screws, normally 18 are required. If you want to go the Alternate (modular) LED channels, 80 more screws will be required to assemble channels. 
+> `*` For M3 FHCS (DIN 7991) 8mm screws, normally 34 are required. If you want to go the Alternate (modular) LED channels, 80 more screws will be required to assemble channels. 
 {.is-info}
 
 
@@ -84,6 +85,7 @@ For the external and internal feet, we recommend at least 5 perimeters to ensure
 | ^^ | `BottomCrossbar.stl` | 1 | ^^ |
 | ^^ | `Corner.stl` | 8 | |
 | ^^ | `TopBar.stl` | 4 | |
+| ^^ | `TopCorner.stl` | 4 | |
 | Electronics | `ShellyBase.stl` | 1 | |
 | ^^ | `ShellyStrap.stl` | 1 | |
 | ^^ | `UtilityPanel.stl` | 1 | |
@@ -173,8 +175,9 @@ Assemble the frame using 16x 8mm M3 BHCS. Use a flat surface to ensure the frame
 When assembling the bttom face, preload the following Makerbeam XL Nuts:
  * 2 nuts on **each** extrusion on the bottom side
  * 4 nuts on **each** extrusion on the inside of the cube. On one side (that will be the back side) preload 7 nuts. 
+ * 4 nuts on **each** extrusion on the top of the cube, all on the top side.
  
-A total of 27 nuts must be preloaded. 
+A total of 43 nuts must be preloaded. 
  
 | ![screenshot_20251029_024344.png](/screenshot_20251029_024344.png) | ![screenshot_20251029_025219.png](/screenshot_20251029_025219.png) |
 | -- | -- |
@@ -222,6 +225,13 @@ Afterwards, mount the top face LED channel using 4x 8mm M3 FHCS. These screws wi
 The LED structure is now ready for mounting inside the main frame. Use 16x 16mm M4 SHCS.
 
 | ![screenshot_20251029_040306.png](/screenshot_20251029_040306.png) | ![screenshot_20251029_040338.png](/screenshot_20251029_040338.png) |
+| -- | -- |
+
+### Top corners
+
+Secure the top corners using 4x 8mm M3 FHCS (for each corner) and the MakerbeamXL nuts preloaded earlier. The 4mm M3 FHCS screws only onto the plastic part and is decorative.
+
+| ![screenshot_20251128_032154.png](/screenshot_20251128_032154.png) | ![screenshot_20251128_032121.png](/screenshot_20251128_032121.png) |
 | -- | -- |
 
 ## Electronics
