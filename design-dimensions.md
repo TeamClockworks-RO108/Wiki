@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-26T02:00:45.228Z
+date: 2025-11-28T02:35:40.898Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -21,6 +21,15 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | **M6** | 6 | 10 | 6 | 6 | 10.5 | 3.3 | 6 | 12 | 3.3 |
 | **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
 | Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
+
+> ### Things to add in the future
+> * M2, M2,5, M3, M4, M5, M6, M8 Nuts and Nylocks.
+> * M3, M4 square Nuts (find ISO).
+> * Voron inserts.
+> * MakerbeamXL Nuts.
+> * Printed dimensions for all of the above. 
+{.is-warning}
+
 
 ## Choosing a fastener style
 
