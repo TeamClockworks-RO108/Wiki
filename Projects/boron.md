@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-28T02:16:52.442Z
+date: 2025-11-28T03:01:00.907Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -339,11 +339,13 @@ This screw threads inside a brass insert, so don't forget to install that too.
 
 ## You are done
 
-> Congratz! Shoot us a mail at contact@teamclockworks.ro with photos of your build! We'd love to do a gallery here!
+> Congratz! Shoot us a mail at contact@teamclockworks.ro with photos of your build! We'd love to do a gallery here and issue you a serial number!
 {.is-success}
 
 # Gallery
 
-![whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg](/whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg)
+| B.001 | ![whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg](/whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg) |
+| The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.  | ^^ |
+|:-- |
 
 
