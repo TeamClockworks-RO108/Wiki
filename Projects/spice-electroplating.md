@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-11-28T04:20:41.717Z
+date: 2025-11-28T04:22:15.633Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -36,7 +36,7 @@ Because acetone dries quickly at room temperature, it is difficult to obtain a s
 
 ## Electroplating Bath
 
-To deposit copper onto conductive paste layer, we are using the electrolysis of copper (II) sulfate (CuSO~4~), which is readily available for agricultural use. A current-controller power source is ideal because it will alow us to control the rate of deposition (mA/mm^2^) regardless of electrode contact resistance ce or other changing parameters.
+To deposit copper onto conductive paste layer, we are using the electrolysis of copper (II) sulfate (CuSO~4~), which is readily available for agricultural use. A current-controller power source is ideal because it will alow us to control the rate of deposition (mA/mm^2^) regardless of electrode contact resistance or other changing parameters.
 
 It is very important for the metal anode contacts (wires, clips) to not come into contact with the electrolysis solution. Because of the higher resistance of the graphite paste (in comparison with pure copper or steel), failing to do so will leak most of the current trough the metal contact itself, bringing productive deposition of copper to a halt. To prevent this situation, we are routing anode contacts to the other side of the board using buried screws underneath the conductive paste. The board is partially submerged in the solution.
 
