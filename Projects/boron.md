@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-28T01:30:30.460Z
+date: 2025-11-28T02:16:52.442Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -341,5 +341,9 @@ This screw threads inside a brass insert, so don't forget to install that too.
 
 > Congratz! Shoot us a mail at contact@teamclockworks.ro with photos of your build! We'd love to do a gallery here!
 {.is-success}
+
+# Gallery
+
+![whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg](/whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg)
 
 
