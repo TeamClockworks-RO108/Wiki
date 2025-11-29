@@ -2,7 +2,7 @@
 title: Voron Mods
 description: 
 published: true
-date: 2025-11-29T18:20:09.736Z
+date: 2025-11-29T18:21:27.740Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
@@ -31,6 +31,8 @@ We have found that cheap MG90/SG90 servo motors can die pretty fast from bed hea
 This model uses a small GT2 belt as a toothed rack to move the blobifier's tray back and forth. To make room for a stepper motor, the blobifier assembly is risen by 2mm. This should not be an issue on most setups, but depending how your bottom panel sits, it might collide with the shaker arm. To solve this, a redesigned shaker arm is provided.
 
 Extensive modidications need to be done to the blobifier configurations to a stepper motor in place of a servo. Steppers need to be homes to be accurately moved. For this purpose, tried to use sensorless homing but found it too unreliable on pancake steppers on out TMC2130 driver. Adding a second microswitch to the blobifier body would be a nice solution, but would would require extra wiring. In the end, we have settles to ram the tray against the mechanical limit, and because of the low stepper current, there is little vibration produced. 
+
+We reccomend to browse the assembly and configuration instructions on the Github PR tree.
 
 > `TODO` Make some proper renders from CAD. 
 {.is-info}
