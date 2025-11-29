@@ -2,11 +2,13 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2025-10-13T02:06:48.849Z
+date: 2025-11-29T17:03:20.929Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
 ---
+
+![license](https://img.shields.io/github/license/TeamClockworks-RO108/PlanetaryStarspinner?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/TeamClockworks-RO108/PlanetaryStarspinner?style=flat-square) ![status](https://img.shields.io/badge/status-working-green?style=flat-square) ![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/PlanetaryStarspinner?style=flat-square) [![blazingly fast](https://blazingly.fast/api/badge.svg?repo=TeamClockworks-RO108%2FPlanetaryStarspinner)](https://blazingly.fast) 
 
 # Description
 Planetary Starspinner is a project that allows to modify the 84 RPM goBILDA Yellow Jacket Planetary motor to create either 4200 RPM or 8000 RPM. The entire conversion happens inside the planetary housing, allowing you to mount the motor as you would with a standard goBILDA motor.
