@@ -2,7 +2,7 @@
 title: Voron Mods
 description: 
 published: true
-date: 2025-11-29T17:45:53.282Z
+date: 2025-11-29T18:20:09.736Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
@@ -22,7 +22,22 @@ The cutter is much faster and silent after this change :).
 | -- | -- |
 
 
+# Stepper Blobifier
 
+[![Static Badge](https://img.shields.io/badge/github-pr%20open-brightgreen?style=for-the-badge&logo=git&logoColor=white&logoSize=auto)](https://github.com/Carrot-collective/Blobifier/pull/49) [![Static Badge](https://img.shields.io/badge/printables-click-orange?style=for-the-badge&logo=printables&logoColor=white&logoSize=auto)](https://www.printables.com/model/1484215-stepper-blobifier)
+
+We have found that cheap MG90/SG90 servo motors can die pretty fast from bed heat, therefore we developed the option to use a pancake stepper motor instead.
+
+This model uses a small GT2 belt as a toothed rack to move the blobifier's tray back and forth. To make room for a stepper motor, the blobifier assembly is risen by 2mm. This should not be an issue on most setups, but depending how your bottom panel sits, it might collide with the shaker arm. To solve this, a redesigned shaker arm is provided.
+
+Extensive modidications need to be done to the blobifier configurations to a stepper motor in place of a servo. Steppers need to be homes to be accurately moved. For this purpose, tried to use sensorless homing but found it too unreliable on pancake steppers on out TMC2130 driver. Adding a second microswitch to the blobifier body would be a nice solution, but would would require extra wiring. In the end, we have settles to ram the tray against the mechanical limit, and because of the low stepper current, there is little vibration produced. 
+
+> `TODO` Make some proper renders from CAD. 
+{.is-info}
+
+
+| ![06.jpg](/06.jpg) |
+| -- |
 
 
 # Voron 0 Raspberry Pi Camera Mount (upside down)
