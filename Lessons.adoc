@@ -1,0 +1,10 @@
+1. intake ul nu apuca asa de bine bilele
+2. uneori dupa ce am luat bila 2 iese din intake cand ma misc pe teren
+3. cand iau a treia bila pe langa faptul ca s obligat sa intru in perete inainte sa pivotez, mai mor conexiunile/intra overload gripperul si nu se inchide bine/la timp
+4. toti timpii de autonom tunati, 14V MINIM TOATE BATERIILE PE CARE SE FACE AUTONOM. Sa se faca mufele de incarcator. Se poate ajunge la 12 bile cel mai probabil, daca se tuneaza totul bine. @ioana @Adrian Roșu atentie mare la toti timpii morti/in plus. + la path urile pe care le ia robotul si in ce mod. 
+5. placi protectii hub uri? aparatori daca se poate pe undeva? Cand se joaca defense e foarte greu sa scorez in special daca se face defense bun pt ca shooter ul este fix si sunt impins rau. avem ce face? anti defense measure? + nu prea pot sa fac defense ca nu prea am cu ce.
+6. refacut cablu fly wheel? a zis @Alex Dedu . s a deconectat intr un meci
+7. pivotul intra in overload or whatever si 4 secunde nu ma lasa sa pivotez
+8. e foarte mult de optimizat. fiecare pauza intre lansat bile. fiecare path pe care l ia chiar si putin prost/ineficient. fiecare stat lipit de perete 1 secunda pana sa inchida si sa pivoteze.
+9. +3 placi pentru deschidere gate.
+10. roti gripforce
