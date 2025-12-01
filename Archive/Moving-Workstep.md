@@ -2,7 +2,7 @@
 title: Moving Workstep
 description: 
 published: true
-date: 2025-12-01T19:57:34.378Z
+date: 2025-12-01T20:39:09.589Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-01T19:54:33.284Z
@@ -89,7 +89,7 @@ Other - 1 box or to the trash
 ---
 
 # Unpacking
-First, we build the field and place it where we thing it's best. Then, we make sure that we have enough plugs to charge everything. After that, we put the printers and some it setup so we can start printing.
+First, we build the field and place it where we think it's best. Then, we make sure that we have enough plugs to charge everything. After that, we put the printers and some it setup so we can start printing.
 
 Then, we start to bring our most important resources (robot and printer stuff) and we think how to bring the workbanches so we can place everything in them. 
 
