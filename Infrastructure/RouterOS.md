@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2025-12-02T22:15:28.882Z
+date: 2025-12-02T22:15:45.454Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -41,7 +41,7 @@ Can happen that pulumi loses connection details and resources need to be wiped e
 
 
 ```bash
-PULUMI_CONFIG_PASSPHRASE=...
+export PULUMI_CONFIG_PASSPHRASE=...
 pulumi stack --show-urns | grep URN | grep A- | awk '{print $3}' | xargs -I {} pulumi state delete {}
 ```
 
