@@ -2,7 +2,7 @@
 title: Moving Workstep
 description: 
 published: true
-date: 2025-12-03T13:30:30.734Z
+date: 2025-12-03T13:32:39.701Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-01T19:54:33.284Z
@@ -74,6 +74,7 @@ Other - 1 box or to the trash
 | ^^ | Medkit | |
 | ^^ | Tetrx, rev and other build materials | | 
 | Third | 
+| ^^ | Boron | |
 | ^^ | Freeseboxes | PLEASE empty |
 | ^^ | Bins | PLEASE empty | 
 | ^^ | Other | What else remains | 
