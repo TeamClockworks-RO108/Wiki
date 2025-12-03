@@ -2,7 +2,7 @@
 title: Moving Workstep
 description: 
 published: true
-date: 2025-12-01T20:39:09.589Z
+date: 2025-12-03T13:09:57.819Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-01T19:54:33.284Z
@@ -58,7 +58,7 @@ Other - 1 box or to the trash
 1	- Field tiles
 1	- Rest of the field
 1	- Tools
-1	- Filaments 
+1	- Filaments (14 rolls)
 1	- Balls
 1	- Printer electronics
 1	- FTC electronics
