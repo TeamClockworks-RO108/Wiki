@@ -2,7 +2,7 @@
 title: Moving Workstep
 description: 
 published: true
-date: 2025-12-03T13:09:57.819Z
+date: 2025-12-03T13:30:30.734Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-01T19:54:33.284Z
@@ -49,46 +49,45 @@ Other - 1 box or to the trash
 ---
 
 ## Order of Transport
-### Placement of urgency - Objects (1 = most urgent)
 
-1 -	Robot
-1	- Printers 
-1	- Robot controlling system
-1	- Field Blue
-1	- Field tiles
-1	- Rest of the field
-1	- Tools
-1	- Filaments (14 rolls)
-1	- Balls
-1	- Printer electronics
-1	- FTC electronics
-1 - IT setup
-2	- Workbanches
-2	- Servos
-2	- DC motors
-2	- Cables,chargers
-2	- Screws, nuts and bearing
-2	- Gobilda small hardware
-2	- Gobilda big hardware + misumi sliders
-2	- Big Tools
-3	- Chemicals
-3	- Extra electronics
-3	- Medkit
-3	- Trophies
-3	- Freezeboxes
-3	- Tetrix, rev, miscellaneous
-3	- Desk
-3	- Printers' desks
-3	- Vaccum
-3	- Plexiglass
-3	- Other
-3	- PR Stuff
-3	- Old game elements
-3	- Bins
+| Order | Item | Comments |
+| --- | --- | --- |
+| First | Robot |  |
+| ^^ | Vacuum |
+| ^^ | Medina, Iron, Dueling |  |
+| ^^ | Desk, rollbox, include black printer parts box | |
+| ^^ | Network, PC, Monitor, mousepad, keyboard, mouses, pc electronics | |
+| ^^ | Driver hubs, controllers, top rollbox content, power plugs, Nous A8T plugs |  |
+| ^^ | 2x Field tiles box, Field red unassembled, Field blue assembled, balls in original box | |
+| ^^ | All remaining filament  | |
+| Second | Electronics drawer all in one box/bag | |
+| ^^ | Workbenches (DISSASSEMBLE!!) | | 
+| ^^ | Electronics box | |
+| ^^ | Chemicals | |
+| ^^ | DC Motors | |
+| ^^ | Servos | |
+| ^^ | Hand Tools (make a box) | |
+| ^^ | Gobilda big rev box | |
+| ^^ | Gobilda small hardware | |
+| ^^ | Hardware and screws drawer | |
+| ^^ | Power tools | |
+| ^^ | Medkit | |
+| ^^ | Tetrx, rev and other build materials | | 
+| Third | 
+| ^^ | Freeseboxes | PLEASE empty |
+| ^^ | Bins | PLEASE empty | 
+| ^^ | Other | What else remains | 
+| SINCAI | Trophies | |
+| ^^ | PR Stuff | |
+| ^^ | Plexiglass | | 
+| ^^ | Old game elements and old field elements | |
 
 ---
 
 # Unpacking
+
+First we build the desks and workbenches
+
 First, we build the field and place it where we think it's best. Then, we make sure that we have enough plugs to charge everything. After that, we put the printers and some it setup so we can start printing.
 
 Then, we start to bring our most important resources (robot and printer stuff) and we think how to bring the workbanches so we can place everything in them. 
