@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T06:09:24.216Z
+date: 2025-12-09T06:34:06.195Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -18,7 +18,7 @@ To embed electrical conductors in a part, we will use a electrolysis bath to dep
 
 The process is subdivided further into the electrolysis bath in two main parts: strike bath and layer thickening. 
 
-**Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer.
+**Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer. At this step, we're using a low current (around 200mA)
 
 The target is partially submerged in an initial solution that only contains copper sulfate and distilled water, allowing for local copper hydroxide deposition processes to take place on the top layer of the electrical trace.
 ![img-20251128-wa0026.jpg](/img-20251128-wa0026.jpg)
@@ -30,8 +30,13 @@ As it can be seen in the picture, there is a local hydroxide layer build on top 
 
 ## Evaluating and maintaining normal copper deposition rate
 
-2Te quality of the deposited copper depends on a few variables: current, quantity/existence of acid in the chemical bath and copper replacement rate, which remains almost constant throughout most of the plating process.
+The quality of the deposited copper depends on a few variables: current, quantity/existence of acid in the chemical bath and copper replacement rate, which remains almost constant throughout most of the plating process.
 
+For our experiment, we have used a sensitive power source, capable of reading mV changes in the solution bath. After the strike bath is finished and we start adding the acid, we can start increasing the current to about 300-500 mA. it's important we monitor the voltage rate of change. Rapid increases in voltage corresponding to hydroxide layer formation. A slow drop in voltage means the process is functioning and copper gets deposited correctly. As we have mentioned, resistance drops exponentially at this stage, final voltage readings corresponding to about a 0.1V drop. 
+
+it's recommended we use a heater to keep the temperature constant in the solution bath. higher temperatures accelerate the process at low risks (compared to increasing the current). Also, they keep the resistance of the copper bath virtually constant (varying mostly only due to temperature changes which can be caused by the ongoing chemical reactions).
+
+Furthermore, voltage changes are a nice way of evaluating and approximating voltage deposition, finding the appropriate time at which to physically check layer thickness.
 
 ## Electrode paste deposition
 
