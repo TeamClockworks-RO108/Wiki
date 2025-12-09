@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T05:34:25.086Z
+date: 2025-12-09T05:38:27.098Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -15,6 +15,12 @@ dateCreated: 2025-11-28T04:20:41.717Z
 # Process
 
 To embed electrical conductors in a part, we will use a electrolysis bath to deposit copper metal where it is needed. To achieve this, traces need to be painted using electrically conductive paint (or paste) in order to become an electrode.
+
+The process is subdivided further into the electrolysis bath in two main parts: strike bath and layer thickening. 
+
+**Strike bath** is the first step, being composed of an aggressive plating which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer.
+
+
 
 ## Electrode paste deposition
 
