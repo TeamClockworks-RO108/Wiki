@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:58:22.942Z
+date: 2025-12-09T08:04:36.559Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -48,7 +48,17 @@ We also researched optimal drying conditions to evaporate the solvent. Tests sho
 ![screenshot_20251209_095210_chrome.jpg](/screenshot_20251209_095210_chrome.jpg)
 ***we have also tested different binder agents, blue for ABS, yellow-PLA, green-ASA and red-HIPS (abs also held better adherance)  ***
 
+| plastic folosit | rezistenta (dupa o ora) | rezistenta (dupa o ora jumate) | Schimbare |
 
+| --- | --- | --- | --- |
+
+| ABS | 42.8g | 36.63g  | -16% | 
+
+| ASA | 1h39m | 1h48m  | + |
+
+| PLA | 1h4m | 1h16m | + |
+
+| HIPS | 31m | 19m | - |
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
 
