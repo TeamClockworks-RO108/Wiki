@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:05:05.451Z
+date: 2025-12-09T07:24:29.526Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -75,4 +75,16 @@ The rate of deposition is controlled by changing the outgoing current density tr
  ## Proposed circuit
  
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
+  
+  ![20251209_090724.jpg](/20251209_090724.jpg)
+  ![f5cwheljgnwufot.png](/f5cwheljgnwufot.png)
+  ***diagram of the circuit***
+  
+  With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.
+  The resistance of the traces sits at around 15 mOhms, better than industrial grade traces (20-30 mOhms).
+  
+  We have also tested different substrates, including petg, abs and pla. what we have discovered is that abs has the best overall adherence. Sanding down the graphite paint further makes fir a more uniform copper deposition and higher quality traces.
+  
+For our main project, we have fabricated a 555 timer blinker circuit, 
+  
 
