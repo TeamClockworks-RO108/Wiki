@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-11-28T04:22:15.633Z
+date: 2025-12-09T05:34:07.165Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -10,7 +10,7 @@ dateCreated: 2025-11-28T04:20:41.717Z
 
 # Description
 
-**Spice** is our attempt at embedding electrically conductive elements on 3D printed parts. We envisioned a two-step process that can be executed at a relatively low cost using commodity tooling.
+**Sppice** (**S**special **P**late-on-**P**rint **I**on **C**ooper **E**missions) is our attempt at embedding electrically conductive elements on 3D printed parts. We envisioned a two-step process that can be executed at a relatively low cost using commodity tooling.
 
 # Process
 
