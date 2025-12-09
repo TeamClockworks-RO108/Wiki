@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T06:50:47.714Z
+date: 2025-12-09T06:58:16.365Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -66,4 +66,9 @@ To deposit copper onto conductive paste layer, we are using the electrolysis of 
 
 It is very important for the metal anode contacts (wires, clips) to not come into contact with the electrolysis solution. Because of the higher resistance of the graphite paste (in comparison with pure copper or steel), failing to do so will leak most of the current trough the metal contact itself, bringing productive deposition of copper to a halt. To prevent this situation, we are routing anode contacts to the other side of the board using buried screws underneath the conductive paste. The board is partially submerged in the solution.
 
-The rate of deposition is controlled by changing the outgoing current density trough the boundary of the paste. At higher currents, the Cu^2+^ ions are not replenished fast enough to carry the current, therefore water molecules are broken down into H^2^ and OH^-^. Hydroxide ions lead to the formation of unwanted Cu(OH)~2~, which can be spotted as green depositions around high-current areas. This phenomenon can be mitigated by adding a small amount of sulphuric acid (70g/L) which serves to oxidize the Cu(OH)~2~ back into CuSO~4~. The sulphuric acid also helps reduce the rate of Cu(OH)~2~ production by aiding with current carrying. 
+The rate of deposition is controlled by changing the outgoing current density trough the boundary of the paste. At higher currents, the Cu^2+^ ions are not replenished fast enough to carry the current, therefore water molecules are broken down into H^2^ and OH^-^. Hydroxide ions lead to the formation of unwanted Cu(OH)~2~, which can be spotted as green depositions around high-current areas. This phenomenon can be mitigated by adding a small amount of sulphuric acid (70g/L) which serves to oxidize the Cu(OH)~2~ back into CuSO~4~. The sulphuric acid also helps reduce the rate of Cu(OH)~2~ production by aiding with current carrying.
+
+## Evaluating layer thickness
+
+ It's important that we place the screws sitting on top of the graphite layer, the resistance of the traces being the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked.
+
