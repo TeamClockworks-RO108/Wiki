@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T05:40:23.532Z
+date: 2025-12-09T06:06:08.684Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -18,8 +18,15 @@ To embed electrical conductors in a part, we will use a electrolysis bath to dep
 
 The process is subdivided further into the electrolysis bath in two main parts: strike bath and layer thickening. 
 
-**Strike bath** is the first step, being composed of an aggressive plating which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer.
+**Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer.
 
+The target is partially submerged in an initial solution that only contains copper sulfate and distilled water, allowing for local copper hydroxide deposition processes to take place on the top layer of the electrical trace.
+![img-20251128-wa0026.jpg](/img-20251128-wa0026.jpg)
+***diagram showing a profile view of the plating process during strike bath***
+
+As it can be seen in the picture, there is a local hydroxide layer build on top of a thin, conductive copper layer. this helps speed up the copper deposition process (electrons being virtually pushed to the edge), allowing for uniform plating and excluding the possibility of thickness gradients being found in the conductive layer.
+
+**Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, eating away any deposited copper hydroxide, revealing the conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially and allowing for low resistance, electronics grade traces to be formed. the acid also allows for higher currents to be used, breaking down any OH bonds.
 
 
 ## Electrode paste deposition
