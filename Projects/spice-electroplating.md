@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T06:43:19.540Z
+date: 2025-12-09T06:50:47.714Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -55,6 +55,10 @@ Overall electrical resistance can be greatly affected by the nature of the conne
  * A screw embedded inside the substrate, underneath the paste layer can give a few square mm's of good contact. Resistance is between 0 and 5 Ohms. 
  
 Because acetone dries quickly at room temperature, it is difficult to obtain a smooth application of the paste. To combat this, we have designed insets where paste is deposited. This allows for the plastic part to be lapped using sandpaper and also creates a smoother surface finish for the deposited copper.
+
+## Preparing the target before plating
+
+It's important that the surface of the target traces are cleaned of any grease, volatile substances that otherwise would impact adherence etc. This degreasing process is normally done using highly toxic industrial grade cyanides. We have used isopropyl alcohol to clean most of the traces, a better and safer approach (which we will also use in the future) using atmospheric plasma (cold plasma) to deep clean the entire surface of the target.
 
 ## Electroplating Bath
 
