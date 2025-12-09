@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T08:14:06.785Z
+date: 2025-12-09T08:14:39.630Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -62,7 +62,7 @@ We also researched optimal drying conditions to evaporate the solvent. Tests sho
 
 | Metrica | Original (100%) | Optimizat (57%) | Schimbare |
 
-| --- | --- | --- | --- |
+- 
 
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
