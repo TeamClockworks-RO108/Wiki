@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T08:12:40.004Z
+date: 2025-12-09T08:13:22.855Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -59,6 +59,18 @@ We also researched optimal drying conditions to evaporate the solvent. Tests sho
 | PLA | 1300 | 1170| -10% |
 
 | HIPS | 1350 | 1190 | -12% |
+
+| Metrica | Original (100%) | Optimizat (57%) | Schimbare |
+
+| --- | --- | --- | --- |
+
+| Greutate | 42.8g | 36.63g  | -16% | 
+
+| Timp Total | 1h39m | 1h48m  | + |
+
+| Timp Perimetre | 1h4m | 1h16m | + |
+
+| Timp Infill | 31m | 19m | - |
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
 
