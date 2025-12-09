@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T08:14:55.498Z
+date: 2025-12-09T08:38:23.117Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -27,6 +27,8 @@ The target is partially submerged in an initial solution that only contains copp
 As it can be seen in the picture, there is a local hydroxide layer built on top of a thin, conductive copper layer. this helps speed up the deposition process (electrons being virtually pushed to the edge), allowing for uniform plating and excluding the possibility of thickness gradients being found in the conductive layer.
 
 **Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, eating away any deposited copper hydroxide, revealing the conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially and allowing for low resistance, electronics grade traces to be formed. the acid also allows for higher currents to be used, breaking down any OH bonds.
+
+![img-20251209-wa0001.jpg](/img-20251209-wa0001.jpg)
 
 ## Evaluating and maintaining normal copper deposition rate
 
