@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:54:57.520Z
+date: 2025-12-09T07:58:22.942Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -46,6 +46,9 @@ To mitigate these effects, we added a binder to our paste. We tested three aceto
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
 ![screenshot_20251209_095210_chrome.jpg](/screenshot_20251209_095210_chrome.jpg)
+***we have also tested different binder agents, blue for ABS, yellow-PLA, green-ASA and red-HIPS (abs also held better adherance)  ***
+
+
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
 
