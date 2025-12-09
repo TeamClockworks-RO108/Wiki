@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:51:29.528Z
+date: 2025-12-09T07:54:28.867Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -45,7 +45,7 @@ To create an electrically conductive solid layer, we started off using very fine
 To mitigate these effects, we added a binder to our paste. We tested three acetone-soluble polymers and settled on ABS, which had the best properties for our project. 
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
-[8c0a0408-b419-4ab6-92cc-7d02363a27b6](/8c0a0408-b419-4ab6-92cc-7d02363a27b6)
+![screenshot_20251209_095210_chrome.jpg](/screenshot_20251209_095210_chrome.jpg)
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
 
