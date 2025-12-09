@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T06:34:56.779Z
+date: 2025-12-09T06:37:12.281Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -18,7 +18,7 @@ To embed electrical conductors in a part, we will use a electrolysis bath to dep
 
 The process is subdivided further into the electrolysis bath in two main parts: strike bath and layer thickening. 
 
-**Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer. At this step, we're using a low current (around 200mA)
+**Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer. At this stage, we're using a low current (around 200mA).
 
 The target is partially submerged in an initial solution that only contains copper sulfate and distilled water, allowing for local copper hydroxide deposition processes to take place on the top layer of the electrical trace.
 ![img-20251128-wa0026.jpg](/img-20251128-wa0026.jpg)
