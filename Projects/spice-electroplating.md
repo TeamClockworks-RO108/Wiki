@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:24:29.526Z
+date: 2025-12-09T07:34:36.218Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -85,6 +85,12 @@ The rate of deposition is controlled by changing the outgoing current density tr
   
   We have also tested different substrates, including petg, abs and pla. what we have discovered is that abs has the best overall adherence. Sanding down the graphite paint further makes fir a more uniform copper deposition and higher quality traces.
   
-For our main project, we have fabricated a 555 timer blinker circuit, 
+For our main project, we have fabricated a 555 timer blinker circuit.
+
+![blinking-led-using-555-timer.jpg](/blinking-led-using-555-timer.jpg)
+  ***diagram of the Proposed circuit***
   
+  The purpose of the circuit is to periodically send logical signals to an led, setting it high and low alternatively. We have used fine abs graphite paste for better adherence which we then sanded down for a more uniform result. We have also slowed down the plating process to 100 mA in strike bath and 300 mA in normal mode. 
+  
+  The results were superior, implementing more contact points (screws) which led to a more uniform  deposition.
 
