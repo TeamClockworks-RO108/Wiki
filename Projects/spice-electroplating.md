@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T08:04:36.559Z
+date: 2025-12-09T08:12:40.004Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -46,19 +46,19 @@ To mitigate these effects, we added a binder to our paste. We tested three aceto
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
 ![screenshot_20251209_095210_chrome.jpg](/screenshot_20251209_095210_chrome.jpg)
-***we have also tested different binder agents, blue for ABS, yellow-PLA, green-ASA and red-HIPS (abs also held better adherance)  ***
+***we have also tested different binder agents: yellow-PLA, HIPS-blue, green-ASA and red-ABS(abs also held better adherance)  ***
 
-| plastic folosit | rezistenta (dupa o ora) | rezistenta (dupa o ora jumate) | Schimbare |
+| plastic folosit | rezistenta (dupa o ora) | rezistenta (dupa o ora jumate) | schimbare |
 
 | --- | --- | --- | --- |
 
-| ABS | 42.8g | 36.63g  | -16% | 
+| ABS | 900 | 750  | -16.7% | 
 
-| ASA | 1h39m | 1h48m  | + |
+| ASA | 1150 | 1100 | -4.4% |
 
-| PLA | 1h4m | 1h16m | + |
+| PLA | 1300 | 1170| -10% |
 
-| HIPS | 31m | 19m | - |
+| HIPS | 1350 | 1190 | -12% |
 
 Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
 
