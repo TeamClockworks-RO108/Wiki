@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T07:02:42.776Z
+date: 2025-12-09T07:05:05.451Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -71,4 +71,8 @@ The rate of deposition is controlled by changing the outgoing current density tr
 ## Evaluating layer thickness
 
  It's important that we place the screws sitting on top of the graphite layer, the resistance of the traces being the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked. At this stage, the voltage starts decreasing at a moderate rate, indicating appropriate layer formation.
+ 
+ ## Proposed circuit
+ 
+  On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
 
