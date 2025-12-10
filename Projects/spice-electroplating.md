@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-10T16:25:06.678Z
+date: 2025-12-10T16:37:11.920Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -46,6 +46,8 @@ Furthermore, voltage changes are a nice way of evaluating and approximating volt
 
 To create an electrically conductive solid layer, we started off using very fine graphite powder and a volatile solvent (acetone). This approach yielded good deposition uniformity and low electrical resistance, but the layer is mechanically very fragile. The graphite layer might diffuse inside the electrolyte bath and the deposited copper will peel off very easily.
 
+
+
 To mitigate these effects, we added a binder to our paste. We tested three acetone-soluble polymers and settled on ABS, which had the best properties for our project. 
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
@@ -81,7 +83,7 @@ Because acetone dries quickly at room temperature, it is difficult to obtain a s
 
 ## Preparing the target before plating
 
-It's important that the surface of the target traces are cleaned of any grease, volatile substances that otherwise would impact adherence etc. This degreasing process is normally done using highly toxic industrial grade cyanides. We have used isopropyl alcohol to clean most of the traces, a better and safer approach (which we will also use in the future) using atmospheric plasma (cold plasma) to deep clean the entire surface of the target.
+It's important that the surface of the target traces are cleaned of any grease, volatile substances that otherwise would impact adherence. This degreasing process is normally done using highly toxic industrial grade cyanides. We have used isopropyl alcohol to clean most of the traces, a better and safer approach (which we will also use in the future) using atmospheric plasma (cold plasma) to deep clean the entire surface of the target.
 
 ## Electroplating Bath
 
@@ -93,7 +95,7 @@ The rate of deposition is controlled by changing the outgoing current density tr
 
 ## Evaluating layer thickness
 
- It's important that we place the screws sitting on top of the graphite layer, the resistance of the traces being the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked. At this stage, the voltage starts decreasing at a moderate rate, indicating appropriate layer formation.
+ It's important that the electrode has contact points on top of the paste, outside the solution bath, the resistance of the traces being thus the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked. At this stage, the voltage starts decreasing at a moderate rate, indicating appropriate layer formation.
  
  ## Proposed circuit
  
