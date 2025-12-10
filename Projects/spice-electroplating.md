@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-09T08:39:44.824Z
+date: 2025-12-10T16:16:10.717Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -36,9 +36,9 @@ As it can be seen in the picture, there is a local hydroxide layer built on top 
 
 The quality of the deposited copper depends on a few variables: current, quantity/existence of acid in the chemical bath and copper replacement rate, which remains almost constant throughout most of the plating process.
 
-For our experiment, we have used a sensitive power source, capable of reading mV changes in the solution bath. After the strike bath is finished and we start adding the acid, we can start increasing the current to about 300-500 mA. it's important we monitor the voltage rate of change. Rapid increases in voltage corresponding to hydroxide layer formation. A slow drop in voltage means the process is functioning and copper gets deposited correctly. As we have mentioned, resistance drops exponentially at this stage, final voltage readings corresponding to about a 0.1V drop. 
+For our experiment, we have used a sensitive power source, capable of reading mV changes in the solution bath. After the strike bath is finished and we start adding the acid, we can start increasing the current to about 300-500 mA. it's important we monitor the voltage rate of change, rapid increases in voltage corresponding to hydroxide layer formation. A slow drop in voltage means the process is functioning and copper gets deposited correctly. As we have mentioned, resistance drops exponentially at this stage, final voltage readings corresponding to about a 0.1V drop. 
 
-it's recommended we use a heater to keep the temperature constant in the solution bath. higher temperatures accelerate the process at low risks (compared to increasing the current). Also, they keep the resistance of the copper bath virtually constant (varying mostly only due to temperature changes which can be caused by the ongoing chemical reactions).
+it's recommended we use a heater to keep the temperature constant in the solution bath during most of the plating procedure. higher temperatures accelerate the process at low risks (compared to increasing the current). for our purposes, we have decided to keep the temperature constant at about 40 degrees celsius. Higher temperatures can affect the way the sulphuric acid interacts with the rest of the environment, 40C being set at an optimal value. Also, they keep the resistance of the copper bath virtually constant (varying mostly only due to temperature changes which can be caused by the ongoing chemical reactions).
 
 Furthermore, voltage changes are a nice way of evaluating and approximating voltage deposition, finding the appropriate time at which to physically check layer thickness.
 
