@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2025-12-10T16:37:11.920Z
+date: 2025-12-10T16:59:30.154Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -118,4 +118,7 @@ For our main project, we have fabricated a 555 timer blinker circuit.
   The purpose of the circuit is to periodically send logical signals to an led, setting it high and low alternatively. We have used fine abs graphite paste for better adherence which we then sanded down for a more uniform result. We have also slowed down the plating process to 100 mA in strike bath and 300 mA in normal mode. 
   
   The results were superior, implementing more contact points (screws) which led to a more uniform  deposition.
+  
+# Future development
 
+  Future development will also encompass the transfer of this project from an electro-chemical approach to a more independent physical process. We are going to implement plasma sputtering at atmospheric pressure or near vacuum pressure to rapidly print and plate thick pure metal traces on custom 3d printed pcbs. If it works, it is going to drastically change the way custom pcbs are manufactured.
