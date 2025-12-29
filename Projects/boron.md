@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-11-28T03:10:53.572Z
+date: 2025-12-29T13:20:32.327Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -348,4 +348,9 @@ This screw threads inside a brass insert, so don't forget to install that too.
 | The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.  | ^^ |
 |:-- |
 
+
+
+![grafica_boron_final_(clock_-_voron).svg](/grafica_boron_final_(clock_-_voron).svg)
+
+![grafica_boron_final_(natie_prin_educatie).svg](/grafica_boron_final_(natie_prin_educatie).svg)
 
