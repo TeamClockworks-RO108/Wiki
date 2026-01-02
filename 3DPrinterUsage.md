@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2025-11-24T00:50:05.715Z
+date: 2026-01-02T21:02:34.657Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -143,3 +143,9 @@ Conversion between filament units:
  * 1 mm^3^ = 0.415 mm
 
 
+# Special maintenante
+
+## Palmyr ERCF servo horn
+
+If the loading of material starts behaving eratically and does not have enough grip, it is very possible that the servo horn is worn out.
+Print [this servo horn](https://github.com/moggieuk/ERCF-Springy/blob/main/Savox_Servo_Option/%5Ba%5D_Servo_Arm_Savox.stl).
