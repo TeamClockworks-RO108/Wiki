@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-02T21:02:34.657Z
+date: 2026-01-02T21:27:15.705Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -148,4 +148,4 @@ Conversion between filament units:
 ## Palmyr ERCF servo horn
 
 If the loading of material starts behaving eratically and does not have enough grip, it is very possible that the servo horn is worn out.
-Print [this servo horn](https://github.com/moggieuk/ERCF-Springy/blob/main/Savox_Servo_Option/%5Ba%5D_Servo_Arm_Savox.stl).
+Print [this servo horn](https://github.com/moggieuk/ERCF-Springy/blob/main/Savox_Servo_Option/%5Ba%5D_Servo_Arm_Savox.stl). The screw at the center is nonstandard, so make sure to not strip it and keep it safe during the repair. 
