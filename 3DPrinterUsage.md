@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-02T21:27:15.705Z
+date: 2026-01-06T01:17:47.399Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -91,6 +91,30 @@ We print PLA on the smooth sheet and PETG on the textured sheet.
 For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
 
 To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
+
+# Spool management
+
+We use spoolman to track the filament usage. Spoolman can be accessed from the Dashboard or at [spoolman.lucres.net](https://spoolman.lucres.net) All the klipper-equipped printers report to spoolman the used quantity of material. 
+
+Each spool is tracked using an unique number (example: `#17`) that is written using a marker on the spool or on the spool box. If opening a new spool, **please** take the time to transfer the writing from the box to the spool itself using a suitable permanent marker. Some spools will have a sticker that you can transfer to the spool.
+
+| ![screenshot_20260106_030348.png](/screenshot_20260106_030348.png) |
+| -- |
+
+Before printing, ensure that you have enough filament on the spool. You can typically see this information inside the printer's page in the spoolman section. In this menu you can also eject the spool (`1`) (if using an untracked spool) or change the spool to another (`2`).
+
+| ![screenshot_20260106_031019.png](/screenshot_20260106_031019.png) | ![screenshot_20260106_031140.png](/screenshot_20260106_031140.png) |
+| -- | -- |
+
+> Always change the spool configured in the printer when switching spools. If you forget, the printer will keep consuming from the old one and we'll end up with bad data in spoolman.
+>
+> It is possible to correct this situation by weighing all the affected spools manually and entering the data into spoolman. Ask Cristi or Alex to help with this operation.
+{.is-info}
+
+> You might get an error similar to `Cannot reach spoolman instance`. This is because you might not be logged in to the spoolman instance in a long while. To fix it, open the [Spoolman URL](https://spoolman.lucres.net) and then refresh the printer page.
+{.is-warning}
+
+
 
 # Observability
 
