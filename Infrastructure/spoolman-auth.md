@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2026-01-06T02:55:31.832Z
+date: 2026-01-06T02:57:03.756Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z
@@ -141,6 +141,9 @@ ansible-playbook -i inventory.yaml -e @variables.yaml configure_spoolman.yaml --
 
 > The `inventory.yaml` and `variables.yaml` files can contain sensitive credentials, so it is best to ensure that you will never be able to commit and push these files. It is possible to configure git to ignore them completely. Use this procedure after cloning: 
 > ```bash
+> 
+> cd KlipperScripts/spoolman
+> 
 > # Completely ignore files
 > git update-index --skip-worktree inventory.yaml variables.yaml
 > 
