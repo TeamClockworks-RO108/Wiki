@@ -2,7 +2,7 @@
 title: Voron Mods
 description: 
 published: true
-date: 2026-01-06T04:19:05.780Z
+date: 2026-01-06T04:21:15.784Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
@@ -19,7 +19,7 @@ All our Klipper printers are running a common set of macros. They are written to
  * Chamber LED handler, both for analog and boolean strips.
  * Development helpers to dump or search trough values in the `printer` object.
  
-We also ship an ansible playbook that aids in mass deployment of our proxy-protected spoolman connector. A technical writeup is available on [this page]().
+We also ship an ansible playbook that aids in mass deployment of our proxy-protected spoolman connector. A technical writeup is available on [this page](https://wiki.teamclockworks.ro/en/Infrastructure/spoolman-auth).
 
 # FilametrixAxon
 
