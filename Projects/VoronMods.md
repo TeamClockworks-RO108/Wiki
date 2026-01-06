@@ -2,11 +2,24 @@
 title: Voron Mods
 description: 
 published: true
-date: 2025-11-29T18:21:27.740Z
+date: 2026-01-06T04:19:05.780Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
 ---
+
+# KlipperScripts
+
+[![Static Badge](https://img.shields.io/badge/github-repo-brightgreen?style=for-the-badge&logo=git&logoColor=white&logoSize=auto)](https://github.com/TeamClockworks-RO108/KlipperScripts)
+
+All our Klipper printers are running a common set of macros. They are written to be heavily configurable for every printer model and capabilities. Some of the features covered are:
+ * Print start and end procedures, together with handling of mesh, cartographer/beacon touch mode, heating, chamber heatsoaking and a very fancy purge line.
+ * Basic spoolman macros.
+ * Status RGB(W) LED with configurable color maps and strip selection.
+ * Chamber LED handler, both for analog and boolean strips.
+ * Development helpers to dump or search trough values in the `printer` object.
+ 
+We also ship an ansible playbook that aids in mass deployment of our proxy-protected spoolman connector. A technical writeup is available on [this page]().
 
 # FilametrixAxon
 
