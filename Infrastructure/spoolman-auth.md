@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2025-12-15T03:10:53.706Z
+date: 2026-01-06T02:05:36.052Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z
@@ -109,4 +109,22 @@ Configure the printer to point to our fake domain inside `moonraker.conf`.
 server: http://spoolman-intl.lucres.net
 sync_rate: 5
 ```
+
+# Automation
+
+An ansible playbook is available in our [Gtihub repository](https://github.com/TeamClockworks-RO108/KlipperScripts) that automates the printer config creation. To run it, verify the correct hosts are configured inside `inventory.yaml` and run the playbook like so:
+
+```bash
+# Run for all hosts
+ansible-playbook -i inventory.yaml configure_spoolman.yaml
+
+# Limit to only a few
+ansible-playbook -i inventory.yaml configure_spoolman.yaml --limit iron,medina
+```
+
+> The `inventory.yaml` file is gitignored, so if you need to commit it, use the `git add -f` flag.
+{.is-info}
+
+
+
 
