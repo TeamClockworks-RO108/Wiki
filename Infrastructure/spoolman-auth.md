@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2026-01-06T02:32:28.878Z
+date: 2026-01-06T02:55:31.832Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z
@@ -139,8 +139,17 @@ ansible-playbook -i inventory.yaml -e @variables.yaml configure_spoolman.yaml
 ansible-playbook -i inventory.yaml -e @variables.yaml configure_spoolman.yaml --limit iron,medina
 ```
 
-> The `inventory.yaml` file is gitignored, so if you need to commit it, use the `git add -f` flag.
+> The `inventory.yaml` and `variables.yaml` files can contain sensitive credentials, so it is best to ensure that you will never be able to commit and push these files. It is possible to configure git to ignore them completely. Use this procedure after cloning: 
+> ```bash
+> # Completely ignore files
+> git update-index --skip-worktree inventory.yaml variables.yaml
+> 
+> # Revert back to original behaviour (able to commit)
+> git update-index --no-skip-worktree inventory.yaml variables.yaml
+> ```
 {.is-info}
+
+
 
 
 
