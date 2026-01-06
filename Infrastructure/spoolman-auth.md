@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2026-01-06T02:19:34.598Z
+date: 2026-01-06T02:32:28.878Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z
@@ -100,6 +100,12 @@ server {
 ```bash
 sudo ln -s /etc/nginx/sites-available/spoolman /etc/nginx/sites-enabled/spoolman
 sudo systemctl restart nginx
+```
+
+To create the base64-encoded token, use the following command:
+
+```bash
+echo -n 'username:password' | base64 --wrap=9999
 ```
 
 Configure the printer to point to our fake domain inside `moonraker.conf`.
