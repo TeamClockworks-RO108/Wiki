@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-06T01:17:47.399Z
+date: 2026-01-07T19:42:15.507Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -30,7 +30,7 @@ Our slicer of choice is [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_4
 > Do not select any of the team's printers in the configuration wizard. We maintain a custom repository of configuration and it is ideal we do not stray from it. They will be imported in the next section of this page.
 {.is-info}
 
-# Updating your slicer configuration
+## Updating your slicer configuration
 
 It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
 
@@ -39,6 +39,17 @@ It is very important to update your slicer configuration to the latest version. 
   * Linux: `~/.config/PrusaSlicer`
   * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
   
+# Bed placement considerations
+
+To ensure that the parts do no warp and lift off the plate, try to break down complex geometry into simpler parts. 
+
+Keep massive, warpy parts off the edges of the buildplate. Because the edges of the buildplate are slightly colder than the center, putting warpy parts on the edge **will** cause the print fail. 
+Rounding corners also helps prevent warping.
+
+|  Example: large parts as close to the center |
+| ![screenshot_20260107_200513.png](/screenshot_20260107_200513.png) |
+| -- |
+
   
 # Pre-flight checks
 
