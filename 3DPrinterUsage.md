@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-09T03:56:23.171Z
+date: 2026-01-09T11:48:43.970Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -149,7 +149,17 @@ Before printing, ensure that you have enough filament on the spool. You can typi
 > You might get an error similar to `Cannot reach spoolman instance`. This is because you might not be logged in to the spoolman instance in a long while. To fix it, open the [Spoolman URL](https://spoolman.lucres.net) and then refresh the printer page.
 {.is-warning}
 
+## Palmyr integration
 
+Palmyr has a different way to integrate with spoolman. Because there are up to 8 gates/spools, we cannot use the usual spoolman panel to set the filament. If we still use the regular panel and/or macros, the spool will remnain set only until the next load/unload happens, when the data is overriden and lost. 
+
+Palmyr keeps track of spool ID's inside its gate map. To modify the gate map, follow the instructions below:
+
+| Locate the MMU panel and open the Edit Filaments menu inside the dots button | Click on the gate you wish to modify and enable Spoolman. Type the spool ID or click the Choose Spool button to have it auto-filled. To remove a gate from filament tracking, just disable Spoolman from that gate. 
+| ![screenshot_20260109_122122.png](/screenshot_20260109_122122.png) | ![screenshot_20260109_122150.png](/screenshot_20260109_122150.png) |
+| -- | -- |
+
+The printer will fetch filament's details from spoolman like type, name and color. At each filament switch, the printer will set the appropiate spool ID and Moonraker will submit filament consumption to Spoolman. Selecting a gate will **not** change the current spool, only load operations.  
 
 # Observability
 
