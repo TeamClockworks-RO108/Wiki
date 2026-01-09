@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2026-01-06T02:57:03.756Z
+date: 2026-01-09T12:22:27.312Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z
@@ -150,8 +150,7 @@ ansible-playbook -i inventory.yaml -e @variables.yaml configure_spoolman.yaml --
 > # Revert back to original behaviour (able to commit)
 > git update-index --no-skip-worktree inventory.yaml variables.yaml
 > ```
-{.is-info}
-
+<!-- {blockquote:.is-info} -->
 
 
 
