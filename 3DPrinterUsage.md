@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-11T02:40:31.331Z
+date: 2026-01-11T10:14:10.968Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -160,6 +160,10 @@ We print PLA on the smooth sheet and PETG on the textured sheet.
 For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
 
 To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
+
+> They are pending an upgrade to Mk3.5. Cristi and Dragos, please update this section once the printers are upgraded with instructions for prusaconnect after Alex configures it. 
+{.is-success}
+
 
 # Observability
 
