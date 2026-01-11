@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-09T12:17:12.080Z
+date: 2026-01-11T02:40:31.331Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -98,35 +98,6 @@ For filament compatibility, as a general rule:
  
 If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
 
-## Medina (Voron 2.4 350^3^)
-
-Medina is a large format, enclosed Voron 2.4 printer. It only uses ABS and ASA.
-
-The print sheet to be used is the **PrusaXL Satin sheet**. 
-
-Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
-
-To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the Ironport terminal. 
-
-> The **Satin** sheet does not provide excellent adhesion for large parts. 
-> If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
-> The strong adhesion of the **Smooth** sheet combined with significant warping can permanently damage the sheet!
-> 
-> After using the **Smooth** sheet, always revert to the **Satin** sheet.
-{.is-warning}
-
-
-## Prusa Mk3S+
-
-Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
-
-The bed sheets attach magnetically to the bed and can be changed with our other sheets stored near the printers. For more information about the materials that can be printed on Prusa Sheets, you can consult [Prusa’s Material Guide](https://help.prusa3d.com/filament-material-guide).
-We print PLA on the smooth sheet and PETG on the textured sheet.
-
-For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
-
-To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
-
 # Spool management
 
 We use spoolman to track the filament usage. Spoolman can be accessed from the Dashboard or at [spoolman.lucres.net](https://spoolman.lucres.net) All the klipper-equipped printers report to spoolman the used quantity of material. 
@@ -160,6 +131,35 @@ Palmyr keeps track of spool ID's inside its gate map. To modify the gate map, fo
 | -- | -- |
 
 The printer will fetch filament's details from spoolman like type, name and color. At each filament switch, the printer will set the appropiate spool ID and Moonraker will submit filament consumption to Spoolman. Selecting a gate will **not** change the current spool, only load operations.  
+
+## Medina (Voron 2.4 350^3^)
+
+Medina is a large format, enclosed Voron 2.4 printer. It only uses ABS and ASA.
+
+The print sheet to be used is the **PrusaXL Satin sheet**. 
+
+Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
+
+To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the Ironport terminal. 
+
+> The **Satin** sheet does not provide excellent adhesion for large parts. 
+> If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
+> The strong adhesion of the **Smooth** sheet combined with significant warping can permanently damage the sheet!
+> 
+> After using the **Smooth** sheet, always revert to the **Satin** sheet.
+{.is-warning}
+
+
+## Prusa Mk3S+
+
+Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
+
+The bed sheets attach magnetically to the bed and can be changed with our other sheets stored near the printers. For more information about the materials that can be printed on Prusa Sheets, you can consult [Prusa’s Material Guide](https://help.prusa3d.com/filament-material-guide).
+We print PLA on the smooth sheet and PETG on the textured sheet.
+
+For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
+
+To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
 
 # Observability
 
