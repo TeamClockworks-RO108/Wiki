@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2025-11-28T02:48:28.114Z
+date: 2026-01-11T23:41:00.536Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -11,10 +11,10 @@ dateCreated: 2024-11-13T00:40:19.306Z
 # Design Dimensions
 
 > **Reading printing tolerances**
-> Notations like 2^2.2^*/*~1.9~ should be read the following way:
+> Notations like 2^H2.2V2.3^*/*~H1.9V1.95~ should be read the following way:
 > **Size** (2): Nominal diameter or size of the fastener.
-> **Superscript** (2.2): Printed hole diameter for pass-trough holes
-> **Subscript** (1.9): Printed hole diameter for threaded, unmodelled holes. If the feature is not threaded, only the superscript will appear. 
+> **Superscript** (2.2): Printed hole diameter for pass-trough holes for **H**orizontal surfaces and **V**ertical surfaces.
+> **Subscript** (1.9): Printed hole diameter for threaded, unmodelled holes. If the feature is not threaded, only the superscript will appear. For for **H**orizontal surfaces and **V**ertical surfaces.
 {.is-info}
 
 
