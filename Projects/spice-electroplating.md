@@ -2,8 +2,8 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2026-01-11T22:29:19.917Z
-tags: 
+date: 2026-01-12T02:39:15.635Z
+tags: 3dprinting, davidcore, research
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
 ---
