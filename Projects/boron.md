@@ -2,8 +2,8 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-12T00:45:43.936Z
-tags: 
+date: 2026-01-12T02:35:10.898Z
+tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
 ---
