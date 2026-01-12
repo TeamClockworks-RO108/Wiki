@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-12T03:48:25.089Z
+date: 2026-01-12T22:28:41.555Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -21,7 +21,7 @@ The design is built so that minimal electronics and soldering work is required. 
 The bottom of the cube contains two output wall sockets to aid with wiring. (Maybe chain more Borons?).
 
 CAD files, STL files and firmware can be found in the [Github repository](https://github.com/TeamClockworks-RO108/Boron).
-| ![boron-render.png](/boron-render.png) ||||
+| ![boron-render.png](/boron-render.png =50%x50%) ||||
 | ![screenshot_20251029_015652.png](/screenshot_20251029_015652.png) | ![screenshot_20251029_015722.png](/screenshot_20251029_015722.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
 | -- | -- | -- | -- |
 
