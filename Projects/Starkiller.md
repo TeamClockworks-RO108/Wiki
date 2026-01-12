@@ -2,8 +2,8 @@
 title: Planetary Starkiller
 description: Gobilda planetary transformer
 published: true
-date: 2026-01-12T02:37:22.481Z
-tags: 3dprinting, project, modding
+date: 2026-01-12T02:38:48.448Z
+tags: 3dprinting, project, guide, modding
 editor: markdown
 dateCreated: 2025-09-09T01:20:59.160Z
 ---
