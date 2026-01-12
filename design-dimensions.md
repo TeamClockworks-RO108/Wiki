@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2026-01-11T23:41:00.536Z
+date: 2026-01-12T02:19:22.964Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -31,11 +31,29 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
 | Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
 
+
+| Size | Hex Nut || DIN 934   || Square Nut | DIN 562 | ISO  |
+| | ![screenshot_20260112_034902.png](/screenshot_20260112_034902.png) |||| ![screenshot_20260112_035250.png](/screenshot_20260112_035250.png)  |||
+|  | Thread (D) | Height (k) | Outer Diameter (E) | Flat-to-Flat (S) | Thread (D) | Height (k) | Square length (E) |
+| -- |
+| **M2** | 2 | 1.6 | 4.3 | 4 | 2 | 1.2 | 4 | 
+| **M2.5** | 2.5 | 2 | 5.5  | 5 | 2.5 |1.6 | 5 |
+| **M3** | 3 | 2.4 | 6 | 5.5 | 3 | 1.8 | 5.5 | 
+| **M4** | 4 | 3.2 | 7.7 | 7 | 4 | 2.2 | 7 | 
+| **M5** | 5 | 4.7 | 8.8 | 8 | 5 | 2.7 | 8 | 
+| **M6** | 6 | 5.2 | 11.1 | 10 | 6 | 3.2 | 10 | 
+| **M8** | 8 | 6.8 | 14.4 | 13 | 8 | 4 | 13 | 
+| Comments | Standard hex nuts and nylocs |||| Square nut |||
+
+
+| Type | M3 Voron Heat inserts || MakerbeamXL Nuts |||
+|  | Outer Diameter | Depth | Length | Width | Height |
+| -- |
+|  | 5^4.7^ | 4^5.5^ | 15 | 5.4 | 2.3 |
+| The standard M3 heat insert used in Voron projects.<br>Leave at least 2mm from the hole edge to the part edge to prevent heat deformation. ||| Tipically used inside MakerbeamXL channels. |||
+
 > ### Things to add in the future
-> * M2, M2,5, M3, M4, M5, M6, M8 Nuts and Nylocks.
-> * M3, M4 square Nuts (find ISO).
-> * Voron inserts.
-> * MakerbeamXL Nuts.
+> * Add diagram for Voron inserts and MakerbeamXL nuts
 > * Printed dimensions for all of the above. 
 
 
