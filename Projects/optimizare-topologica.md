@@ -2,8 +2,8 @@
 title: Optimizare Topologica
 description: ---
 published: true
-date: 2025-05-27T18:32:29.920Z
-tags: 
+date: 2026-01-12T02:36:43.354Z
+tags: 3dprinting, project, research
 editor: markdown
 dateCreated: 2025-05-13T05:32:37.620Z
 ---
