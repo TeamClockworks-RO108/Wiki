@@ -2,8 +2,8 @@
 title: PID Shooter
 description: 
 published: true
-date: 2025-10-21T17:08:28.136Z
-tags: 
+date: 2026-01-12T02:32:58.431Z
+tags: programming
 editor: markdown
 dateCreated: 2025-10-21T17:08:28.136Z
 ---
@@ -20,12 +20,6 @@ dateCreated: 2025-10-21T17:08:28.136Z
 
 # Ki induced oscillations
 ![screenshot_20251021_195024.png](/screenshot_20251021_195024.png)
-
-
-
-
-
-
 
 # Perfect
 ![screenshot_20251021_194141.png](/screenshot_20251021_194141.png)
