@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2025-12-29T13:20:32.327Z
+date: 2026-01-12T00:40:45.979Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -19,7 +19,7 @@ The design is built so that minimal electronics and soldering work is required. 
 The bottom of the cube contains two output wall sockets to aid with wiring. (Maybe chain more Borons?).
 
 CAD files, STL files and firmware can be found in the [Github repository](https://github.com/TeamClockworks-RO108/Boron).
-
+| ![boron-render.png](/boron-render.png) ||||
 | ![screenshot_20251029_015652.png](/screenshot_20251029_015652.png) | ![screenshot_20251029_015722.png](/screenshot_20251029_015722.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
 | -- | -- | -- | -- |
 
