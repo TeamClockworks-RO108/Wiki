@@ -2,8 +2,8 @@
 title: Voron Mods
 description: 
 published: true
-date: 2026-01-06T04:21:15.784Z
-tags: 
+date: 2026-01-12T02:40:18.233Z
+tags: programming, mechanics, project, voron, modding
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
 ---
