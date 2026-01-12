@@ -2,11 +2,13 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-12T02:35:10.898Z
+date: 2026-01-12T03:48:25.089Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
 ---
+
+![license](https://img.shields.io/github/license/TeamClockworks-RO108/boron?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/TeamClockworks-RO108/boron?style=flat-square) ![status](https://img.shields.io/badge/status-working-green?style=flat-square) ![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/boron?style=flat-square)
 
 # Description
 
@@ -344,7 +346,7 @@ This screw threads inside a brass insert, so don't forget to install that too.
 
 # Gallery
 
-| B.001 | ![whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg](/whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg) |
+| ![](https://img.shields.io/badge/B.001-working-red?style=flat-square)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=flat-square)| ![whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg](/whatsapp_image_2025-11-27_at_8.52.15_pm.jpeg) |
 | The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/grafica_boron_final_(clock_-_voron).svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/grafica_boron_final_(natie_prin_educatie).svg =200x200) | ^^ |
 |:-- |
 
