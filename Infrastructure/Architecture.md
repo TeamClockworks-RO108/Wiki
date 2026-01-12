@@ -2,8 +2,8 @@
 title: Architecture
 description: 
 published: true
-date: 2025-11-29T16:18:26.308Z
-tags: 
+date: 2026-01-12T02:33:34.733Z
+tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
 ---
