@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-12T02:30:48.041Z
+date: 2026-01-12T03:29:50.695Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -49,22 +49,6 @@ Rounding corners also helps prevent warping.
 |  Example: large parts as close to the center |
 | ![screenshot_20260107_200513.png](/screenshot_20260107_200513.png) |
 | -- |
-
-  
-# Pre-flight checks
-
-Before printing, please have a look at the printer to ensure that it is operating normally.
-
-- [ ] The printer's mechanics do not look damaged, bent or broken
-- [ ] There is filament loaded and it is the same type of filament as in the slicer. 
-- [ ] The filament is compatible with the printer
-
-> Before the print, always wipe the bed with Isopropanol. 
-{.is-info}
-
-
-> When in doubt, ***PLEASE*** ask Alex to help figure the issue out.
-{.is-warning}
 
 # Material selection
 
@@ -132,6 +116,21 @@ Palmyr keeps track of spool ID's inside its gate map. To modify the gate map, fo
 
 The printer will fetch filament's details from spoolman like type, name and color. At each filament switch, the printer will set the appropiate spool ID and Moonraker will submit filament consumption to Spoolman. Selecting a gate will **not** change the current spool, only load operations.  
 
+
+# Pre-flight checks
+
+Before printing, please have a look at the printer to ensure that it is operating normally.
+
+- [ ] The printer's mechanics do not look damaged, bent or broken
+- [ ] There is filament loaded and it is the same type of filament as in the slicer. 
+- [ ] The filament is compatible with the printer
+
+> Before the print, always wipe the bed with Isopropanol. 
+{.is-info}
+
+> When in doubt, ***PLEASE*** ask Alex to help figure the issue out.
+{.is-warning}
+
 ## Medina (Voron 2.4 350^3^)
 
 Medina is a large format, enclosed Voron 2.4 printer. It only uses ABS and ASA.
@@ -140,7 +139,7 @@ The print sheet to be used is the **PrusaXL Satin sheet**.
 
 Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
 
-To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the Ironport terminal. 
+To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the klipperscreen terminal. 
 
 > The **Satin** sheet does not provide excellent adhesion for large parts. 
 > If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
@@ -209,14 +208,26 @@ This process should be done with **every type and brand** of filament we own. Sa
 ## Reference 
 ![emprints-coarse-annotated.png](/emprints-coarse-annotated.png)
 
-# Shortcuts
+## Shortcuts
 
 Conversion between filament units:
  * 1 mm = 2.4 mm^3^
  * 1 mm^3^ = 0.415 mm
 
 
-# Special maintenante
+# Special maintenance
+
+## Printer cleanup
+
+All Vorons have a tendancy to accumulate plastic bits at the bottom, so make sure to remove them often. You can use a vacuum cleaner for this task.
+
+## Palmyr Blobifier tray
+After quite a few filament loads and unloads, the blobifier tray will fill up with purged blobs. Simply take it out by pulling the tab on the left towards the front and empty inside a trashcan.
+
+## Palmyr ERCF servo startup
+
+Due to unusual behaviour of the Axon servo at startup, it will vibrate aggressively until it is commanded to go to a position. 
+If you hear it vibrate after bootup, go to the ERCF menu, the Manage aubmenu and order to servo to go to the Move or Up position.
 
 ## Palmyr ERCF servo horn
 
