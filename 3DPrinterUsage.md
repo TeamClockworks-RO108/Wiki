@@ -2,8 +2,8 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-11T10:14:10.968Z
-tags: util
+date: 2026-01-12T02:30:48.041Z
+tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
 ---
