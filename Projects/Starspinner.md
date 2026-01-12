@@ -2,8 +2,8 @@
 title: Planetary Starspinner
 description: 
 published: true
-date: 2026-01-12T02:37:43.562Z
-tags: 3dprinting, project, modding
+date: 2026-01-12T02:38:29.127Z
+tags: 3dprinting, project, guide, modding
 editor: markdown
 dateCreated: 2025-10-12T12:35:21.952Z
 ---
