@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-12T03:29:50.695Z
+date: 2026-01-12T03:30:29.783Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -227,7 +227,7 @@ After quite a few filament loads and unloads, the blobifier tray will fill up wi
 ## Palmyr ERCF servo startup
 
 Due to unusual behaviour of the Axon servo at startup, it will vibrate aggressively until it is commanded to go to a position. 
-If you hear it vibrate after bootup, go to the ERCF menu, the Manage aubmenu and order to servo to go to the Move or Up position.
+If you hear it vibrate after bootup, go to the ERCF menu, the Manage submenu and order to servo to go to the Move or Up position.
 
 ## Palmyr ERCF servo horn
 
