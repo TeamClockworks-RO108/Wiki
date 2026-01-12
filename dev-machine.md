@@ -2,8 +2,8 @@
 title: Dev Machine
 description: 
 published: true
-date: 2025-08-05T07:39:24.446Z
-tags: 
+date: 2026-01-12T02:32:31.845Z
+tags: programming, infrastructure
 editor: markdown
 dateCreated: 2025-08-02T14:25:30.841Z
 ---
@@ -13,7 +13,7 @@ The dev machine is a linux server you can SSH into and do remote development fro
 Access is given on a neet-to-have basis. Ask Alex to enter your SSH key into the machine if you need remote development. 
 
 Append the below section in your `~/.ssh/config` file. 
-``` SSH config
+```ssh-config
 Host cdm.lucres.net
     User clock
     Hostname cdm.lucres.net
