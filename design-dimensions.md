@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2026-01-12T02:19:22.964Z
+date: 2026-01-12T02:28:22.162Z
 tags: util
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -31,18 +31,21 @@ dateCreated: 2024-11-13T00:40:19.306Z
 | **M8** | 8 | 13 | 8 | 8 | 14 | 4.4 | 8 | 16 | 4.4 |
 | Comments | Standard-issue hex key screw. ||| Flatter head ||| Countersunk head that can be completely hidden inside the part. Length is measured for the whole screw! |||
 
+> **Reading printing tolerances**
+> For nuts, **superscript** is used to denote printed hexagon dimension for fixing the nut in place inside a print. This measure is to be used as a Flat-to-Flat specification (Circumscribed Polygon in Fusion360). 
+{.is-info}
 
 | Size | Hex Nut || DIN 934   || Square Nut | DIN 562 | ISO  |
 | | ![screenshot_20260112_034902.png](/screenshot_20260112_034902.png) |||| ![screenshot_20260112_035250.png](/screenshot_20260112_035250.png)  |||
 |  | Thread (D) | Height (k) | Outer Diameter (E) | Flat-to-Flat (S) | Thread (D) | Height (k) | Square length (E) |
 | -- |
-| **M2** | 2 | 1.6 | 4.3 | 4 | 2 | 1.2 | 4 | 
-| **M2.5** | 2.5 | 2 | 5.5  | 5 | 2.5 |1.6 | 5 |
-| **M3** | 3 | 2.4 | 6 | 5.5 | 3 | 1.8 | 5.5 | 
-| **M4** | 4 | 3.2 | 7.7 | 7 | 4 | 2.2 | 7 | 
-| **M5** | 5 | 4.7 | 8.8 | 8 | 5 | 2.7 | 8 | 
-| **M6** | 6 | 5.2 | 11.1 | 10 | 6 | 3.2 | 10 | 
-| **M8** | 8 | 6.8 | 14.4 | 13 | 8 | 4 | 13 | 
+| **M2** | 2 | 1.6 | 4.3 | 4^4.2^ | 2 | 1.2 | 4 | 
+| **M2.5** | 2.5 | 2 | 5.5 | 5^5.2^ | 2.5 |1.6 | 5 |
+| **M3** | 3 | 2.4 | 6 | 5.5^5.7^ | 3 | 1.8 | 5.5 | 
+| **M4** | 4 | 3.2 | 7.7 | 7^7.3^ | 4 | 2.2 | 7 | 
+| **M5** | 5 | 4.7 | 8.8 | 8^8.4^ | 5 | 2.7 | 8 | 
+| **M6** | 6 | 5.2 | 11.1 | 10^10.4^ | 6 | 3.2 | 10 | 
+| **M8** | 8 | 6.8 | 14.4 | 13^13.4^ | 8 | 4 | 13 | 
 | Comments | Standard hex nuts and nylocs |||| Square nut |||
 
 
