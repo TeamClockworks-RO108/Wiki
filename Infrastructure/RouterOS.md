@@ -2,8 +2,8 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-01-12T02:33:56.437Z
-tags: infrastructure, 3dprinting, project
+date: 2026-01-12T02:34:14.777Z
+tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
 ---
