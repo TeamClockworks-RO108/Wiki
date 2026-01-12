@@ -2,8 +2,8 @@
 title: Drawer Organizer
 description: 
 published: true
-date: 2025-11-27T17:18:12.976Z
-tags: 
+date: 2026-01-12T02:36:02.758Z
+tags: 3dprinting, project
 editor: markdown
 dateCreated: 2025-11-20T16:53:45.091Z
 ---
