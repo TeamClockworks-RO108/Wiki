@@ -2,8 +2,8 @@
 title: Clockworks Site
 description: Site-ul echipei clockworks, atat cel principal cat si admin-ul
 published: true
-date: 2025-08-05T13:27:43.146Z
-tags: 
+date: 2026-01-12T02:35:28.411Z
+tags: programming, project
 editor: markdown
 dateCreated: 2025-05-23T15:51:46.312Z
 ---
