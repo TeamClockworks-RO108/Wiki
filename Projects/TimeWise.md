@@ -2,8 +2,8 @@
 title: Time Wise
 description: 
 published: true
-date: 2025-05-27T17:32:59.675Z
-tags: 
+date: 2026-01-12T02:39:56.011Z
+tags: 3dprinting, project
 editor: markdown
 dateCreated: 2025-05-26T17:13:33.020Z
 ---
