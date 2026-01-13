@@ -25,7 +25,8 @@
   * Punte printata intre profilele orizontale gobilda, 1 pe fiecare parte. 
   * Eliminat nebunia cu wago cu un panou vertical intre huburi care are loc de wago 221 in el, de preferat sudat dcmotor aici. 
   * Senzori culoare si distanta integrati: distanta pe gripper, culoare in spate. 
-  * Frane simetrice cu paralelogram intre roti. 
-  * Prindere servo flap printata mai usoara.
-  * Mutat SPM pe partea opusa a hubului
-  * Roata launcher custom.
+2.  Frane simetrice cu paralelogram intre roti. 
+2. Prindere servo flap printata mai usoara.
+3. Mutat SPM pe partea opusa a hubului
+4. Roata launcher custom.
+5. Flap masurat la perfectie si printat unul de dimensiunea corecta!!!  
