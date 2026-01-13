@@ -2,7 +2,7 @@
 title: Wire Nest
 description: 
 published: true
-date: 2026-01-12T02:40:39.587Z
+date: 2026-01-12T02:40:41.371Z
 tags: mechanics, 3dprinting, project
 editor: markdown
 dateCreated: 2025-09-26T19:36:07.409Z

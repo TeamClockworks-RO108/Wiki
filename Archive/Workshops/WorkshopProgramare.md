@@ -2,7 +2,7 @@
 title: Workshop Programare
 description: 
 published: true
-date: 2025-05-29T12:50:30.480Z
+date: 2025-09-10T23:24:39.954Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-29T20:20:18.524Z

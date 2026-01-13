@@ -2,7 +2,7 @@
 title: Optimizare Topologica
 description: ---
 published: true
-date: 2026-01-12T02:36:51.442Z
+date: 2026-01-12T02:36:53.350Z
 tags: 3dprinting, project, davidcore, research
 editor: markdown
 dateCreated: 2025-05-13T05:32:37.620Z

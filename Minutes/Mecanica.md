@@ -2,7 +2,7 @@
 title: Mecanica
 description: 
 published: true
-date: 2025-01-06T16:55:26.730Z
+date: 2025-06-03T15:11:42.865Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-16T14:33:08.460Z

@@ -2,7 +2,7 @@
 title: Dueling Zero 3DP
 description: 
 published: true
-date: 2026-01-12T02:36:23.255Z
+date: 2026-01-12T02:36:25.469Z
 tags: mechanics, 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-05-18T00:26:10.510Z

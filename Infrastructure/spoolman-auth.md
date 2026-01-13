@@ -2,7 +2,7 @@
 title: Spoolman Authentication
 description: 
 published: true
-date: 2026-01-12T02:34:33.356Z
+date: 2026-01-12T02:34:35.222Z
 tags: infrastructure, 3dprinting, project
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z

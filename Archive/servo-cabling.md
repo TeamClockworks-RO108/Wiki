@@ -2,7 +2,7 @@
 title: Servo Cabling
 description: 
 published: true
-date: 2025-08-29T00:48:30.818Z
+date: 2025-09-10T23:26:04.998Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T00:48:30.818Z
