@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-01-12T02:34:16.521Z
+date: 2026-01-13T21:12:50.699Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -63,3 +63,9 @@ prusa-slicer --printer-profile "$PRINTER" --query-print-filament-profiles | grep
 
 Replace R7 (20k, code 30C) with 22k. Size is imperial 0603
 Tme link: https://www.tme.eu/ro/details/smd0603-22k-1%25/rezistente-smd/royalohm/0603saf2202t5e/
+
+Inaltime birou Alex: 75.3 grosime placa 2cm
+Inaltime birou Ioana: 76.7 grosime placa 2.5cm
+Latime blat 50
+Lungime blat 135
+Inaltime suport 12
