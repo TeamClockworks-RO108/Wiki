@@ -2,13 +2,15 @@
 title: Homepage
 description: Homepage
 published: true
-date: 2026-01-12T02:55:06.713Z
+date: 2026-01-13T01:59:55.175Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T18:31:31.628Z
 ---
 
 # 🕰️  Clockworks Team wiki
+
+![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/Wiki?style=flat-square)
 
 Welcome to the **Clockworks Team Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
 
