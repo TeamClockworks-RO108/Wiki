@@ -2,7 +2,7 @@
 title: Voron Mods
 description: 
 published: true
-date: 2026-01-13T01:38:38.562Z
+date: 2026-01-13T02:15:55.673Z
 tags: programming, mechanics, project, voron, modding
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
@@ -47,11 +47,7 @@ Extensive modidications need to be done to the blobifier configurations to a ste
 
 We reccomend to browse the assembly and configuration instructions on the Github PR tree.
 
-> `TODO` Make some proper renders from CAD. 
-{.is-info}
-
-
-| ![06.jpg](/06.jpg) |
+| ![blobifier-render.png](/blobifier-render.png =50%x50%) |
 | -- |
 
 # Parametric LED Bar
