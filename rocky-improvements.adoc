@@ -28,4 +28,4 @@
   * Frane simetrice cu paralelogram intre roti. 
   * Prindere servo flap printata mai usoara.
   * Mutat SPM pe partea opusa a hubului
-2. 
+  * Roata launcher custom.
