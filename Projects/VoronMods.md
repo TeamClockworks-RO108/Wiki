@@ -2,7 +2,7 @@
 title: Voron Mods
 description: 
 published: true
-date: 2026-01-12T02:40:18.233Z
+date: 2026-01-13T01:38:38.562Z
 tags: programming, mechanics, project, voron, modding
 editor: markdown
 dateCreated: 2025-11-29T17:15:50.895Z
@@ -52,6 +52,19 @@ We reccomend to browse the assembly and configuration instructions on the Github
 
 
 | ![06.jpg](/06.jpg) |
+| -- |
+
+# Parametric LED Bar
+
+[![Static Badge](https://img.shields.io/badge/printables-click-orange?style=for-the-badge&logo=printables&logoColor=white&logoSize=auto)](https://www.printables.com/model/1554185-parametric-led-bar)
+
+This model is a LED bar holder with integrated grate diffuser. It is designed for standard LED strips that are 10mm wide and can be cut at 25mm segments. We use it with dense strips (240 LEDs per meter).
+
+You will need 8x 6mm M3 BHCS and appropiate channel nuts to assemble. 
+
+The CAD is made in Fusion360 and is parametric. We have exported configuration for all standard Voron sizes and Dueling Zero. Many aspects can be customized, including LED strip width, length and grate count.
+
+| ![50fecb48-016a-471b-b2f1-5eb6254ccf54.jpeg](/50fecb48-016a-471b-b2f1-5eb6254ccf54.jpeg =50%x50%) | ![whatsapp_image_2026-01-06_at_12.47.25_am.jpeg](/whatsapp_image_2026-01-06_at_12.47.25_am.jpeg =50%x50%) | 
 | -- |
 
 
