@@ -244,7 +244,7 @@ The LED structure is now ready for mounting inside the main frame. Use 16x 16mm 
 
 Secure the top corners using 4x 8mm M3 FHCS (for each corner) and the MakerbeamXL nuts preloaded earlier. The 4mm M3 FHCS screws only into the plastic part and is decorative.
 
-| ![screenshot_20251128_032154.png](/screenshot_20251128_032154.png) | ![screenshot_20251128_032121.png](/screenshot_20251128_032121.png) |
+| ![boron-assy-14.png](/boron-assy-14.png) | ![screenshot_20251128_032121.png](/screenshot_20251128_032121.png) |
 | -- | -- |
 
 ## Electronics
