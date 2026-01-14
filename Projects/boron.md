@@ -331,7 +331,7 @@ It's time to add the electronics:
 
 Install back the three LED supports you just took off to aid in electronics mounting
 
-| ![screenshot_20251123_040627.png](/screenshot_20251123_040627.png) |
+| ![boron-assy-21.png](/boron-assy-21.png) |
 | -- |
 
 ## Wrap the LED strips around the cube
