@@ -18,7 +18,7 @@ All the services are enrolled in the [Dashboard](https://clockworks-dashboard.lu
 
 When you access the dashboard, you will be asked to login. Instead of entering an username or email, login using the Discord button as shown below. You need to be present on the Discord server and have the Member role to be able to enter.
 
-![screenshot_20251009_041503.png](/screenshot_20251009_041503.png)
+![acct-wiki-1.png](/acct-wiki-1.png)
 
 When you visit a service from the dashboard, you will be logged in automatically.
 
@@ -36,7 +36,7 @@ Once you arrive on the Authentik's page, login as usual using the Discord provid
 
 If you have configured a password and username for your account, like in the next section, you can use that on the LucaciResearch login page instead of Discord.
 
-| ![wiki-login-2.png](/wiki-login-2.png) | ![screenshot_20251009_041503.png](/screenshot_20251009_041503.png) |
+| ![wiki-login-2.png](/wiki-login-2.png) | ![acct-wiki-1.png](/acct-wiki-1.png) |
 | --- | --- |
 
 
