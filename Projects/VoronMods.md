@@ -80,7 +80,7 @@ The mount allows the installation of the offical raspberry Pi camera both in the
 This mod modified a Voron 2.4 mount for BTT HDMI5 1.2 to allow more space for the HDMI and USB connections.
 The mount is extended forwards by a whole extrusion width to allow for future compatibility with the Clicky-Clack door mod. 
 
-| ![screenshot_20251117_030710.png](/screenshot_20251117_030710.png) |
+| ![voron-btt-hdmi5.png](/voron-btt-hdmi5.png) |
 | -- |
 
 # DragonBurner Cartographer/Beacon mount
