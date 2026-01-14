@@ -91,7 +91,7 @@ Amplificatorul digital HX711 este utilizat pentru măsurători, cu un gain de 32
   
   Urmeaza sa fie testat un modul lidar cu precizie de 64 de pixeli [VL53L7CX](https://www.robofun.ro/vl53l7cx-time-of-flight-8-8-zone-wide-fov-distance-sensor-carrier-with-voltage-regulator-350cm-max.html?gad_source=1&gad_campaignid=20383925641&gclid=Cj0KCQjw_dbABhC5ARIsAAh2Z-SsQSl8gLTzo1tBTG-PHYMbIrvgGt-ZnvaIW4blQK0FZV3CvSHxr8AaAv7REALw_wcB). Cu acest senzor se masoara dimensiunile ambalajului.
 
-  ![drawing1.jpg](/drawing1.jpg)
+  ![walle-lidar-camera.png](/walle-lidar-camera.png)
 
 **Note post-teste:**
 
