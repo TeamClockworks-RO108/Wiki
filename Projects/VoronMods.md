@@ -108,5 +108,5 @@ We have remixed the excellent sturdy 130mm holder from Printables by cutting ins
 
 Mount using 2x 16mm M5 BHCS and appropiate M5 channel nuts.
 
-| ![screenshot_20251128_015935.png](/screenshot_20251128_015935.png) |
+| ![voron-double-spool-holder.png](/voron-double-spool-holder.png) |
 | -- |
