@@ -102,7 +102,7 @@ The rate of deposition is controlled by changing the outgoing current density tr
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
   
   ![spice-first-circuit-led.png](/spice-first-circuit-led.png)
-  ![f5cwheljgnwufot.png](/f5cwheljgnwufot.png)
+  ![spice-first-circuit-schematic.png](/spice-first-circuit-schematic.png)
   ***diagram of the circuit***
   
   With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.
