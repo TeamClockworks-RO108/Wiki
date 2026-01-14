@@ -62,7 +62,7 @@ stabilizarea ambalajului pe durata procesului de scanare, până la direcționar
 Mecanismul de cântărire este bazat pe un senzor de sarcină (load cell) configurat sub formă de pârghie, conectat la un amplificator digital HX711.
 Prin variația rezistenței electrice generate la aplicarea unei forțe, sistemul convertește valoarea acesteia în unități de masă, oferind o citire precisă și stabilă.
  
-|![screenshot_2025-05-25_131221.png](/screenshot_2025-05-25_131221.png)| ![load-cell-diagram-72.png](/load-cell-diagram-72.png)|
+|![screenshot_2025-05-25_131221.png](/screenshot_2025-05-25_131221.png)| ![walle-load-cell.png](/walle-load-cell.png)|
 | -- | -- |
 
  [Mai multe detalii referitoare la functionarea unui load cell](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells/all)
