@@ -84,7 +84,7 @@ Această configurare permite sortarea corectă a ambalajelor de aluminiu conside
 
 Amplificatorul digital HX711 este utilizat pentru măsurători, cu un gain de 32 biți, asigurând o detecție precisă.
 
-|![schema circuitului](/aaa.webp)| ![detectormetale_walle.jpg](/detectormetale_walle.jpg)|
+|![schema circuitului](/walle-rldc-filter.png)| ![detectormetale_walle.jpg](/detectormetale_walle.jpg)|
 | -- | -- |
    
 ### 5. Lidar
