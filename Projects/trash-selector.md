@@ -172,7 +172,7 @@ Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alt
 * Dacă ambalajul este metal (doză), cilindrul se rotește 90° spre dreapta pentru a sorta ambalajul în compartimentul destinat metalelor.
 
 * Dacă ambalajul este sticlă de plastic, falcile ce susțin obiectul se deschid, lăsând ambalajul să cadă în interior.
-![screenshot_2025-05-25_135908.png](/screenshot_2025-05-25_135908.png)
+![walle-loadcell-open.png](/walle-loadcell-open.png)
 
   
 |![screenshot_2025-05-25_141411.png](/screenshot_2025-05-25_141411.png)|![screenshot_2025-05-25_141800.png](/screenshot_2025-05-25_141800.png)|
