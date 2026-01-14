@@ -260,7 +260,7 @@ Secure the WAGO holder into the utility panel body using 2x 16mm M3 BHCS. To mak
 Assemble the Shelly holder by sliding the shelly relay inside and securing it into place with its small bracket and 2x 10mm M3 BHCS. 
 Use the same glue technique as above to install the 4 WAGO connectors.
 
-| ![screenshot_20251121_024231.png](/screenshot_20251121_024231.png) |
+| ![boron-elec-3.png](/boron-elec-3.png) |
 | -- |
 
 ## Wiring
