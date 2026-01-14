@@ -102,7 +102,7 @@ There are multiple hole types to choose from. You can do standard, counterbores,
 
 We do not reccomend using the built-in thread and clearance tap types because we require specific tolerances on our printers. Just create your hole as you would normally.
 
-| ![guide-fusion-hole-1.png](/guide-fusion-hole-1.png) | ![screenshot_20251028_221255.png](/screenshot_20251028_221255.png) |
+| ![guide-fusion-hole-1.png](/guide-fusion-hole-1.png) | ![guide-fusion-hole-2.png](/guide-fusion-hole-2.png) |
 | -- | -- |
 
 # Fastener Availability
