@@ -175,7 +175,7 @@ Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alt
 ![walle-loadcell-open.png](/walle-loadcell-open.png)
 
   
-|![walle-bottom-open.png](/walle-bottom-open.png)|![screenshot_2025-05-25_141800.png](/screenshot_2025-05-25_141800.png)|
+|![walle-bottom-open.png](/walle-bottom-open.png)|![walle-left-open.png](/walle-left-open.png)|
 | -- | -- |
   
 
