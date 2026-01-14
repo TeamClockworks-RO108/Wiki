@@ -33,7 +33,7 @@ CAD files, STL files and firmware can be found in the [Github repository](https:
   </tr>
 </table>
 
-| ![boron-view-1.png](/boron-view-1.png) | ![boron-view-2.png](/boron-view-2.png) | ![screenshot_20251029_015741.png](/screenshot_20251029_015741.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
+| ![boron-view-1.png](/boron-view-1.png) | ![boron-view-2.png](/boron-view-2.png) | ![boron-view-3.png](/boron-view-3.png) | ![screenshot_20251029_015841.png](/screenshot_20251029_015841.png) |
 | -- | -- | -- | -- |
 
 # Graphics panels
