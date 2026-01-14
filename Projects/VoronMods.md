@@ -60,7 +60,7 @@ You will need 8x 6mm M3 BHCS and appropiate channel nuts to assemble.
 
 The CAD is made in Fusion360 and is parametric. We have exported configuration for all standard Voron sizes and Dueling Zero. Many aspects can be customized, including LED strip width, length and grate count.
 
-| ![voron-led-bar-1.png](/voron-led-bar-1.png =50%x50%) | ![whatsapp_image_2026-01-06_at_12.47.25_am.jpeg](/whatsapp_image_2026-01-06_at_12.47.25_am.jpeg =50%x50%) | 
+| ![voron-led-bar-1.png](/voron-led-bar-1.png =50%x50%) | ![voron-led-bar-2.png](/voron-led-bar-2.png =50%x50%) | 
 | -- |
 
 
