@@ -183,6 +183,6 @@ Any kind of thick, tacky grease should be good. We prefer LiquiMoly LM47.
 
 | Conversion from 84 RPM to 435 RPM by replacing the center planetary with `SK11111` | Conversion from 84 RPM to 6000 RPM by replacing all the stages with `SK31717` |
 | --- | --- |
-| ![whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg](/whatsapp_image_2025-09-09_at_11.41.19_pm.jpeg) | ![starkiller-84-600.png](/starkiller-84-600.png) |
+| ![starkiller-partial-conversion.png](/starkiller-partial-conversion.png) | ![starkiller-84-600.png](/starkiller-84-600.png) |
 
 
