@@ -199,7 +199,7 @@ Mount the external feet using 3x 16mm M3 BHCS and the internal feet using 4x 16m
 The middle screw of the external foot threads into the extrusion. 
 Use the preloaded nuts in the earlier steps.
 
-| ![screenshot_20251029_030341.png](/screenshot_20251029_030341.png) | ![screenshot_20251029_030245.png](/screenshot_20251029_030245.png) |
+| ![screenshot_20251029_030341.png](/screenshot_20251029_030341.png) | ![boron-assy-4.png](/boron-assy-4.png) |
 | -- | -- |
 
 Final assembled frame
