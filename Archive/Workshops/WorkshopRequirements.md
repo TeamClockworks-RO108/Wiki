@@ -72,7 +72,7 @@ Mergeti pe [aceasta pagina](https://www.azul.com/downloads/?package=jdk#zulu) si
 
 In acest meniu al installer-ului, bifati `Set JAVA_HOME variable`:
 
-![screenshot_20250527_005326.png](/screenshot_20250527_005326.png)
+![workshop-java-install.png](/workshop-java-install.png)
 
 Continuati cu optiunile default.
 
