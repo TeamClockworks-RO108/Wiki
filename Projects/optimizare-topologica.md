@@ -112,7 +112,7 @@ De exemplu, daca dorim sa fabricam piesa originala la 60% infill, putem in schim
 
 | 60% Infill (original) | 90% Infill (optimizat) |
 | --- | --- |
-| ![screenshot_20250522_211756.png](/screenshot_20250522_211756.png) | ![topo-90-optimized.png](/topo-90-optimized.png) |
+| ![topo-60-original.png](/topo-60-original.png) | ![topo-90-optimized.png](/topo-90-optimized.png) |
 
 # Concluzii
 
