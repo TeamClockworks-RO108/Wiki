@@ -111,7 +111,7 @@ Palmyr has a different way to integrate with spoolman. Because there are up to 8
 Palmyr keeps track of spool ID's inside its gate map. To modify the gate map, follow the instructions below:
 
 | Locate the MMU panel and open the Edit Filaments menu inside the dots button | Click on the gate you wish to modify and enable Spoolman. Type the spool ID or click the Choose Spool button to have it auto-filled. To remove a gate from filament tracking, just disable Spoolman from that gate. 
-| ![screenshot_20260109_122122.png](/screenshot_20260109_122122.png) | ![screenshot_20260109_122150.png](/screenshot_20260109_122150.png) |
+| ![printer-palmyr-spoolman-1.png](/printer-palmyr-spoolman-1.png) | ![screenshot_20260109_122150.png](/screenshot_20260109_122150.png) |
 | -- | -- |
 
 The printer will fetch filament's details from spoolman like type, name and color. At each filament switch, the printer will set the appropiate spool ID and Moonraker will submit filament consumption to Spoolman. Selecting a gate will **not** change the current spool, only load operations.  
