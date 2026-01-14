@@ -53,7 +53,7 @@ You will see a dashboard where you will be able to control your account.
 ---
 Head over to the **Settings** area
 
-![screenshot_20250702_001329-1.png](/screenshot_20250702_001329-1.png)
+![acct-password-1.png](/acct-password-1.png)
 
 ---
 In the **User Details** section, take note of your **Usernamne**. This is the username you will login with. You can change it if you want to, but don't forget to click **Save**
