@@ -48,7 +48,7 @@ Afisajul integrat este greu de controlat, si are textul foarte mic, deci devine 
 
 In loc, vom folosi un Raspberry conectat la un touchscreen cu alimentare prin PoE. Asa avem mult mai multe controale. Pe Pi va rula KlipperScreen si va avea configurate toate imprimantele in el. 
 
-| ![whatsapp_image_2025-05-24_at_8.05.53_pm.jpeg](/whatsapp_image_2025-05-24_at_8.05.53_pm.jpeg) | ![duelingzero-klipperscreen-1.png](/duelingzero-klipperscreen-1.png) |
+| ![duelingzero-klipperscreen-2.png](/duelingzero-klipperscreen-2.png) | ![duelingzero-klipperscreen-1.png](/duelingzero-klipperscreen-1.png) |
 | --- | --- |
 
 ## Inlocuirea placii de pe carriage EBB42 cu EBB36
