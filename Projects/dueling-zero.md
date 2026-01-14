@@ -39,7 +39,7 @@ Tubul bowden merge catre rolele pozitionate in interior. Pentru ca preferam sa t
 
 Tubul existent in proiect este desenat cu verde. Rosu este extensia pe care noi o vom adauga.
 
-| ![screenshot_20250524_195636.png](/screenshot_20250524_195636.png) |
+| ![duelingzero-bowden-path.png](/duelingzero-bowden-path.png) |
 | --- |
 
 ## Renuntam la afisajul integrat si folosim ecran pe retea
