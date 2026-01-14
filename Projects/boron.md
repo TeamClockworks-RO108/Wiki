@@ -192,7 +192,7 @@ When assembling the bttom face, preload the following Makerbeam XL Nuts:
  
 A total of 43 nuts must be preloaded. 
  
-| ![boron-assy-1.png](/boron-assy-1.png) | ![screenshot_20251029_025219.png](/screenshot_20251029_025219.png) |
+| ![boron-assy-1.png](/boron-assy-1.png) | ![boron-assy-2.png](/boron-assy-2.png) |
 | -- | -- |
 
 Mount the external feet using 3x 16mm M3 BHCS and the internal feet using 4x 16mm M3 BHCS.
