@@ -16,7 +16,7 @@ Please read this page and follow the steps here when using the 3D Printers
 
 All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
 
-| ![screenshot_20251009_035232.png](/screenshot_20251009_035232.png) |
+| ![printer-web-menu.png](/printer-web-menu.png) |
 | --- |
 
 
