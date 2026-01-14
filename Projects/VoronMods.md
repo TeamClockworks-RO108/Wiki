@@ -95,7 +95,7 @@ Our modified mount impedes the airflow a bit (there is less space) but we have n
 
 This mod is a bit of a dead end for development because we are in the process of transitioning our Voron 2.4's away from DragonBurner. We found that the DragonBurner carriage for Voron 2.4 is fragile. XoL toolhead and carriage are the way forward for our printers.
 
-| ![screenshot_20251112_235510.png](/screenshot_20251112_235510.png) |
+| ![voron-carto-dragonburner.png](/voron-carto-dragonburner.png) |
 | -- |
 
 # Voron 2.4 157mm double spool holder (for ERCF MMU)
