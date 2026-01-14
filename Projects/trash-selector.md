@@ -186,7 +186,7 @@ Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alt
 Piciorul de susținere a fost optimizat topologic, utilizând uneltele de simulare din Fusion 360, pentru a reduce masa și a obține rezistența structurală maximă.
 
 
-|![topo-walle-design.png](/topo-walle-design.png)|![screenshot_2025-05-25_161333.png](/screenshot_2025-05-25_161333.png)|![screenshot_2025-05-25_161348.png](/screenshot_2025-05-25_161348.png)|
+|![topo-walle-design.png](/topo-walle-design.png)|![walle-topo-study.png](/walle-topo-study.png)|![screenshot_2025-05-25_161348.png](/screenshot_2025-05-25_161348.png)|
 | -- | -- | -- |
 
 Aceasta structura, comparativ cu piciorul de raft din [proiectul de cercetare](https://wiki.teamclockworks.ro/en/Projects/optimizare-topologica) pentru tool-ul de optimizare, a fost creat folosind metoda 2.
