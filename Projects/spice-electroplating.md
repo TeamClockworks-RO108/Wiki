@@ -101,7 +101,7 @@ The rate of deposition is controlled by changing the outgoing current density tr
  
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
   
-  ![20251209_090724.jpg](/20251209_090724.jpg)
+  ![spice-first-circuit-led.png](/spice-first-circuit-led.png)
   ![f5cwheljgnwufot.png](/f5cwheljgnwufot.png)
   ***diagram of the circuit***
   
