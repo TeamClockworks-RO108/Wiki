@@ -237,7 +237,7 @@ Afterwards, mount the top face LED channel using 4x 8mm M3 FHCS. These screws wi
 
 The LED structure is now ready for mounting inside the main frame. Use 16x 16mm M4 SHCS.
 
-| ![screenshot_20251029_040306.png](/screenshot_20251029_040306.png) | ![screenshot_20251029_040338.png](/screenshot_20251029_040338.png) |
+| ![boron-assy-12-2.png](/boron-assy-12-2.png) | ![screenshot_20251029_040338.png](/screenshot_20251029_040338.png) |
 | -- | -- |
 
 ### Top corners
