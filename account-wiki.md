@@ -36,7 +36,7 @@ Once you arrive on the Authentik's page, login as usual using the Discord provid
 
 If you have configured a password and username for your account, like in the next section, you can use that on the LucaciResearch login page instead of Discord.
 
-| ![screenshot_20250702_002600.png](/screenshot_20250702_002600.png) | ![screenshot_20251009_041503.png](/screenshot_20251009_041503.png) |
+| ![wiki-login-2.png](/wiki-login-2.png) | ![screenshot_20251009_041503.png](/screenshot_20251009_041503.png) |
 | --- | --- |
 
 
