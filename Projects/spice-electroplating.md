@@ -51,7 +51,7 @@ To create an electrically conductive solid layer, we started off using very fine
 To mitigate these effects, we added a binder to our paste. We tested three acetone-soluble polymers and settled on ABS, which had the best properties for our project. 
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
-![screenshot_20251209_095210_chrome.jpg](/screenshot_20251209_095210_chrome.jpg)
+![spice-resistance-graph.png](/spice-resistance-graph.png)
 ***we have also tested different binder agents: yellow-PLA, HIPS-blue, green-ASA and red-ABS(abs also held better adherance)  ***
 
 | plastic folosit | rezistenta (dupa o ora) | rezistenta (dupa o ora jumate) | schimbare |
