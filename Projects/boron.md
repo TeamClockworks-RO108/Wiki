@@ -204,7 +204,7 @@ Use the preloaded nuts in the earlier steps.
 
 Final assembled frame
 
-| ![screenshot_20251029_030642.png](/screenshot_20251029_030642.png) |
+| ![boron-assy-5.png](/boron-assy-5.png) |
 | -- |
  
 
