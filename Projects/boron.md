@@ -29,7 +29,7 @@ CAD files, STL files and firmware can be found in the [Github repository](https:
   </colgroup>
   <tr>
     <th> <img src="/boron-render.png" style="width=100%; height: auto;"> </th>
-    <th> <img src="/boron-assembled-preview.jpeg" style="width=100%; height: auto;"> </th>
+    <th> <img src="/boron-assembled-preview-darkness.png" style="width=100%; height: auto;"> </th>
   </tr>
 </table>
 
