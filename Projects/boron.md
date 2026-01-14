@@ -254,7 +254,7 @@ To install the potentiometer, unscrew the included nut and put it trough the hol
 
 Secure the WAGO holder into the utility panel body using 2x 16mm M3 BHCS. To make the WAGO connectors stay in place, we can use Cyanoacrylate glue or hot glue. 
 
-| ![boron-elec-1.png](/boron-elec-1.png) | ![screenshot_20251121_023804.png](/screenshot_20251121_023804.png) |
+| ![boron-elec-1.png](/boron-elec-1.png) | ![boron-elec-2-2.png](/boron-elec-2-2.png) |
 | -- |
 
 Assemble the Shelly holder by sliding the shelly relay inside and securing it into place with its small bracket and 2x 10mm M3 BHCS. 
