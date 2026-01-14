@@ -223,7 +223,7 @@ Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws
 
 If you opted for the alternative channels (3 piece part instead of single piece), then it is time to assemble them now. Join two halved with the center piece using 4x 8mm M3 FHCS. Repeat this step 20 times.
 
-| ![screenshot_20251125_005058.png](/screenshot_20251125_005058.png) |
+| ![boron-assy-9.png](/boron-assy-9.png) |
 | -- |
 
 ### LED Channels
