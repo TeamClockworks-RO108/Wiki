@@ -89,7 +89,7 @@ Then, configure the type of screw or nut (size, length, material) and select the
 
 The fasteners are inserted as special components under the top-level **Fasteners** directory. They will be automatically rigid jointed to the selected features. 
 
-| ![guide-fusion-fastener.png](/guide-fusion-fastener.png) | ![screenshot_20251028_044632.png](/screenshot_20251028_044632.png) |
+| ![guide-fusion-fastener.png](/guide-fusion-fastener.png) | ![guide-fusion-fastener-2.png](/guide-fusion-fastener-2.png) |
 | -- | -- |
 
 # Fusion hole tool
