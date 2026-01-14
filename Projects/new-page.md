@@ -17,7 +17,7 @@ Acest organizator este ideal pentru orice spațiu de lucru, fie el birou, atelie
 
 
 
-![captură_de_ecran_2025-09-26_223100.png](/captură_de_ecran_2025-09-26_223100.png){.align-center}
+![wire-nest-rg-cad.png](/wire-nest-rg-cad.png){.align-center}
 
  # **Obiective:**
  Proiectul Wire Nest are ca scop realizarea unui organizator funcțional și eficient, destinat gestionării diverselor tipuri de cabluri USB și nu numai. Acesta urmărește:
