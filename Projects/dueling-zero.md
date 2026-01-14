@@ -12,7 +12,7 @@ dateCreated: 2025-05-18T00:26:10.510Z
 **Dueling Zero** este o imprimanta 3D de ultima generatie, complet open-source, bazata pe designul imprimantei Voron Zero, care introduce o arhitectura inovatoare cu doua gantry-uri independente (Dual Gantry). 
 Beneficiaza de un sistem IDEX (Independent Dual Extrusion - 2 capete de printare independente), care permite printarea simultana cu 2 culori diferite sau 2 materiale diferite intr-un singur print. Este conceputa pentru precizie, viteza si versatilitate.
 
-| ![alt_text](/guelingzero-render-top.png){.align-center} | ![alt_text](/duelingzero-render-iso.png){.align-center} | ![alt_text](/duelingzero-gantry-iso.png){.align-center}
+| ![alt_text](/duelingzero-render-top.png){.align-center} | ![alt_text](/duelingzero-render-iso.png){.align-center} | ![alt_text](/duelingzero-gantry-iso.png){.align-center}
 | - | - | - |
 
 Pentru mai multe detalii se poate accesa link-ul de GitHub [Dueling Zero](https://github.com/zruncho3d/DuelingZero?tab=readme-ov-file).
