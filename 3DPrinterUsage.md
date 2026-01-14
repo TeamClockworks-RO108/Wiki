@@ -88,7 +88,7 @@ We use spoolman to track the filament usage. Spoolman can be accessed from the D
 
 Each spool is tracked using an unique number (example: `#17`) that is written using a marker on the spool or on the spool box. If opening a new spool, **please** take the time to transfer the writing from the box to the spool itself using a suitable permanent marker. Some spools will have a sticker that you can transfer to the spool.
 
-| ![screenshot_20260106_030348.png](/screenshot_20260106_030348.png) |
+| ![printer-spoolman-label.png](/printer-spoolman-label.png) |
 | -- |
 
 Before printing, ensure that you have enough filament on the spool. You can typically see this information inside the printer's page in the spoolman section. In this menu you can also eject the spool (`1`) (if using an untracked spool) or change the spool to another (`2`).
