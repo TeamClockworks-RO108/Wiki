@@ -81,7 +81,7 @@ Intrand in sectiunea de “mesh” ce exista in spatiul de design, mergi la modi
 Simularea reprezinta un cadru pentru un nou design, facut de la 0 sau imbunatatit pe piesa originala, astfel oferind o idee generala a distributiei stresului mecanic din piesa. Aceasta metoda cere efort mai mare, dar ofera rezultate pe care proiectarea ulterioara se face mai usor, fara dificultatile de a lucra pe o piesa ce contine mii de poligoane. 
 Piesa din imaginea de jos a fost creata folosind metoda 2 a optimizarii topologice. Rezultatele simularii au fost folosite ca o baza pentru un nou design.
 
-![](/screenshot_2025-05-13_202210.png)
+![](/topo-walle-design.png)
 
 # Printarea pieselor optimizate
 
