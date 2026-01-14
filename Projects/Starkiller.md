@@ -169,7 +169,7 @@ To ensure smooth operation, we need to clean the mechanism of the old, dirty gre
 
 We have found that Isopropyl alcohol and a plastic brush work well for cleaning out the old grease. 
 
-| ![img_20250910_041538411~2.jpg](/img_20250910_041538411~2.jpg) |
+| ![starskiller-clean-gears.png](/starskiller-clean-gears.png) |
 |:---:|
 | Clean gears |
 
