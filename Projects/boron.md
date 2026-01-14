@@ -357,7 +357,7 @@ Loosen the buried screws at the top of the vertical extrusions and take the top 
 Install the 4 side panels and the top panel (the chamfered one). 
 Reassemble the `U` and `I`, but do not tighten the corners fully. Place the square in the frame and tighten everything. 
 
-| ![boron-assembly-panels.jpeg](/boron-assembly-panels.jpeg) |
+| ![boron-assembly-panels-guide.png](/boron-assembly-panels-guide.png) |
 | -- |
 
 ## You are done
