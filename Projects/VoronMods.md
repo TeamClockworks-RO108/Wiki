@@ -70,7 +70,7 @@ The CAD is made in Fusion360 and is parametric. We have exported configuration f
 
 The mount allows the installation of the offical raspberry Pi camera both in the normal position and upside-down. This flexibility aids with the wiring of the CSI ribbon cable.
 
-| ![pi_camera_mount_v3.png](/pi_camera_mount_v3.png) |
+| ![voron-pi-camera-mount.png](/voron-pi-camera-mount.png) |
 | -- |
 
 # BTT HDMI5 V1.2 display mount Voron (Clicky-Clack, more space for USB)
