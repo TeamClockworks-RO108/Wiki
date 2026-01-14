@@ -28,7 +28,7 @@ As it can be seen in the picture, there is a local hydroxide layer built on top 
 
 **Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, eating away any deposited copper hydroxide, revealing the conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially and allowing for low resistance, electronics grade traces to be formed. the acid also allows for higher currents to be used, breaking down any OH bonds.
 
-![img-20251209-wa0001.jpg](/img-20251209-wa0001.jpg)
+![spice-copper-width.png](/spice-copper-width.png)
 
 ***diagram showing the copper deposition rate at different currents***
 
