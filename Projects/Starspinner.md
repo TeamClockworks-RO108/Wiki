@@ -45,7 +45,7 @@ For this project, you will need two fabricate two different parts: `SPx` and `SP
 
 `SPx1117` is the connector that reverses the planetary ratio. Its ending comes from it connecting 17-teeth center planetary stage to 11-teeth center planetary stage.
 
-| ![screenshot_20251012_162845.png](/screenshot_20251012_162845.png) | ![whatsapp_image_2025-10-12_at_4.34.04_pm.jpeg](/whatsapp_image_2025-10-12_at_4.34.04_pm.jpeg) |
+| ![starspinner-cnc-render.png](/starspinner-cnc-render.png) | ![whatsapp_image_2025-10-12_at_4.34.04_pm.jpeg](/whatsapp_image_2025-10-12_at_4.34.04_pm.jpeg) |
 | --- | --- |
 
 We strongly advise to machine this part out of aluminium or better. The dimensions are modelled after goBILDA carriers, so the gears should fit nicely on the prongs.
