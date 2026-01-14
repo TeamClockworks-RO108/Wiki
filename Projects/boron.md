@@ -341,7 +341,7 @@ Take each LED strip and direct one towards each vertical post. We will wrap each
 This is how one of the strips wrap. Repeat this pattern for all 4.
 At the bottom of the post there is a ziptie loop to help you keep the cables in place. 
 
-| ![screenshot_20251123_041212-1.png](/screenshot_20251123_041212-1.png) |
+| ![boron-elec-leds.png](/boron-elec-leds.png) |
 | -- |
 
 If you are having trouble keeping the strip in place at the top corners, install one of the strip clips using an 8mm M3 FHCS screw. 
