@@ -47,7 +47,7 @@ Extensive modidications need to be done to the blobifier configurations to a ste
 
 We reccomend to browse the assembly and configuration instructions on the Github PR tree.
 
-| ![blobifier-render.png](/blobifier-render.png =50%x50%) |
+| ![blobifier-stepper-render.png](/blobifier-stepper-render.png =50%x50%) |
 | -- |
 
 # Parametric LED Bar
