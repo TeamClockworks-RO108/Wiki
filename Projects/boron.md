@@ -216,7 +216,7 @@ The two crosses **are not identical**! The top cross contains heated inserts on 
 
 Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws. These beams help stabilize our build. 
 
-| ![screenshot_20251029_033556.png](/screenshot_20251029_033556.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) | ![screenshot_20251029_035000.png](/screenshot_20251029_035000.png) |
+| ![boron-assy-6.png](/boron-assy-6.png) | ![screenshot_20251029_033737-1.png](/screenshot_20251029_033737-1.png) | ![screenshot_20251029_035000.png](/screenshot_20251029_035000.png) |
 | -- | -- | -- |
 
 ### Alternative LED Channels
