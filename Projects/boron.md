@@ -347,7 +347,7 @@ At the bottom of the post there is a ziptie loop to help you keep the cables in 
 If you are having trouble keeping the strip in place at the top corners, install one of the strip clips using an 8mm M3 FHCS screw. 
 This screw threads inside a brass insert, so don't forget to install that too.
 
-| ![screenshot_20251123_042257.png](/screenshot_20251123_042257.png) |
+| ![boron-elec-leds-retainer.png](/boron-elec-leds-retainer.png) |
 | -- |
 
 ## Panel mounting
