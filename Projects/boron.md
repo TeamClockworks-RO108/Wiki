@@ -326,7 +326,7 @@ It's time to add the electronics:
  * Secure the shelly carrier to the bottom cross using 2x 10mm M3 FHCS
  * Secure the utility panel to the back extrusion using 3x 40mm M3 FHCS. Use the three extra preloaded nuts.
  
-| ![boron-assy-17.png](/boron-assy-17.png) | ![boron-assy-18.png](/boron-assy-18.png) | ![boron-assy-19.png](/boron-assy-19.png) | ![screenshot_20251123_040134.png](/screenshot_20251123_040134.png) |
+| ![boron-assy-17.png](/boron-assy-17.png) | ![boron-assy-18.png](/boron-assy-18.png) | ![boron-assy-19.png](/boron-assy-19.png) | ![boron-assy-20.png](/boron-assy-20.png) |
 | -- |
 
 Install back the three LED supports you just took off to aid in electronics mounting
