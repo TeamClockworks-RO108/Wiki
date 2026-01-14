@@ -60,7 +60,7 @@ In the **User Details** section, take note of your **Usernamne**. This is the us
 
 Click on the **Change password** button.
 
-![screenshot_20250702_001913.png](/screenshot_20250702_001913.png)
+![acct-password-2.png](/acct-password-2.png)
 
 ---
 Enter a new password twice and click **Continue**
