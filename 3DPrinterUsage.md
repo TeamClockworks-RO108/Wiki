@@ -176,7 +176,7 @@ After you open Grafana, you will see an empty welcome page. In the left menu, go
 
 Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
-![screenshot_20251009_051254.png](/screenshot_20251009_051254.png)
+![printer-grafana.png](/printer-grafana.png)
 
 # Extruder Multiplier Calibration
 
