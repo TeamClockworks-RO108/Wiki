@@ -25,7 +25,7 @@ Funcționarea sa nu necesită intervenție umană, aparatul utilizând o combina
 Dispozitivul asigură o detecție rapidă și precisă, contribuind la o reciclare eficientă a mai multor ambalaje într-un timp redus.
 Datorită designului compact, coșul poate fi atașat unui recipient de gunoi tetracameral cu modificări minime, oferind o soluție practică și inteligentă pentru gestionarea deșeurilor.
 
-| ![screenshot_2025-05-25_140819.png](/screenshot_2025-05-25_140819.png) |
+| ![walle-main-view.png](/walle-main-view.png) |
 | -- |
 
 
