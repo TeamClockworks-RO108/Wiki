@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-14T02:52:34.991Z
+date: 2026-01-14T02:56:14.154Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -353,7 +353,7 @@ This screw threads inside a brass insert, so don't forget to install that too.
 
 ## Panel mounting
 
-Loosen the buried screws at the top of the vertical extrusions and take the top square out. The top corner pieces will keep the square in one piece. Unfasten two corners (total 4 screws) to break the square into an `U` and an `I`. 
+Loosen the 8 buried screws at the top of the vertical extrusions and take the top square out. The top corner pieces will keep the square in one piece. Unfasten two corners (total 4 screws) to break the square into an `U` and an `I`. 
 
 Install the 4 side panels and the top panel (the chamfered one). 
 Reassemble the `U` and `I`, but do not tighten the corners fully. Place the square in the frame and tighten everything. 
