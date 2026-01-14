@@ -1,176 +1,62 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Rename root-level photos and update Markdown references that use: ![...](/photo)
-# We update by searching for occurrences of: (/FILENAME)
-# Extensions supported: jpg, jpeg, png, webp, heic (case-insensitive)
 
-ROOT="."
-DRY_RUN=0
+die() { printf 'Error: %s\n' "$*" >&2; exit 1; }
 
-usage() {
-  cat <<'EOF'
-Usage: rename-photos.sh [--dry-run]
-
-Iterates over photos in the repository root and prompts to rename them.
-Then updates all references in all *.md files (recursive) by replacing:
-  (/oldfilename)  ->  (/newfilename)
-
-Options:
-  --dry-run   Show what would change without modifying files.
-EOF
-}
-
-if [[ "${1-}" == "-h" || "${1-}" == "--help" ]]; then
-  usage
-  exit 0
+if (( $# != 2 )); then
+  die "Expected 2 args: oldfile newfile_base"
 fi
 
-if [[ "${1-}" == "--dry-run" ]]; then
-  DRY_RUN=1
+oldfile="$1"
+newbase="$2"
+
+
+# Filenames have no subpaths per requirement; enforce to avoid surprises.
+[[ "$oldfile" == */* ]] && die "oldfile must not contain '/'"
+[[ "$newbase" == */* ]] && die "newfile_base must not contain '/'"
+
+[[ -e "$oldfile" ]] || die "oldfile '$oldfile' does not exist"
+
+# Extract extension (text after last dot). If no dot, extension is empty.
+ext="${oldfile##*.}"
+newfile="${newbase}.${ext}"
+[[ ! -e "$newfile" ]] || die "target '$newfile' already exists"
+
+mv -- "$oldfile" "$newfile"
+lower_ext="${ext,,}"
+if [[ "$lower_ext" != "png" ]]; then
+    pngfile="${newbase}.png"
+    [[ ! -e "$pngfile" ]] || die "cannot re-encode: '$pngfile' already exists"
+    ffmpeg -hide_banner -loglevel error -y -i "$newfile" "$pngfile"
+    rm -f -- "$newfile"
+    newfile="$pngfile"
 fi
 
-# Ensure we are in repo root (best effort): use current directory.
-# You can cd to your repo root before running.
-
-# Collect markdown files once (recursive)
-mapfile -d '' MD_FILES < <(find "$ROOT" -type f -name '*.md' -print0)
-
-if (( ${#MD_FILES[@]} == 0 )); then
-  echo "No markdown files (*.md) found under: $ROOT"
-fi
-
-# Find root-level photos only
-mapfile -d '' PHOTOS < <(
-  find "$ROOT" -maxdepth 1 -type f \( \
-    -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.heic' \
-  \) -print0
-)
-
-if (( ${#PHOTOS[@]} == 0 )); then
-  echo "No photos found in repo root ($ROOT) with extensions: jpg jpeg png webp heic"
-  exit 0
-fi
-
-# Helper: count occurrences of (/filename) in markdown files
-count_occurrences() {
-    echo 1
+escape_sed_repl() {
+  # Escape backslashes, ampersands, and delimiter '|'
+  # (for sed replacement part)
+  printf '%s' "$1" | sed -e 's/[\/&|\\]/\\&/g'
+}
+escape_sed_pat() {
+  # Escape for sed pattern (basic regex) so oldfile is treated literally
+  printf '%s' "$1" | sed -e 's/[][(){}.^$*+?|\\\/]/\\&/g'
 }
 
-update_markdown_refs() {
-  local old="$1"
-  local new="$2"
+old_pat="$(escape_sed_pat "$oldfile")"
+new_rep="$(escape_sed_repl "$newfile")"
 
-  local old_pat="(/$old)"
-  local new_pat="(/$new)"
+while IFS= read -r -d '' f; do
+    sed -i "s|$old_pat|$new_rep|g" "$f"
+done < <(find . -type f -name '*.md' -print0)
 
-  if (( ${#MD_FILES[@]} == 0 )); then
-    return 0
-  fi
-
-  if (( DRY_RUN == 1 )); then
-    echo "  [dry-run] would replace: $old_pat -> $new_pat in ${#MD_FILES[@]} markdown files"
-    return 0
-  fi
-
-  # Pass strings via env so we don't fight delimiter parsing.
-  # Also escape special chars in the replacement so it stays literal.
-  OLD="$old_pat" NEW="$new_pat" \
-  perl -i -pe '
-    BEGIN {
-      $old = $ENV{OLD};
-      $new = $ENV{NEW};
-
-      # Make replacement literal (avoid $1, \1, etc. being interpreted)
-      $new =~ s/\\/\\\\/g;
-      $new =~ s/\$/\\\$/g;
-      $new =~ s/\@/\\\@/g;
-    }
-    s/\Q$old\E/$new/g;
-  ' -- "${MD_FILES[@]}"
-}
+git add $(git diff --name-only | grep .md)
+git add -A -- "$oldfile" "$newfile"
+git commit -m "Rename image $oldfile to $newfile"
 
 
-# Helper: validate new filename
-is_valid_new_name() {
-  local name="$1"
-  # Disallow path separators
-  [[ "$name" != *"/"* && "$name" != *"\\"* && -n "$name" ]]
-}
 
-echo "Found ${#PHOTOS[@]} photo(s) in repo root."
-echo "Will update references in ${#MD_FILES[@]} markdown file(s)."
-echo
 
-for photo_path in "${PHOTOS[@]}"; do
-  base="$(basename "$photo_path")"
 
-  # How many references exist?
-  refs="$(count_occurrences "$base")"
 
-  echo "Photo: $base"
-  echo "  References found in markdown: $refs"
-  echo -n "  New name (Enter=skip, '.'=auto-suggest from base name): "
-  IFS= read -r new_name
-
-  if [[ -z "$new_name" ]]; then
-    echo "  Skipped."
-    echo
-    continue
-  fi
-
-  if [[ "$new_name" == "." ]]; then
-    # Simple suggestion: replace spaces with '-', keep extension
-    ext="${base##*.}"
-    stem="${base%.*}"
-    suggested="${stem// /-}.${ext}"
-    new_name="$suggested"
-    echo "  Suggested: $new_name"
-  fi
-
-  if ! is_valid_new_name "$new_name"; then
-    echo "  Invalid new name. Must not contain '/' or '\\' and must be non-empty."
-    echo
-    continue
-  fi
-
-  if [[ "$new_name" == "$base" ]]; then
-    echo "  Same name; nothing to do."
-    echo
-    continue
-  fi
-
-  if [[ -e "$ROOT/$new_name" ]]; then
-    echo "  Target already exists: $new_name"
-    echo "  Skipping to avoid overwrite."
-    echo
-    continue
-  fi
-
-  # Confirm
-  echo -n "  Rename '$base' -> '$new_name' and update markdown refs? [y/N]: "
-  IFS= read -r ans
-  if [[ "$ans" != "y" && "$ans" != "Y" ]]; then
-    echo "  Cancelled."
-    echo
-    continue
-  fi
-
-  if (( DRY_RUN == 1 )); then
-    echo "  [dry-run] would mv -- '$base' '$new_name'"
-  else
-    mv -- "$ROOT/$base" "$ROOT/$new_name"
-  fi
-
-  if (( refs > 0 )); then
-    update_markdown_refs "$base" "$new_name"
-    echo "  Updated markdown references."
-  else
-    echo "  No markdown references to update."
-  fi
-
-  echo
-done
-
-echo "Done."
 
