@@ -59,7 +59,7 @@ Mai jos putem vedea piciorul de raft simulat in 3 exemple in care configuram pra
 
 | 100% | 57.6% | 32% |
 | ---- | ----- | --- |
-| ![](/screenshot_2025-05-13_194556.png) | ![](/screenshot_2025-05-13_194632.png) | ![](/screenshot_2025-05-13_194646.png) |
+| ![](/topo-simulation.png) | ![](/screenshot_2025-05-13_194632.png) | ![](/screenshot_2025-05-13_194646.png) |
 | Pragul de masa este 100%, deci avem chiar piesa originala. Putem vedea distributia stresului mecanic, unde peretii nu contribuie prea mult la rezistenta piesei. | La 57.6% obtinem o taiere optima. Piesa isi pastreaza structurile critice desi cantareste cu foarte putin peste jumatate din masa originala. | La 32% umplere pierdem atat structuri critice cat si structuri non-critice, rezultatul devenind neoptim.
 
 Observam ca simularile de optimizare trebuie efectuate de mai multe ori, pe mai multe cazuri, iar parametrii simularii trebuie ajustati pentru imbunatatirea rezultatelor.
