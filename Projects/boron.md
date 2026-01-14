@@ -317,7 +317,7 @@ Plug in the power outlet. You should see a green light on the shelly controller.
 
 Take off the bottom three LED supports from the **back** of of the cube. The **back** is the side where we preloaded 3 more (total 7) channel nuts in the bottom extrusion. We will be using these nuts to mount the utility panel we just wired. 
 
-| ![screenshot_20251123_034631.png](/screenshot_20251123_034631.png) |
+| ![boron-assy-16.png](/boron-assy-16.png) |
 | -- |
 
 It's time to add the electronics:
