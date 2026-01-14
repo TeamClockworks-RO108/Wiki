@@ -44,7 +44,7 @@ Dispozitivul este alcătuit dintr-un cilindru rotativ înclinat la 30°, integra
 
 Prin designul său modular și compact, proiectul funcționează ca un accesoriu inteligent și adaptabil, ce poate fi integrat cu ușurință în diverse medii — de la spații publice și birouri până la zone rezidențiale.
   
-![proiect_walle.jpg](/proiect_walle.jpg)
+![walle-render.png](/walle-render.png)
 
 ## Parcursul unui ambalaj prin cos
 
