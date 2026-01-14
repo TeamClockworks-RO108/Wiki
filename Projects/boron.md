@@ -288,7 +288,7 @@ The potentiometer has three connection points: two ends and one center tap. We w
 
 Follow the diagram below to wire the shelly circuit.
 
-| ![screenshot_20251121_020634.png](/screenshot_20251121_020634.png) |
+| ![boron-elec-5.png](/boron-elec-5.png) |
 | -- |
 
 ### PSU
