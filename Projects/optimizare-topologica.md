@@ -38,7 +38,7 @@ In comparatia de mai jos putem vedea atat piesa originala cat si piesa optimizat
 
 | Piesa originala    | Modelul optimizat |
 | -------- | ------- |
-| ![](/topo-original.png)  | ![](/screenshot_2025-04-26_232312.png) |
+| ![](/topo-original.png)  | ![](/topo-optimized-2.png) |
 
 
 # Etape
