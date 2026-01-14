@@ -14,7 +14,7 @@ Your account on [auth.lucaciresearch.net](https://auth.lucaciresearch.net) is us
 
 All the services are enrolled in the [Dashboard](https://clockworks-dashboard.lucres.net) so you do not have to memorize all the URL's. Please bookmark the dashboard address!
 
-![screenshot_20251009_041224.png](/screenshot_20251009_041224.png)
+![acct-dashboard.png](/acct-dashboard.png)
 
 When you access the dashboard, you will be asked to login. Instead of entering an username or email, login using the Discord button as shown below. You need to be present on the Discord server and have the Member role to be able to enter.
 
