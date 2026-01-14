@@ -108,7 +108,7 @@ We recomend that you grab the CAD file from our [github repository](https://gith
 
 The CAD file contains lots of parameters that can be configured. The most important are set to favourites and should be configured to your setup:
 
-![screenshot_20250909_043537.png](/screenshot_20250909_043537.png)
+![starkiller-parameters.png](/starkiller-parameters.png)
 
 | Parameter | Meaning |
 | --- | --- |
