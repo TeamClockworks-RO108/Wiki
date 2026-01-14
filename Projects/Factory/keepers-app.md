@@ -72,7 +72,7 @@ Proiectul a fost conceput in noiembrie si pus in activitate in ianuarie.
  
  
  
-![screenshot_20250525_164913.png](/screenshot_20250525_164913.png)
+![keepers-main-view.png](/keepers-main-view.png)
 
 ### Inventar
 
