@@ -65,7 +65,7 @@ Click on the **Change password** button.
 ---
 Enter a new password twice and click **Continue**
 
-![screenshot_20250702_001453.png](/screenshot_20250702_001453.png)
+![acct-password-3.png](/acct-password-3.png)
 
 
 ## Test your new password
