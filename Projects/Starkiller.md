@@ -124,7 +124,7 @@ The CAD file contains lots of parameters that can be configured. The most import
 
 You do not need to set the N, T and B variables manually in the Parameters window. You can use the Configuration menu to switch between part profiles. This setting only changes the first three parameters described above and is a shortcut to switch between the different part numbers.
 
-| ![screenshot_20250910_033509.png](/screenshot_20250910_033509.png) |
+| ![starkiller-configurations.png](/starkiller-configurations.png) |
 | --- |
 
 ## Example CAD configurations
