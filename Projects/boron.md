@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-14T02:46:01.683Z
+date: 2026-01-14T02:52:34.991Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -369,7 +369,7 @@ Reassemble the `U` and `I`, but do not tighten the corners fully. Place the squa
 # Gallery
 
 | ![](https://img.shields.io/badge/B.001-working-red?style=flat-square)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=flat-square)| ![boron-serial-b001.png](/boron-serial-b001.png) |
-| The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/grafica_boron_final_(clock_-_voron).svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/grafica_boron_final_(natie_prin_educatie).svg =200x200) | ^^ |
+| The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/boron-graphic-voron-x-clock.svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/boron-graphic-natie.svg =200x200) | ^^ |
 |:-- |
 
 
