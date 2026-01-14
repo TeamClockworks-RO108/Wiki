@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-14T02:32:24.499Z
+date: 2026-01-14T02:40:39.788Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -10,8 +10,7 @@ dateCreated: 2025-10-07T00:54:49.380Z
 
 ![license](https://img.shields.io/github/license/TeamClockworks-RO108/boron?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/TeamClockworks-RO108/boron?style=flat-square) ![status](https://img.shields.io/badge/status-working-green?style=flat-square) ![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/boron?style=flat-square)
 
-# fjdjdj ![boron-render.png](/boron-render.png)
-{.inltext}
+# fjdjdj ![boron-render.png](/boron-render.png){.inltext}
 
 # Description
 
