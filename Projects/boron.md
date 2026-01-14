@@ -281,7 +281,7 @@ When wiring the utility panel, take extra care to ensure that the neutral line (
 
 The potentiometer has three connection points: two ends and one center tap. We will wire one single end and the center tap, wires which will go to the shelly circuit. Dimension the wire accordingly. 
 
-| ![screenshot_20251121_015217.png](/screenshot_20251121_015217.png) |
+| ![boron-elec-4.png](/boron-elec-4.png) |
 | -- |
 
 ### Shelly circuit
