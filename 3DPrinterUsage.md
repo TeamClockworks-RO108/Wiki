@@ -47,7 +47,7 @@ Keep massive, warpy parts off the edges of the buildplate. Because the edges of 
 Rounding corners also helps prevent warping.
 
 |  Example: large parts as close to the center |
-| ![screenshot_20260107_200513.png](/screenshot_20260107_200513.png) |
+| ![printer-bed-placement.png](/printer-bed-placement.png) |
 | -- |
 
 # Material selection
