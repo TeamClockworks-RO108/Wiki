@@ -31,7 +31,7 @@ The Axon is a bit larger in size then the cheap chinese models and also comes wi
 
 The cutter is much faster and silent after this change :). 
 
-| ![frontclosed.png](/frontclosed.png) | ![frontopen.png](/frontopen.png) |
+| ![filametrix-axon-front-closed.png](/filametrix-axon-front-closed.png) | ![frontopen.png](/frontopen.png) |
 | -- | -- |
 
 
