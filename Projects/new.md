@@ -12,7 +12,7 @@ dateCreated: 2025-11-20T16:53:45.091Z
 Proiectul constă în realizarea unui organizator modular pentru sertar, folosind sistemul Gridfinity. După măsurarea spațiului disponibil, au fost generate aproximativ 10 baseplate-uri care acoperă zona interioară a sertarului. Pe acestea vor fi amplasate box-uri Gridfinity de diferite dimensiuni (1×1, 1×2, 5×2 etc.), selectate în funcție de obiectele ce urmează să fie depozitate.
 Modularitatea sistemului permite rearanjarea ușoară a compartimentelor și adaptarea lor în funcție de necesități.
  
- ![baseplate_-imagine.png](/baseplate_-imagine.png){.align-center}
+ ![gridfinity-baseplase.png](/gridfinity-baseplase.png){.align-center}
 
 # *Obiectiv:*
 
