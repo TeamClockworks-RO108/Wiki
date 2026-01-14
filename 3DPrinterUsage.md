@@ -93,7 +93,7 @@ Each spool is tracked using an unique number (example: `#17`) that is written us
 
 Before printing, ensure that you have enough filament on the spool. You can typically see this information inside the printer's page in the spoolman section. In this menu you can also eject the spool (`1`) (if using an untracked spool) or change the spool to another (`2`).
 
-| ![screenshot_20260106_031019.png](/screenshot_20260106_031019.png) | ![screenshot_20260106_031140.png](/screenshot_20260106_031140.png) |
+| ![printer-spoolman-mainsail.png](/printer-spoolman-mainsail.png) | ![screenshot_20260106_031140.png](/screenshot_20260106_031140.png) |
 | -- | -- |
 
 > Always change the spool configured in the printer when switching spools. If you forget, the printer will keep consuming from the old one and we'll end up with bad data in spoolman.
