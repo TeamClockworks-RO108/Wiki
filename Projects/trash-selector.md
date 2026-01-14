@@ -157,7 +157,7 @@ Pragul numeric empiric, T, stabilit după multiple teste, este egal cu 0,5.
 Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alte materiale și să elimine corect ambalajele ușoare sau pline cu lichid.
 
 
-|![chatgpt_image_nov_2_2025_07_01_45_pm.png](/chatgpt_image_nov_2_2025_07_01_45_pm.png)|![chatgpt_image_nov_2_2025_07_13_04_pm.png](/chatgpt_image_nov_2_2025_07_13_04_pm.png)|
+|![unknown-k-is-m-h.png](/unknown-k-is-m-h.png)|![chatgpt_image_nov_2_2025_07_13_04_pm.png](/chatgpt_image_nov_2_2025_07_13_04_pm.png)|
 | -- | -- |
 
 
