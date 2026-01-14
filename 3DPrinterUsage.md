@@ -206,7 +206,7 @@ To be able to obtain accurate values from this test, the printer's `rotation_dis
 This process should be done with **every type and brand** of filament we own. Save the value in the slicer's filament extrusion multiplier setting (scale 0-100% to 0-1).
 
 ## Reference 
-![emprints-coarse-annotated.png](/emprints-coarse-annotated.png)
+![printer-em-calibration.png](/printer-em-calibration.png)
 
 ## Shortcuts
 
