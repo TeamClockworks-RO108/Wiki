@@ -2,17 +2,25 @@
 title: Homepage
 description: Homepage
 published: true
-date: 2026-01-13T01:59:57.660Z
+date: 2026-01-14T02:10:45.232Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T18:31:31.628Z
 ---
 
-# 🕰️  Clockworks Team wiki
+# 🕰️  Clockworks Wiki
 
 ![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/Wiki?style=flat-square)
 
-Welcome to the **Clockworks Team Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
+Welcome to the **Clockworks Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
+
+Our foundational principle is **open-source**. We strive to open up to everyone to study, reproduce and improve all of our projects. This Wiki is a place where documentation lives for all of our work.
+
+The principles of open-source are best summarized by the Voron community:
+
+> *We build space shuttles with gardening tools, so that everyone can have a space shuttle of their own.*
+>
+> -- Voron manual, page 1
 
 # 🚀 Quick Navigation
 
