@@ -2,7 +2,7 @@
 title: Homepage
 description: Homepage
 published: true
-date: 2026-01-14T02:10:45.232Z
+date: 2026-01-14T02:14:34.267Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T18:31:31.628Z
@@ -22,10 +22,9 @@ The principles of open-source are best summarized by the Voron community:
 >
 > -- Voron manual, page 1
 
-# 🚀 Quick Navigation
 
 
-### 📘 Core Projects
+# 🚀 Core Projects
 
 * **⚙️ [Planetary Starkiller](en/Projects/Starkiller)** - A gear-ratio modification project for goBILDA Yellow Jacket planetary motors.
 * **🌀 [Planetary Starspinner](en/Projects/Starspinner)** - A detailed guide to modifying planetary gear motors for custom RPM configurations (e.g., 4200 and 8000).
@@ -34,7 +33,7 @@ The principles of open-source are best summarized by the Voron community:
 * **🗑️ [WALLE_E Smart Trashcan](en/Projects/trash-selector)** - WALLE_E is an automated sorting waste bin capable of classifying four types of materials.
 
 
-### 📘 Wiki Guides & Tools
+# 🏗 Guides & Tools
 
 * **👤 [Account & Wiki](en/account-wiki)** – How to log in and manage your account access.
 * **🖨️ [3D Printer Usage](en/3DPrinterUsage)** – Best practices and procedures for using the team’s 3D printers. 
