@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-14T02:56:14.154Z
+date: 2026-01-14T03:02:22.689Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -47,6 +47,8 @@ The side panels should follow this specification:
  
 The graphics elements should cover the entire usable visible area, but the background must continue up to the edges of the panel.
 The panel is phisically slightly smaller than the available area to acount for manufacturing inaccuracies.
+
+Ask your local supplier of plexiglass or PC panels about what transparency they offer. You want semitransparent, white panels. Fully transparent panels will allow you to see right trough the ink and completely opaque (like PVC) will let no light trough.
 
 # Parts List & Sourcing Guide
 
