@@ -169,6 +169,6 @@ Piesele pentru ecranul pe retea sunt:
  
 | Board | Pinout |
 | --- | --- | 
-| Octopus V1.1 | ![octopus_pinout.png](/octopus_pinout.png) <br> ![octopus-pinout-2.png](/octopus-pinout-2.png) | 
+| Octopus V1.1 | ![octopus_pinout.png](/octopus_pinout.png) <br> ![refs-octopus-pinout.png](/refs-octopus-pinout.png) | 
 | EBB36 CAN | ![refs-ebb36-pinout.png](/refs-ebb36-pinout.png) | 
 | SB2209 CAN | ![sb2209-pinout-guide.png](/sb2209-pinout-guide.png) | 
