@@ -120,7 +120,7 @@ Senzorul capacitiv funcționează prin detectarea schimbării indicelui dielectr
 
 * Semnalul trece printr-o configurație simplă cu tranzistor NPN, alimentat cu Vcc = 3,3 V (asigurat de Raspberry Pi), ceea ce permite obținerea unui nivel de ieșire sigur de 0/3,3 V, compatibil cu GPIO-urile plăcii de dezvoltare.
 
-|![051135_5_522_1024x1024.webp](/051135_5_522_1024x1024.webp)|![whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg](/whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg)|
+|![walle-sensor-unknown.png](/walle-sensor-unknown.png)|![whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg](/whatsapp_image_2025-11-02_at_18.25.12_2e654ebd.jpg)|
 | -- | -- |
 	
 
