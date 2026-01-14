@@ -127,7 +127,7 @@ Ensure that your UART adapter is set to work at 3.3v levels, as the ESP inside s
 Connect the UART adapter to the shelly as follows:
 | Shelly | UART Adapter | Diagram |
 | --- | --- | --- | 
-| U0TXD | RX | ![screenshot_20251121_031121.png](/screenshot_20251121_031121.png) |
+| U0TXD | RX | ![boron-flashing-pinout.png](/boron-flashing-pinout.png) |
 | U0RXD | TX |^^|
 | GND | GND |^^|
 | GPIO0 | GND |^^|
