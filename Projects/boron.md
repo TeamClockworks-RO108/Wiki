@@ -232,7 +232,7 @@ Install the 20 lateral LED channels. Mount them with 40x 8mm M3 BHCS screws. The
 
 Afterwards, mount the top face LED channel using 4x 8mm M3 FHCS. These screws will go in the heatset inserts inside the top cross. 
 
-| ![boron-assy-10.png](/boron-assy-10.png) |  ![screenshot_20251029_035542.png](/screenshot_20251029_035542.png)|
+| ![boron-assy-10.png](/boron-assy-10.png) |  ![boron-assy-11.png](/boron-assy-11.png)|
 | -- | -- |
 
 The LED structure is now ready for mounting inside the main frame. Use 16x 16mm M4 SHCS.
