@@ -36,7 +36,7 @@ dateCreated: 2024-11-13T00:40:19.306Z
 {.is-info}
 
 | Size | Hex Nut || DIN 934   || Square Nut | DIN 562 | ISO  |
-| | ![refs-hex-nuts.png](/refs-hex-nuts.png) |||| ![screenshot_20260112_035250.png](/screenshot_20260112_035250.png)  |||
+| | ![refs-hex-nuts.png](/refs-hex-nuts.png) |||| ![refs-square-nuts.png](/refs-square-nuts.png)  |||
 |  | Thread (D) | Height (k) | Outer Diameter (E) | Flat-to-Flat (S) | Thread (D) | Height (k) | Square length (E) |
 | -- |
 | **M2** | 2 | 1.6 | 4.3 | 4^4.2^ | 2 | 1.2 | 4 | 
