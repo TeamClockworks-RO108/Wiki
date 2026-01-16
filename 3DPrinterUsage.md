@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-12T03:30:31.793Z
+date: 2026-01-16T01:52:51.064Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -214,6 +214,33 @@ Conversion between filament units:
  * 1 mm = 2.4 mm^3^
  * 1 mm^3^ = 0.415 mm
 
+# Slicer profile mapping
+
+Set default filament and print profiles by opening the printer file and change these lines:
+
+```ini
+default_filament_profile = "Prusament PLA @MK3.5"
+default_print_profile = 0.20mm SPEED @MK3.5 0.4
+```
+---
+Configure for each printer a model.
+```ini
+printer_model = CVoron24
+printer_model = CVoron24-ERCF
+printer_model = CVoron0
+printer_model = CMK35
+```
+
+Configure for each material what printers can use it. Restrict based on cooling performance, temperature compatibility and extruder type. If the filament is specific for a single printer, please prefix the filament name with the printer's name (not the `printer_model` above) and restrict it properly.
+```ini
+compatible_printers_condition = printer_model=="CVoron24" or printer_model=="CVoron0"
+```
+
+For filament compatibility, restrict based on compatible printers and nozzle diameter.
+Take into consideration multimaterial handling. 
+```ini
+compatible_printers_condition = printer_model=="CVoron24" and nozzle_diameter[0]==0.4
+```
 
 # Special maintenance
 
