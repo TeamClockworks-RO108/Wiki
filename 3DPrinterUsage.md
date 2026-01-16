@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-16T21:28:54.947Z
+date: 2026-01-16T21:29:38.112Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -153,7 +153,7 @@ To control the printer, use the [webpage](https://printer.lucaciresearch.net) or
 
 Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
 
-This year we chose to upgrade our Prusa Mk3S+ printers to the Prusa Mk3.5S model, using upgrade kits bought from Prusa, and were assembled by our team using the very user-friendly upgrade [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-mk3s-to-mk3-5s-upgrade_2194).
+In 2026 we chose to upgrade our Prusa Mk3S+ printers to the Prusa Mk3.5S model, using upgrade kits bought from Prusa, and were assembled by our team using the very user-friendly upgrade [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-mk3s-to-mk3-5s-upgrade_2194).
 
 The Prusa Mk3.5S upgrade gives us access to more modern features, such as input shaper, a new screen interface with USB support and printing over network, while maintaining most of the hardware used by the Prusa Mk3S+. These features make the printers run faster than ever while having a more user-accesible interface, helps us print pieces faster and easier than before.
 
