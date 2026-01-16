@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-01-13T21:12:50.699Z
+date: 2026-01-16T01:36:56.707Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -69,3 +69,19 @@ Inaltime birou Ioana: 76.7 grosime placa 2.5cm
 Latime blat 50
 Lungime blat 135
 Inaltime suport 12
+
+
+# Programming Swyft servos
+
+
+The initial instructions were incomplete, but here is the bottom line, if you didn't source a programmer from them:
+
+USB to TTL converter (CP2102 works)
+
+  * 3 kΩ resistor across TxD and RxD
+
+  * RxD → Servo gray wire (Servo pwm)
+
+  * +5V → Servo center black wire (Servo 5V)
+
+  * Gnd → Servo remaining black wire (Servo Gnd)
