@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-16T21:29:38.112Z
+date: 2026-01-16T22:07:28.495Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -243,6 +243,12 @@ Take into consideration multimaterial handling.
 ```ini
 compatible_printers_condition = printer_model=="CVoron24" and nozzle_diameter[0]==0.4
 ```
+
+# Printing small details
+
+If printing very small details (like teethed pulleys),  apply the following settings to print:
+ * Layers and Perimeters -> Perimeter generator: Classic
+ * Speed -> Acceleration control -> Default: 1000
 
 # Special maintenance
 
