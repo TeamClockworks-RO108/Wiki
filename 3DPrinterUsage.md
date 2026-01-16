@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-16T01:52:51.064Z
+date: 2026-01-16T21:28:54.947Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -149,19 +149,21 @@ To control the printer, use the [webpage](https://printer.lucaciresearch.net) or
 {.is-warning}
 
 
-## Prusa Mk3S+
+## Prusa Mk3.5S
 
 Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
+
+This year we chose to upgrade our Prusa Mk3S+ printers to the Prusa Mk3.5S model, using upgrade kits bought from Prusa, and were assembled by our team using the very user-friendly upgrade [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-mk3s-to-mk3-5s-upgrade_2194).
+
+The Prusa Mk3.5S upgrade gives us access to more modern features, such as input shaper, a new screen interface with USB support and printing over network, while maintaining most of the hardware used by the Prusa Mk3S+. These features make the printers run faster than ever while having a more user-accesible interface, helps us print pieces faster and easier than before.
 
 The bed sheets attach magnetically to the bed and can be changed with our other sheets stored near the printers. For more information about the materials that can be printed on Prusa Sheets, you can consult [Prusa’s Material Guide](https://help.prusa3d.com/filament-material-guide).
 We print PLA on the smooth sheet and PETG on the textured sheet.
 
-For more general information about the PrusaMk3S+ printers you can consult the [printer handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mk3s_en.pdf) or read the slightly older physical version present at the workshop, stored near the printers themselves.
+For more general information about the Prusa Mk3.5S printers you can consult [the printer's handbook](https://www.prusa3d.com/downloads/manual/prusa3d_manual_mk35s_101_en.pdf) or read the physical versions present at the workshop, stored near the printers themselves.
 
-To print, put your gcode file on a SD card and insert the SD card into the printer. Navigate on the printer's LCD to find the file and start printing.
+To print, remove the printer's USB stick and conect it to the workshop's PC, upload your gcode file on the USB stick and insert the USB stick back into the printer. Press the "Print" button on the printer's LCD screen, select the file you uploaded and start printing.
 
-> They are pending an upgrade to Mk3.5. Cristi and Dragos, please update this section once the printers are upgraded with instructions for prusaconnect after Alex configures it. 
-{.is-success}
 
 
 # Observability
