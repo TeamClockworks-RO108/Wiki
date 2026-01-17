@@ -2,7 +2,7 @@
 title: Flywheel Molding
 description: 
 published: true
-date: 2026-01-17T03:35:09.077Z
+date: 2026-01-17T03:36:35.876Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-17T03:35:09.077Z
@@ -44,7 +44,7 @@ Use:
 # Pour
 
 Pour the silicone in the bottom half and secure the top using 4x M4 20mm SHCS
-For the 96mm wheel you will need about 184mL of silicone, so prepare about 250mL. 
+For the 96mm wheel you will need about 184mL of silicone, so prepare about 230mL. 
 
 |  ![screenshot_20260117_053155.png](/screenshot_20260117_053155.png) |
 | -- |
