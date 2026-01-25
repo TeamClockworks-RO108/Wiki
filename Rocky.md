@@ -2,7 +2,7 @@
 title: Rocky
 description: 
 published: true
-date: 2026-01-25T02:36:16.294Z
+date: 2026-01-25T02:41:25.039Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T02:36:16.294Z
@@ -34,7 +34,6 @@ The robot was designed around the idea of storing up to 3 artifacts placed by a 
 
 The launcher was built using an AndyMark silicone wheel, driven by a 6000 RPM motor. Feeding artifacts into the launcher was done with the help of a servo connected to a flap, which pushed artifacts individually into the launching mechanism, ensuring simple and repeatable control suitable for a 16-hour hackathon.
 
-### Evaluation
 
 | Pros                              | Cons                              |
 | --------------------------------- | --------------------------------- |
@@ -46,8 +45,6 @@ The launcher was built using an AndyMark silicone wheel, driven by a 6000 RPM mo
 
 Analyzing our Kickathon design revealed significant development potential. We decided to address the robot’s shortcomings as follows.
 
-### Improvements
-
 * Adding an intake.
   We mounted the storage tube in a pivoting position, actuated by a servo motor with a 2:1 gearbox. This allows the intake opening to approach the ground, where we added a drum-based intake using elastic bands.
 
@@ -58,15 +55,15 @@ Analyzing our Kickathon design revealed significant development potential. We de
 
 After testing, we identified several weaknesses during collection. Because the intake is relatively narrow (130 mm) and the tube is fairly short (400 mm), collecting the last artifact becomes difficult and sometimes it falls back out.
 
-### Drawbacks
-
-* Reduced intake error margin         
-* Last artifact may fall out          
-* Unstable during aggressive gameplay 
+* Reduced intake error margin.
+  Intake collection tube is too narrow (130mm).
+* Last artifact may fall out due to lack of grip on tube.
+* Unstable during aggressive gameplay .
+  Collisions with other robots may cause the last artifact to fall. 
 
 ## Third Version
 
-### Improvements
+The third iteration of Rocky has some large improvements that allow it to be a much more robust robot. As a consequence, our OPR raised significantly when version 3 was put into play at league meets.
 
 * Wide intake (310 mm) with gears and dual roller
   We widened the intake area to 310 mm and added a secondary, smaller elastic roller behind the main one to assist artifact transfer during fast autonomous collection. Two servo-driven gears were added on the sides to prevent the last artifact from falling out.
