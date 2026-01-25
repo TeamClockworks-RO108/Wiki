@@ -2,7 +2,7 @@
 title: Rocky
 description: 
 published: true
-date: 2026-01-25T03:09:27.948Z
+date: 2026-01-25T03:13:57.455Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T02:36:16.294Z
@@ -85,6 +85,8 @@ The third iteration of Rocky has some large improvements that allow it to be a m
 
 * Automatic positioning using a video camera
   We implemented automatic navigation to the optimal launch zone using a Limelight camera and field markers. Navigation is based on sensor fusion between camera data and odometry.
+  
+ * Faster (435 RPM) motors on drivetrain. This change allows our driver to navigate much faster around the field, at the expense of slower accelerations and less control. In the past, we have emulated slower accelerations using FIR filters on the motors to allow our driver to get accustomed to slower controls to prepare for this change. 
   
 | Gripper on intake | Brake system | 
 |  |  | 
