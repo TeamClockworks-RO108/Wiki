@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2026-01-28T02:02:31.617Z
+date: 2026-01-28T02:11:14.531Z
 tags: mechanics, 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -130,6 +130,15 @@ We do not reccomend using the built-in thread and clearance tap types because we
 | ![guide-fusion-hole-1.png](/guide-fusion-hole-1.png) | ![guide-fusion-hole-2.png](/guide-fusion-hole-2.png) |
 | -- | -- |
 
+# Screw Acquisition
+
+Go to [tme.eu](https://tme.eu) and login with the team account. Navigate to **Elemente Mecanice** -> **Suruburi cu piulita** and select the correct type in filters **Norma DIN** or **Norma ISO**. Check **Valabile in stoc**. **KRAFTBERG** is the prefferred producer.
+
+A2 stainless steel screws are good. Do not splurge on A4.  
+
+# Pogo connectors
+686C02222030C1E EDAC mates with 685C02212021C1E EDAC
+
 # Fastener Availability
 
 | Type |||| Count | Notes |
@@ -202,19 +211,5 @@ We do not reccomend using the built-in thread and clearance tap types because we
 
 
 
-# Screw Acquisition
 
-Go to [tme.eu](https://tme.eu) and login with the team account. Navigate to **Elemente Mecanice** -> **Suruburi cu piulita** and select the correct type in filters **Norma DIN** or **Norma ISO**. Check **Valabile in stoc**. **KRAFTBERG** is the prefferred producer.
-
-A2 stainless steel screws are good. Do not splurge on A4.  
-
-# Very nice pogo connectors:
-686C02222030C1E EDAC mates with 685C02212021C1E EDAC
-
-
-# Flexible materials:
-
-[Shore A 18-20](https://mathaus.ro/p/silicon-sanitar-bison-transparent-280-ml/000000000011105095)
-
-[Shore A 10](https://mathaus.ro/p/silicon-acril-bison-alb-300-ml/000000000011105107)
 
