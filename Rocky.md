@@ -2,7 +2,7 @@
 title: Rocky
 description: 
 published: true
-date: 2026-01-25T03:13:57.455Z
+date: 2026-01-28T02:09:34.384Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T02:36:16.294Z
@@ -113,6 +113,6 @@ This system is superior to purely navigating based on vision information because
 | II  | ❄️ Snowbotz              | 2 | 07.12.2025 | 3.33          | 85.71 ↗  | **1**    | **1**           |
 | III | 🟢 Unlock the Motif      | 3 | 13.12.2025 | 3.50 ↗        | 72.65 ↗  | **1**    | **1**           |
 | IV  | 🏛️ Relic Rush            | 3 | 10.01.2026 | 5.50 ↗        | 134.75 ↗ | **1**    | **1**           |
-| V   | 🏎️ Future at High Speed  | 3 | 24.01.2026 | **6.00** ↗        | 139.12 ↗ | **1**    | **1**           |
+| V   | 🏎️ Future at High Speed  | 4 | 24.01.2026 | **6.00** ↗        | 139.12 ↗ | **1**    | **1**           |
 
 
