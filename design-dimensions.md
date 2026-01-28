@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2026-01-12T02:31:46.805Z
+date: 2026-01-28T02:02:31.617Z
 tags: mechanics, 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
@@ -80,6 +80,31 @@ Unfortunately, it is not magnetic. It will not stick to magnetic trays and might
 **Steel** has beter mechanical properties than A2, but can rust if exposed to elements and heat.
 Screws are often coated with a protective layer: Zinc, Black oxide. 
 It attracts well magnets and can be used for induction detection. 
+
+# Bearing Holes
+
+When creating a round hole for a bearing, the slicer's seam placement algorithm will place the seam on the hole surface. Because of this, the hole will appear slightly (0.1mm) tighter. If the assembly is subjected to rough motion, the seam bump will wear out and the bearing will be free to move in the hole.
+
+To prevent this situation, we will design bearing holes to have a "teardrop" shape. The opening of the teardrop should have 120* (or the angle of a line with the horizontal is 60*).
+
+| ![screenshot_20260128_033845.png](/screenshot_20260128_033845.png) | ![screenshot_20260128_033925.png](/screenshot_20260128_033925.png) |
+| -- | -- |
+
+The diameter of the teardrop hole should be approximately 0.2mm over the diameter of the bearing. 
+For a very tight fit, use `D+0.1` instead and assemble using a vice. !
+
+# Hexagonal shaft holes
+
+Seams and corner smoothing will create badly-dimensioned holes if modelled as straight hexagons. This phenomenon forces us to design oversized holes. The extra material wears out in time, giving more play in the joint. 
+
+To combat this, we will include small holes (1mm) in the corners of the hexagon. To further prevent corner bulging and first layer imperfections, a small fillet (0.6mm) is added to new edged together with a small chamfer (0.3mm) to the bottom face.
+
+| ![screenshot_20260128_035629.png](/screenshot_20260128_035629.png) | ![screenshot_20260128_035803.png](/screenshot_20260128_035803.png) |
+| -- |
+
+
+For a good fit, the hexagon's circumscribed radius should be `(D+0.2)/2`.
+Tighter fits can be made, but assembly will be difficult and will include intensive hammering. 
 
 # Fusion fastener tool
 
