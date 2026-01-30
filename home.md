@@ -9,3 +9,44 @@ dateCreated: 2026-01-30T20:25:38.275Z
 ---
 
 # Home page
+title: Homepage
+description: Homepage
+published: true
+date: 2026-01-14T02:14:34.267Z
+tags: 
+editor: markdown
+dateCreated: 2024-11-11T18:31:31.628Z
+---
+
+# 🕰️  Clockworks Wiki
+
+![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/Wiki?style=flat-square)
+
+Welcome to the **Clockworks Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
+
+Our foundational principle is **open-source**. We strive to open up to everyone to study, reproduce and improve all of our projects. This Wiki is a place where documentation lives for all of our work.
+
+The principles of open-source are best summarized by the Voron community:
+
+> *We build space shuttles with gardening tools, so that everyone can have a space shuttle of their own.*
+>
+> -- Voron manual, page 1
+
+
+
+# 🚀 Core Projects
+
+* **⚙️ [Planetary Starkiller](en/Projects/Starkiller)** - A gear-ratio modification project for goBILDA Yellow Jacket planetary motors.
+* **🌀 [Planetary Starspinner](en/Projects/Starspinner)** - A detailed guide to modifying planetary gear motors for custom RPM configurations (e.g., 4200 and 8000).
+* **🧊 [Boron](en/Projects/boron)** - Boron (Box-Voron) is an open-source light cube designed to be built cheaply and easily, with interchangeable side graphics for customizable displays.
+* **🧠 [Topology Optimization](en/Projects/optimizare-topologica)** - Topology Optimization is a research tool and workflow used in CAD  to improve the geometry of parts under mechanical stress.
+* **🗑️ [WALLE_E Smart Trashcan](en/Projects/trash-selector)** - WALLE_E is an automated sorting waste bin capable of classifying four types of materials.
+
+
+# 🏗 Guides & Tools
+
+* **👤 [Account & Wiki](en/account-wiki)** – How to log in and manage your account access.
+* **🖨️ [3D Printer Usage](en/3DPrinterUsage)** – Best practices and procedures for using the team’s 3D printers. 
+* **📐 [Design Dimensions](en/design-dimensions)** – Reference for fastener measurements and printing tolerances.
+* **💻 [Dev Machine](en/dev-machine)** – Information for accessing the remote development server.
+
