@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-01-31T02:17:49.122Z
+date: 2026-01-31T02:51:13.017Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -41,4 +41,5 @@ The principles of open-source are best summarized by the Voron community:
 * **🖨️ [3D Printer Usage](en/3DPrinterUsage)** – Best practices and procedures for using the team’s 3D printers. 
 * **📐 [Design Dimensions](en/design-dimensions)** – Reference for fastener measurements and printing tolerances.
 * **💻 [Dev Machine](en/dev-machine)** – Information for accessing the remote development server.
+* **⚡️ [PID Tuning](en/pid-tuning)** – Process for tuning PID coefficients.
 
