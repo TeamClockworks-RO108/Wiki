@@ -2,21 +2,13 @@
 title: Home page
 description: 
 published: true
-date: 2026-01-30T20:28:19.510Z
+date: 2026-01-31T02:17:49.122Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
 ---
 
-# Home page
-title: Homepage
-description: Homepage
-published: true
-date: 2026-01-14T02:14:34.267Z
-tags: 
-editor: markdown
-dateCreated: 2024-11-11T18:31:31.628Z
----
+
 
 # 🕰️  Clockworks Wiki
 
