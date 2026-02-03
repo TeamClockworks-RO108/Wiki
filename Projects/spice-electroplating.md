@@ -2,8 +2,8 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2026-01-12T02:39:35.119Z
-tags: 3dprinting, davidcore, research, project
+date: 2026-02-03T10:52:22.551Z
+tags: 3dprinting, project, davidcore, research
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
 ---
@@ -121,4 +121,4 @@ For our main project, we have fabricated a 555 timer blinker circuit.
   
 # Future development
 
-  Future development will also encompass the transfer of this project from an electro-chemical approach to a more independent physical process. We are going to implement plasma sputtering at atmospheric pressure or near vacuum pressure to rapidly print and plate thick pure metal traces on custom 3d printed pcbs. If it works, it is going to drastically change the way custom pcbs are manufactured.
+  Future development will also encompass the transfer of this project from an electro-chemical approach to a more independent physical process. We are going to implement plasma sputtering at atmospheric pressure or near vacuum pressure to rapidly print and plate thick pure metal traces on custom 3d printed pcbs. If it works, it is going to drastically change the way custom pcbs are manufactured (see Therion - https://wiki.teamclockworks.ro/en/Projects/nume-inca-in-creatie).
