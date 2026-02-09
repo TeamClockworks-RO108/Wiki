@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-01-16T22:07:28.495Z
+date: 2026-02-09T00:29:56.471Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -50,6 +50,34 @@ Rounding corners also helps prevent warping.
 | ![printer-bed-placement.png](/printer-bed-placement.png) |
 | -- |
 
+# Build plate
+
+Our printers are equipped with magnetic, hot-swappable build plates. All build plates have functioning surfaces on both sides. When switching to a new build plate, follow the general checklist:
+ * The plate is correctly dimensioned for the printer.
+   * Prusa XL plates for Medina.
+   * Prusa Core One plates for Palmyr.
+   * Prusa Mini plates for Dueling.
+ * Wipe the plate with IPA
+ * Ensure correct positioning (example: for Palmyr the plate should not cross under the nozzle wiper)
+ * **Check recommandations given in the materials section below.**
+ 
+The printers are usually equipped with a **Satin** sheet. This is the daily setup that we run and it should fit your workkflow too. The **Satin** has a few drawbacks, notably that is does not have that much holding power for our most usual materials (ABS, ASA, PC). Big parts can still warp and small parts can get knocked off during printing. In these cases, you might end up needing much stronger adhesion than Satin, in which cases please switch to the **PEI Smooth** sheet. 
+ 
+| PEI Smooth | Satin | Textured |
+| -- | -- | -- |
+| Very good adhesion for a wide range of materials. | Decent adhesion for almost all materials imaginable, including first-class support for PC.  | Good adhesion for PETG, but not really useful beyond that. 
+
+> Tree supports tipically do not succeed on the **Satin** sheet using ABS. This is because the bottom layer of the supports is fragile, and combined with the reduced adhesion, may cause the support to fly off the print. Prefer to use Snug supports or better, switch to the **Smooth** sheet
+{.is-info}
+
+
+> The **Satin** sheet does not provide excellent adhesion for large parts. 
+> If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
+> The strong adhesion of the **Smooth** sheet combined with significant warping can permanently damage the sheet!
+> 
+> After using the **Smooth** sheet, always revert to the **Satin** sheet.
+{.is-warning}
+
 # Material selection
 
 When choosing a material for a print, take into consideration the following:
@@ -57,6 +85,7 @@ When choosing a material for a print, take into consideration the following:
    * Matte ABS (Everfil ABS-L.01 and ABS-M.34) has very poor layer adhesion and break resistance. Use only for decorative prints and some Voron printer parts.
    * Regular ABS has good mechanical properties. This category includes 3DPower, Sakata3D, Everfil ABS-S.01 and other.
    * White ABS is **EXTREMELY** brittle even in filament form. It is very abrasive to extruder gears and nozzles. The cause of this is the addition of TiO~2~ as a whitener. Do not print unless necessary. It can break in the extruder, in filament changers, in the tube or pretty much anywhere.
+   * Print on the regular **Satin** plate except for when printing parts that are susceptible to warp or are too small to keep adhesion during printing. For these cases, switch to **PEI Smooth**.
  * ASA is equivalent to ABS and is resistant to UV degradation. It rarely contains destructive additives.
  * PC is literally ABS on steroids. Mechanical resistance is trough the roof, but it warps severely. It is dense and heavy. Print PC on the Satin sheet only after careful evaluation of the design with Alex or Cristi. Do **NOT** print on Smooth PEI as it will bond permanently. 
  * PCCF is PC with added carbon fibers that reduce the warping effect at the expense of worse layer adhesion and surface finish. Stiffness and dimensional stability is much improved. Careful considerations for:
@@ -141,12 +170,6 @@ Currently, when loading filament, you have to disconnect the bowden tube from th
 
 To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the klipperscreen terminal. 
 
-> The **Satin** sheet does not provide excellent adhesion for large parts. 
-> If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
-> The strong adhesion of the **Smooth** sheet combined with significant warping can permanently damage the sheet!
-> 
-> After using the **Smooth** sheet, always revert to the **Satin** sheet.
-{.is-warning}
 
 
 ## Prusa Mk3.5S
