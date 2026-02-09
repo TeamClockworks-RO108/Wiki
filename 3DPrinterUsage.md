@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-09T00:29:56.471Z
+date: 2026-02-09T00:34:10.287Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -240,6 +240,8 @@ Conversion between filament units:
  * 1 mm^3^ = 0.415 mm
 
 # Slicer profile mapping
+
+PrusaSlicer includes features to restrict filament and printer profilese to a specific set of printers.
 
 Set default filament and print profiles by opening the printer file and change these lines:
 
