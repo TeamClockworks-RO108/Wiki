@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-09T00:35:06.683Z
+date: 2026-02-09T00:46:13.482Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -110,6 +110,33 @@ For filament compatibility, as a general rule:
  * PC will be printed only on enclosed printers and after careful evaluation of the design. Due to severe adhesion and warping, it can damage PEI sheets. It is a good idea to print it on multimaterial printers (Palmyr) to allow for ABS strain relief features. 
  
 If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
+
+---
+
+> This bit here is not yet implemented, please read but do not take seriously.
+{.is-danger}
+
+
+All of our printers share common filament profiles. Despite having different cooling performance, the fan commands are hijacked by a klipper macro that scales the needed fan around what are the printer's capabilities. 
+
+The fan scaling parameters can be changed using the `TEST_FAN_TUNING` macro. After tuning, don't forget to save the new values in the `KlipperScripts/fan_scale.cfg` file.
+
+```ini
+[gcode_macro TEST_FAN_TUNING]
+
+# Test the scale and offset parametes of the overriden M106 fan macro.
+# Also allows an override value to be set. If overridden, any value set on the fan
+# will use the override value, except if 0 is set, 0 is written.
+# Normal operation follows this formula: new_fan = (old_fan * SCALE) + OFFSET
+#
+#  P A R A M E T E R S :
+# SCALE: float to scale the fan with
+# OFFSET: float to add after scaling
+# OVERRIDE: float to set as raw speed (no scaling and offset!).
+#           Takes effect until this macro is called again *without* OVERRIDE.
+#           If the macro is called parameterless, it just clears any active overrride.
+#
+```
 
 # Spool management
 
