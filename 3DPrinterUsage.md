@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-09T00:34:10.287Z
+date: 2026-02-09T00:35:06.683Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -233,11 +233,11 @@ This process should be done with **every type and brand** of filament we own. Sa
 ## Reference 
 ![printer-em-calibration.png](/printer-em-calibration.png)
 
-## Shortcuts
+# Printing small details
 
-Conversion between filament units:
- * 1 mm = 2.4 mm^3^
- * 1 mm^3^ = 0.415 mm
+If printing very small details (like teethed pulleys),  apply the following settings to print:
+ * Layers and Perimeters -> Perimeter generator: Classic
+ * Speed -> Acceleration control -> Default: 1000
 
 # Slicer profile mapping
 
@@ -269,11 +269,7 @@ Take into consideration multimaterial handling.
 compatible_printers_condition = printer_model=="CVoron24" and nozzle_diameter[0]==0.4
 ```
 
-# Printing small details
 
-If printing very small details (like teethed pulleys),  apply the following settings to print:
- * Layers and Perimeters -> Perimeter generator: Classic
- * Speed -> Acceleration control -> Default: 1000
 
 # Special maintenance
 
@@ -293,3 +289,9 @@ If you hear it vibrate after bootup, go to the ERCF menu, the Manage submenu and
 
 If the loading of material starts behaving eratically and does not have enough grip, it is very possible that the servo horn is worn out.
 Print [this servo horn](https://github.com/moggieuk/ERCF-Springy/blob/main/Savox_Servo_Option/%5Ba%5D_Servo_Arm_Savox.stl). The screw at the center is nonstandard, so make sure to not strip it and keep it safe during the repair. 
+
+# Shortcuts
+
+Conversion between filament units:
+ * 1 mm = 2.4 mm^3^
+ * 1 mm^3^ = 0.415 mm
