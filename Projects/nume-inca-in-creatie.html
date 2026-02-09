@@ -2,7 +2,7 @@
 title: Therion metal plating (a voron augmentation initiative)
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate.
 published: true
-date: 2026-02-04T23:46:03.679Z
+date: 2026-02-09T20:31:14.721Z
 tags: 3dprinting, davidcore, voron, research, electroplating
 editor: ckeditor
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -27,7 +27,23 @@ dateCreated: 2026-01-31T10:04:25.526Z
   <li>easier prototyping, cutting the need for third party companies from afar that handle PCB manufacturing.</li>
 </ol>
 <h3>Fast introduction in plasma physics</h3>
-<p>&nbsp; &nbsp; First, it is important to remember a basic chemistry lesson that each of us learns during school. Most atomic elements are ions, either negative or positive ions. These elements search for other “complements” in nature so that they can form atomic compounds, reaching neutrality. Thus, by using high energy electrons, it is possible to sever these covalent bonds between nuclei, obtaining a ion. Having high percentages of ions in an atomic gas can eventually bring about the creation of a plasma. Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:&nbsp;</p>
+<p>&nbsp; &nbsp;</p>
+<figure class="image image-style-align-right image_resized" style="width:39.24%;"><img src="/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png">
+  <figcaption>maxwellian distribution (following a “normal distribution” of electron thermal energies)</figcaption>
+</figure>
+<p>&nbsp;First, it is important to remember a basic chemistry lesson that each of us learns during school. Most atomic elements are ions, either negative or positive ions. These elements search for other “complements” in nature so that they can form atomic compounds, reaching neutrality. Thus, by using high energy electrons, it is possible to sever these covalent bonds between nuclei, obtaining a ion. Having high percentages of ions in an atomic gas can eventually bring about the creation of a plasma.</p>
+<p>electrons are knocked off orbit in processes of dissociation, excitation and dissociative ionization. Generally, when a high energy electron hits a molecule's electron, kinetic energy is transferred, exciting the electron</p>
+<figure class="image image_resized image-style-align-right" style="width:39.25%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&amp;s" alt="Scintillation and ionization in argon. | Download Scientific Diagram">
+  <figcaption>diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.</figcaption>
+</figure>
+<p>It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.</p>
+<p><i>#Maxwellian distribution showing the electron temperature distribution. Only electrons in the yellow zone have enough energy to ionize a particle.</i></p>
+<p>&nbsp;</p>
+<p>&nbsp;and thus bringing it into a higher energy state. Then, if the electron that hit the molecule is hot enough, the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (the molecule will become a positive ion - x<sup>+</sup>); ionization reaction of argon could be written as</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class="text-huge" style="font-family:Arial, Helvetica, sans-serif;">Ar(g) + e<sup>-</sup> → Ar<sup>+</sup>(g) + 2e<sup>-</sup></span></p>
+<p>or, if the electron is energetic enough, it can remove more electrons</p>
+<p><span class="text-huge" style="font-family:Arial, Helvetica, sans-serif;"><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</sup>Ar(g) + e<sup>-</sup> → Ar<sup>2+</sup>(g) + 3e<sup>- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</sup></span></p>
+<p>Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:&nbsp;</p>
 <ul>
   <li>“A plasma is a quasineutral gas of charged and neutral particles which exhibits collective behavior”, a short explanation taken from “Introduction To Plasma Physics”, by F. Chen, reveals that</li>
 </ul>
@@ -38,9 +54,6 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <ul>
   <li>Another criterion is that the total number of collisions between plasma particles is low enough so that the recombination rate of ions and electrons stays low. If electrons knock with positive ions, the electron will get absorbed by the ion, becoming a neutral particle once again. This is not a wanted effect, as the energy required to maintain a plasma increases exponentially with pressure. Also, plasma motion should be &nbsp;mostly dominated by electrostatic forces, not usual hydrodynamic mechanics, given the high collision rate of high pressure systems.</li>
 </ul>
-<p>&nbsp; It is also important for our purposes to mention that plasma particles generally follow a gaussian like distribution, called maxwellian distribution.</p>
-<figure class="image"><img src="/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png"></figure>
-<p><i>#Maxwellian distribution showing the electron temperature distribution. Only electrons in the yellow zone have enough energy to ionize a particle.</i></p>
 <p>&nbsp; &nbsp;Plasma electrons and ions generally have very high thermal energies, in the tens of thousands of K. For this reason, plasma particles generally have low mass but high energy density, meaning that they can easily excite and vaporize surface atoms.&nbsp;</p>
 <p>Most common sputtering gases are noble gases, helium for specialized applications, argon for most applications and xenon for most high-end applications.</p>
 <p>For our application, argon will be used.&nbsp;</p>
@@ -49,7 +62,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <p>&nbsp; The main processes are plasma ion sputtering (vacuum) and plasma jet evaporation (for atmospheric plasmas).</p>
 <ol>
   <li>Plasma sputtering - used widely in lens production and metal film deposition, it is used for quality film production and can be scaled down to accommodate a 2.4 voron printing chamber. The concept it's quite simple: a magnetron accelerates electrons, producing plasma ions inside a vacuum sealed chamber. The plasma gas is usually argon. A strong permanent magnet positioned on top of the magnetron has the purpose of confining the electrons, and therefore (because of the quasineutral nature of the plasma) the ions in a small volume in the proximity of the metal target. The target represents the metal wafer that will be plated on top of the substrate. The ions, being accelerated near the target knock metal atoms for the crystal lattice of the metal. These atoms are hence ballistically launched radially in all directions, coating the substrate with a dense metal layer. This layer is a quality film layer, its porosity being low. a couple downsides will be the necessity</li>
-  <li>plasma jet (thermal evaporation) - used at higher pressures, typically in open atmosphere or at fractions of one atm. It uses energetic ions to rapidly excite and vaporize surface atom layers, launching molten metal droplets on the adjoining substrate. This method yields high deposition speeds, the major drawback being represented by the increased porosity cause by large droplets rapidly cooling on the substrate, the conductivity, therefore can be poor if the method is not applied correctly. For increased fiom quality, smaller evaporation rates have to be used.</li>
+  <li>plasma jet (thermal evaporation) - used at higher pressures, typically in open atmosphere or at fractions of one atm. It uses energetic ions to rapidly excite and vaporize surface atom layers, launching molten metal droplets on the adjoining substrate. This method yields high deposition speeds, the major drawback being represented by the increased porosity cause by large droplets rapidly cooling on the substrate, the conductivity, therefore can be poor if the method is not applied correctly. For increased film quality, smaller evaporation rates have to be used.</li>
 </ol>
 <h1>Therion-concept</h1>
 <p>&nbsp; Therion will incorporate one of the methods presented above - either thermal evaporation or plasma sputtering. We will now explore each concept and how they would affect the design.</p>
