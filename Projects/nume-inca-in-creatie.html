@@ -2,7 +2,7 @@
 title: Therion metal plating (a voron augmentation initiative)
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate.
 published: true
-date: 2026-02-09T20:31:34.529Z
+date: 2026-02-10T05:19:26.921Z
 tags: 3dprinting, davidcore, voron, research, electroplating
 editor: ckeditor
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -37,7 +37,6 @@ dateCreated: 2026-01-31T10:04:25.526Z
   <figcaption>diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.</figcaption>
 </figure>
 <p>It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.</p>
-<p><i>#Maxwellian distribution showing the electron temperature distribution. Only electrons in the yellow zone have enough energy to ionize a particle.</i></p>
 <p>&nbsp;and thus bringing it into a higher energy state. Then, if the electron that hit the molecule is hot enough, the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (the molecule will become a positive ion - x<sup>+</sup>); ionization reaction of argon could be written as</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class="text-huge" style="font-family:Arial, Helvetica, sans-serif;">Ar(g) + e<sup>-</sup> → Ar<sup>+</sup>(g) + 2e<sup>-</sup></span></p>
 <p>or, if the electron is energetic enough, it can remove more electrons</p>
@@ -57,6 +56,48 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <p>Most common sputtering gases are noble gases, helium for specialized applications, argon for most applications and xenon for most high-end applications.</p>
 <p>For our application, argon will be used.&nbsp;</p>
 <p>Other non-noble gases can also be used for plasma etching, an industrial application in which material is removed from a substrate using specific chemical reactions between plasma and the substrate, creating volatile compounds which then evaporate.</p>
+<p>The ionization energy-the minimum energy required to remove the most loosely bound electron (valence electron) from an isolated, gaseous atom or ion-also differs with each element. This energy is inversely proportional to the number of electrons in the electron shell.</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td><mark class="pen-red">Noble gas</mark></td>
+        <td>atomic number(<mark class="pen-red">Z</mark>)</td>
+        <td><mark class="pen-red">ionization energy(eV)</mark></td>
+      </tr>
+      <tr>
+        <td>Helium(<mark class="marker-pink">He</mark>)</td>
+        <td>2</td>
+        <td>24.6&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Neon(<mark class="marker-pink">Ne</mark>)</td>
+        <td>10</td>
+        <td>21.6</td>
+      </tr>
+      <tr>
+        <td>Argon(<mark class="marker-pink">Ar</mark>)</td>
+        <td>18</td>
+        <td>15.8</td>
+      </tr>
+      <tr>
+        <td>Kripton(<mark class="marker-pink">Kr</mark>)</td>
+        <td>36</td>
+        <td>14.0</td>
+      </tr>
+      <tr>
+        <td>Xenon(<mark class="marker-pink">Xe</mark>)</td>
+        <td>54</td>
+        <td>12.1</td>
+      </tr>
+      <tr>
+        <td>Radon(<mark class="marker-pink">Rn</mark>)</td>
+        <td>86</td>
+        <td>10.7</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <h2>The main manufacturing processes used for metal film deposition</h2>
 <p>&nbsp; The main processes are plasma ion sputtering (vacuum) and plasma jet evaporation (for atmospheric plasmas).</p>
 <ol>
