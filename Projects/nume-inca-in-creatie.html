@@ -2,7 +2,7 @@
 title: Therion metal plating (a voron augmentation initiative)
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate.
 published: true
-date: 2026-02-10T08:46:39.080Z
+date: 2026-02-10T08:49:58.971Z
 tags: 3dprinting, davidcore, voron, research, electroplating
 editor: ckeditor
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -23,7 +23,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
   <li>Metal plating allows for shielding plastic pieces against EMF radiation.</li>
   <li>decorative metal plating</li>
   <li>possible minor optic modification of lenses using partial-mirror plastic lenses.</li>
-  <li>easier prototyping, eliminating 3rd party PCB manufacturing altogether&nbsp;</li>
+  <li>easier prototyping, eliminating 3rd party PCB manufacturing altogether</li>
 </ol>
 <h3>Fast introduction in plasma physics</h3>
 <p>&nbsp; &nbsp;</p>
@@ -108,7 +108,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <h2>Pros and cons - design considerations</h2>
 <p>First, we need to establish in what way the project design differs based on the concept we'll incorporate henceforth. The main difference is represented by the pressure inside the printing chamber. If plasma sputtering is to be used, the pressure inside needs to stay really low, a maximum of about 5p (0.005% of atmospheric pressure). This would require the chamber to be vacuum sealed, completely isolated from the outside. The film quality would then be much higher, requiring a vacuum pump to be tied to the chamber for air removal. The next step would require argon to be pumped inside the inner ionization chamber (inside the toolhead), creating plasma and allowing for the sputtering process to begin. Careful manufacturing of such a chamber would not be easy for several reasons which will later be discussed, but it has been done before and it is possible. A few problems arising from vacuum sealing the chamber would be (amongst others): motors would have to be cooled with liquid, through teflon tubes (resistant to high vacuum), vacuum grade grease would replace any other lubricant used for bearings, filament will have to be stored in a chamber adjacent to the printing chamber, rerouting the vacuum pump input to it so as to keep the filament dry and eliminate any bubbles from the filament. This way, outgassing will be kept at a minimum. The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundred nm/min.</p>
 <p>If thermal evaporation will be incorporated instead, the pressure inside the chamber can be kept as high as normal atmospheric, but it would best be recommended to keep the pressure a bit lower than normal, about 20.000-30.000pa for higher trace quality. Vacuum grease would not be required, fans would replace water cooling of the stepper motors. Higher vacuum would also dramatically help lower the metal target's melting &nbsp;point (because of lower pressure), thus increasing power efficiency. depositions rates are also much higher (tens of nm/min up to um/min). A downside would be the fact that thermal evaporation in atmospheric plasmas yields lower film quality, metal droplets that plate the plastic substrate giving rise to high porosity in traces. Quality can be increased by managing deposition rates (lowering them), thus increasing uniformity. This tradeoff between speed vs quality is worth it, given that even at slower rates the deposition is still much faster than it would be in sputtering systems.</p>
-<p>The optimal design would incorporate best of both worlds, enabling both partial thermal evaporation and sputtering capabilities at lower than normal chamber pressure.</p>
+<p>The optimal design incorporats best of both methods, enabling both partial thermal evaporation and sputtering capabilities at lower than normal chamber pressure.</p>
 <h2>Design schematic</h2>
 <p>The design is fairly similar to that of a plasma jet barrel.</p>
 <figure class="image"><img src="/therion-schita+legenda.jpg">
