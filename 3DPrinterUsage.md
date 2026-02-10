@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-09T00:46:13.482Z
+date: 2026-02-10T20:50:09.135Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -38,6 +38,12 @@ It is very important to update your slicer configuration to the latest version. 
 2. Extract the contents of the zip file in your PrusaSlicer's config folder. If asked, overwrite any files folders. The possible locations are outlined below:
   * Linux: `~/.config/PrusaSlicer`
   * Windows: `%APPDATA%\PrusaSlicer` (Type this in your file explorer, it will open the right directory)
+  
+> ### Updating from old installs
+> If you are updating your existing installation and you have old profiles, always prefer to nuke the old configuration (delete the config folder outlined above).
+> If you need to keep some of your old configs, go to your config folder and identify all print, printer and filament profiles you wish to keep. Delete all other. 
+{.is-success}
+
   
 # Bed placement considerations
 
