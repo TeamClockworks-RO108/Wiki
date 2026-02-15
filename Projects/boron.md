@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-01-25T00:40:57.582Z
+date: 2026-02-15T02:50:11.001Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -95,6 +95,7 @@ For the external and internal feet, we recommend at least 5 perimeters to ensure
 | Category | File | Amount | Notes |
 | --- |
 | Structure | `Foot.stl` | 4 | 5+ perimeters.  |
+| ^^ | `Stacking Foot.stl` | 4 | If planning to stack multiple borons, this alternative foot designs allows for cubes to be rigidly placed at 25* angle offset and both on the ground. If printing this variant, do **not** print the regular `Foot.stl`. |
 | ^^ | `InternalFoot.stl` | 4 | Add supports for the steep overhanging area.<br>5+ perimeters. |
 | ^^ | `Post.stl` | 4 | 350^3^ print area required.
 | ^^ | `TopCrossbar.stl` | 1 | ^^ |
