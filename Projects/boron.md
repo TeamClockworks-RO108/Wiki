@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-02-15T02:50:11.001Z
+date: 2026-02-15T02:56:16.012Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -206,7 +206,17 @@ Use the preloaded nuts in the earlier steps.
 | ![boron-assy-3.png](/boron-assy-3.png) | ![boron-assy-4.png](/boron-assy-4.png) |
 | -- | -- |
 
-Final assembled frame
+If using the stacking feet, assemble them as usual  instead of the regular feet. The channel inside the foot helps align with the frame of the botton cube.
+
+| ![boron-assy-stacking-feet.png](/boron-assy-stacking-feet.png) |
+| -- |
+
+> `TODO` Remake the stacking feet, as the feet can not dig 15mm into the top of the frame, because of the panel. 
+> Also update F3Z, STEP, STL and image above (keep name).
+{.is-danger}
+
+
+### Final assembled frame
 
 | ![boron-assy-5.png](/boron-assy-5.png) |
 | -- |
