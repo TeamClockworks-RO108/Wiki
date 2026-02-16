@@ -2,7 +2,7 @@
 title: PID Tuning
 description: 
 published: true
-date: 2026-01-31T02:53:42.835Z
+date: 2026-02-16T00:49:18.559Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T02:52:19.527Z
@@ -27,18 +27,18 @@ Systems with higher inertia (mass) can tolerate too high `Kd` values. Low-inerti
 
 The tests are done using a 4200 RPM motor attached to a AndyMark 4inch 30A compliant wheel. 
 
-# Undercompensated Kp
-![screenshot_20251021_193423.png](/screenshot_20251021_193423.png)
+| Undercompensated Kp | Undercompensated Ki (steady state error) |
+| ![screenshot_20251021_193423.png](/screenshot_20251021_193423.png) | ![screenshot_20251021_194026.png](/screenshot_20251021_194026.png) |
+| -- | -- |
 
-# Too small Ki (steady state error)
-![screenshot_20251021_194026.png](/screenshot_20251021_194026.png)
-![screenshot_20251021_193759.png](/screenshot_20251021_193759.png)
+| Better Ki but not enough | Ki, Kd induced oscillations | 
+| ![screenshot_20251021_193655.png](/screenshot_20251021_193655.png) | ![screenshot_20251021_195024.png](/screenshot_20251021_195024.png)
+| -- | -- |
 
-# Better Ki but not enough
-![screenshot_20251021_193655.png](/screenshot_20251021_193655.png)
 
-# Ki, Kd induced oscillations
-![screenshot_20251021_195024.png](/screenshot_20251021_195024.png)
 
-# Perfect
-![screenshot_20251021_194141.png](/screenshot_20251021_194141.png)
+
+
+| Almost Perfect |
+| ![screenshot_20251021_194141.png](/screenshot_20251021_194141.png) |
+| -- |
