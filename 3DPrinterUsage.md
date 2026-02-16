@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-10T20:50:09.135Z
+date: 2026-02-16T00:50:06.891Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -77,7 +77,7 @@ The printers are usually equipped with a **Satin** sheet. This is the daily setu
 {.is-info}
 
 
-> The **Satin** sheet does not provide excellent adhesion for large parts. 
+> The **Satin** sheet does not provide excellent adhesion for large parts **AND** for parts with small contact bases. 
 > If you need to print large parts, prefer to redesign so that the effects of warping are minimized. If that is not possible, the **Smooth** sheet can be used instead, but PLEASE let us know first.
 > The strong adhesion of the **Smooth** sheet combined with significant warping can permanently damage the sheet!
 > 
