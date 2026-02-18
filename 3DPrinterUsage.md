@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-18T22:58:36.079Z
+date: 2026-02-18T23:36:40.451Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -248,10 +248,10 @@ Full history is available for analysys in Grafana. Select your time interval in 
 It is possible to use the grafana's history of temperatures to investigate different situations regarding heater issues.
 
 In the graph below we can see that at some point in the print, the extruder temperature sagged a bit. We can also see the power field maxxing (touching the top of the graph). This indicates that the heater was not able to keep up with the required temperature due to unexpected cooling events.  Possible causes are:
- * Too much cooling for localized features (for example, bridges, overhangs). Cooling looks OK for general cooling as there is no sag for the entirety of the print
+ * Too much cooling for localized features (for example, bridges, overhangs). Cooling looks OK for general cooling as there is no sag for the entirety of the print. The power averages around 80%, which is high, but acceptable. 
  * Silicone sock is damaged and normal cooling for bridges overpower the extruder's heating ability.
  
-We can also see a slight increase in chamber temperatures at that point, possibly meaning power dissipation indeed rises, caused by cooling and mis-isolation. 
+We can also see a slight increase in chamber temperatures at that point, possibly meaning power dissipation indeed rises, caused by cooling and mis-isolation. Average power at 80% also tells us that it would be ideal to replace the heater with a bigger one.  
 
 | ![screenshot_20260219_005631.png](/screenshot_20260219_005631.png) |
 | -- |
