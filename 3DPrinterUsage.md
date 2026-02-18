@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-16T00:50:06.891Z
+date: 2026-02-18T03:01:57.249Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -238,13 +238,18 @@ Full history is available for analysys in Grafana. Select your time interval in 
 
 # Extruder Multiplier Calibration
 
-Create a 55mm^3^ cube in the slicer. Do the following settings:
+Create a 55mm x 30mm x 55mm (Z) cube in the slicer. Do the following settings:
  * Layer height: 0.2mm
  * Bottom layers: 3
  * Top layers: 269
  * Infill: Gyroid, 15%
  * Perimeters: 3
  * Filament Extrusion Multiplier: 1
+ * Fill pattern: Archimedean chords
+ 
+> `TODO` Change process to use archimedean chords like in [orcaslicer](https://www.orcaslicer.com/wiki/calibration/flow-rate-calib.html).
+{.is-success}
+
  
 Print the cube. After it has finished doing infill layers, lower the EM until there are gaps between the lines. Then, slowly raise it, waiting 5-6 layers between each change. When the EM is too much, you will start to see extra filament buildup on the layers.
 Perfect EM will have a nice finish of fused lines at the **center of the surface**. Disregard the edges where material builds up because of movement changes.
