@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-18T03:01:57.249Z
+date: 2026-02-18T17:19:41.804Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -220,7 +220,14 @@ For more general information about the Prusa Mk3.5S printers you can consult [th
 
 To print, remove the printer's USB stick and conect it to the workshop's PC, upload your gcode file on the USB stick and insert the USB stick back into the printer. Press the "Print" button on the printer's LCD screen, select the file you uploaded and start printing.
 
+# Printer Errors
 
+When the printer detects a malfunction, an error is thrown and the print is interrupted. When this situation happens, you will see an error box on the printer page like below:
+
+| ![screenshot_20260218_191526.png](/screenshot_20260218_191526.png) |
+| -- |
+
+When this happens, **PLEASE** notify us on Mechanich channels before pressing the `FIRMWARE RESTART` button. Include all the relevant details of the error, so that we can debug the issue later on. It's important to know which is the reported problem. 
 
 # Observability
 
@@ -235,6 +242,7 @@ After you open Grafana, you will see an empty welcome page. In the left menu, go
 Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
 ![printer-grafana.png](/printer-grafana.png)
+
 
 # Extruder Multiplier Calibration
 
