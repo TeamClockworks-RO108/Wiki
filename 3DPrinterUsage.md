@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-18T17:19:41.804Z
+date: 2026-02-18T17:34:20.863Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -242,6 +242,23 @@ After you open Grafana, you will see an empty welcome page. In the left menu, go
 Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
 ![printer-grafana.png](/printer-grafana.png)
+
+## Using Grafana to investigate errors
+
+It is possible to use the grafana's history of temperatures to investigate different situations regarding heater issues.
+
+To make reading easier, the power field (scale 0-1) is multiplied by current temperature. This causes the power line to *touch* the temperature line when power is maxed.
+
+In the graph below we can see that at some point in the print, the extruder temperature sagged a bit. We can also see the power field maxxing (touching the temperature line). This indicates that the heater was not able to keep up with the required temperature due to unexpected cooling events.  Possible causes are:
+ * Too much cooling for localized features (for example, bridges, overhangs). Cooling looks OK for general cooling as there is no sag for the entirety of the print
+ * Silicone sock is damaged and normal cooling for bridges overpower the extruder's heating ability.
+ 
+We can also see a slight increase in chamber temperatures at that point, possibly meaning power dissipation indeed rises, caused by cooling and mis-isolation. 
+
+| ![screenshot_20260218_192723.png](/screenshot_20260218_192723.png) |
+| -- |
+
+
 
 
 # Extruder Multiplier Calibration
