@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T14:03:21.444Z
+date: 2026-02-19T14:39:21.761Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -27,8 +27,6 @@ All our klipper-based printers can be accessed online over the printer portal lo
 Please see in each printer's section below the correct name for printer and print profiles. Filament profiles are generally standardized and the slicer should not let you print with a non-compatible filament. 
 
 # Slicer setup
-
-Our slicer of choice is . After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
 
 We use [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) as our slicing software. On first launch, the slicer prompts you to select printer profiles. **Do not select the team’s printers in this step, as we manage custom configurations separately (explained below).**
 
