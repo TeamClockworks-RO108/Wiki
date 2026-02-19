@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-18T23:36:40.451Z
+date: 2026-02-19T01:28:51.415Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -71,7 +71,7 @@ The printers are usually equipped with a **Satin** sheet. This is the daily setu
  
 | PEI Smooth | Satin | Textured |
 | -- | -- | -- |
-| Very good adhesion for a wide range of materials. | Decent adhesion for almost all materials imaginable, including first-class support for PC.  | Good adhesion for PETG, but not really useful beyond that. 
+| Very good adhesion for a wide range of materials.<br>Do **NOT** use with PETG or PC as it bonds permanently. | Decent adhesion for almost all materials imaginable, including first-class support for PC.<br> Insufficient adhesion with ABS for small or warpy parts. | Good adhesion for PETG, but not really useful beyond that. 
 
 > Tree supports tipically do not succeed on the **Satin** sheet using ABS. This is because the bottom layer of the supports is fragile, and combined with the reduced adhesion, may cause the support to fly off the print. Prefer to use Snug supports or better, switch to the **Smooth** sheet
 {.is-info}
