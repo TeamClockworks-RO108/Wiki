@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T01:33:02.211Z
+date: 2026-02-19T01:38:02.512Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -86,28 +86,13 @@ The printers are usually equipped with a **Satin** sheet. This is the daily setu
 
 # Material selection
 
-When choosing a material for a print, take into consideration the following:
- * ABS is very solid and heat-resistant. It holds up well under heavy load. Special care must be taken to prevent warping by careful design and placement on the buildplate. Additives can severely degrade the mechanical properties.
-   * Matte ABS (Everfil ABS-L.01 and ABS-M.34) has very poor layer adhesion and break resistance. Use only for decorative prints and some Voron printer parts.
-   * Regular ABS has good mechanical properties. This category includes 3DPower, Sakata3D, Everfil ABS-S.01 and other.
-   * White ABS is **EXTREMELY** brittle even in filament form. It is very abrasive to extruder gears and nozzles. The cause of this is the addition of TiO~2~ as a whitener. Do not print unless necessary. It can break in the extruder, in filament changers, in the tube or pretty much anywhere.
-   * Print on the regular **Satin** plate except for when printing parts that are susceptible to warp or are too small to keep adhesion during printing. For these cases, switch to **PEI Smooth**.
- * ASA is equivalent to ABS and is resistant to UV degradation. It rarely contains destructive additives.
- * PC is literally ABS on steroids. Mechanical resistance is trough the roof, but it warps severely. It is dense and heavy. Print PC on the Satin sheet only after careful evaluation of the design with Alex or Cristi. Do **NOT** print on Smooth PEI as it will bond permanently. 
- * PCCF is PC with added carbon fibers that reduce the warping effect at the expense of worse layer adhesion and surface finish. Stiffness and dimensional stability is much improved. Careful considerations for:
-   * Print on Satin sheet or on Smooth sheet with the reccomandation below.
-   * Minimize bed contact area by adding pocketing-like features on the bottom. Use strip width of 8mm and maximum bridge length of 30mm. This can allow you to print with Smooth sheet but take note that if the part warps, it will warp *together with the bed*, or destroy the bed coating.
-   * Do not expect smooth surface finish.
-   * Does not play well with filament changers (too stiff). Load manually.
-   * **WILL** eat right trough extruder gears and nozzles, so talk to Alex or Cristi before pulling the trigger on the print button.
-   * 0.6mm nozzle is strongly preffered to prevent the CF jamming.
-   * Most printers are not able to keep up with the required temperature on standard profiles and speed, so ensure to lower the speed until the extruder power does not cross 90% consistently. Start at 75% speed and increase if there is headroom.
- * ABS-CF is ABS with carbon fibers added. It is stiff, low-warp but a bit more brittle. It follows the general recomendations of PCCF except that it can be successfully printed on Smooth sheets without fear of damage.
- * PETG is good for prototypes and decorative parts. It has low impact resistance but good printability.
-   * If not hit with impact, it will bend before failing. Impacts will cause it to crack instantly.
-   * Parts under load slowly get microfractures over time, *without giving any signs of failure*. At some point, they disintegrate into bits. Do not use for gears or moving assemblies.
-   * Print only on Prusa with the Textured sheet. 
- * PLA is for kids, we do not use it.
+For filament compatibility, as a general rule:
+ * Enclosed printers only use ABS and ASA
+ * Open printers only use PLA and PETG
+ * HIPS can be used as support material on multi-material enclosed printers
+ * PC will be printed only on enclosed printers and after careful evaluation of the design. Due to severe adhesion and warping, it can damage PEI sheets. It is a good idea to print it on multimaterial printers (Palmyr) to allow for ABS strain relief features. 
+ 
+If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
  
 ## Materials {.tabset}
 
@@ -149,16 +134,7 @@ When choosing a material for a print, take into consideration the following:
 ### PLA
 - PLA is for kids, we do not use it.
 
-
-For filament compatibility, as a general rule:
- * Enclosed printers only use ABS and ASA
- * Open printers only use PLA and PETG
- * HIPS can be used as support material on multi-material enclosed printers
- * PC will be printed only on enclosed printers and after careful evaluation of the design. Due to severe adhesion and warping, it can damage PEI sheets. It is a good idea to print it on multimaterial printers (Palmyr) to allow for ABS strain relief features. 
- 
-If a filament profile is not available in the slicer, it generally means that the selected printer is not compatible with it. If you need to print nonstandard setups, talk to us and we will figure out a way to make it work.
-
----
+## Cooling
 
 > This bit here is not yet implemented, please read but do not take seriously.
 {.is-danger}
