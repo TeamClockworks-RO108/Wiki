@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T01:48:01.067Z
+date: 2026-02-19T02:11:56.177Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -20,9 +20,12 @@ All our klipper-based printers can be accessed online over the printer portal lo
 | --- |
 
 
-| Medina | Iron | Envy | Malice | Supermodel | Kraftmaschine |
+| Medina | Palmyr | Iron | Envy | Malice | Supermodel | Kraftmaschine |
 | --- | --- | --- | --- | --- |
-| Voron 2.4 350^3^ | Voron Zero 120^3^ | Prusa i3 MK3S+ | Prusa i3 MK3S+ | DuelingZ | DuelingZ |
+| Voron 2.4 350^3^ | Voron 2.4 300^3^ | Voron Zero 120^3^ | Prusa i3 MK3.5 | Prusa i3 MK3.5 (Down for maintenance) | DuelingZ | DuelingZ |
+
+Please see in each printer's section below the correct name for printer and print profiles. Filament profiles are generally standardized and the slicer should not let you print with a non-compatible filament. 
+
 # Slicer setup
 
 Our slicer of choice is [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/). After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
@@ -214,26 +217,56 @@ Before printing, please have a look at the printer to ensure that it is operatin
 - [ ] The printer's mechanics do not look damaged, bent or broken
 - [ ] There is filament loaded and it is the same type of filament as in the slicer. 
 - [ ] The filament is compatible with the printer
-
-> Before the print, always wipe the bed with Isopropanol. 
-{.is-info}
+- [ ] The print sheet is compatible with the material, respects the considerations outlined in the material section
+- [ ] The print sheet has been cleaned with Isopropanol.
 
 > When in doubt, ***PLEASE*** ask Alex to help figure the issue out.
 {.is-warning}
 
 ## Medina (Voron 2.4 350^3^)
 
+ * **Printer profile**: `Medina 4NZ`
+ * **Print profiles**:
+   * `Medina 4NZ 2LH Conservative Lighter` has normal speeds and few perimeters. It is best used to save filament and print time.
+   * `Medina 4NZ 2LH Conservative Strong` has normal speeds and lots of perimeters. It eats more filament but produces strong parts.
+ 
+
 Medina is a large format, enclosed Voron 2.4 printer. It only uses ABS and ASA.
 
-The print sheet to be used is the **PrusaXL Satin sheet**. 
+The print sheet to be used is the **PrusaXL Satin sheet**. It can be switched to **PrusaXL Smooth PEI** if following the reccomandations from the filament section. 
 
 Currently, when loading filament, you have to disconnect the bowden tube from the extruder to manually feed the filament inside the gears. The reason for this process is that the extruder body has burrs from CNC machining and feeding from the tube will cause filament to get stuck.
 
 To control the printer, use the [webpage](https://printer.lucaciresearch.net) or the klipperscreen terminal. 
 
+## Palmyr (Voron 2.4 300^3^) with ERCF
+
+ * **Printer profile**: `Palmyr 4NZ ERCF`
+ * **Print profiles**:
+   * `Palmyr 4NZ 2LH Voron Standard` has the usual configurations for printing parts for Vorons (0.4mm forced extrusion width, many perimeters, high infill). 
+   * `Palmyr 4NZ 2LH Strong` has normal speeds and lots of perimeters. Use this one for general printing.
+   
+**Palmyr** genrally uses the same considerations as **Medina** for printing surfaces. The sheets are the same size as the **Prusa Core One**.   
+
+It is equipped with ERCF filament switcher. We will complete this section in the future with a small guide to use the filament switcher.
+
+## Iron (Voron 0.2 120^3^)
+
+ * **Printer profile**: `Iron 4NZ`
+ * **Print profiles**:
+   * `Iron 4NZ 2LH Conservative Strong` has regular speeds and lots of perimeters and relatively high accelerations. 
+   
+Iron is a good printer for rapid prototyping of not too big parts. The bed sheet is **Smooth PEI**, but because of the small size, it is not required to take special considerations when printing PEI-unsafe materials. 
+
+Currently, cooling is not very uniform and overhang performance is unsatisfactory. 
+
 
 
 ## Prusa Mk3.5S
+
+ * **Printer profile**: `MK35 4NZ`
+ * **Print profiles**:
+
 
 Prusa Mk3S+ are the 3D printers that our team has used since 2021 and they have been the most helpful tools for building our robots across the years, allowing us to bring our components and designs into reality. They were bought in the form of kits directly from Prusa and were built by our team with the help of the very user-friendly assembly [manual](https://help.prusa3d.com/manual/original-prusa-i3-mk3s-kit-assembly_1128). The assembly manual can also be used when doing teardowns of the printers to fix any issues, alongside other instructions and suggestions from the [support page](https://help.prusa3d.com/product/mk3s-2). 
 
