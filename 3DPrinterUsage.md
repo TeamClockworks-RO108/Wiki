@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T01:38:02.512Z
+date: 2026-02-19T01:48:01.067Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -101,7 +101,8 @@ If a filament profile is not available in the slicer, it generally means that th
   - **Matte ABS (Everfil ABS-L.01 and ABS-M.34)** has very poor layer adhesion and break resistance. Use only for decorative prints and some Voron printer parts.
   - **Regular ABS** has good mechanical properties. This category includes 3DPower, Sakata3D, Everfil ABS-S.01 and other.
   - **White ABS** is **EXTREMELY** brittle even in filament form. It is very abrasive to extruder gears and nozzles. The cause of this is the addition of TiO~2~ as a whitener. Do not print unless necessary. It can break in the extruder, in filament changers, in the tube or pretty much anywhere.
-  - Print on the regular **Satin** plate except for when printing parts that are susceptible to warp or are too small to keep adhesion during printing. For these cases, switch to **PEI Smooth**.
+- Print on the regular **Satin** plate except for when printing parts that are susceptible to warp or are too small to keep adhesion during printing. For these cases, switch to **PEI Smooth**.
+- Use **Adhesion Relief** on **Smooth PEI**.
 
 ### ASA
 - ASA is equivalent to ABS and is resistant to UV degradation. It rarely contains destructive additives.
@@ -110,6 +111,7 @@ If a filament profile is not available in the slicer, it generally means that th
 - PC is literally ABS on steroids. Mechanical resistance is trough the roof, but it warps severely. It is dense and heavy.
 - Print PC on the **Satin** sheet only after careful evaluation of the design with Alex or Cristi.
 - Do **NOT** print on **Smooth PEI** as it will bond permanently.
+- Use **Adhesion Relief** on **Satin** sheet. 
 
 ### PCCF
 - PCCF is PC with added carbon fibers that reduce the warping effect at the expense of worse layer adhesion and surface finish. Stiffness and dimensional stability is much improved. Careful considerations for:
@@ -120,11 +122,12 @@ If a filament profile is not available in the slicer, it generally means that th
   - **WILL** eat right trough extruder gears and nozzles, so talk to Alex or Cristi before pulling the trigger on the print button.
   - **0.6mm nozzle** is strongly preffered to prevent the CF jamming.
   - Most printers are not able to keep up with the required temperature on standard profiles and speed, so ensure to lower the speed until the extruder power does not cross **90%** consistently. Start at **75% speed** and increase if there is headroom.
+- Use **Adhesion Relief**.
 
 ### ABS-CF
 - ABS-CF is ABS with carbon fibers added. It is stiff, low-warp but a bit more brittle.
 - It follows the general recommendations of PCCF except that it can be successfully printed on **Smooth** sheets without fear of damage.
-
+- Use **Adhesion Relief** if part is very big.
 ### PETG
 - PETG is good for prototypes and decorative parts. It has low impact resistance but good printability.
   - If not hit with impact, it will bend before failing. Impacts will cause it to crack instantly.
@@ -133,6 +136,14 @@ If a filament profile is not available in the slicer, it generally means that th
 
 ### PLA
 - PLA is for kids, we do not use it.
+
+## Adhesion Relief
+
+Sometimes you may be required to print on the **Smooth PEI** sheet big parts. The adhesion of ABS, ASA, PC, PCCF can be destructive for the sheet if the contact surface area is very large.
+To prevent this from happening, for large objects, prefer to create a sort of pocketing feature, where only the edges of the model and significant features will touch the bed. The floating bridges should be about 2mm deep. This example below has a diameter of 280mm. The width of the touching edges is about 8-10mm and bridges are kept manageable at around maximum 30mm.
+
+| ![guide-adhesion-relief.png](/guide-adhesion-relief.png)|
+| -- |
 
 ## Cooling
 
