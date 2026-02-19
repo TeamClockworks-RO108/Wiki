@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T02:11:56.177Z
+date: 2026-02-19T14:03:21.444Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -12,7 +12,7 @@ dateCreated: 2024-11-11T18:42:21.941Z
 
 Please read this page and follow the steps here when using the 3D Printers
 
-3D printers are devices that are able to turn filament into functional components. They work by pushing the filament with the extruder and into the hotend, where it gets melted and pushed through the nozzle. It gets turned into thin layers of plastic that get stacked, starting from the bed, to form the desired components.
+3D printers transform filament into functional parts by feeding the material through an extruder into a heated nozzle. The molten filament is deposited in thin layers on the build plate and fused together to form the final object.
 
 All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
 
@@ -28,14 +28,13 @@ Please see in each printer's section below the correct name for printer and prin
 
 # Slicer setup
 
-Our slicer of choice is [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/). After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
+Our slicer of choice is . After installing, the first time you open the slicer, it will ask which printer models we have. You can select any printers that **you** own.
 
-> Do not select any of the team's printers in the configuration wizard. We maintain a custom repository of configuration and it is ideal we do not stray from it. They will be imported in the next section of this page.
-{.is-info}
+We use [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) as our slicing software. On first launch, the slicer prompts you to select printer profiles. **Do not select the team’s printers in this step, as we manage custom configurations separately (explained below).**
 
 ## Updating your slicer configuration
 
-It is very important to update your slicer configuration to the latest version. The printers will refuse to print a gcode that is sliced using an older version of the slicer configuration. 
+Always update your slicer configuration to the latest version. The printers will reject G-code files generated with outdated configuration profiles.
 
 1. Download the newest configurations from our [github repository](https://github.com/TeamClockworks-RO108/PrusaSlicerConfig). To download, press the green button and click `Download ZIP`.
 2. Extract the contents of the zip file in your PrusaSlicer's config folder. If asked, overwrite any files folders. The possible locations are outlined below:
@@ -50,7 +49,7 @@ It is very important to update your slicer configuration to the latest version. 
   
 # Bed placement considerations
 
-To ensure that the parts do no warp and lift off the plate, try to break down complex geometry into simpler parts. 
+To reduce warping and lifting from the build plate, break complex geometry into smaller, simpler components whenever possible.
 
 Keep massive, warpy parts off the edges of the buildplate. Because the edges of the buildplate are slightly colder than the center, putting warpy parts on the edge **will** cause the print fail. 
 Rounding corners also helps prevent warping.
@@ -61,7 +60,7 @@ Rounding corners also helps prevent warping.
 
 # Build plate
 
-Our printers are equipped with magnetic, hot-swappable build plates. All build plates have functioning surfaces on both sides. When switching to a new build plate, follow the general checklist:
+Each printer uses magnetic, hot-swappable build plates. Both sides of each plate can be used, but certain surfaces are better suited for specific materials (see below). When switching to a new build plate, follow the general checklist:
  * The plate is correctly dimensioned for the printer.
    * Prusa XL plates for Medina.
    * Prusa Core One plates for Palmyr.
@@ -89,7 +88,7 @@ The printers are usually equipped with a **Satin** sheet. This is the daily setu
 
 # Material selection
 
-For filament compatibility, as a general rule:
+Material compatibility depends on the printer type. As a general guideline:
  * Enclosed printers only use ABS and ASA
  * Open printers only use PLA and PETG
  * HIPS can be used as support material on multi-material enclosed printers
