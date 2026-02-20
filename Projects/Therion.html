@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-02-19T17:28:22.371Z
+date: 2026-02-20T08:10:23.867Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -154,4 +154,9 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <p>Hollow, water cooled inductors would be best, minimizing coil overheating, but other conductive cooling methods that don't require hollow conductors can be implemented. Efficiency would also depend on the electric resistance of the target, Higher resistance yielding better results. It's essential that the temperature of the bulk metal doesn't reach melting point, preventing structural deformation.&nbsp;</p>
 <p>Also, induction heating would only work for metal targets, ceramics or polymers would have to be exclusively sputtered on the substrate surface.</p>
 <p>A strong permanent magnet placed under the target and the inductor will purposely concentrate and confine plasma near the target, enabling fast removal of the surface atoms from the crystal lattice.&nbsp;</p>
-<p>&nbsp;</p>
+<h1>Filament considerations in vacuum</h1>
+<p>&nbsp;In deep vacuum, most materials experience a certain degree of outgassing, given by the time of inner organic volatile gases to desorb and diffuse though the material walls. Most common outgas gases are H2O, H2, N2 or O2. H2O typically represents 80% of the total outgas quantity, depending on the specific atmospheric conditions in which the material has absorbed water form the atmosphere. Materials such as metals also experience outgassing, water vapor traveling through the metal walls and out into the vacuum chamber. Filaments and components are usually degassed and baked for couple days, removing most of the absorbed gas.</p>
+<p>Filament outgassing represents a great cause of concern for our project, given that if filament is not properly deep vacuum dried before use, it would foam and basically explode when molten at 250 C inside the printing chamber. Therefore, it's important we take into consideration proper filament drying techniques in vacuum, as well as specific filament differences that help us choose the best polymer for vacuum use.&nbsp;</p>
+<p>Filaments that can be considered vacuum grade have low outgassing and diffusion coefficients, meaning that they release less gas when put under high vacuum. Vacuum grade filaments should also allow for gas desorbtion in an acceptable amount of time, vacuum components being typically degassed and baked before use.&nbsp;</p>
+<p>ABS has lower outgass rates when compared to PLA and PETG, making it a suitable polymer that can be used in vacuum systems, especially in our project. Amorphous materials (such as plastics and glass), have a glass transition temperature, which once passed can alter structural strength, making them soft and malleable. ABS glass transition temperature sits between 105-115 C. ASA, a close polymer in chemical composition to ABS, has a slightly lower glass transition phase, a minimum of about 100 C. As the article… mentions, ABS baked at 103 C in high vacuum for about 3 days removes almost all gas from the filament. Outgass rates also depends on gas diffusion path through the inner walls of the material, which makes it easy for filament outgassing, given it's small thickness.</p>
+<p>ASA is typically considered a better alternative to ABS, having better mechanical and chemical properties, as well as lower outgass and diffusion coefficients.</p>
