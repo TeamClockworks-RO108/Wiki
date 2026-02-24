@@ -2,13 +2,85 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-01-16T01:36:56.707Z
+date: 2026-02-24T18:09:26.436Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
 ---
 
 # Useful scripts
+
+## Firewall configuration with IRAF
+
+Main configuration of the firewall is built around accepting specific routing options and rejecting everything else.
+Do not forget to add both `A->B` and `B->A` routes as TCP connections are bidirectional.
+
+Configure the `WAN` interface list to include the physical port where internet is connected and any carriers it may also have (PPPoE or such). Enable internet detection on these interfaces. Enable DDNS for Hairpin NAT.
+
+```bash
+/interface list member
+add interface=ether2 list=WAN
+add interface=pppoe-out1 list=WAN
+/interface detect-internet
+set detect-interface-list=WAN internet-interface-list=WAN lan-interface-list=\
+    LAN wan-interface-list=WAN
+/ip cloud
+set ddns-enabled=yes
+```
+
+Configure router to respond to DNS queries.
+
+
+```bash
+/ip dns
+set allow-remote-requests=yes cache-size=20480KiB max-concurrent-queries=1000 \
+    max-concurrent-tcp-sessions=200 query-total-timeout=3s servers=\
+    1.1.1.1,8.8.8.8
+```
+
+Create address lists for RFC6890 RFC3068 and IRAF addresses.
+Set the `WAN_IP_MIKDDNS` to the mikrotik-provided DDNS name.
+Configure address lists for local vlans.
+
+```bash
+/ip firewall address-list
+add address=10.0.0.0/8 list=allowed_to_router
+add address=192.168.0.0/16 list=allowed_to_router
+add address=0.0.0.0/8 comment=RFC6890 list=not_in_internet
+add address=172.16.0.0/12 comment=RFC6890 list=not_in_internet
+add address=192.168.0.0/16 comment=RFC6890 list=not_in_internet
+add address=10.0.0.0/8 comment=RFC6890 list=not_in_internet
+add address=169.254.0.0/16 comment=RFC6890 list=not_in_internet
+add address=127.0.0.0/8 comment=RFC6890 list=not_in_internet
+add address=224.0.0.0/4 comment=Multicast list=not_in_internet
+add address=198.18.0.0/15 comment=RFC6890 list=not_in_internet
+add address=192.0.0.0/24 comment=RFC6890 list=not_in_internet
+add address=192.0.2.0/24 comment=RFC6890 list=not_in_internet
+add address=198.51.100.0/24 comment=RFC6890 list=not_in_internet
+add address=203.0.113.0/24 comment=RFC6890 list=not_in_internet
+add address=100.64.0.0/10 comment=RFC6890 list=not_in_internet
+add address=240.0.0.0/4 comment=RFC6890 list=not_in_internet
+add address=192.88.99.0/24 comment="6to4 relay Anycast [RFC 3068]" list=\
+    not_in_internet
+add address=10.200.0.0/16 list=iraf_int
+add address=10.95.0.0/16 list=iraf_edge
+add address=192.168.10.0/24 list=iraf_edge
+add address=10.5.0.0/16 list=iraf_edge
+add address=10.9.0.0/16 list=iraf_edge
+add address=10.12.0.0/16 list=iraf_edge
+
+# Edit here
+# DDNS name provided by mikrotik
+add address=heh08gs3gcg.sn.mynetname.net list=WAN_IP_MIKDDNS
+
+
+# Edit here
+# Local vlans and ip_local_here to the whole local net. 
+add address=10.2.2.0/24 list=ip_core
+add address=10.2.3.0/24 list=ip_autom
+add address=10.2.4.0/24 list=ip_guest
+add address=10.2.0.0/16 list=ip_local_here
+```
 
 ## Add all new LTE interfaces to the WAN list
 Useful when using USB tethering functionality of a smartphone to share internet connection to a RouterOS router.
