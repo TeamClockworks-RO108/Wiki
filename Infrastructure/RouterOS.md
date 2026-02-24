@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-02-24T18:09:26.436Z
+date: 2026-02-24T18:42:28.048Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -13,7 +13,6 @@ dateCreated: 2025-05-22T15:32:34.476Z
 ## Firewall configuration with IRAF
 
 Main configuration of the firewall is built around accepting specific routing options and rejecting everything else.
-Do not forget to add both `A->B` and `B->A` routes as TCP connections are bidirectional.
 
 Configure the `WAN` interface list to include the physical port where internet is connected and any carriers it may also have (PPPoE or such). Enable internet detection on these interfaces. Enable DDNS for Hairpin NAT.
 
@@ -80,6 +79,110 @@ add address=10.2.2.0/24 list=ip_core
 add address=10.2.3.0/24 list=ip_autom
 add address=10.2.4.0/24 list=ip_guest
 add address=10.2.0.0/16 list=ip_local_here
+```
+
+Create firewall bulk rules.
+
+```bash
+/ip firewall connection tracking
+set enabled=yes udp-timeout=10s
+
+# Bulk of rules here
+add action=accept chain=input comment="Allow OOBE Winbox" dst-port=8291 \
+    in-interface=client-oobe protocol=tcp
+add action=accept chain=input comment="Allow OOBE HTTP" dst-port=80 \
+    in-interface=client-oobe protocol=tcp
+add action=accept chain=input comment="Accept already established" \
+    connection-state=established,related
+add action=accept chain=input comment="Allow traffic on private subnets" \
+    src-address-list=allowed_to_router
+add action=accept chain=input comment="Allow ICMP" protocol=icmp
+add action=accept chain=forward comment="Accept existing connections" \
+    connection-state=established,related
+add action=drop chain=forward comment="Drop invalid" connection-state=invalid \
+    log-prefix=invalid
+add action=drop chain=forward comment="Drop packets from WAN not NAT" \
+    connection-nat-state=!dstnat connection-state=new in-interface-list=WAN \
+    log=yes log-prefix="not nat"
+add action=accept chain=icmp comment="echo reply" icmp-options=0:0 protocol=\
+    icmp
+add action=accept chain=icmp comment="net unreachable" icmp-options=3:0 \
+    protocol=icmp
+add action=accept chain=icmp comment="host unreachable" icmp-options=3:1 \
+    protocol=icmp
+add action=accept chain=icmp comment=\
+    "host unreachable fragmentation required" icmp-options=3:4 protocol=icmp
+add action=accept chain=icmp comment="allow echo request" icmp-options=8:0 \
+    protocol=icmp
+add action=accept chain=icmp comment="allow time exceed" icmp-options=11:0 \
+    protocol=icmp
+add action=accept chain=icmp comment="allow parameter bad" icmp-options=12:0 \
+    protocol=icmp
+add action=drop chain=icmp comment="deny all other types"
+add action=jump chain=forward comment="ICMP Filters" jump-target=icmp \
+    protocol=icmp
+add action=drop chain=forward comment="Drop packets from WAN not in internet" \
+    in-interface-list=WAN src-address-list=not_in_internet
+add action=drop chain=forward comment="Drop packets from LAN not from LAN IP" \
+    in-interface-list=LAN src-address-list=!allowed_to_router
+    
+# Accept DSTNAT
+add action=accept chain=forward comment="Accept DSTNAT'ed" \
+    connection-nat-state=dstnat dst-address-list=allowed_to_router
+
+# Specify which subnet can initiate connections to which subnet
+
+# Each subnet routed locally can access itself
+add action=accept chain=forward dst-address-list=ip_core src-address-list=\
+    ip_core
+add action=accept chain=forward dst-address-list=ip_guest src-address-list=\
+    ip_guest
+add action=accept chain=forward dst-address-list=ip_autom src-address-list=\
+    ip_autom
+    
+# Which subnet can cross vlans and where
+# Who can do internet access
+# And who can be accessed from IRAF and access IRAF
+add action=accept chain=forward comment="Core to Autom" dst-address-list=\
+    ip_autom src-address-list=ip_core
+add action=accept chain=forward comment="Core to Guest" dst-address-list=\
+    ip_guest src-address-list=ip_core
+
+# External subnets coming from IRAF
+add action=accept chain=forward comment="Breaza to Core" dst-address-list=\
+    ip_local_here src-address=10.5.0.0/16
+
+# Access IRAF interior, by default disabled
+add action=accept chain=forward comment="Core to IRAF Interior" \
+    dst-address-list=iraf_int src-address-list=ip_core disabled=yes
+    
+# Access IRAF edge devices
+add action=accept chain=forward comment="Core to IRAF Edge" dst-address-list=\
+    iraf_edge src-address-list=ip_core
+
+# IRAF Edge can access subnet, default disabled
+add action=accept chain=forward comment="IRAF Edge to Core" dst-address-list=\
+    ip_core src-address-list=iraf_edge disabled=yes
+add action=accept chain=forward comment="IRAF Edge IDP to Guest machines" \
+    dst-address-list=ip_guest src-address=10.95.50.0/24 disabled=yes
+
+# Internet access
+add action=accept chain=forward comment="Core to Internet" dst-address-list=\
+    !not_in_internet src-address-list=ip_core
+add action=accept chain=forward comment="Autom to Internet" dst-address-list=\
+    !not_in_internet src-address-list=ip_autom
+add action=accept chain=forward comment="Guest to Internet" dst-address-list=\
+    !not_in_internet src-address-list=ip_guest\
+    
+
+    
+# DENY anything else not explicitly allowed
+# This is disabled
+# Enable after doing modifications
+add action=drop chain=forward comment="Drop all other shit" disabled=yes
+
+
+
 ```
 
 ## Add all new LTE interfaces to the WAN list
