@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-01-31T02:51:13.017Z
+date: 2026-02-24T19:06:42.023Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -22,7 +22,7 @@ The principles of open-source are best summarized by the Voron community:
 
 > *We build space shuttles with gardening tools, so that everyone can have a space shuttle of their own.*
 >
-> -- Voron manual, page 1
+> -- Voron manual, page 1 
 
 
 
