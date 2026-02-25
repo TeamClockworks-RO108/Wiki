@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-02-24T18:42:28.048Z
+date: 2026-02-25T19:55:09.310Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -172,7 +172,7 @@ add action=accept chain=forward comment="Core to Internet" dst-address-list=\
 add action=accept chain=forward comment="Autom to Internet" dst-address-list=\
     !not_in_internet src-address-list=ip_autom
 add action=accept chain=forward comment="Guest to Internet" dst-address-list=\
-    !not_in_internet src-address-list=ip_guest\
+    !not_in_internet src-address-list=ip_guest
     
 
     
@@ -181,8 +181,32 @@ add action=accept chain=forward comment="Guest to Internet" dst-address-list=\
 # Enable after doing modifications
 add action=drop chain=forward comment="Drop all other shit" disabled=yes
 
+# Create Hairpin NAT rule
+/ip firewall nat
+add action=masquerade chain=srcnat comment="Hairpin NAT. USES MIKROTIK SERVER \
+    IN PORT FORWARD RULES FOR DDNS LOOKUP. ELIMINATE WITH STATIC IP." \
+    dst-address=10.2.0.0/16 src-address=10.2.0.0/16
+add action=masquerade chain=srcnat src-address-list=not_in_internet out-interface-list=WAN
+add action=dst-nat chain=dstnat comment="Example HTTP" dst-address-list=\
+    WAN_IP_MIKDDNS dst-port=80 protocol=tcp to-addresses=10.2.99.99 to-ports=80
 
+```
 
+Create a few other security configs:
+
+```bash
+/system clock
+set time-zone-name=Europe/Bucharest
+/system note
+set show-at-login=no
+/ip service
+set telnet disabled=yes
+set ftp disabled=yes
+set www address=10.0.0.0/8
+set ssh disabled=yes
+set api address=10.0.0.0/8
+set winbox address=10.0.0.0/8
+set api-ssl disabled=yes
 ```
 
 ## Add all new LTE interfaces to the WAN list
