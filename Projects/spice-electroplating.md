@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2026-02-03T10:52:22.551Z
+date: 2026-03-03T15:59:23.829Z
 tags: 3dprinting, project, davidcore, research
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -24,49 +24,52 @@ The target is partially submerged in an initial solution that only contains copp
 ![spice-current-path.png](/spice-current-path.png)
 ***diagram showing a profile view of the plating process during strike bath***
 
-As it can be seen in the picture, there is a local hydroxide layer built on top of a thin, conductive copper layer. this helps speed up the deposition process (electrons being virtually pushed to the edge), allowing for uniform plating and excluding the possibility of thickness gradients being found in the conductive layer.
+As it can be seen in the picture, there is a local hydroxide layer built on top of a thin, conductive copper layer. This process helps to lay out a initial layer of uniform conductor that prevents uneven deposition of bulk copper in the next stages. 
 
-**Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, eating away any deposited copper hydroxide, revealing the conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially and allowing for low resistance, electronics grade traces to be formed. the acid also allows for higher currents to be used, breaking down any OH bonds.
+The initial strike bath can be omitted if and only if the conductive substrate is on the order of tenths of an ohm. 
 
-![spice-copper-width.png](/spice-copper-width.png)
+**Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, preventing the firther deposition of  copper hydroxide, creating the bulk conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially, electronics grade traces are being formed. The acid also allows for higher currents to be used, breaking unwanted OH bonds in the solution created by electrolisys.
+| Diagram showing the copper deposition rate at different currents
+ |
+| ![spice-copper-width.png](/spice-copper-width.png) |
+| -- |
 
-***diagram showing the copper deposition rate at different currents***
 
 ## Evaluating and maintaining normal copper deposition rate
 
 The quality of the deposited copper depends on a few variables: current, quantity/existence of acid in the chemical bath and copper replacement rate, which remains almost constant throughout most of the plating process.
 
-For our experiment, we have used a sensitive power source, capable of reading mV changes in the solution bath. After the strike bath is finished and we start adding the acid, we can start increasing the current to about 300-500 mA. it's important we monitor the voltage rate of change, rapid increases in voltage corresponding to hydroxide layer formation. A slow drop in voltage means the process is functioning and copper gets deposited correctly. As we have mentioned, resistance drops exponentially at this stage, final voltage readings corresponding to about a 0.1V drop. 
+Lack of sulphuric acid in the solution will lead to porosity in the main copper layer, caused by the crystaline shape of copper hydroxide inside the layer. 
 
-it's recommended we use a heater to keep the temperature constant in the solution bath during most of the plating procedure. higher temperatures accelerate the process at low risks (compared to increasing the current). for our purposes, we have decided to keep the temperature constant at about 40 degrees celsius. Higher temperatures can affect the way the sulphuric acid interacts with the rest of the environment, 40C being set at an optimal value. Also, they keep the resistance of the copper bath virtually constant (varying mostly only due to temperature changes which can be caused by the ongoing chemical reactions).
+Plating in the main bath at too high currents will outrun the acid's ability to break down hyrdoxide, and this can be observed as two symptoms:
+ * Crystal growth in the copper layer.
+ * Increase in voltage, caused by bad conductivity of copper hydroxide.
 
-Furthermore, voltage changes are a nice way of evaluating and approximating voltage deposition, finding the appropriate time at which to physically check layer thickness.
+For our experiment, we have used a sensitive power source, capable of reading mV changes in the solution bath. After the strike bath is finished and we start adding the acid, we can start increasing the current to about 300-500 mA. it's important we monitor the voltage rate of change, rapid increases in voltage corresponding to hydroxide layer formation. A slow drop in voltage means the process is functioning and copper gets deposited correctly. As we have mentioned, resistance drops exponentially at this stage, final voltage readings corresponding to about a 0.1V. 
+
+it's recommended we use a heater to keep the temperature constant in the solution bath during most of the plating procedure. higher temperatures accelerate the process at low risks (compared to increasing the current). 
+
+For our purposes, we have decided to keep the temperature constant at about 40 degrees celsius. Higher temperatures can affect the way the sulphuric acid interacts with the rest of the environment, 40C being set at an optimal value.
+
+Furthermore, voltage changes are a easy to measure way of evaluating and approximating deposition, finding the appropriate time at which to physically check layer thickness.
 
 ## Electrode paste deposition
 
-To create an electrically conductive solid layer, we started off using very fine graphite powder and a volatile solvent (acetone). This approach yielded good deposition uniformity and low electrical resistance, but the layer is mechanically very fragile. The graphite layer might diffuse inside the electrolyte bath and the deposited copper will peel off very easily.
+To create an electrically conductive solid layer, we started off using very fine graphite powder and a volatile solvent (acetone). This approach yielded good deposition uniformity and low electrical resistance, but the layer is mechanically very fragile. The graphite layer will diffuse inside the electrolyte bath and the deposited copper will peel off very easily.
 
 
 
 To mitigate these effects, we added a binder to our paste. We tested three acetone-soluble polymers and settled on ABS, which had the best properties for our project. 
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
-![spice-resistance-graph.png](/spice-resistance-graph.png)
-***we have also tested different binder agents: yellow-PLA, HIPS-blue, green-ASA and red-ABS(abs also held better adherance)  ***
 
-| plastic folosit | rezistenta (dupa o ora) | rezistenta (dupa o ora jumate) | schimbare |
-
+| Binder | Resistance after 10 minutes | Resistance after 30 minutes | schimbare |
 | --- | --- | --- | --- |
-
 | ABS | 900 | 750  | -16.7% | 
-
 | ASA | 1150 | 1100 | -4.4% |
 
-| PLA | 1300 | 1170| -10% |
 
 | HIPS | 1350 | 1190 | -12% |
-
-| Metrica | Original (100%) | Optimizat (57%) | Schimbare |
 
 
 
