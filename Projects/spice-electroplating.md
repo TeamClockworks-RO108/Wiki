@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2026-03-03T15:59:23.829Z
+date: 2026-03-03T16:10:14.555Z
 tags: 3dprinting, project, davidcore, research
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -63,34 +63,32 @@ To mitigate these effects, we added a binder to our paste. We tested three aceto
 
 We also researched optimal drying conditions to evaporate the solvent. Tests showed that slower, cooler drying at about 55*C* prevents cracking of the paste layers from evaporation pressure.
 
-| Binder | Resistance after 10 minutes | Resistance after 30 minutes | schimbare |
+| Binder | Resistance after 10 minutes | Resistance after 30 minutes | Change |
 | --- | --- | --- | --- |
 | ABS | 900 | 750  | -16.7% | 
 | ASA | 1150 | 1100 | -4.4% |
-
-
 | HIPS | 1350 | 1190 | -12% |
 
 
 
 
-Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations, electrical resistance is not significantly affected.
+Different concentrations of binder were tested for mechanical properties and electrical resistance. It was found that, at low binder concentrations (under 5%), electrical resistance is not significantly affected.
 
 
 
 Overall electrical resistance can be greatly affected by the nature of the connection to the electrical wire:
  * Alligator clips offer 2-6 small points of contact with a high pressure. Contact resistance is on the order of kOhms.
- * A screw embedded inside the substrate, underneath the paste layer can give a few square mm's of good contact. Resistance is between 0 and 5 Ohms. 
+ * A screw embedded inside the substrate, underneath the paste layer can give a few mm^2^ of good contact. Resistance is between 0 and 2 Ohms. 
  
 Because acetone dries quickly at room temperature, it is difficult to obtain a smooth application of the paste. To combat this, we have designed insets where paste is deposited. This allows for the plastic part to be lapped using sandpaper and also creates a smoother surface finish for the deposited copper.
 
 ## Preparing the target before plating
 
-It's important that the surface of the target traces are cleaned of any grease, volatile substances that otherwise would impact adherence. This degreasing process is normally done using highly toxic industrial grade cyanides. We have used isopropyl alcohol to clean most of the traces, a better and safer approach (which we will also use in the future) using atmospheric plasma (cold plasma) to deep clean the entire surface of the target.
+It's important that the surface of the target traces are cleaned of any grease, volatile substances that otherwise would impact adherence. This degreasing process is normally done using highly toxic industrial grade cyanides. We have used isopropyl alcohol to clean most of the traces, a better and safer approach.
 
 ## Electroplating Bath
 
-To deposit copper onto conductive paste layer, we are using the electrolysis of copper (II) sulfate (CuSO~4~), which is readily available for agricultural use. A current-controller power source is ideal because it will alow us to control the rate of deposition (mA/mm^2^) regardless of electrode contact resistance or other changing parameters.
+To deposit copper onto conductive paste layer, we are using the electrolysis of copper (II) sulfate (CuSO~4~), which is readily available for agricultural use. A current-controlled power source is ideal because it will alow us to control the rate of deposition (mA/mm^2^) regardless of electrode contact resistance or other changing parameters.
 
 It is very important for the metal anode contacts (wires, clips) to not come into contact with the electrolysis solution. Because of the higher resistance of the graphite paste (in comparison with pure copper or steel), failing to do so will leak most of the current trough the metal contact itself, bringing productive deposition of copper to a halt. To prevent this situation, we are routing anode contacts to the other side of the board using buried screws underneath the conductive paste. The board is partially submerged in the solution.
 
@@ -98,30 +96,21 @@ The rate of deposition is controlled by changing the outgoing current density tr
 
 ## Evaluating layer thickness
 
- It's important that the electrode has contact points on top of the paste, outside the solution bath, the resistance of the traces being thus the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked. At this stage, the voltage starts decreasing at a moderate rate, indicating appropriate layer formation.
- 
- ## Proposed circuit
+It's important that the electrode has contact points on top of the paste, outside the solution bath, the resistance of the traces being thus the parallel resistance of the copper layer in parallel with the graphite paint. once we get to the second plating stage, resistance will decrease rapidly in the copper layer, graphite resistance being overlooked. 
+
+## Proposed circuit
  
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
   
-  ![spice-first-circuit-led.png](/spice-first-circuit-led.png)
-  ![spice-first-circuit-schematic.png](/spice-first-circuit-schematic.png)
-  ***diagram of the circuit***
+|  ![spice-first-circuit-led.png](/spice-first-circuit-led.png) | ![spice-first-circuit-schematic.png](/spice-first-circuit-schematic.png) |
+| -- | -- |
   
-  With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.
-  The resistance of the traces sits at around 15 mOhms, better than industrial grade traces (20-30 mOhms).
+With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.
+ 
+The resistance of the traces sits at around 15 mOhms, better than industrial grade traces (20-30 mOhms).
   
-  We have also tested different substrates, including petg, abs and pla. what we have discovered is that abs has the best overall adherence. Sanding down the graphite paint further makes fir a more uniform copper deposition and higher quality traces.
-  
-For our main project, we have fabricated a 555 timer blinker circuit.
-
-![spice-555-schematic.png](/spice-555-schematic.png)
-  ***diagram of the Proposed circuit***
-  
-  The purpose of the circuit is to periodically send logical signals to an led, setting it high and low alternatively. We have used fine abs graphite paste for better adherence which we then sanded down for a more uniform result. We have also slowed down the plating process to 100 mA in strike bath and 300 mA in normal mode. 
-  
-  The results were superior, implementing more contact points (screws) which led to a more uniform  deposition.
+We have also tested different substrates, including PETG, ABS and PLA. what we have discovered is that ABS has the best overall adherence and soldering resistance. Sanding down the graphite paint further makes for a more uniform copper deposition and higher quality traces.
   
 # Future development
 
-  Future development will also encompass the transfer of this project from an electro-chemical approach to a more independent physical process. We are going to implement plasma sputtering at atmospheric pressure or near vacuum pressure to rapidly print and plate thick pure metal traces on custom 3d printed pcbs. If it works, it is going to drastically change the way custom pcbs are manufactured (see Therion - https://wiki.teamclockworks.ro/en/Projects/nume-inca-in-creatie).
+Future development will also encompass the transfer of this project from an electro-chemical approach to a more independent physical process. We are going to implement plasma sputtering at atmospheric pressure or near vacuum pressure to rapidly print and plate thick pure metal traces on custom 3d printed pcbs. If it works, it is going to drastically change the way custom pcbs are manufactured.
