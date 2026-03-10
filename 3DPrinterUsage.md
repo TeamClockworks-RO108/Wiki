@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-02-19T14:39:21.761Z
+date: 2026-03-10T03:18:36.286Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -354,9 +354,16 @@ This process should be done with **every type and brand** of filament we own. Sa
 
 # Printing small details
 
-If printing very small details (like teethed pulleys),  apply the following settings to print:
+If printing very small details (like teethed pulleys), apply the following settings to print:
  * Layers and Perimeters -> Perimeter generator: Classic
- * Speed -> Acceleration control -> Default: 1000
+ * Layers and Perimeters -> External perimeters first: True
+ * Speed -> Scale back speeds to not be over 100mm/s.
+ * Speed -> Acceleration control -> Default: 1000, set all other accelerations to 0.
+ 
+Optionally, if there is enough headroom on the extruder heater power (see [section above]()), the fan power for regular layers can be increased by approximately how much heater power headroom is available during print. 
+
+In some cases, bridge fan speed can also be increased after careful evaluation of past print data. Ensure the heater has enough headroom during intense cooling of bridges.
+
 
 # Slicer profile mapping
 
