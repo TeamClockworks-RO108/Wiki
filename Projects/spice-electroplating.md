@@ -2,7 +2,7 @@
 title: Spice Electroplating
 description: 
 published: true
-date: 2026-03-03T16:10:14.555Z
+date: 2026-03-10T02:45:51.602Z
 tags: 3dprinting, project, davidcore, research
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
@@ -29,8 +29,8 @@ As it can be seen in the picture, there is a local hydroxide layer built on top 
 The initial strike bath can be omitted if and only if the conductive substrate is on the order of tenths of an ohm. 
 
 **Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, preventing the firther deposition of  copper hydroxide, creating the bulk conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially, electronics grade traces are being formed. The acid also allows for higher currents to be used, breaking unwanted OH bonds in the solution created by electrolisys.
-| Diagram showing the copper deposition rate at different currents
- |
+
+| Diagram showing the copper deposition rate at different currents |
 | ![spice-copper-width.png](/spice-copper-width.png) |
 | -- |
 
@@ -102,8 +102,8 @@ It's important that the electrode has contact points on top of the paste, outsid
  
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
   
-|  ![spice-first-circuit-led.png](/spice-first-circuit-led.png) | ![spice-first-circuit-schematic.png](/spice-first-circuit-schematic.png) |
-| -- | -- |
+|  ![spice-first-circuit-led.png](/spice-first-circuit-led.png) |
+| -- |
   
 With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.
  
