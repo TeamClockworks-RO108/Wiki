@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-03-10T03:18:36.286Z
+date: 2026-03-10T03:19:40.786Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -360,7 +360,7 @@ If printing very small details (like teethed pulleys), apply the following setti
  * Speed -> Scale back speeds to not be over 100mm/s.
  * Speed -> Acceleration control -> Default: 1000, set all other accelerations to 0.
  
-Optionally, if there is enough headroom on the extruder heater power (see [section above]()), the fan power for regular layers can be increased by approximately how much heater power headroom is available during print. 
+Optionally, if there is enough headroom on the extruder heater power (see [section above](#using-grafana-to-investigate-errors)), the fan power for regular layers can be increased by approximately how much heater power headroom is available during print. 
 
 In some cases, bridge fan speed can also be increased after careful evaluation of past print data. Ensure the heater has enough headroom during intense cooling of bridges.
 
