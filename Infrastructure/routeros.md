@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-03-10T02:38:47.012Z
+date: 2026-03-10T02:39:57.472Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
