@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-02-24T19:06:42.023Z
+date: 2026-03-10T02:20:25.359Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -43,3 +43,9 @@ The principles of open-source are best summarized by the Voron community:
 * **💻 [Dev Machine](en/dev-machine)** – Information for accessing the remote development server.
 * **⚡️ [PID Tuning](en/pid-tuning)** – Process for tuning PID coefficients.
 
+# Techy details
+
+* **⛓️‍💥 [Network](en/network)** – An overview of the network at Khazadum and Workshop.
+* **📟 [RouterOS](en/routeros)** – Configuration guide for our Mikrotik routers.
+* **🛞 [Spoolman Security](en/spoolman-security)** – Configuration tips for our secured Spoolman instance.
+* **🧰 [Wiki Maintenance](en/wiki-maintenance)** – Things to check when encountering issues with wiki deployment.
