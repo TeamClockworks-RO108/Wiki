@@ -1,8 +1,8 @@
 ---
-title: Architecture
+title: Network
 description: 
 published: true
-date: 2026-02-16T01:16:00.720Z
+date: 2026-03-10T02:38:04.629Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
