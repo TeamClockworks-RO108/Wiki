@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-03-10T02:20:25.359Z
+date: 2026-03-10T02:36:57.715Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -10,19 +10,27 @@ dateCreated: 2026-01-30T20:25:38.275Z
 
 
 
-# 🕰️  Clockworks Wiki
+# Clockworks
 
-![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/Wiki?style=flat-square)
+We are Team Clockworks, a robotics team from Bucharest, Romania. We compete in FTC under the international number #19085 and at various local competitions. 
 
-Welcome to the **Clockworks Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
+We are powered by [Alacrity Education](https://alacrity.education), an NGO focused on innovating informal education by creating the first open-access STEM laboratory in the heart of Bucharest. 
+
 
 Our foundational principle is **open-source**. We strive to open up to everyone to study, reproduce and improve all of our projects. This Wiki is a place where documentation lives for all of our work.
 
 The principles of open-source are best summarized by the Voron community:
 
 > *We build space shuttles with gardening tools, so that everyone can have a space shuttle of their own.*
->
-> -- Voron manual, page 1 
+
+
+# 📚 Clockworks Wiki
+
+![repo-size](https://img.shields.io/github/repo-size/TeamClockworks-RO108/Wiki?style=flat-square)
+
+Welcome to the **Clockworks Wiki** — a knowledge base for our robotics projects, documentation, and team resources! 
+
+This Wiki is a place where documentation lives for all of our open-source work.
 
 
 
@@ -43,7 +51,7 @@ The principles of open-source are best summarized by the Voron community:
 * **💻 [Dev Machine](en/dev-machine)** – Information for accessing the remote development server.
 * **⚡️ [PID Tuning](en/pid-tuning)** – Process for tuning PID coefficients.
 
-# Techy details
+# 🔌 Techy details
 
 * **⛓️‍💥 [Network](en/network)** – An overview of the network at Khazadum and Workshop.
 * **📟 [RouterOS](en/routeros)** – Configuration guide for our Mikrotik routers.
