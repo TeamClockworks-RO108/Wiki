@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-03-10T02:36:57.715Z
+date: 2026-03-10T02:41:06.173Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -53,7 +53,7 @@ This Wiki is a place where documentation lives for all of our open-source work.
 
 # 🔌 Techy details
 
-* **⛓️‍💥 [Network](en/network)** – An overview of the network at Khazadum and Workshop.
-* **📟 [RouterOS](en/routeros)** – Configuration guide for our Mikrotik routers.
-* **🛞 [Spoolman Security](en/spoolman-security)** – Configuration tips for our secured Spoolman instance.
-* **🧰 [Wiki Maintenance](en/wiki-maintenance)** – Things to check when encountering issues with wiki deployment.
+* **⛓️‍💥 [Network](en/Infrastructure/network)** – An overview of the network at Khazadum and Workshop.
+* **📟 [RouterOS](en/Infrastructure/routeros)** – Configuration guide for our Mikrotik routers.
+* **🛞 [Spoolman Security](en/Infrastructure/spoolman-security)** – Configuration tips for our secured Spoolman instance.
+* **🧰 [Wiki Maintenance](en/Infrastructure/wiki-maintenance)** – Things to check when encountering issues with wiki deployment.
