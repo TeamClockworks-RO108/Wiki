@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-03-10T02:54:41.455Z
+date: 2026-03-13T06:46:35.690Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -42,7 +42,7 @@ This Wiki is a place where documentation lives for all of our open-source work.
 * **🧠 [Topology Optimization](en/Projects/optimizare-topologica)** - Topology Optimization is a research tool and workflow used in CAD  to improve the geometry of parts under mechanical stress.
 * **🗑️ [WALLE_E Smart Trashcan](en/Projects/trash-selector)** - WALLE_E is an automated sorting waste bin capable of classifying four types of materials.
 * **🧪 [SPPICE Electroplating](en/Projects/sppice-electroplating)** – An experimental process for chemically depositing conductive copper traces on 3D-printed substrate.
-* **🔫 [Therion Metal Plating](en/Projects/therion)** – A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma bombardment. 
+* **🔫 [Therion Metal Plating](en/Projects/therion)** – A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment. 
 
 
 # 🏗 Guides & Tools
