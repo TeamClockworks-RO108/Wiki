@@ -1,8 +1,8 @@
 <!--
-title: Therion Metal Plating
+title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-03-10T02:54:26.998Z
+date: 2026-03-14T12:11:31.915Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -11,6 +11,9 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <h1>Introduction</h1>
 <h2 style="text-align:justify;">What is Therion?</h2>
 <p style="text-align:justify;">Therion represents a 3d-printing augmentation project that aims for achieving thin-film deposition capabilities on a Voron 2.4 printer, enabling at-home prototyping and quality manufacturing of complex custom-3D-printed multilayer PCBs, or printed plastic pieces with inner metal traces or shielding for reliable electric work (as a better alternative to cable-management) or emf shielding.</p>
+<blockquote>
+  <p style="text-align:justify;">A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.</p>
+</blockquote>
 <p style="text-align:justify;">films could be virtually made of almost any polymer, metal or ceramic, using a modified plasma gun toolhead for depositing films. &nbsp;A toolchanging system will be implemented, rapidly switching between traditional printing and thin-film deposition.</p>
 <p style="text-align:justify;">Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition. It uses induction heating for efficient excitation of surface atoms, vaporised by dense, ECR ionized gas precursor plasma for high deposition rates of dense, quality thin films.</p>
 <h2>Problems Therion solves</h2>
@@ -131,7 +134,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 <p>Exposed structural parts inside the toolhead would have to be covered with a protection film so that deposits don't form on the surface, possibly corrosion structural elements.</p>
 <p>This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by basic hydrodynamic interactions. If the vapor is ionised (by say, an <a href="https://en.wikipedia.org/wiki/Electron_cyclotron_resonance">ECR</a> unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setup.</p>
 <h2>Design schematic</h2>
-<p>The deswign if fairlz similar to a plasma jet barrel used in atmospheric pressure. The goal is to achieve controlled pattern and fine, qualitz deposition of target material on the substrate. Below are presented two schematics, two possible designs that could be implemented. The first one implements a hollow cathode design, while the second one uses an ECR ioniyation design. We will now go through a thourough descripition of each design, stating what problems each solves and creates.</p>
+<p>The deswign if fairlz similar to a plasma jet barrel used in atmospheric pressure. The goal is to achieve controlled pattern and fine, qualitz deposition of target material on the substrate. Below are presented two schematics, two possible designs that could be implemented. The first one implements a hollow cathode design, while the second one uses an ECR ionization design. We will now go through a thourough descripition of each design, stating what problems each solves and creates.</p>
 <figure class="image"><img src="/therion-schita+legenda.jpg" alt="">
   <figcaption>Figure 4: Profile view of the design schematic-plasma jet barrel used as a toolhead for metal plating</figcaption>
 </figure>
@@ -139,10 +142,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
   <figcaption>Figure 5: Main five areas of the toolhead; a-Ar outlet(maintains and modulates a constant Argon inflow); b-Electron depletion zone(the area where electrons are accelerated, ionizing the Ar atoms); c-Plasma confinement zone(the area where plasma is concentrated and partly confined, allowing for surface vaporization and sputtering of the metal target); d-Ion barrel(a tube through which sputtered metal ions are focused-and cooled down-in a straight beam, being kept on orbit by the strong side electromagnets and enabling consistent deposition); e-Deposition zone (the area under the barrel where metal is deposited on the plastic substrate)</figcaption>
 </figure>
 <p>The project implements a hollow cathode design, isolated in a vacuum enclosure down to about 10pa. Argon inlets are positioned on the top of the barrel cap, maintaining the flow of argon into the jet barrel. Careful magnetron design of the electrode body is needed for high efficiency in low prssure systems, given that ohmic heating is limited in collisionless processes. Magnetic directed confinement will be implemented, making use of both permanent magnets and electromagnets (ion barrel-d and possibly confinement near the argon inlet). The target, placed in the plasma confinement zone-c, is where physicial vapor of the target is formed, being later deposited on the opposing substrate. The inductor, placed in the main plasma confinement zone-c is used for local surface heating of metal targets for higher deposition rates and higher quality thin film formation.</p>
-<p>The ionization process start at the electrode level, argon flooding the hollow cathode ionization begins. plasma, having high energy density and low mass enables fast superficial sputtering/evaporation of surface atoms, induction heating counting for about 80% of the metal's current melting temperature, the rest being takwen care of by the plasma inflow. Hollow cathode design have the downside of faster degradation and surface corrosion, being limited in vacuum systems. Even so, ECR ionization often represents a more efficient method in vacuum systems compared to normal hopllow cathode designs. Protective film will be places inside the nozzle cavity (ion barrel-d), which has the purpose of protecting structural parts from off-axis chaotic metal ions which could accidentally plate unwanted areas. Even though meagnetic confinement limits this phenomena, collisional diffusion as well as ambipolar diffusion perpendicular to the field lines still could count for slow deposits to accumulate on the barrel.</p>
-<h2>Second design - plasma enhanced thermal evaporation deposition using ECR ionization</h2>
-<p>In the second design, targets implement a toroidal design, the gap between target and inductor is kept minimal, making for higher power efficiency and more localised surface excitation of surface atoms.</p>
-<p>&nbsp;</p>
+<p>The ionization rpocess startst at the electrode level, argon flooding the hollow cathode ionization begins. plasma, having high energy density and low mass enables fast superficial sputtering/evaporation of surface atoms, induction heating counting for about 80% of the metal's current melting temperature, the rest being takwen care of by the plasma inflow. Hollow cathode design have the downside of faster degradadion and surface corrosion, being limited in vacuum systems. Even so, ECR ionization often represents a more efficient method in vacuum systems compared to normal hopllow cathode designs. Protective film will be places inside the nozzle cavity (ion barrel-d), which has the purpose of protecting structural parts from off-axis chaotic metal ions which could accidentally plate unwanted areas. Even though meagnetic confinement limits this phenomena, collisional diffusion as well as ambipolar diffusion perpendicular to the field lines still could count for slow deposits to accumulate on the barrel.</p>
 <h2>C - Plasma confinement zone</h2>
 <p>&nbsp;</p>
 <h3>Inductor coil</h3>
