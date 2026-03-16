@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-03-10T02:39:57.472Z
+date: 2026-03-16T02:15:35.298Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -75,10 +75,9 @@ add address=heh08gs3gcg.sn.mynetname.net list=WAN_IP_MIKDDNS
 
 # Edit here
 # Local vlans and ip_local_here to the whole local net. 
-add address=10.2.2.0/24 list=ip_core
-add address=10.2.3.0/24 list=ip_autom
-add address=10.2.4.0/24 list=ip_guest
-add address=10.2.0.0/16 list=ip_local_here
+add address=10.12.2.0/24 list=ip_core
+add address=10.12.3.0/24 list=ip_alacrity
+add address=10.12.0.0/16 list=ip_local_here
 ```
 
 Create firewall bulk rules.
@@ -97,6 +96,7 @@ add action=accept chain=input comment="Accept already established" \
 add action=accept chain=input comment="Allow traffic on private subnets" \
     src-address-list=allowed_to_router
 add action=accept chain=input comment="Allow ICMP" protocol=icmp
+add action=drop chain=input comment="Drop all other shit"
 add action=accept chain=forward comment="Accept existing connections" \
     connection-state=established,related
 add action=drop chain=forward comment="Drop invalid" connection-state=invalid \
@@ -130,49 +130,40 @@ add action=drop chain=forward comment="Drop packets from LAN not from LAN IP" \
 add action=accept chain=forward comment="Accept DSTNAT'ed" \
     connection-nat-state=dstnat dst-address-list=allowed_to_router
 
-# Specify which subnet can initiate connections to which subnet
-
 # Each subnet routed locally can access itself
 add action=accept chain=forward dst-address-list=ip_core src-address-list=\
-    ip_core
-add action=accept chain=forward dst-address-list=ip_guest src-address-list=\
-    ip_guest
-add action=accept chain=forward dst-address-list=ip_autom src-address-list=\
-    ip_autom
+    ip_core comment="Loop Core"
+add action=accept chain=forward dst-address-list=ip_alacrity src-address-list=\
+    ip_alacrity comment="Loop Alacrity"
     
 # Which subnet can cross vlans and where
 # Who can do internet access
 # And who can be accessed from IRAF and access IRAF
-add action=accept chain=forward comment="Core to Autom" dst-address-list=\
-    ip_autom src-address-list=ip_core
-add action=accept chain=forward comment="Core to Guest" dst-address-list=\
-    ip_guest src-address-list=ip_core
+add action=accept chain=forward comment="Core to Alacrity" dst-address-list=\
+    ip_alacrity src-address-list=ip_core
+
 
 # External subnets coming from IRAF
-add action=accept chain=forward comment="Breaza to Core" dst-address-list=\
-    ip_local_here src-address=10.5.0.0/16
+add action=accept chain=forward comment="Alex Home Core to All" dst-address-list=\
+    ip_local_here src-address=10.2.2.0/24
 
 # Access IRAF interior, by default disabled
 add action=accept chain=forward comment="Core to IRAF Interior" \
     dst-address-list=iraf_int src-address-list=ip_core disabled=yes
     
-# Access IRAF edge devices
+# Access IRAF edge devices, by default disabled
 add action=accept chain=forward comment="Core to IRAF Edge" dst-address-list=\
-    iraf_edge src-address-list=ip_core
+    iraf_edge src-address-list=ip_core disabled=yes
 
 # IRAF Edge can access subnet, default disabled
-add action=accept chain=forward comment="IRAF Edge to Core" dst-address-list=\
-    ip_core src-address-list=iraf_edge disabled=yes
-add action=accept chain=forward comment="IRAF Edge IDP to Guest machines" \
+add action=accept chain=forward comment="IRAF Edge IDP to machines" \
     dst-address-list=ip_guest src-address=10.95.50.0/24 disabled=yes
 
 # Internet access
 add action=accept chain=forward comment="Core to Internet" dst-address-list=\
     !not_in_internet src-address-list=ip_core
-add action=accept chain=forward comment="Autom to Internet" dst-address-list=\
-    !not_in_internet src-address-list=ip_autom
-add action=accept chain=forward comment="Guest to Internet" dst-address-list=\
-    !not_in_internet src-address-list=ip_guest
+add action=accept chain=forward comment="Alacrity to Internet" dst-address-list=\
+    !not_in_internet src-address-list=ip_alacrity
     
 
     
