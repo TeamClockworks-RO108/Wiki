@@ -2,7 +2,7 @@
 title: Boron
 description: 
 published: true
-date: 2026-02-15T02:56:16.012Z
+date: 2026-03-16T01:22:38.509Z
 tags: 3dprinting, project, voron
 editor: markdown
 dateCreated: 2025-10-07T00:54:49.380Z
@@ -211,9 +211,6 @@ If using the stacking feet, assemble them as usual  instead of the regular feet.
 | ![boron-assy-stacking-feet.png](/boron-assy-stacking-feet.png) |
 | -- |
 
-> `TODO` Remake the stacking feet, as the feet can not dig 15mm into the top of the frame, because of the panel. 
-> Also update F3Z, STEP, STL and image above (keep name).
-{.is-danger}
 
 
 ### Final assembled frame
@@ -381,11 +378,11 @@ Reassemble the `U` and `I`, but do not tighten the corners fully. Place the squa
 
 # Gallery
 
-| ![](https://img.shields.io/badge/B.001-Finished-green?style=flat-square)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=flat-square)| ![boron-serial-b001.png](/boron-serial-b001.png) |
+| ![](https://img.shields.io/badge/B.001-Finished-brightgreen?style=for-the-badge)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=for-the-badge)| ![boron-serial-b001.png](/boron-serial-b001.png) |
 | The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the UHP PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/boron-graphic-voron-x-clock.svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/boron-graphic-natie.svg =200x200) | ^^ |
 |:-- |
  
-| ![](https://img.shields.io/badge/B.002-in%20progress-red?style=flat-square)<br>![](https://img.shields.io/badge/Owner-TBA-purple?style=flat-square)|  |
+| ![](https://img.shields.io/badge/B.002-in%20progress-red?style=for-the-badge)<br>![](https://img.shields.io/badge/Owner-TBA-purple?style=for-the-badge)|  |
 | The second boron will feature another option for the power supply (HDR-150-24) and options for printing the main posts in two pieces. Stay tuned! | ^^ |
 |:-- |
 
