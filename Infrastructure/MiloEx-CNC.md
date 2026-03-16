@@ -2,7 +2,7 @@
 title: MiloEx CNC
 description: 
 published: true
-date: 2026-03-16T02:47:38.339Z
+date: 2026-03-16T03:10:31.543Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-16T02:47:38.339Z
@@ -18,7 +18,12 @@ Movment controller will be PlanetCNC MK3/9.
  * 48 V PSU
  
 # Integrated servo
- * Leadshine iSV57
+ * ClearPath-SDSK-23
+ * 75V, 1500W PSU (RSP-1500-72)
+ * 24V, 100W auxiliary PSU
+ * Separate PSU for other electronics
+ 
+TODO: Validate required torque
  
 
 
