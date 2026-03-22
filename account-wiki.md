@@ -2,7 +2,7 @@
 title: Account & Wiki
 description: 
 published: true
-date: 2026-03-22T23:17:06.653Z
+date: 2026-03-22T23:17:26.063Z
 tags: infrastructure, guide
 editor: markdown
 dateCreated: 2025-07-01T21:34:11.812Z
@@ -75,6 +75,6 @@ Logout of the authentication server, then try to login. The logout button is in 
 
 # Configure Vaultwarden Instance (if you need password manager access)
 
-See this separate document for configuring Bitwarden/Vaultwarden: [Guide](en/Infrastructure/vaultwarden-setup).
+See this separate document for configuring Bitwarden/Vaultwarden: [Guide](/en/Infrastructure/vaultwarden-setup).
 
 
