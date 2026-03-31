@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:06:25.293Z
+date: 2026-03-31T22:15:17.052Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -83,11 +83,11 @@ By default, Cloudflare flattens `CNAME` records at the zone apex and may also fl
 
 ---
 
-## Application Services
+# Application Services
 
 Each service is deployed as a standalone `docker-compose.yaml` stack on Eros.
 
-### Authentik — Identity Provider
+## Authentik — Identity Provider
 
 | | |
 |---|---|
@@ -95,7 +95,7 @@ Each service is deployed as a standalone `docker-compose.yaml` stack on Eros.
 | **Containers** | `authentik-server`, `authentik-worker`, `authentik-postgres`, `authentik-redis` |
 | **Purpose** | Centralised authentication and authorisation for all Alacrity services |
 
-#### Authentication Sources
+### Authentication Sources
 
 Account **self-registration is disabled**. All accounts are provisioned by the Alacrity Board. The following authentication methods are supported:
 
@@ -107,8 +107,9 @@ Account **self-registration is disabled**. All accounts are provisioned by the A
 | **D** | LucaciResearch Authentik (OAuth2 federation) | ✓ | An existing remote Authentik instance that serves as the directory for **Clockworks** members. Self-registration *is* enabled for this source so that the Alacrity Board does not need to manually synchronise Clockworks account operations. Users arriving through this provider are automatically placed in the **Clockworks Members** group. |
 
 > Methods **B** and **C** are especially useful for **mobile sign-in**, where typing long passwords is inconvenient.
+{.is-info}
 
-#### Account Creation Flow
+### Account Creation Flow
 
 ```mermaid
 flowchart TD
@@ -118,7 +119,7 @@ flowchart TD
     D --> E[Link Discord/GitHub accounts - optional]
 ```
 
-#### Groups
+### Groups
 
 Authentik groups partition users for role-based access control:
 
@@ -129,7 +130,7 @@ Authentik groups partition users for role-based access control:
 | **Clockworks Members** | Auto-populated via LucaciResearch federation | Access rights specific to Clockworks collaborators |
 | **Service** | API accounts (tokens & app passwords) | Machine-to-machine access to protected applications |
 
-#### Roles & RBAC
+### Roles & RBAC
 
 Authentik provides a full **Role-Based Access Control** system. Roles are the component that actually grants access: a role encapsulates a set of permissions for a given application, and is then *assigned to one or more groups*. Users never receive permissions directly — they inherit them through their group memberships.
 
@@ -137,7 +138,7 @@ Concrete role definitions for each application are **to be determined** during t
 
 ---
 
-### WikiJS — Knowledge Base
+## WikiJS — Knowledge Base
 
 | | |
 |---|---|
@@ -145,12 +146,10 @@ Concrete role definitions for each application are **to be determined** during t
 | **Containers** | `wikijs`, `wikijs-postgres` |
 | **Purpose** | Public/private wiki for Alacrity Education |
 
-#### Authentication
-
 - **Local authentication and password login are disabled.** The only sign-in method is OAuth2, redirecting to `auth.alacrity.ro`.
 - Every user who successfully authenticates through Alacrity Authentik is automatically added to the WikiJS **Editor** group (this is a WikiJS-internal group, not an Authentik group).
 
-#### Page Visibility Model
+### Page Visibility Model
 
 WikiJS supports granular per-page and per-folder permissions. The two primary audiences are:
 
@@ -161,19 +160,16 @@ WikiJS supports granular per-page and per-folder permissions. The two primary au
 
 Content authors control visibility at page creation time: a page can be marked as visible to Guests (public) or restricted to Editors only (private). This is the mechanism that makes the wiki a *mixed* public/private knowledge base.
 
-#### Analytics
+### Search and Analytics
 
 Page interactions can optionally be tracked using an external analytics provider such as [Statcounter](https://statcounter.com), [Plausible](https://plausible.io), or [Umami](https://umami.is). WikiJS supports injecting custom HTML/JS into page headers or footers, which is sufficient for any tag-based analytics solution.
 
-#### Search & Comments
-
 The deployment will use WikiJS's **built-in database search engine** and **default comment system**. No external search or comment backends are required at this stage.
 
-#### Future: Authentik-to-WikiJS Group Mapping
+### Future: Authentik-to-WikiJS Group Mapping
 
 In the initial deployment, all authenticated users share a single WikiJS group (Editor). In the future, we will research whether it is possible to map **Authentik roles** (passed as claims in the OAuth2 token) to **WikiJS groups**, enabling more fine-grained permissions — for example, restricting certain page trees to Board members only, without requiring manual group management inside WikiJS.
 
----
 
 ## Caddy Reverse Proxy
 
@@ -185,57 +181,27 @@ Two directives in the Caddyfile map each public domain to its backend: `auth.ala
 
 ## Architecture Diagram
 
-```kroki
-blockdiag {
-  orientation = portrait;
-
-  Internet [label = "Internet"];
-  Cloudflare [label = "Cloudflare DNS\n(DNS-only, no proxy)"];
-  MikroTik [label = "MikroTik Router\nPort Fwd 80/443"];
-  Caddy [label = "Caddy\n(bare-metal)\n:80 / :443"];
-  Authentik [label = "Authentik\n:9000"];
-  WikiJS [label = "WikiJS\n:3000"];
-  AuthPG [label = "Postgres\n(Authentik)"];
-  WikiPG [label = "Postgres\n(WikiJS)"];
-  Redis [label = "Redis\n(Authentik)"];
-  LR [label = "LucaciResearch\nAuthentik\n(remote)"];
-
-  Internet -> Cloudflare -> MikroTik -> Caddy;
-  Caddy -> Authentik;
-  Caddy -> WikiJS;
-  Authentik -> AuthPG;
-  Authentik -> Redis;
-  WikiJS -> WikiPG;
-  WikiJS -> Authentik [label = "OAuth2"];
-  Authentik -> LR [label = "OAuth2\nFederation"];
-}
-```
-
-> *If your WikiJS instance does not have the Kroki renderer enabled, the diagram above can be replaced with a Mermaid block or a static image.*
-
-**Simplified Mermaid alternative:**
 
 ```mermaid
 flowchart TD
-    A[Internet] --> B[Cloudflare DNS — DNS only]
-    B --> C[MikroTik Router — Port Fwd 80/443]
-    C --> D[Caddy — bare-metal on Eros — :80/:443]
+    A[Internet] --> B[Cloudflare DNS - DNS only]
+    B --> C[MikroTik Router - Port Fwd 80/443]
+    C --> D[Caddy - bare-metal on Eros - :80/:443]
     D -->|auth.alacrity.ro| E[Authentik :9000]
     D -->|wiki.alacrity.ro| F[WikiJS :3000]
-    E --> G[(Postgres — Authentik)]
-    E --> H[(Redis)]
-    F --> I[(Postgres — WikiJS)]
+    E --> G[(Postgres - Authentik)]
+    F --> I[(Postgres - WikiJS)]
     F -.->|OAuth2| E
-    E -.->|OAuth2 Federation| J[LucaciResearch Authentik — remote]
+    E -.->|OAuth2 Federation with self-registration| J[LucaciResearch Authentik - remote]
+    E -.->|OAuth2 Federation| K[Discord]
+    E -.->|OAuth2 Federation| L[Github]
 ```
 
----
+
 
 ## Scalability to More Services
 
 The Authentik instance deployed on Eros is not limited to the wiki — it is designed to serve as the **single sign-on (SSO) provider for all Alacrity Education services**, current and future.
-
-### Supported Protocols
 
 Authentik supports several authentication and authorisation protocols out of the box:
 
@@ -247,19 +213,6 @@ Authentik supports several authentication and authorisation protocols out of the
 
 For applications that have no built-in SSO support, Authentik's **Proxy Provider** can be placed in front of the service. In this mode, Caddy forwards the authentication decision to Authentik, and only passes the request through to the upstream service if the user has a valid session. This means virtually *any* web application can be protected with Alacrity SSO, even if it has no authentication system of its own.
 
-### Hosting Additional Services
-
-Eros has sufficient headroom (i3-8100, 16 GB RAM, 500 GB SSD) to host additional lightweight services alongside Authentik and WikiJS. Each new service would follow the same pattern:
-
-1. Deploy as a new Docker Compose stack under `/opt/stacks/<service>/`.
-2. Register an OAuth2/OIDC (or LDAP) application in Authentik.
-3. Create a DNS `CNAME` record (`<service>.alacrity.ro → alacrityhub.go.ro`).
-4. Add a `reverse_proxy` directive to the Caddyfile.
-5. Assign appropriate Authentik roles to the relevant groups.
-
-This pattern keeps the operational model consistent and predictable as the platform grows.
-
----
 
 ## Appendix A — Port & Service Summary
 
@@ -269,7 +222,6 @@ This pattern keeps the operational model consistent and predictable as the platf
 | Authentik Server | `127.0.0.1:9000` | HTTP | `auth.alacrity.ro` |
 | WikiJS | `127.0.0.1:3000` | HTTP | `wiki.alacrity.ro` |
 | Authentik Postgres | Docker-internal | TCP/5432 | No |
-| Authentik Redis | Docker-internal | TCP/6379 | No |
 | WikiJS Postgres | Docker-internal | TCP/5432 | No |
 
 ## Appendix B — Backup Considerations
