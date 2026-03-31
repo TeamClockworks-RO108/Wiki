@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:16:56.685Z
+date: 2026-03-31T22:18:51.549Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -22,8 +22,6 @@ From a visitor's perspective the wiki behaves as a **mixed public/private knowle
 - Once signed in, users land in the **Editor** role inside WikiJS, gaining access to private pages (internal procedures, meeting notes, drafts) and the ability to create and edit content according to their permissions.
 
 The identity layer is designed to scale: the same Authentik instance can serve as the SSO provider for any future Alacrity service, not just the wiki.
-
----
 
 ## Hardware
 
@@ -52,7 +50,7 @@ A port-forwarding rule on the MikroTik edge router exposes TCP ports **80** and 
 
 Eros runs **Arch Linux** and acts primarily as a Docker host. All application services are deployed as Docker Compose stacks, with the sole exception of Caddy, which runs bare-metal (see [Caddy Reverse Proxy](#caddy-reverse-proxy)).
 
-
+---
 ## DNS
 
 
@@ -80,6 +78,21 @@ By default, Cloudflare flattens `CNAME` records at the zone apex and may also fl
 # Application Services
 
 Each service is deployed as a standalone `docker-compose.yaml` stack on Eros.
+
+```mermaid
+flowchart TD
+    A[Internet] --> B[Cloudflare DNS - DNS only]
+    B --> C[MikroTik Router - Port Fwd 80/443]
+    C --> D[Caddy - bare-metal on Eros - :80/:443]
+    D -->|auth.alacrity.ro| E[Authentik :9000]
+    D -->|wiki.alacrity.ro| F[WikiJS :3000]
+    E --> G[(Postgres - Authentik)]
+    F --> I[(Postgres - WikiJS)]
+    F -.->|OAuth2| E
+    E -.->|OAuth2 Federation with self-registration| J[LucaciResearch Authentik - remote]
+    E -.->|OAuth2 Federation| K[Discord]
+    E -.->|OAuth2 Federation| L[Github]
+```
 
 ## Authentik — Identity Provider
 
@@ -171,29 +184,8 @@ Caddy runs **bare-metal** on Eros (not inside Docker). It listens on ports **80*
 
 Two directives in the Caddyfile map each public domain to its backend: `auth.alacrity.ro` → Authentik on port 9000, and `wiki.alacrity.ro` → WikiJS on port 3000. Caddy infers HTTPS, provisions certificates, and handles HTTP→HTTPS redirection automatically.
 
----
 
-## Architecture Diagram
-
-
-```mermaid
-flowchart TD
-    A[Internet] --> B[Cloudflare DNS - DNS only]
-    B --> C[MikroTik Router - Port Fwd 80/443]
-    C --> D[Caddy - bare-metal on Eros - :80/:443]
-    D -->|auth.alacrity.ro| E[Authentik :9000]
-    D -->|wiki.alacrity.ro| F[WikiJS :3000]
-    E --> G[(Postgres - Authentik)]
-    F --> I[(Postgres - WikiJS)]
-    F -.->|OAuth2| E
-    E -.->|OAuth2 Federation with self-registration| J[LucaciResearch Authentik - remote]
-    E -.->|OAuth2 Federation| K[Discord]
-    E -.->|OAuth2 Federation| L[Github]
-```
-
-
-
-## Scalability to More Services
+# Scalability to More Services
 
 The Authentik instance deployed on Eros is not limited to the wiki — it is designed to serve as the **single sign-on (SSO) provider for all Alacrity Education services**, current and future.
 
@@ -203,12 +195,12 @@ Authentik supports several authentication and authorisation protocols out of the
 - **LDAP** — Authentik can expose an LDAP interface, useful for services that only support directory-based authentication (e.g., Gitea, Portainer, some network appliances).
 - **Forward Auth / Proxy Authentication** — Authentik can act as an authentication middleware in front of any HTTP service (see below).
 
-### Protected Reverse Proxy
+## Protected Reverse Proxy
 
 For applications that have no built-in SSO support, Authentik's **Proxy Provider** can be placed in front of the service. In this mode, Caddy forwards the authentication decision to Authentik, and only passes the request through to the upstream service if the user has a valid session. This means virtually *any* web application can be protected with Alacrity SSO, even if it has no authentication system of its own.
 
 
-## Appendix A — Port & Service Summary
+# Appendix A — Port & Service Summary
 
 | Service | Listen Address | Protocol | Exposed via Caddy |
 |---|---|---|---|
@@ -218,7 +210,7 @@ For applications that have no built-in SSO support, Authentik's **Proxy Provider
 | Authentik Postgres | Docker-internal | TCP/5432 | No |
 | WikiJS Postgres | Docker-internal | TCP/5432 | No |
 
-## Appendix B — Backup Considerations
+# Appendix B — Backup Considerations
 
 At a minimum, the following data should be included in a regular backup schedule:
 
