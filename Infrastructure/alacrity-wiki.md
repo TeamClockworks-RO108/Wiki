@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:19:31.834Z
+date: 2026-03-31T22:20:33.524Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -93,6 +93,16 @@ flowchart TD
     E -.->|OAuth2 Federation| K[Discord]
     E -.->|OAuth2 Federation| L[Github]
 ```
+
+Port and service summary:
+
+| Service | Listen Address | Protocol | Exposed via Caddy |
+|---|---|---|---|
+| Caddy | `0.0.0.0:80`, `0.0.0.0:443` | HTTP / HTTPS | — (is the proxy) |
+| Authentik Server | `127.0.0.1:9000` | HTTP | `auth.alacrity.ro` |
+| WikiJS | `127.0.0.1:3000` | HTTP | `wiki.alacrity.ro` |
+| Authentik Postgres | Docker-internal | TCP/5432 | No |
+| WikiJS Postgres | Docker-internal | TCP/5432 | No |
 
 ## Authentik — Identity Provider
 
@@ -200,17 +210,8 @@ Authentik supports several authentication and authorisation protocols out of the
 For applications that have no built-in SSO support, Authentik's **Proxy Provider** can be placed in front of the service. In this mode, Caddy forwards the authentication decision to Authentik, and only passes the request through to the upstream service if the user has a valid session. This means virtually *any* web application can be protected with Alacrity SSO, even if it has no authentication system of its own.
 
 
-# Appendix A — Port & Service Summary
 
-| Service | Listen Address | Protocol | Exposed via Caddy |
-|---|---|---|---|
-| Caddy | `0.0.0.0:80`, `0.0.0.0:443` | HTTP / HTTPS | — (is the proxy) |
-| Authentik Server | `127.0.0.1:9000` | HTTP | `auth.alacrity.ro` |
-| WikiJS | `127.0.0.1:3000` | HTTP | `wiki.alacrity.ro` |
-| Authentik Postgres | Docker-internal | TCP/5432 | No |
-| WikiJS Postgres | Docker-internal | TCP/5432 | No |
-
-# Appendix B — Backup Considerations
+# Appendix A — Backup Considerations
 
 At a minimum, the following data should be included in a regular backup schedule:
 
