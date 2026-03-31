@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:18:51.549Z
+date: 2026-03-31T22:19:31.834Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -99,7 +99,7 @@ flowchart TD
 | | |
 |---|---|
 | **URL** | `https://auth.alacrity.ro` |
-| **Containers** | `authentik-server`, `authentik-worker`, `authentik-postgres`, `authentik-redis` |
+| **Containers** | `authentik-server`, `authentik-worker`, `authentik-postgres` |
 | **Purpose** | Centralised authentication and authorisation for all Alacrity services |
 
 ### Authentication Sources
