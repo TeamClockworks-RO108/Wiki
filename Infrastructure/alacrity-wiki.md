@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:15:17.052Z
+date: 2026-03-31T22:16:56.685Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -10,11 +10,10 @@ dateCreated: 2026-03-31T21:52:32.616Z
 
 # Alacrity Education — Mixed Wiki Platform Architecture
 
-## Summary
 
 This document describes the architecture for **Alacrity Education's public/private wiki platform**, hosted at [wiki.alacrity.ro](https://wiki.alacrity.ro). The platform is a [WikiJS](https://js.wiki) instance backed by a centralised identity provider ([Authentik](https://goauthentik.io)), reverse-proxied through [Caddy](https://caddyserver.com), and running on a single on-premise server at the Alacrity lab.
 
-### User Experience at a Glance
+## User Experience at a Glance
 
 From a visitor's perspective the wiki behaves as a **mixed public/private knowledge base**:
 
@@ -26,9 +25,7 @@ The identity layer is designed to scale: the same Authentik instance can serve a
 
 ---
 
-## Physical Infrastructure
-
-### Hardware
+## Hardware
 
 | Component | Specification |
 |---|---|
@@ -41,7 +38,7 @@ The identity layer is designed to scale: the same Authentik instance can serve a
 
 The server is rack-mounted in the Alacrity lab alongside the existing networking equipment.
 
-### Network
+## Network
 
 | Parameter | Value |
 |---|---|
@@ -51,17 +48,15 @@ The server is rack-mounted in the Alacrity lab alongside the existing networking
 
 A port-forwarding rule on the MikroTik edge router exposes TCP ports **80** and **443** from `10.12.3.3` to the public internet, allowing Caddy to terminate TLS and serve both `wiki.alacrity.ro` and `auth.alacrity.ro`.
 
-### Operating System
+## Operating System
 
 Eros runs **Arch Linux** and acts primarily as a Docker host. All application services are deployed as Docker Compose stacks, with the sole exception of Caddy, which runs bare-metal (see [Caddy Reverse Proxy](#caddy-reverse-proxy)).
 
----
 
 ## DNS
 
-### Record Layout
 
-Digi provides the dynamic/static hostname **`alacrityhub.go.ro`**, which resolves to the lab's public IP. Both service domains are `CNAME` records pointing at this hostname with a **TTL of 300 seconds (5 minutes)**:
+Digi provides the dynamic hostname **`alacrityhub.go.ro`**, which resolves to the lab's public IP. Both service domains are `CNAME` records pointing at this hostname with a **TTL of 300 seconds (5 minutes)**:
 
 | Record | Type | Target | TTL |
 |---|---|---|---|
@@ -80,8 +75,7 @@ By default, Cloudflare flattens `CNAME` records at the zone apex and may also fl
 4. If the zone is on a plan that exposes the *CNAME Flattening* setting (Business or Enterprise), go to **DNS → Settings** and set CNAME flattening to **Flatten at the zone apex only** (the default). This has no effect on subdomain records but is good hygiene.
 
 > **Why disable the proxy?** Caddy handles TLS termination and certificate management via ACME (Let's Encrypt). If Cloudflare's proxy is active, it will present its own certificate and interfere with Caddy's ACME HTTP-01 challenges, potentially causing certificate issuance failures or double-encryption overhead.
-
----
+{.is-info}
 
 # Application Services
 
