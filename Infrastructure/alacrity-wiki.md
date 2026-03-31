@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:20:33.524Z
+date: 2026-03-31T22:47:11.025Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -22,58 +22,6 @@ From a visitor's perspective the wiki behaves as a **mixed public/private knowle
 - Once signed in, users land in the **Editor** role inside WikiJS, gaining access to private pages (internal procedures, meeting notes, drafts) and the ability to create and edit content according to their permissions.
 
 The identity layer is designed to scale: the same Authentik instance can serve as the SSO provider for any future Alacrity service, not just the wiki.
-
-## Hardware
-
-| Component | Specification |
-|---|---|
-| **Machine** | Dell OptiPlex 3060 |
-| **CPU** | Intel Core i3 (8th gen) |
-| **RAM** | 16 GB |
-| **Storage** | 500 GB PCIe SSD |
-| **Hostname** | `eros` |
-| **Internal DNS** | `eros.lr` |
-
-The server is rack-mounted in the Alacrity lab alongside the existing networking equipment.
-
-## Network
-
-| Parameter | Value |
-|---|---|
-| **VLAN** | 30 |
-| **Subnet** | `10.12.3.0/24` |
-| **Server address** | `10.12.3.3` |
-
-A port-forwarding rule on the MikroTik edge router exposes TCP ports **80** and **443** from `10.12.3.3` to the public internet, allowing Caddy to terminate TLS and serve both `wiki.alacrity.ro` and `auth.alacrity.ro`.
-
-## Operating System
-
-Eros runs **Arch Linux** and acts primarily as a Docker host. All application services are deployed as Docker Compose stacks, with the sole exception of Caddy, which runs bare-metal (see [Caddy Reverse Proxy](#caddy-reverse-proxy)).
-
----
-## DNS
-
-
-Digi provides the dynamic hostname **`alacrityhub.go.ro`**, which resolves to the lab's public IP. Both service domains are `CNAME` records pointing at this hostname with a **TTL of 300 seconds (5 minutes)**:
-
-| Record | Type | Target | TTL |
-|---|---|---|---|
-| `wiki.alacrity.ro` | CNAME | `alacrityhub.go.ro` | 300 |
-| `auth.alacrity.ro` | CNAME | `alacrityhub.go.ro` | 300 |
-
-A 5-minute TTL is low enough to allow reasonably fast failover or IP changes (common with consumer-grade uplinks) while still being high enough to avoid excessive DNS query volume. If the upstream IP is fully static, the TTL can be raised to 3600 (1 h) later.
-
-### Disabling Cloudflare CNAME Flattening
-
-By default, Cloudflare flattens `CNAME` records at the zone apex and may also flatten non-apex records when the orange-cloud proxy is enabled. Since `wiki` and `auth` are subdomains (not the apex), the main action required is:
-
-1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com) and select the `alacrity.ro` zone.
-2. Navigate to **DNS → Records**.
-3. For each `CNAME` record (`wiki`, `auth`), ensure the **Proxy status** toggle is set to **DNS only** (grey cloud), not **Proxied** (orange cloud). When the record is DNS-only, Cloudflare returns the raw `CNAME` without flattening or proxying.
-4. If the zone is on a plan that exposes the *CNAME Flattening* setting (Business or Enterprise), go to **DNS → Settings** and set CNAME flattening to **Flatten at the zone apex only** (the default). This has no effect on subdomain records but is good hygiene.
-
-> **Why disable the proxy?** Caddy handles TLS termination and certificate management via ACME (Let's Encrypt). If Cloudflare's proxy is active, it will present its own certificate and interfere with Caddy's ACME HTTP-01 challenges, potentially causing certificate issuance failures or double-encryption overhead.
-{.is-info}
 
 # Application Services
 
@@ -153,7 +101,6 @@ Authentik provides a full **Role-Based Access Control** system. Roles are the co
 
 Concrete role definitions for each application are **to be determined** during the deployment phase, once the full set of applications and their permission models are known.
 
----
 
 ## WikiJS — Knowledge Base
 
@@ -209,6 +156,57 @@ Authentik supports several authentication and authorisation protocols out of the
 
 For applications that have no built-in SSO support, Authentik's **Proxy Provider** can be placed in front of the service. In this mode, Caddy forwards the authentication decision to Authentik, and only passes the request through to the upstream service if the user has a valid session. This means virtually *any* web application can be protected with Alacrity SSO, even if it has no authentication system of its own.
 
+
+# DNS
+
+
+Digi provides the dynamic hostname **`alacrityhub.go.ro`**, which resolves to the lab's public IP. Both service domains are `CNAME` records pointing at this hostname with a **TTL of 300 seconds (5 minutes)**:
+
+| Record | Type | Target | TTL |
+|---|---|---|---|
+| `wiki.alacrity.ro` | CNAME | `alacrityhub.go.ro` | 300 |
+| `auth.alacrity.ro` | CNAME | `alacrityhub.go.ro` | 300 |
+
+A 5-minute TTL is low enough to allow reasonably fast failover or IP changes (common with consumer-grade uplinks) while still being high enough to avoid excessive DNS query volume. If the upstream IP is fully static, the TTL can be raised to 3600 (1 h) later.
+
+## Disabling Cloudflare CNAME Flattening
+
+By default, Cloudflare flattens `CNAME` records at the zone apex and may also flatten non-apex records when the orange-cloud proxy is enabled. Since `wiki` and `auth` are subdomains (not the apex), the main action required is:
+
+1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com) and select the `alacrity.ro` zone.
+2. Navigate to **DNS → Records**.
+3. For each `CNAME` record (`wiki`, `auth`), ensure the **Proxy status** toggle is set to **DNS only** (grey cloud), not **Proxied** (orange cloud). When the record is DNS-only, Cloudflare returns the raw `CNAME` without flattening or proxying.
+4. If the zone is on a plan that exposes the *CNAME Flattening* setting (Business or Enterprise), go to **DNS → Settings** and set CNAME flattening to **Flatten at the zone apex only** (the default). This has no effect on subdomain records but is good hygiene.
+
+> **Why disable the proxy?** Caddy handles TLS termination and certificate management via ACME (Let's Encrypt). If Cloudflare's proxy is active, it will present its own certificate and interfere with Caddy's ACME HTTP-01 challenges, potentially causing certificate issuance failures or double-encryption overhead.
+{.is-info}
+
+# Network
+
+| Parameter | Value |
+|---|---|
+| **VLAN** | 30 |
+| **Subnet** | `10.12.3.0/24` |
+| **Server address** | `10.12.3.3` |
+
+A port-forwarding rule on the MikroTik edge router exposes TCP ports **80** and **443** from `10.12.3.3` to the public internet, allowing Caddy to terminate TLS and serve both `wiki.alacrity.ro` and `auth.alacrity.ro`.
+
+# Hardware
+
+| Component | Specification |
+|---|---|
+| **Machine** | Dell OptiPlex 3060 |
+| **CPU** | Intel Core i3 (8th gen) |
+| **RAM** | 16 GB |
+| **Storage** | 500 GB PCIe SSD |
+| **Hostname** | `eros` |
+| **Internal DNS** | `eros.lr` |
+
+The server is rack-mounted in the Alacrity lab alongside the existing networking equipment.
+
+# Operating System
+
+Eros runs **Arch Linux** and acts primarily as a Docker host. All application services are deployed as Docker Compose stacks, with the sole exception of Caddy, which runs bare-metal (see [Caddy Reverse Proxy](#caddy-reverse-proxy)).
 
 
 # Appendix A — Backup Considerations
