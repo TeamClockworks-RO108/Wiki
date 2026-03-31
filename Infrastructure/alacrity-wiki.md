@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:03:33.915Z
+date: 2026-03-31T22:04:57.687Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -112,10 +112,10 @@ Account **self-registration is disabled**. All accounts are provisioned by the A
 
 ```mermaid
 flowchart TD
-    A[Board creates user account\nwithout password] --> B[User receives magic link\nvia e-mail]
+    A[Board creates user account without password] --> B[User receives magic link via e-mail]
     B --> C[User clicks link → signed in]
-    C --> D[Prompted to set a password\noptional but recommended]
-    D --> E[User may link Discord / GitHub\nfrom Account Settings]
+    C --> D[Prompted to set a password optional but recommended]
+    D --> E[User may link Discord / GitHub from Account Settings]
 ```
 
 #### Groups
