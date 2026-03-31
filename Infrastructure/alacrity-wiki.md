@@ -2,7 +2,7 @@
 title: Alacrity Wiki
 description: 
 published: true
-date: 2026-03-31T22:04:57.687Z
+date: 2026-03-31T22:06:25.293Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-31T21:52:32.616Z
@@ -112,10 +112,10 @@ Account **self-registration is disabled**. All accounts are provisioned by the A
 
 ```mermaid
 flowchart TD
-    A[Board creates user account without password] --> B[User receives magic link via e-mail]
-    B --> C[User clicks link → signed in]
-    C --> D[Prompted to set a password optional but recommended]
-    D --> E[User may link Discord / GitHub from Account Settings]
+    A[Board creates user account without password] --> B[User receives magic link via email]
+    B --> C[User clicks link - signed in]
+    C --> D[Prompted to set password - optional but recommended]
+    D --> E[Link Discord/GitHub accounts - optional]
 ```
 
 #### Groups
@@ -185,7 +185,7 @@ Two directives in the Caddyfile map each public domain to its backend: `auth.ala
 
 ## Architecture Diagram
 
-```kroki {type=blockdiag}
+```kroki
 blockdiag {
   orientation = portrait;
 
