@@ -2,7 +2,7 @@
 title: SPINSPINSPIN
 description: 
 published: true
-date: 2026-04-02T01:51:42.621Z
+date: 2026-04-02T03:10:41.222Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-01T14:27:10.307Z
@@ -25,6 +25,13 @@ dateCreated: 2026-04-01T14:27:10.307Z
  * STM32G474CE 
  * SimpleFOC
 
+
 > TODO
-> Check gain for current sensing amplifier and dimension shunt resistors accordingly. 2m is ok, we might need to go for the 50x gain instead of 20x for the INA240 amplifiers.
+> Check all vias, some are intersecting traces!!
 {.is-warning}
+
+# Cost
+
+![whatsapp_image_2026-04-02_at_6.08.09_am.jpeg](/whatsapp_image_2026-04-02_at_6.08.09_am.jpeg)
+
+![whatsapp_image_2026-04-02_at_6.05.55_am.jpeg](/whatsapp_image_2026-04-02_at_6.05.55_am.jpeg)
