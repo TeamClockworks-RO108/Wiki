@@ -2,7 +2,7 @@
 title: SPINSPINSPIN
 description: 
 published: true
-date: 2026-04-02T01:46:01.512Z
+date: 2026-04-02T01:51:42.621Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-01T14:27:10.307Z
@@ -24,3 +24,7 @@ dateCreated: 2026-04-01T14:27:10.307Z
  * 16k PPR Encoder with SPI
  * STM32G474CE 
  * SimpleFOC
+
+> TODO
+> Check gain for current sensing amplifier and dimension shunt resistors accordingly. 2m is ok, we might need to go for the 50x gain instead of 20x for the INA240 amplifiers.
+{.is-warning}
