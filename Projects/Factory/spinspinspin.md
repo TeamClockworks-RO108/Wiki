@@ -2,7 +2,7 @@
 title: SPINSPINSPIN
 description: 
 published: true
-date: 2026-04-02T01:41:20.343Z
+date: 2026-04-02T01:46:01.512Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-01T14:27:10.307Z
@@ -16,3 +16,11 @@ dateCreated: 2026-04-01T14:27:10.307Z
 
 
 3-board assembly, each designed with 4 layers.
+ * 12-18v Supply
+ * 15A continous, 25A peak
+ * CAN communication
+ * USB communication
+ * Inline current sensing on all 3 phases
+ * 16k PPR Encoder with SPI
+ * STM32G474CE 
+ * SimpleFOC
