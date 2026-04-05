@@ -2,7 +2,7 @@
 title: SPINSPINSPIN
 description: 
 published: true
-date: 2026-04-02T03:10:41.222Z
+date: 2026-04-05T19:54:23.550Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-01T14:27:10.307Z
@@ -35,3 +35,7 @@ dateCreated: 2026-04-01T14:27:10.307Z
 ![whatsapp_image_2026-04-02_at_6.08.09_am.jpeg](/whatsapp_image_2026-04-02_at_6.08.09_am.jpeg)
 
 ![whatsapp_image_2026-04-02_at_6.05.55_am.jpeg](/whatsapp_image_2026-04-02_at_6.05.55_am.jpeg)
+
+# Motor
+
+[Option 1](https://www.emag.ro/motor-rc-enforose-d2836-880kv-portabil-putere-mare-28x26mm-portocalie-si-argintie-lrm20250314-1830/pd/D78Q933BM/)
