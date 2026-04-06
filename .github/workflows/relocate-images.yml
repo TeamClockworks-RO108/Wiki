@@ -1,0 +1,33 @@
+name: Relocate Images
+
+on:
+  push:
+    branches: ['**']
+
+jobs:
+  relocate-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run sync.py --relocate-images
+        run: python sync.py --relocate-images .
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Relocate images and clean up unreferenced files"
+            git push
+          fi
