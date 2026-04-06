@@ -2,7 +2,7 @@
 title: Wiki Maintenance
 description: 
 published: true
-date: 2026-02-24T19:23:29.219Z
+date: 2026-04-06T23:11:49.211Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:13:23.255Z
@@ -11,16 +11,13 @@ dateCreated: 2026-02-24T19:13:23.255Z
 # Set timezone to all users
 
 The timezone is initialized as New York by default for all users. 
-To fix this, regularly connect to the Postgres database and run the following query:
+To fix this, connect to the postgres database and run SQL commands to set the timezone for everyone and then set the default to the correct timezone:
 
-```sql
-UPDATE users SET timezone = 'Europe/Bucharest' WHERE timezone IS DISTINCT FROM 'Europe/Bucharest';
+```bash
+docker exec -it wiki psql -U wikijs -d wiki
 ```
-
----
-
-Another untested solution from [Wiki.js forums](https://requarks.canny.io/wiki/p/select-date-format-and-time-zone-for-the-entire-site) would be to seet the default column type. 
-
+Type the following SQL and hit enter:
 ```sql
 ALTER TABLE users ALTER COLUMN timezone SET DEFAULT 'Europe/Bucharest';
+UPDATE users SET timezone = 'Europe/Bucharest' WHERE timezone IS DISTINCT FROM 'Europe/Bucharest';
 ```
