@@ -21,7 +21,7 @@ Ask Alex to invite to invite you to the Vaultwarden instance.
 You will receive an email with an invitation link. Create your account.
 
 | Click on the "Join Organization Now" button to create your account. | Setup a password for your accout. Take care that you do not reuse your passwords. | After logging in with the new account, you will see an empty vault. |
-| ![whatsapp_image_2026-03-23_at_12.42.16_am.png](/Infrastructure/whatsapp_image_2026-03-23_at_12.42.16_am.png =50%x50%) | ![whatsapp_image_2026-03-23_at_12.42.16_am_(1).png](/Infrastructure/whatsapp_image_2026-03-23_at_12.42.16_am_(1).png =50%x50%) | ![whatsapp_image_2026-03-23_at_12.42.16_am_(2).png](/whatsapp_image_2026-03-23_at_12.42.16_am_(2).png =50%x50%) |
+| ![whatsapp_image_2026-03-23_at_12.42.16_am.png](/Infrastructure/whatsapp_image_2026-03-23_at_12.42.16_am.png =50%x50%) | ![whatsapp_image_2026-03-23_at_12.42.16_am_(1).png](/Infrastructure/whatsapp_image_2026-03-23_at_12.42.16_am_(1).png =50%x50%) | ![whatsapp_image_2026-03-23_at_12.42.16_am_(2).png](/Infrastructure/whatsapp_image_2026-03-23_at_12.42.16_am_(2).png =50%x50%) |
 | -- |
 
 <details>
