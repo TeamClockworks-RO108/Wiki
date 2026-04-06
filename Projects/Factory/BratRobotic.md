@@ -48,4 +48,4 @@ Intre timp, vom folosi bratul pentru diferite aplicatii in atelier.
 
 Se lucreaza la proiectare. Am terminat baza si cele doua sectiuni si am ajuns la incheietura si gripper.
 
-![brat-cad-render.png](/brat-cad-render.png)
+![brat-cad-render.png](/Projects/Factory/brat-cad-render.png)

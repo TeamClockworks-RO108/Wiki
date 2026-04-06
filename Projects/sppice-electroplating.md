@@ -21,7 +21,7 @@ The process is subdivided further into the electrolysis bath in two main parts: 
 **Strike bath** is the first step, being composed of an aggressive plating process which strives to cover all of the printed traces in copper, making use of the electrical properties of the deposited layer. At this stage, we're using a low current (around 200mA).
 
 The target is partially submerged in an initial solution that only contains copper sulfate and distilled water, allowing for local copper hydroxide deposition processes to take place on the top layer of the electrical trace.
-![spice-current-path.png](/spice-current-path.png)
+![spice-current-path.png](/Projects/spice-current-path.png)
 ***diagram showing a profile view of the plating process during strike bath***
 
 As it can be seen in the picture, there is a local hydroxide layer built on top of a thin, conductive copper layer. This process helps to lay out a initial layer of uniform conductor that prevents uneven deposition of bulk copper in the next stages. 
@@ -31,7 +31,7 @@ The initial strike bath can be omitted if and only if the conductive substrate i
 **Layer thickening** is the second step, allowing for copper deposition under normal conditions. Sulphuric acid is added to the mix, preventing the firther deposition of  copper hydroxide, creating the bulk conductive copper layer. At this stage, copper deposition happens at a very fast rate, trace resistance plummeting exponentially, electronics grade traces are being formed. The acid also allows for higher currents to be used, breaking unwanted OH bonds in the solution created by electrolisys.
 
 | Diagram showing the copper deposition rate at different currents |
-| ![spice-copper-width.png](/spice-copper-width.png) |
+| ![spice-copper-width.png](/Projects/spice-copper-width.png) |
 | -- |
 
 
@@ -102,7 +102,7 @@ It's important that the electrode has contact points on top of the paste, outsid
  
   On our first try we have plated a simple circuit, composed of an led and a resistor in series connected to a 9v battery. 
   
-|  ![spice-first-circuit-led.png](/spice-first-circuit-led.png) |
+|  ![spice-first-circuit-led.png](/Projects/spice-first-circuit-led.png) |
 | -- |
   
 With this test, he have found out that the deposited copper layer has great porosity and absorption, enabling easy soldeing. Also, the plated traces as well as the graphite underneath act as heatsinks, therefore enabling soldering at temperatures that over the melting point of the substrate underneath.

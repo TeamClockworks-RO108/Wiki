@@ -36,11 +36,11 @@ Acum, pentru motivul principal pentru care s-a si facut aceasta tranzitie la un 
 
 Puteti vizualiza mai jos, prin diagrama facuta, arborele de decizie ce reprezinta procesul de autentificare.
 
-![admin.darkl.drawio.png](/admin.darkl.drawio.png)
+![admin.darkl.drawio.png](/Projects/admin.darkl.drawio.png)
 
 
 De asemenea, pe langa improvement-urile aduse la backend, am facut un CI/CD pipeline pentru a facilita un deployment mai usor al admin-ului pe server-ul echipei. Astfel, folosind GitHub Actions, am creat un job care ruleaza odata cu orice push pe branch-ul de productie, si executa apoi urmatorii pasi:
 
-![ci_cd.drawio_(1).png](/ci_cd.drawio_(1).png)
+![ci_cd.drawio_(1).png](/Projects/ci_cd.drawio_(1).png)
 
 Odata cu implementarea unui CI/CD pipeline pentru admin, am implementat inca un pipeline pentru deployment asemanator si pentru frontend-ul site-ului principal, dar in loc de a folosi SSH, am folosit protocolul FTP pentru a face transferul de date.

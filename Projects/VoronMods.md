@@ -31,7 +31,7 @@ The Axon is a bit larger in size then the cheap chinese models and also comes wi
 
 The cutter is much faster and silent after this change :). 
 
-| ![filametrix-axon-front-closed.png](/filametrix-axon-front-closed.png) | ![filametrix-axon-front-open.png](/filametrix-axon-front-open.png) |
+| ![filametrix-axon-front-closed.png](/Projects/filametrix-axon-front-closed.png) | ![filametrix-axon-front-open.png](/Projects/filametrix-axon-front-open.png) |
 | -- | -- |
 
 
@@ -47,7 +47,7 @@ Extensive modidications need to be done to the blobifier configurations to a ste
 
 We reccomend to browse the assembly and configuration instructions on the Github PR tree.
 
-| ![blobifier-stepper-render.png](/blobifier-stepper-render.png =50%x50%) |
+| ![blobifier-stepper-render.png](/Projects/blobifier-stepper-render.png =50%x50%) |
 | -- |
 
 # Parametric LED Bar
@@ -60,7 +60,7 @@ You will need 8x 6mm M3 BHCS and appropiate channel nuts to assemble.
 
 The CAD is made in Fusion360 and is parametric. We have exported configuration for all standard Voron sizes and Dueling Zero. Many aspects can be customized, including LED strip width, length and grate count.
 
-| ![voron-led-bar-1.png](/voron-led-bar-1.png =50%x50%) | ![voron-led-bar-2.png](/voron-led-bar-2.png =50%x50%) | 
+| ![voron-led-bar-1.png](/Projects/voron-led-bar-1.png =50%x50%) | ![voron-led-bar-2.png](/Projects/voron-led-bar-2.png =50%x50%) | 
 | -- |
 
 
@@ -70,7 +70,7 @@ The CAD is made in Fusion360 and is parametric. We have exported configuration f
 
 The mount allows the installation of the offical raspberry Pi camera both in the normal position and upside-down. This flexibility aids with the wiring of the CSI ribbon cable.
 
-| ![voron-pi-camera-mount.png](/voron-pi-camera-mount.png) |
+| ![voron-pi-camera-mount.png](/Projects/voron-pi-camera-mount.png) |
 | -- |
 
 # BTT HDMI5 V1.2 display mount Voron (Clicky-Clack, more space for USB)
@@ -80,7 +80,7 @@ The mount allows the installation of the offical raspberry Pi camera both in the
 This mod modified a Voron 2.4 mount for BTT HDMI5 1.2 to allow more space for the HDMI and USB connections.
 The mount is extended forwards by a whole extrusion width to allow for future compatibility with the Clicky-Clack door mod. 
 
-| ![voron-btt-hdmi5.png](/voron-btt-hdmi5.png) |
+| ![voron-btt-hdmi5.png](/Projects/voron-btt-hdmi5.png) |
 | -- |
 
 # DragonBurner Cartographer/Beacon mount
@@ -95,7 +95,7 @@ Our modified mount impedes the airflow a bit (there is less space) but we have n
 
 This mod is a bit of a dead end for development because we are in the process of transitioning our Voron 2.4's away from DragonBurner. We found that the DragonBurner carriage for Voron 2.4 is fragile. XoL toolhead and carriage are the way forward for our printers.
 
-| ![voron-carto-dragonburner.png](/voron-carto-dragonburner.png) |
+| ![voron-carto-dragonburner.png](/Projects/voron-carto-dragonburner.png) |
 | -- |
 
 # Voron 2.4 157mm double spool holder (for ERCF MMU)
@@ -108,5 +108,5 @@ We have remixed the excellent sturdy 130mm holder from Printables by cutting ins
 
 Mount using 2x 16mm M5 BHCS and appropiate M5 channel nuts.
 
-| ![voron-double-spool-holder.png](/voron-double-spool-holder.png) |
+| ![voron-double-spool-holder.png](/Projects/voron-double-spool-holder.png) |
 | -- |
