@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-04-06T22:52:56.283Z
+date: 2026-04-06T23:22:17.292Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -421,8 +421,3 @@ Print [this servo horn](https://github.com/moggieuk/ERCF-Springy/blob/main/Savox
 Conversion between filament units:
  * 1 mm = 2.4 mm^3^
  * 1 mm^3^ = 0.415 mm
- 
- 
-> This page is available both on the [Clockworks Wiki](https://wiki.teamclockworks.ro) and [Alacrity Wiki](https://wiki.alacrity.ro).
-> Synchronization is done automatically.
-{.is-info}
