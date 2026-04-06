@@ -32,9 +32,9 @@ dateCreated: 2026-04-01T14:27:10.307Z
 
 # Cost
 
-![whatsapp_image_2026-04-02_at_6.08.09_am.jpeg](/Projects/Factory/whatsapp_image_2026-04-02_at_6.08.09_am.jpeg)
+![whatsapp_image_2026-04-02_at_6.08.09_am.png](/Projects/Factory/whatsapp_image_2026-04-02_at_6.08.09_am.png)
 
-![whatsapp_image_2026-04-02_at_6.05.55_am.jpeg](/Projects/Factory/whatsapp_image_2026-04-02_at_6.05.55_am.jpeg)
+![whatsapp_image_2026-04-02_at_6.05.55_am.png](/Projects/Factory/whatsapp_image_2026-04-02_at_6.05.55_am.png)
 
 # Motor
 

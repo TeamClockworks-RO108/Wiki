@@ -116,10 +116,10 @@ The optimal design incorporats best of both methods, enabling both partial therm
 
 The design is fairly similar to that of a plasma jet barrel.
 
-![](/therion-schita+legenda.jpg)
+![](/therion-schita+legenda.png)
 
 Profile view of the design schematic-plasma jet barrel used as a toolhead for metal plating
 
-![](/therion-schita-zone_de_interes.jpg)
+![](/therion-schita-zone_de_interes.png)
 
 Main five areas of the toolhead; a-Ar outlet(maintains and modulates a constant Argon inflow); b-Electron depletion zone(the area where electrons are accelerated, ionizing the Ar atoms); c-Plasma confinement zone(the area where plasma is concentrated and partly confined, allowing for surface vaporization and sputtering of the metal target); d-Ion barrel(a tube through which sputtered metal ions are focused-andx ooled down-in a straight beam, being kept on orbit by the strong side electromagnets and enabling consistent deposition); e-Deposition zone (the area under the barrel where metal is deposited on the plastic substrate)

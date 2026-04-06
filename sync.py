@@ -14,6 +14,7 @@ import argparse
 import re
 import os
 import shutil
+import subprocess
 import sys
 from collections import Counter
 
@@ -177,6 +178,75 @@ def relocate_images(repo_root):
             f.write(content)
 
         print(f"  FIX: {old_ref}  ->  {new_ref}  (in {os.path.relpath(md_file, repo_root)})")
+
+    # --- Stage 1c: Convert non-PNG images to PNG ---
+    print("\n--- Converting non-PNG images to PNG ---\n")
+
+    CONVERT_EXTENSIONS = {'.jpg', '.jpeg', '.gif', '.webp', '.bmp', '.ico', '.tiff', '.tif'}
+    all_refs_for_convert = find_image_refs(repo_root, absolute_only=False)
+    converted = 0
+
+    for ref in all_refs_for_convert:
+        img_path = ref['img_path']
+        md_file = ref['md_file']
+
+        # Resolve to absolute path
+        if img_path.startswith('/'):
+            img_abs = os.path.join(repo_root, img_path.lstrip('/'))
+        else:
+            img_abs = os.path.normpath(os.path.join(os.path.dirname(md_file), img_path))
+
+        ext = os.path.splitext(img_abs)[1].lower()
+        if ext not in CONVERT_EXTENSIONS:
+            continue
+
+        if not os.path.isfile(img_abs):
+            continue
+
+        # Skip branding/static
+        img_rel = os.path.relpath(img_abs, repo_root)
+        parts = img_rel.split(os.sep)
+        if parts[0] in ('branding', 'static'):
+            continue
+
+        # Convert to PNG
+        png_abs = os.path.splitext(img_abs)[0] + '.png'
+        if os.path.exists(png_abs):
+            print(f"WARNING: conversion target already exists: {os.path.relpath(png_abs, repo_root)} — skipping")
+            continue
+
+        print(f"CONVERT: {img_rel}  ->  {os.path.relpath(png_abs, repo_root)}")
+        result = subprocess.run(
+            ['magick', img_abs, png_abs],
+            capture_output=True, text=True
+        )
+        if result.returncode != 0:
+            print(f"  ERROR: magick failed: {result.stderr.strip()}")
+            continue
+
+        os.remove(img_abs)
+
+        # Update the markdown reference — replace extension in both alt and path
+        old_ref = ref['match_text']
+        new_img_path = os.path.splitext(img_path)[0] + '.png'
+        new_alt = os.path.splitext(ref['alt'])[0] + '.png' if os.path.splitext(ref['alt'])[1].lower() in CONVERT_EXTENSIONS else ref['alt']
+        new_ref = f"![{new_alt}]({new_img_path}{ref['suffix']})"
+
+        with open(md_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        content = content.replace(old_ref, new_ref, 1)
+
+        with open(md_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+
+        print(f"  Updated reference in {os.path.relpath(md_file, repo_root)}")
+        converted += 1
+
+    if converted == 0:
+        print("No images to convert.")
+    else:
+        print(f"\nConverted {converted} image(s) to PNG.")
 
     # --- Stage 2: Delete unreferenced images outside /branding and /static ---
     print("\n--- Checking for unreferenced images ---\n")
