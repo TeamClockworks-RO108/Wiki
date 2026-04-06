@@ -1,0 +1,212 @@
+---
+title: Therion metal plating
+description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
+published: true
+date: 2026-04-06T22:56:37.233Z
+tags: 
+editor: markdown
+dateCreated: 2026-01-31T10:04:25.526Z
+---
+
+# Introduction
+
+## What is Therion?
+
+Therion represents a 3d-printing augmentation project that aims for achieving thin-film deposition capabilities on a Voron 2.4 printer, enabling at-home prototyping and quality manufacturing of complex custom-3D-printed multilayer PCBs, or printed plastic pieces with inner metal traces or shielding for reliable electric work (as a better alternative to cable-management) or emf shielding.
+
+> A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.
+
+films could be virtually made of almost any polymer, metal or ceramic, using a modified plasma gun toolhead for depositing films.  A toolchanging system will be implemented, rapidly switching between traditional printing and thin-film deposition.
+
+Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition. It uses induction heating for efficient excitation of surface atoms, vaporised by dense, ECR ionized gas precursor plasma for high deposition rates of dense, quality thin films.
+
+## Problems Therion solves
+
+1.  Desktop multilayer PCB manufacturing is available at the press of a button.
+2.  Printed traces inside the plastic piece cuts the need for cables in most places, improving on reliability.
+3.  Metal plating allows for shielding plastic pieces against EMF radiation.
+4.  decorative metal plating
+5.  possible minor optic modification of lenses using partial-mirror plastic lenses.
+6.  easier prototyping, eliminating 3rd party PCB manufacturing altogether
+
+### Fast introduction in plasma physics
+
+![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
+
+Figure1: maxwellian distribution (following a “normal distribution” of electron thermal energies)
+
+The last decade has seen a dramatic increase in plasma related research. Currently, it's one of the most studied, if not the most studied field in physics. With extensive academic research carried over the last years and wildly available study materials on the subject, there are a couple reasons why plasma has peaked in interest.
+
+-   ***first,*** most manufacturing processes carried today in the PCB manufacturing industry are plasma based, with total market price of about 70-73 billion USD in 2024, projected to reach 100 billion by 2032.
+-   ***second,*** fusion related research has peaked in the last couple decades, requiring extensive plasma research and innovation for further design considerations. It is projected that once fusion reactors are developed and enter the market, they will dominate any other alternative energy reactors. Plasma will also become a critical component of future space explorations project, our civilization needing plasma research to grow and evolve
+-   ***third,*** and most important, it's estimated that **more than 99% of matter in our universe is made of plasma, our planet being one of the few places where plasma doesn't occur naturally.**
+
+First, it is important to remember a basic chemistry lesson that each of us learns during school. Most atomic elements are ions, either negative or positive ions. These elements search for other “complements” in nature so that they can form atomic compounds, reaching neutrality. Thus, by using high energy electrons, it is possible to sever these bonds, obtaining a ion. Having high percentages of ions in an atomic gas can eventually bring about the creation of a plasma.
+
+electrons are knocked off orbit in processes of dissociation, excitation and dissociative ionization. Generally, when a high energy electron hits a molecule's electron, kinetic energy is transferred, exciting the electron
+
+![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
+
+Figure 2: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.
+
+It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.
+
+and thus bringing it into a higher energy state. Then, if the electron that hit the molecule is hot enough, the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (the molecule will become a positive ion - x^+^); ionization reaction of argon could be written as
+
+     Ar(g) + e^\-^ → Ar^+^(g) + 2e^\-^
+
+or, if the electron is energetic enough, it can remove more electrons 
+
+    Ar(g) + e^\-^ → Ar^2+^(g) + 3e^\-^
+
+ Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:
+
+-   “A plasma is a quasineutral gas of charged and neutral particles which exhibits collective behavior”, a short explanation taken from “Introduction To Plasma Physics”, by F. Chen, reveals that
+
+> Consider the forces acting on a molecule of, say, ordinary air. Since the molecule is neutral, there is no net electromagnetic force on it, and the force of gravity is negligible. The molecule moves undisturbed until it makes a collision with another molecule, and these collisions control the particle’s motion. A macroscopic force applied to a neutral gas, such ass2q from a loudspeaker generating sound waves, is transmitted to the individual atoms by collisions. The situation is totally different in a plasma, which has charged particles. As these charges move around, they can generate local concentrations of positive or negative charge, which give rise to electric fields. Motion of charges also generates currents, and hence magnetic fields. These fields affect the motion of other charged particles far away.
+
+It is exactly these forces that the ions inside a plasma to move simultaneously with the electrons inside. These particles exert forces of attraction on eachother, giving them the ability to shield potential changes or local concentrations of charges because of these very movements and forces. Therefore giving ni = ne = n (where n stands for ni-ion density ne-electron density and n is the number representing these densities.
+
+-   Another criterion is that the total number of collisions between plasma particles is low enough so that the recombination rate of ions and electrons stays low. If electrons knock with positive ions, the electron will get absorbed by the ion, becoming a neutral particle once again. This is not a wanted effect, as the energy required to maintain a plasma increases exponentially with pressure. Also, plasma motion should be  mostly dominated by electrostatic forces, not usual hydrodynamic mechanics, given the high collision rate of high pressure systems.
+
+Plasma electrons and ions generally have very high thermal energies, in the tens of thousands of K. For this reason, plasma particles generally have low mass but high energy density, meaning that they can easily excite and vaporize surface atoms.
+
+## The main manufacturing processes used for metal film deposition
+
+First, as a short definition, “The formation of a condensible vapor by physical mechanisms and subsequent deposition of this material onto a substrate as a thin film or coating is referred to as physical vapor deposition (PVD) (Mahan 2000, Rossnagel 2003, Thornton 1988). The formation of a vapor refers to a phase transition of the filmforming material from a solid or liquid phase into a gaseous or plasma phase. PVD is a broad field and various processes are applied to create film-forming material and to achieve thin film deposition.” (Foundations of physical vapor deposition with plasma assistance). As it's frequently mentioned, the term vapor used here is sort of a misnomer, in comparison to vapor-gaseous state released through thermal excitation, the term refers to any subatomic gas-like conglomerate of particles that is obtained through electric-plasma/thermal excitation phenomena. 
+
+The main processes are plasma ion sputtering (vacuum) and plasma jet evaporation (for atmospheric plasmas).
+
+1.  Plasma sputtering - used widely in lens production and metal film deposition, it is used for quality film production and can be scaled down to accommodate a 2.4 voron printing chamber. The concept it's quite simple: a magnetron accelerates electrons, producing plasma ions inside a vacuum sealed chamber. The plasma gas is usually argon. A strong permanent magnet positioned on top of the magnetron has the purpose of confining the electrons, and therefore (because of the quasineutral nature of the plasma) the ions in a small volume in the proximity of the metal target. The target represents the metal wafer that will be plated on top of the substrate. The ions, being accelerated near the target knock metal atoms for the crystal lattice of the metal. These atoms are hence ballistically launched radially in all directions (not line-of-sight). The deposited film is a dense, quality film, its porosity being low.
+2.  Plasma jet (thermal spraying) - used at higher pressures, typically in open atmosphere or at fractions of one atm. It typically implements a hollow cathode design, known for higher efficiency in high pressure systems. It uses hot plasma to excite and vaporize surface atoms from the target, plating it on the opposing substrate. This process is line-of-sight.
+3.  Thermal evaporation - typically used in a vacuum, due to higher efficiency and lower corresponding melting temperature. This design typically incorporates metal filaments, warmed up beyond their melting temperature, creating a vapor cloud that deposits on the opposing substrate. This process is typically line-of-sight, unless there's additional augmentation given by vapor cloud ionization techniques.
+
+The main difference between these methods is the degree of atomization of the plating medium, energetic processes (such as plasma sputtering in vacuum) yielding high atomization levels, vapor clouds being composed out of individually energetic, ballistically launched ion species, as well as energetic neutrals. films are effectively built block-by-block, causing high film mass density. The overall atomic structure of the bulk target is reproduced in high enthalpy plating methods (high-energy) on the substrate, while lower enthalpy processes cause higher oxidation (open atmosphere process), porosity and less atomic reproduction of the bulk. 
+
+Higher atomization also means higher power consumption (unless open-atmosphere processes are implemented, yielding low efficiency and high poer consumption), given that the energy density of the vapor cloud increases, atoms on average have higher kinetic and potential energies. Most of the time, higher power-consumption also adds the need for a vacuum-sealed chamber where the process is carried on.
+
+# Therion-concept
+
+Therion will incorporate one of the methods presented above - or a combination, depending on the pressure and power level used. We will now explore each concept and how they would affect the design.
+
+## Pros and cons - design considerations
+
+First, we need to establish in what way the project design differs based on the concept we'll incorporate henceforth. The main difference is represented by the pressure inside the printing chamber.
+
+### Plasma sputtering
+
+If plasma sputtering is to be used, the pressure inside needs to stay low, about under 5pa (0.005% of atmospheric pressure). This would require the chamber to be vacuum sealed, completely isolated from the outside. 
+
+The film quality would then be much higher, requiring a vacuum pump to be tied to the chamber for air removal. The next step would require argon to be pumped inside the inner ionization chamber (inside the toolhead), creating plasma and allowing for the sputtering process to begin. 
+
+Careful manufacturing of such a chamber would not be easy for several reasons which will later be discussed, but it has been done before and it is possible.
+
+A few problems arising from vacuum sealing the chamber would be (amongst others): motors would have to be cooled with liquid, through teflon tubes (resistant to high vacuum), vacuum grade grease would replace any other lubricant used for bearings, filament will have to be stored in a chamber adjacent to the printing chamber, rerouting the vacuum pump input to it so as to keep the filament dry and eliminate any bubbles from the filament.
+
+The ionization energy-the minimum energy required to remove the most loosely bound electron (valence electron) from an isolated, gaseous atom or ion-also differs with each element. This energy is inversely proportional (in noble gases) to the number of electrons in the electron shell.
+
+Most common sputtering gases are noble gases, helium for specialized applications, argon for most applications and xenon, used generally for high-end applications. For our application, argon will be used. Th
+
+|     |     |     |
+| --- | --- | --- |
+| Noble gas | atomic number(Z) | ionization energy(eV) |
+| Helium(He) | 2   | 24.6 |
+| Neon(Ne) | 10  | 21.6 |
+| Argon(Ar) | 18  | 15.8 |
+| Kripton(Kr) | 36  | 14.0 |
+| Xenon(Xe) | 54  | 12.1 |
+| Radon(Rn) | 86  | 10.7 |
+
+Other non-noble gases can also be used for plasma etching, an industrial application in which material is removed from a substrate using specific chemical reactions between plasma and the substrate, creating volatile compounds which then evaporate.
+
+ This way, outgassing will be kept at a minimum. The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundred nm/min.
+
+### Thermal evaporation
+
+If [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) will be incorporated instead, the pressure inside the chamber has to be kept low, about 20.000-30.000pa or high vacuum for higher trace quality. Vacuum grease would not be required, unless high vacuum is implemented, fans would replace water cooling of the stepper motors. Higher vacuum would also dramatically help lower the metal target's melting  point (because of lower pressure), thus increasing power efficiency. depositions rates are also much higher (tens of nm/min up to um/min). A downside would be the fact that thermal evaporation in atmospheric plasmas yields lower film quality, combining with oxygen to form oxides. Also, the process is line-of-sight, given the lower thermal energies of the vapor atoms, yielding lower adatom mobility (surface diffusion of atoms) and thus, lower film density.
+
+![](/gold_silver_copper_pressure_melting_temperatures.png)
+
+Figure  3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature
+
+Quality can be increased by managing deposition rates (lowering them), thus increasing uniformity. This tradeoff between speed vs quality is worth it, given that even at slower rates the deposition is still much faster than it would be in sputtering systems.
+
+Also, the melting temperature of most metals is proportional to the the pressure inside the chamber, decreasing dramatically with higher vacuum. Hence, lower pressure would enable thermal evaporation at higher energy efficiency, compared to atmospheric evaporation. 
+
+Moreover, a larger range of deposition speeds can be achieved and maintained.
+
+Induction heating of surface atoms, combined with hot plasma surface excitation could enable [sublimation](https://en.wikipedia.org/wiki/Sublimation_(phase_transition)) of metal atoms in our design. Controlling the power fed to the inductor and the plasma would also precisely manage the deposition rate.
+
+Exposed structural parts inside the toolhead would have to be covered with a protection film so that deposits don't form on the surface, possibly corrosion structural elements.
+
+This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by basic hydrodynamic interactions. If the vapor is ionised (by say, an [ECR](https://en.wikipedia.org/wiki/Electron_cyclotron_resonance) unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setup.
+
+## Design schematic
+
+The deswign if fairlz similar to a plasma jet barrel used in atmospheric pressure. The goal is to achieve controlled pattern and fine, qualitz deposition of target material on the substrate. Below are presented two schematics, two possible designs that could be implemented. The first one implements a hollow cathode design, while the second one uses an ECR ionization design. We will now go through a thourough descripition of each design, stating what problems each solves and creates.
+
+![](/therion-schita+legenda.jpg)
+
+Figure 4: Profile view of the design schematic-plasma jet barrel used as a toolhead for metal plating
+
+![](/therion-schita-zone_de_interes.jpg)
+
+Figure 5: Main five areas of the toolhead; a-Ar outlet(maintains and modulates a constant Argon inflow); b-Electron depletion zone(the area where electrons are accelerated, ionizing the Ar atoms); c-Plasma confinement zone(the area where plasma is concentrated and partly confined, allowing for surface vaporization and sputtering of the metal target); d-Ion barrel(a tube through which sputtered metal ions are focused-and cooled down-in a straight beam, being kept on orbit by the strong side electromagnets and enabling consistent deposition); e-Deposition zone (the area under the barrel where metal is deposited on the plastic substrate)
+
+The project implements a hollow cathode design, isolated in a vacuum enclosure down to about 10pa. Argon inlets are positioned on the top of the barrel cap, maintaining the flow of argon into the jet barrel. Careful magnetron design of the electrode body is needed for high efficiency in low prssure systems, given that ohmic heating is limited in collisionless processes. Magnetic directed confinement will be implemented, making use of both permanent magnets and electromagnets (ion barrel-d and possibly confinement near the argon inlet). The target, placed in the plasma confinement zone-c, is where physicial vapor of the target is formed, being later deposited on the opposing substrate. The inductor, placed in the main plasma confinement zone-c is used for local surface heating of metal targets for higher deposition rates and higher quality thin film formation.
+
+The ionization rpocess startst at the electrode level, argon flooding the hollow cathode ionization begins. plasma, having high energy density and low mass enables fast superficial sputtering/evaporation of surface atoms, induction heating counting for about 80% of the metal's current melting temperature, the rest being takwen care of by the plasma inflow. Hollow cathode design have the downside of faster degradadion and surface corrosion, being limited in vacuum systems. Even so, ECR ionization often represents a more efficient method in vacuum systems compared to normal hopllow cathode designs. Protective film will be places inside the nozzle cavity (ion barrel-d), which has the purpose of protecting structural parts from off-axis chaotic metal ions which could accidentally plate unwanted areas. Even though meagnetic confinement limits this phenomena, collisional diffusion as well as ambipolar diffusion perpendicular to the field lines still could count for slow deposits to accumulate on the barrel.
+
+## C - Plasma confinement zone
+
+### Inductor coil
+
+ The inductor coil is used in this design for precise surface heating of the metal target used. Thanks to the [skin effect](https://en.wikipedia.org/wiki/Skin_effect), most of the current induced inside the target is focused in a narrow volume, close to the surface of the conductor.
+
+![Skin effect - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Skineffect_reason.svg/250px-Skineffect_reason.svg.png)
+
+Figure 6: diagram showing the fields induced inside a metal conductor through which AC current is circulating (image from [Skin effect](https://en.wikipedia.org/wiki/Skin_effect) - Wikipedia)
+
+ This effect is caused by the inability of currents and magnetic fields close to the outside of the metal to shield it from the induced current. 
+
+In the center, where the opposing fields are strongest, the current reduces close to zero. Therefore, it is easy to precisely control the degree of heating and evaporation of the outside metal layer, given that the skin depth is proportional to frequency-higher frequency creates shallower skin depths, raising the resistance of the skin layer which in turn raises the temperature(this effect is AC specific). Bringing the surface metal atoms close to melting temperature also increases the mobility of these atoms, freeing themselves from the crystalline lattice they occupy and allowing for easier vapor formation (either by plasma or by sputtering). 
+
+In this specific design, induction heating could also enable easier alloying of metals by precisely controlling the vapor formation and pressure of the metals being used. It could also allow for individual deposition of the metal targets. Once surface atoms reach about 90% of melting temperature, energetic plasma ions will further transfer their high kinetic energy to these atoms, vaporizing or sputtering them-depending on the pressure used inside the chamber.
+
+ Given the high energy density of plasma, but low mass, only surface level heating is achieved, further managing deposition rates.
+
+![File:Example of skin effect in circular wire.png - Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/42/Example_of_skin_effect_in_circular_wire.png)
+
+Figure 7: thermal energy transition in AC coupled metal showing the effect of the skin effect in induction heating. 20kHz vs 81KHz (image [from](https://commons.wikimedia.org/wiki/File:Example_of_skin_effect_in_circular_wire.png))
+
+For efficient heating of the metal element, the distance between the target and the inductor would have to be fairly small, around couple mm. Thermal dilatation would also have to be considered. Moreover, the shape of the target would best allow field lines to sit perpendicular to the surface of the metal, for high efficiency. 
+
+Hollow, water cooled inductors would be best, minimizing coil overheating, but other conductive cooling methods that don't require hollow conductors can be implemented. Efficiency would also depend on the electric resistance of the target, Higher resistance yielding better results. It's essential that the temperature of the bulk metal doesn't reach melting point, preventing structural deformation. 
+
+Also, induction heating would only work for metal targets, ceramics or polymers would have to be exclusively sputtered on the substrate surface.
+
+A strong permanent magnet placed under the target and the inductor will purposely concentrate and confine plasma near the target, enabling fast removal of surface atoms from the crystal lattice. 
+
+# Filament considerations in vacuum
+
+In deep vacuum, most materials experience a certain degree of outgassing, given by the time of inner organic volatile gases to desorb and diffuse though the material walls. Most common outgas gases are H~2~O, H~2~, N~2~ or O~2~. H~2~O typically represents 80% of the total outgas quantity, depending on the specific atmospheric conditions in which the material has absorbed water form the atmosphere. Materials such as metals also experience outgassing, water vapor traveling through the metal walls and out into the vacuum chamber. Filaments and components are usually degassed and baked for couple days, removing most of the absorbed gas.
+
+Furthermore, as one study puts it, “Outgassing rates, for example, largely determine a material’s suitability for vacuum or space applications. Perhaps more importantly, the suitability of a material for applications in gas sensing, for gas filters, or for gas storage strongly depends on the ability of the material to uptake or desorb gas.”
+
+Filament outgassing represents a great cause of concern for our project, given that if filament is not properly deep vacuum dried before use, it would foam and basically explode when molten at 250 C inside the printing chamber. Therefore, it's important we take into consideration proper filament drying techniques in vacuum, as well as specific filament differences that help us choose the best polymer for vacuum use. 
+
+Filaments that can be considered vacuum grade have low outgassing and diffusion coefficients, meaning that they release less gas when put under high vacuum. Vacuum grade filaments should also allow for gas desorption in an acceptable amount of time, vacuum components being typically degassed and baked before use. 
+
+ABS has a lower diffusion rate when compared to PLA and PETG, sitting at around 8.1 × 10^−8^ cm^2^/s and 8.3 × 10^−8^ cm^2^/s, respectively. Water diffusion through ABS is similar to typical elastomer seals in high-vacuum systems, making it a suitable polymer that can be used in vacuum systems, especially in our project. Amorphous materials (such as plastics and glass), have a glass transition temperature, which once passed can alter structural strength, making them soft and malleable. ABS glass transition temperature sits between 105-115 C. ASA, a close polymer in chemical composition to ABS, has a slightly lower glass transition phase, a minimum of about 100 C. The same aforementioned article suggests that, ABS baked at 103 C-just under the glass transition temperature-in high vacuum for about 3 days removes almost all gas from the filament. Outgas rates depends on gas diffusion path through the inner walls of the material, which makes it easy for filament outgassing, given its small thickness.
+
+![Fig. 4](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7147/5514850/f5e40729d98f/nihms868979f4.jpg)
+
+Figure 8: mass variation during vacuum drying of an ABS sample- rectangular cuboid of dimensions of 6.0 mm × 48.0 mm × 24.9 mm and a mass of approximately 6.5 grams (before loading with gas)
+
+ASA is typically considered a better alternative to ABS, having better mechanical and chemical properties, as well as generally higher resistance to environmental factors that would otherwise degrade in time most polymers. Its superior diffusion coefficient allows for higher resistance to environmental factors that would otherwise degrade other polymers, having higher moisture resistance and less gas retention, as well as better UV resistance and less release of toxic fumes during 3D-printing (such as styrene when printing with ABS) amongst others. Water reabsorption of ABS and ASA filaments sits between 0.2-0.6% by weight, depending on time of exposure, and the humidity level of the atmosphere in which the filament spools have been deposited. Therefore, it should be tested if ASA yields better results in near vacuum printing when compared to ABS.
+
+Storing and vacuum drying filament spools in controlled chambers before use could also drastically improve print quality, not just film deposition, by removing virtually all moisture from the filament. Therefore, a chamber in which filament is stored would have to be build next to the printer, bypassing the main vacuum pump to it. Also, a heater would have to be mounted inside so that filament can be baked and vacuum dried before use. 
+
+In normal printing mode, pressure inside the chamber will be kept slightly higher than in film deposition mode, given that filament is heated beyond melting temperature during printing, resulting in higher outgas rates and possible foaming in high vacuum. During film deposition, air inside the chamber will be pumped down, the temperature of the plastic printed substrate remaining lower than bed temperature, and thus lower than the temperature at which filament had been baked before use, keeping outgassing at a minimum.
+
+## Design consideration
