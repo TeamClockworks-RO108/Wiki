@@ -29,7 +29,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 
 ### Fast introduction in plasma physics
 
-![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
+![](/Projects/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
 
 maxwellian distribution (following a “normal distribution” of electron thermal energies)
 
@@ -102,7 +102,7 @@ If plasma sputtering is to be used, the pressure inside needs to stay really low
 
 If thermal evaporation will be incorporated instead, the pressure inside the chamber can be kept as high as normal atmospheric, but it would best be recommended to keep the pressure a bit lower than normal, about 20.000-30.000pa for higher trace quality. Vacuum grease would not be required, fans would replace water cooling of the stepper motors. Higher vacuum would also dramatically help lower the metal target's melting  point (because of lower pressure), thus increasing power efficiency. depositions rates are also much higher (tens of nm/min up to um/min). A downside would be the fact that thermal evaporation in atmospheric plasmas yields lower film quality, metal droplets that plate the plastic substrate giving rise to high porosity in traces.
 
-![](/gold_silver_copper_pressure_melting_temperatures.png)
+![](/Projects/gold_silver_copper_pressure_melting_temperatures.png)
 
 pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature
 
@@ -116,10 +116,10 @@ The optimal design incorporats best of both methods, enabling both partial therm
 
 The design is fairly similar to that of a plasma jet barrel.
 
-![](/therion-schita+legenda.jpg)
+![](/Projects/therion-schita+legenda.jpg)
 
 Profile view of the design schematic-plasma jet barrel used as a toolhead for metal plating
 
-![](/therion-schita-zone_de_interes.jpg)
+![](/Projects/therion-schita-zone_de_interes.jpg)
 
 Main five areas of the toolhead; a-Ar outlet(maintains and modulates a constant Argon inflow); b-Electron depletion zone(the area where electrons are accelerated, ionizing the Ar atoms); c-Plasma confinement zone(the area where plasma is concentrated and partly confined, allowing for surface vaporization and sputtering of the metal target); d-Ion barrel(a tube through which sputtered metal ions are focused-andx ooled down-in a straight beam, being kept on orbit by the strong side electromagnets and enabling consistent deposition); e-Deposition zone (the area under the barrel where metal is deposited on the plastic substrate)

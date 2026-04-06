@@ -19,7 +19,7 @@ The system also fits any other planetary gearbox from gobilda (not neccessarily 
 The CAD is licensed under [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html). This means, among others, that distributing either STL, printed parts or assemblies containing Starkiller, you must also make the modified CAD available to users. 
 
 The repository for this project can be found [here](https://github.com/TeamClockworks-RO108/PlanetaryStarkiller). 
-|  ![starkilller.png](/starkilller.png)  |
+|  ![starkilller.png](/Projects/starkilller.png)  |
 | -- |
 
 # Part types
@@ -108,7 +108,7 @@ We recomend that you grab the CAD file from our [github repository](https://gith
 
 The CAD file contains lots of parameters that can be configured. The most important are set to favourites and should be configured to your setup:
 
-![starkiller-parameters.png](/starkiller-parameters.png)
+![starkiller-parameters.png](/Projects/starkiller-parameters.png)
 
 | Parameter | Meaning |
 | --- | --- |
@@ -124,14 +124,14 @@ The CAD file contains lots of parameters that can be configured. The most import
 
 You do not need to set the N, T and B variables manually in the Parameters window. You can use the Configuration menu to switch between part profiles. This setting only changes the first three parameters described above and is a shortcut to switch between the different part numbers.
 
-| ![starkiller-configurations.png](/starkiller-configurations.png) |
+| ![starkiller-configurations.png](/Projects/starkiller-configurations.png) |
 | --- |
 
 ## Example CAD configurations
 
 | `SK11111` | `SK11717` | `SK21117` | `SK21711` | `SK31111` | `SK31717` |
 | -- |
-| ![sk11111.png](/sk11111.png) | ![sk11717.png](/sk11717.png) | ![sk21117.png](/sk21117.png) | ![sk21711.png](/sk21711.png) | ![sk31111.png](/sk31111.png) | ![sk31717.png](/sk31717.png) |
+| ![sk11111.png](/Projects/sk11111.png) | ![sk11717.png](/Projects/sk11717.png) | ![sk21117.png](/Projects/sk21117.png) | ![sk21711.png](/Projects/sk21711.png) | ![sk31111.png](/Projects/sk31111.png) | ![sk31717.png](/Projects/sk31717.png) |
 
 ## Print settings
 
@@ -169,7 +169,7 @@ To ensure smooth operation, we need to clean the mechanism of the old, dirty gre
 
 We have found that Isopropyl alcohol and a plastic brush work well for cleaning out the old grease. 
 
-| ![starskiller-clean-gears.png](/starskiller-clean-gears.png) |
+| ![starskiller-clean-gears.png](/Projects/starskiller-clean-gears.png) |
 |:---:|
 | Clean gears |
 
@@ -183,6 +183,6 @@ Any kind of thick, tacky grease should be good. We prefer LiquiMoly LM47.
 
 | Conversion from 84 RPM to 435 RPM by replacing the center planetary with `SK11111` | Conversion from 84 RPM to 6000 RPM by replacing all the stages with `SK31717` |
 | --- | --- |
-| ![starkiller-partial-conversion.png](/starkiller-partial-conversion.png) | ![starkiller-84-600.png](/starkiller-84-600.png) |
+| ![starkiller-partial-conversion.png](/Projects/starkiller-partial-conversion.png) | ![starkiller-84-600.png](/Projects/starkiller-84-600.png) |
 
 

@@ -27,7 +27,7 @@ Use:
  * 19x 20mm M4 SHCS
  * 4 M4 SHCS (temporary, min 10mm)
  
-| ![screenshot_20260117_052223.png](/screenshot_20260117_052223.png) |
+| ![screenshot_20260117_052223.png](/Projects/screenshot_20260117_052223.png) |
 | -- |
 
 # Prepare the top mold
@@ -38,7 +38,7 @@ Use:
  * 4x 4mm M4 SHCS
  
 
-| ![screenshot_20260117_053039.png](/screenshot_20260117_053039.png) |
+| ![screenshot_20260117_053039.png](/Projects/screenshot_20260117_053039.png) |
 | -- |
 
 # Pour
@@ -46,5 +46,5 @@ Use:
 Pour the silicone in the bottom half and secure the top using 4x M4 20mm SHCS
 For the 96mm wheel you will need about 184mL of silicone, so prepare about 230mL. 
 
-|  ![screenshot_20260117_053155.png](/screenshot_20260117_053155.png) |
+|  ![screenshot_20260117_053155.png](/Projects/screenshot_20260117_053155.png) |
 | -- |

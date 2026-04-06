@@ -72,7 +72,7 @@ Proiectul a fost conceput in noiembrie si pus in activitate in ianuarie.
  
  
  
-![keepers-main-view.png](/keepers-main-view.png)
+![keepers-main-view.png](/Projects/Factory/keepers-main-view.png)
 
 ### Inventar
 
@@ -81,7 +81,7 @@ La baza Composable ului de Inventar se afla un DissmissibleDrawer care permite n
 ### Functia de Search din Inventar
 Functia de instant text searching se foloseste de proprietatile variabilelor de actionate de MutableStateOf si sunt folosite pentru a evalua constant orice similaritate intre textul sample introdus de utilizator si title, tag-ul sau keyword-urile itemilor. 
 
-![keepers-inventory-view.png](/keepers-inventory-view.png)
+![keepers-inventory-view.png](/Projects/Factory/keepers-inventory-view.png)
 
 ### Paginile individuale
 Fiecare obiect va avea pagina lui care va putea fi modificata de persoanele autorizate, in mod normal, membrii clubului. In varianta de prototip insa pagina va fi doar vizualizabila si va putea fi modificata numai interactionaand in mod direct cu baza de date. 

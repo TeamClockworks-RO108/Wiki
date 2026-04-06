@@ -15,7 +15,7 @@ dateCreated: 2025-05-26T17:13:33.020Z
 Ceasul echipei este un obiect deosebit, inspirat de designul clasic al unui ceas deșteptător, dar cu o notă modernă și originală. Are o culoare portocalie vibrantă și un cadran pe care, în locul cifrelor, sunt inscripționate literele „CLOCKWORKS”.
 Acest element conferă ceasului un aspect unic și atrăgător, combinând funcționalitatea cu un mesaj subtil despre mecanisme și precizie. Designul său are ca scop captarea atenției și transmiterea ideii de mecanism precis și elegant, asemănător unui ceas deșteptător, dar cu un twist artistic.
 
-![ceas-rg-cad.png](/ceas-rg-cad.png){.align-center}
+![ceas-rg-cad.png](/Projects/ceas-rg-cad.png){.align-center}
 
    # **Obiective:**
 

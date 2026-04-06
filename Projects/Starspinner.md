@@ -45,7 +45,7 @@ For this project, you will need two fabricate two different parts: `SPx` and `SP
 
 `SPx1117` is the connector that reverses the planetary ratio. Its ending comes from it connecting 17-teeth center planetary stage to 11-teeth center planetary stage.
 
-| ![starspinner-cnc-render.png](/starspinner-cnc-render.png) | ![starspinner-machined-part.png](/starspinner-machined-part.png) |
+| ![starspinner-cnc-render.png](/Projects/starspinner-cnc-render.png) | ![starspinner-machined-part.png](/Projects/starspinner-machined-part.png) |
 | --- | --- |
 
 We strongly advise to machine this part out of aluminium or better. The dimensions are modelled after goBILDA carriers, so the gears should fit nicely on the prongs.
@@ -68,9 +68,9 @@ The `SPc` parts should be fabricated by 3D printing. Extra care should be taken 
 
 | Part number | Image | Description | 
 | --- | --- | --- |
-| `SPc1111` | ![spc1111.png](/spc1111.png) | Connect 11-teeth prongs to 11-teeth prongs | 
-| `SPc1117` | ![spc1117.png](/spc1117.png) | Connect 11-teeth prongs to 17-teeth prongs | 
-| `SPc1717` | ![spc1717.png](/spc1717.png) | Connect 17-teeth prongs to 17-teeth prongs | 
+| `SPc1111` | ![spc1111.png](/Projects/spc1111.png) | Connect 11-teeth prongs to 11-teeth prongs | 
+| `SPc1117` | ![spc1117.png](/Projects/spc1117.png) | Connect 11-teeth prongs to 17-teeth prongs | 
+| `SPc1717` | ![spc1717.png](/Projects/spc1717.png) | Connect 17-teeth prongs to 17-teeth prongs | 
 
 # Assembly
 
@@ -104,7 +104,7 @@ The 4200 RPM configuration is assembled as follows:
 
 
 
-| ![staspinner-4200-annotated.png](/staspinner-4200-annotated.png) ||||||||
+| ![staspinner-4200-annotated.png](/Projects/staspinner-4200-annotated.png) ||||||||
 | Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | ---        | - | - | - | - | - | - | - |
 | Any motor | `D11T`^1150^ | 3x `P17T`^84^ | `SPx1117` | 3x `P14T`^84^ | `P11G17`^84^ | `SPc1117` | `O11`^1150^ |
@@ -130,7 +130,7 @@ You will find the following components in the 84 RPM motor:
 
 The 8000 RPM configuration is assembled as follows:
 
-| ![staspinner-4200-annotated.png](/staspinner-8000-annotated.png) ||||||||
+| ![staspinner-4200-annotated.png](/Projects/staspinner-8000-annotated.png) ||||||||
 | Motor base | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | ---        | - | - | - | - | - | - | - |
 | Any motor | `D17T` | 3x `P14T` | `SPx1117` | 3x `P17T` | `P17G11` | `SPc1717` | `O17` |
