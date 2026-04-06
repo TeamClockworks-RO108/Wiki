@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-06T23:27:02.173Z
+date: 2026-04-06T23:45:27.377Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -227,5 +227,5 @@ Configure this script to run every minute or so.
 
   
 > This page is available both on the [Clockworks Wiki](https://wiki.teamclockworks.ro) and [Alacrity Wiki](https://wiki.alacrity.ro).
-> Synchronization is done automatically.
+> Synchronization is done automatically. Page ID: `ROUTEROS`.
 {.is-info}
