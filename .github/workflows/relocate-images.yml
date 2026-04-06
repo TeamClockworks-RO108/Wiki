@@ -20,8 +20,8 @@ jobs:
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-      - name: Run sync.py --relocate-images
-        run: python sync.py --relocate-images .
+      - name: Run sync.py --relocate
+        run: python sync.py --relocate .
 
       - name: Commit and push changes
         run: |

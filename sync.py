@@ -305,19 +305,19 @@ def main():
     parser = argparse.ArgumentParser(description="WikiSync utility")
     parser.add_argument('repo_root', nargs='?', default=os.getcwd(),
                         help="Path to the repository root (default: current directory)")
-    parser.add_argument('--relocate-images', action='store_true',
+    parser.add_argument('-r', '--relocate', action='store_true',
                         help="Relocate images next to the markdown files that reference them")
-    parser.add_argument('--sync', action='store_true',
+    parser.add_argument('-s', '--sync', action='store_true',
                         help="Sync operation (not yet implemented)")
     args = parser.parse_args()
 
     repo_root = os.path.abspath(args.repo_root)
 
-    if not args.relocate_images and not args.sync:
+    if not args.relocate and not args.sync:
         parser.print_help()
         sys.exit(1)
 
-    if args.relocate_images:
+    if args.relocate:
         relocate_images(repo_root)
 
     if args.sync:
