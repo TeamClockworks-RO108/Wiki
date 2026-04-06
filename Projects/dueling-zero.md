@@ -12,7 +12,7 @@ dateCreated: 2025-05-18T00:26:10.510Z
 **Dueling Zero** este o imprimanta 3D de ultima generatie, complet open-source, bazata pe designul imprimantei Voron Zero, care introduce o arhitectura inovatoare cu doua gantry-uri independente (Dual Gantry). 
 Beneficiaza de un sistem IDEX (Independent Dual Extrusion - 2 capete de printare independente), care permite printarea simultana cu 2 culori diferite sau 2 materiale diferite intr-un singur print. Este conceputa pentru precizie, viteza si versatilitate.
 
-| ![alt_text](/Projects/duelingzero-render-top.png){.align-center} | ![alt_text](/Projects/duelingzero-render-iso.png){.align-center} | ![alt_text](/Projects/duelingzero-gantry-iso.png){.align-center}
+| ![alt_text](/duelingzero-render-top.png){.align-center} | ![alt_text](/duelingzero-render-iso.png){.align-center} | ![alt_text](/duelingzero-gantry-iso.png){.align-center}
 | - | - | - |
 
 Pentru mai multe detalii se poate accesa link-ul de GitHub [Dueling Zero](https://github.com/zruncho3d/DuelingZero?tab=readme-ov-file).
@@ -39,7 +39,7 @@ Tubul bowden merge catre rolele pozitionate in interior. Pentru ca preferam sa t
 
 Tubul existent in proiect este desenat cu verde. Rosu este extensia pe care noi o vom adauga.
 
-| ![duelingzero-bowden-path.png](/Projects/duelingzero-bowden-path.png) |
+| ![duelingzero-bowden-path.png](/duelingzero-bowden-path.png) |
 | --- |
 
 ## Renuntam la afisajul integrat si folosim ecran pe retea
@@ -48,7 +48,7 @@ Afisajul integrat este greu de controlat, si are textul foarte mic, deci devine 
 
 In loc, vom folosi un Raspberry conectat la un touchscreen cu alimentare prin PoE. Asa avem mult mai multe controale. Pe Pi va rula KlipperScreen si va avea configurate toate imprimantele in el. 
 
-| ![duelingzero-klipperscreen-2.png](/Projects/duelingzero-klipperscreen-2.png) | ![duelingzero-klipperscreen-1.png](/Projects/duelingzero-klipperscreen-1.png) |
+| ![duelingzero-klipperscreen-2.png](/duelingzero-klipperscreen-2.png) | ![duelingzero-klipperscreen-1.png](/duelingzero-klipperscreen-1.png) |
 | --- | --- |
 
 ## Inlocuirea placii de pe carriage EBB42 cu EBB36
@@ -169,6 +169,6 @@ Piesele pentru ecranul pe retea sunt:
  
 | Board | Pinout |
 | --- | --- | 
-| Octopus V1.1 | ![refs-octopus-pinout-functional.png](/Projects/refs-octopus-pinout-functional.png) <br> ![refs-octopus-pinout.png](/Projects/refs-octopus-pinout.png) | 
-| EBB36 CAN | ![refs-ebb36-pinout.png](/Projects/refs-ebb36-pinout.png) | 
-| SB2209 CAN | ![refs-sb2209-pinout.png](/Projects/refs-sb2209-pinout.png) | 
+| Octopus V1.1 | ![refs-octopus-pinout-functional.png](/refs-octopus-pinout-functional.png) <br> ![refs-octopus-pinout.png](/refs-octopus-pinout.png) | 
+| EBB36 CAN | ![refs-ebb36-pinout.png](/refs-ebb36-pinout.png) | 
+| SB2209 CAN | ![refs-sb2209-pinout.png](/refs-sb2209-pinout.png) | 

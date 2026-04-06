@@ -11,7 +11,7 @@ dateCreated: 2026-04-01T14:27:10.307Z
 # SPINSPINSPIN
 
 
-| ![spinspinspin](/Projects/Factory/spinspinspin_1.png)  | ![spinspinspin](/Projects/Factory/spinspinspin_6.png) | ![spinspinspin](/Projects/Factory/spinspinspin_2.png) | ![spinspinspin](/Projects/Factory/spinspinspin_3.png) |
+| ![spinspinspin](/spinspinspin_1.png)  | ![spinspinspin](/spinspinspin_6.png) | ![spinspinspin](/spinspinspin_2.png) | ![spinspinspin](/spinspinspin_3.png) |
 | -- | -- |
 
 
@@ -32,9 +32,9 @@ dateCreated: 2026-04-01T14:27:10.307Z
 
 # Cost
 
-![whatsapp_image_2026-04-02_at_6.08.09_am.jpeg](/Projects/Factory/whatsapp_image_2026-04-02_at_6.08.09_am.jpeg)
+![whatsapp_image_2026-04-02_at_6.08.09_am.jpeg](/whatsapp_image_2026-04-02_at_6.08.09_am.jpeg)
 
-![whatsapp_image_2026-04-02_at_6.05.55_am.jpeg](/Projects/Factory/whatsapp_image_2026-04-02_at_6.05.55_am.jpeg)
+![whatsapp_image_2026-04-02_at_6.05.55_am.jpeg](/whatsapp_image_2026-04-02_at_6.05.55_am.jpeg)
 
 # Motor
 

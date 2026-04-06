@@ -36,7 +36,7 @@ Acum, pentru motivul principal pentru care s-a si facut aceasta tranzitie la un 
 
 Puteti vizualiza mai jos, prin diagrama facuta, arborele de decizie ce reprezinta procesul de autentificare.
 
-![admin.darkl.drawio.png](/Projects/admin.darkl.drawio.png)
+![admin.darkl.drawio.png](/admin.darkl.drawio.png)
 
 
 De asemenea, pe langa improvement-urile aduse la backend, am facut un CI/CD pipeline pentru a facilita un deployment mai usor al admin-ului pe server-ul echipei. Astfel, folosind GitHub Actions, am creat un job care ruleaza odata cu orice push pe branch-ul de productie, si executa apoi urmatorii pasi:

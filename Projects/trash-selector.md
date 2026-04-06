@@ -25,7 +25,7 @@ Funcționarea sa nu necesită intervenție umană, aparatul utilizând o combina
 Dispozitivul asigură o detecție rapidă și precisă, contribuind la o reciclare eficientă a mai multor ambalaje într-un timp redus.
 Datorită designului compact, coșul poate fi atașat unui recipient de gunoi tetracameral cu modificări minime, oferind o soluție practică și inteligentă pentru gestionarea deșeurilor.
 
-| ![walle-main-view.png](/Projects/walle-main-view.png) |
+| ![walle-main-view.png](/walle-main-view.png) |
 | -- |
 
 
@@ -44,7 +44,7 @@ Dispozitivul este alcătuit dintr-un cilindru rotativ înclinat la 30°, integra
 
 Prin designul său modular și compact, proiectul funcționează ca un accesoriu inteligent și adaptabil, ce poate fi integrat cu ușurință în diverse medii — de la spații publice și birouri până la zone rezidențiale.
   
-![walle-render.png](/Projects/walle-render.png)
+![walle-render.png](/walle-render.png)
 
 ## Parcursul unui ambalaj prin cos
 
@@ -62,7 +62,7 @@ stabilizarea ambalajului pe durata procesului de scanare, până la direcționar
 Mecanismul de cântărire este bazat pe un senzor de sarcină (load cell) configurat sub formă de pârghie, conectat la un amplificator digital HX711.
 Prin variația rezistenței electrice generate la aplicarea unei forțe, sistemul convertește valoarea acesteia în unități de masă, oferind o citire precisă și stabilă.
  
-|![walle-loadcell-assy.png](/Projects/walle-loadcell-assy.png)| ![walle-load-cell.png](/Projects/walle-load-cell.png)|
+|![walle-loadcell-assy.png](/walle-loadcell-assy.png)| ![walle-load-cell.png](/walle-load-cell.png)|
 | -- | -- |
 
  [Mai multe detalii referitoare la functionarea unui load cell](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells/all)
@@ -84,14 +84,14 @@ Această configurare permite sortarea corectă a ambalajelor de aluminiu conside
 
 Amplificatorul digital HX711 este utilizat pentru măsurători, cu un gain de 32 biți, asigurând o detecție precisă.
 
-|![schema circuitului](/Projects/walle-rldc-filter.png)| ![walle-photo-real-1.png](/Projects/walle-photo-real-1.png)|
+|![schema circuitului](/walle-rldc-filter.png)| ![walle-photo-real-1.png](/walle-photo-real-1.png)|
 | -- | -- |
    
 ### 5. Lidar
   
   Urmeaza sa fie testat un modul lidar cu precizie de 64 de pixeli [VL53L7CX](https://www.robofun.ro/vl53l7cx-time-of-flight-8-8-zone-wide-fov-distance-sensor-carrier-with-voltage-regulator-350cm-max.html?gad_source=1&gad_campaignid=20383925641&gclid=Cj0KCQjw_dbABhC5ARIsAAh2Z-SsQSl8gLTzo1tBTG-PHYMbIrvgGt-ZnvaIW4blQK0FZV3CvSHxr8AaAv7REALw_wcB). Cu acest senzor se masoara dimensiunile ambalajului.
 
-  ![walle-lidar-camera.png](/Projects/walle-lidar-camera.png)
+  ![walle-lidar-camera.png](/walle-lidar-camera.png)
 
 **Note post-teste:**
 
@@ -120,7 +120,7 @@ Senzorul capacitiv funcționează prin detectarea schimbării indicelui dielectr
 
 * Semnalul trece printr-o configurație simplă cu tranzistor NPN, alimentat cu Vcc = 3,3 V (asigurat de Raspberry Pi), ceea ce permite obținerea unui nivel de ieșire sigur de 0/3,3 V, compatibil cu GPIO-urile plăcii de dezvoltare.
 
-|![walle-sensor-unknown.png](/Projects/walle-sensor-unknown.png)|![walle-inductive-sensor-on.png](/Projects/walle-inductive-sensor-on.png)|
+|![walle-sensor-unknown.png](/walle-sensor-unknown.png)|![walle-inductive-sensor-on.png](/walle-inductive-sensor-on.png)|
 | -- | -- |
 	
 
@@ -157,7 +157,7 @@ Pragul numeric empiric, T, stabilit după multiple teste, este egal cu 0,5.
 Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alte materiale și să elimine corect ambalajele ușoare sau pline cu lichid.
 
 
-|![unknown-k-is-m-h.png](/Projects/unknown-k-is-m-h.png)|![unknown-t-is-05.png](/Projects/unknown-t-is-05.png)|
+|![unknown-k-is-m-h.png](/unknown-k-is-m-h.png)|![unknown-t-is-05.png](/unknown-t-is-05.png)|
 | -- | -- |
 
 
@@ -172,10 +172,10 @@ Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alt
 * Dacă ambalajul este metal (doză), cilindrul se rotește 90° spre dreapta pentru a sorta ambalajul în compartimentul destinat metalelor.
 
 * Dacă ambalajul este sticlă de plastic, falcile ce susțin obiectul se deschid, lăsând ambalajul să cadă în interior.
-![walle-loadcell-open.png](/Projects/walle-loadcell-open.png)
+![walle-loadcell-open.png](/walle-loadcell-open.png)
 
   
-|![walle-bottom-open.png](/Projects/walle-bottom-open.png)|![walle-left-open.png](/Projects/walle-left-open.png)|
+|![walle-bottom-open.png](/walle-bottom-open.png)|![walle-left-open.png](/walle-left-open.png)|
 | -- | -- |
   
 
@@ -186,7 +186,7 @@ Astfel, sistemul poate să sorteze cu precizie sticlele de sticlă față de alt
 Piciorul de susținere a fost optimizat topologic, utilizând uneltele de simulare din Fusion 360, pentru a reduce masa și a obține rezistența structurală maximă.
 
 
-|![topo-walle-design.png](/topo-walle-design.png)|![walle-topo-study.png](/Projects/walle-topo-study.png)|![walle-topo-study-2.png](/Projects/walle-topo-study-2.png)|
+|![topo-walle-design.png](/topo-walle-design.png)|![walle-topo-study.png](/walle-topo-study.png)|![walle-topo-study-2.png](/walle-topo-study-2.png)|
 | -- | -- | -- |
 
 Aceasta structura, comparativ cu piciorul de raft din [proiectul de cercetare](https://wiki.teamclockworks.ro/en/Projects/optimizare-topologica) pentru tool-ul de optimizare, a fost creat folosind metoda 2.

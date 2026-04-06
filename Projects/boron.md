@@ -34,7 +34,7 @@ CAD files, STL files and firmware can be found in the [Github repository](https:
   </tr>
 </table>
 
-| ![boron-view-1.png](/Projects/boron-view-1.png) | ![boron-view-2.png](/Projects/boron-view-2.png) | ![boron-view-3.png](/Projects/boron-view-3.png) | ![boron-view-4.png](/Projects/boron-view-4.png) |
+| ![boron-view-1.png](/boron-view-1.png) | ![boron-view-2.png](/boron-view-2.png) | ![boron-view-3.png](/boron-view-3.png) | ![boron-view-4.png](/boron-view-4.png) |
 | -- | -- | -- | -- |
 
 # Graphics panels
@@ -131,7 +131,7 @@ Ensure that your UART adapter is set to work at 3.3v levels, as the ESP inside s
 Connect the UART adapter to the shelly as follows:
 | Shelly | UART Adapter | Diagram |
 | --- | --- | --- | 
-| U0TXD | RX | ![boron-flashing-pinout.png](/Projects/boron-flashing-pinout.png) |
+| U0TXD | RX | ![boron-flashing-pinout.png](/boron-flashing-pinout.png) |
 | U0RXD | TX |^^|
 | GND | GND |^^|
 | GPIO0 | GND |^^|
@@ -196,26 +196,26 @@ When assembling the bttom face, preload the following Makerbeam XL Nuts:
  
 A total of 43 nuts must be preloaded. 
  
-| ![boron-assy-1.png](/Projects/boron-assy-1.png) | ![boron-assy-2.png](/Projects/boron-assy-2.png) |
+| ![boron-assy-1.png](/boron-assy-1.png) | ![boron-assy-2.png](/boron-assy-2.png) |
 | -- | -- |
 
 Mount the external feet using 3x 16mm M3 BHCS and the internal feet using 4x 16mm M3 BHCS.
 The middle screw of the external foot threads into the extrusion. 
 Use the preloaded nuts in the earlier steps.
 
-| ![boron-assy-3.png](/Projects/boron-assy-3.png) | ![boron-assy-4.png](/Projects/boron-assy-4.png) |
+| ![boron-assy-3.png](/boron-assy-3.png) | ![boron-assy-4.png](/boron-assy-4.png) |
 | -- | -- |
 
 If using the stacking feet, assemble them as usual  instead of the regular feet. The channel inside the foot helps align with the frame of the botton cube.
 
-| ![boron-assy-stacking-feet.png](/Projects/boron-assy-stacking-feet.png) |
+| ![boron-assy-stacking-feet.png](/boron-assy-stacking-feet.png) |
 | -- |
 
 
 
 ### Final assembled frame
 
-| ![boron-assy-5.png](/Projects/boron-assy-5.png) |
+| ![boron-assy-5.png](/boron-assy-5.png) |
 | -- |
  
 
@@ -227,14 +227,14 @@ The two crosses **are not identical**! The top cross contains heated inserts on 
 
 Afterwards, install the rigity supports at the top using 16x 16mm M4 SHCS screws. These beams help stabilize our build. 
 
-| ![boron-assy-6.png](/Projects/boron-assy-6.png) | ![boron-assy-7.png](/Projects/boron-assy-7.png) | ![boron-assy-8.png](/Projects/boron-assy-8.png) |
+| ![boron-assy-6.png](/boron-assy-6.png) | ![boron-assy-7.png](/boron-assy-7.png) | ![boron-assy-8.png](/boron-assy-8.png) |
 | -- | -- | -- |
 
 ### Alternative LED Channels
 
 If you opted for the alternative channels (3 piece part instead of single piece), then it is time to assemble them now. Join two halved with the center piece using 4x 8mm M3 FHCS. Repeat this step 20 times.
 
-| ![boron-assy-9.png](/Projects/boron-assy-9.png) |
+| ![boron-assy-9.png](/boron-assy-9.png) |
 | -- |
 
 ### LED Channels
@@ -243,19 +243,19 @@ Install the 20 lateral LED channels. Mount them with 40x 8mm M3 BHCS screws. The
 
 Afterwards, mount the top face LED channel using 4x 8mm M3 FHCS. These screws will go in the heatset inserts inside the top cross. 
 
-| ![boron-assy-10.png](/Projects/boron-assy-10.png) |  ![boron-assy-11.png](/Projects/boron-assy-11.png)|
+| ![boron-assy-10.png](/boron-assy-10.png) |  ![boron-assy-11.png](/boron-assy-11.png)|
 | -- | -- |
 
 The LED structure is now ready for mounting inside the main frame. Use 16x 16mm M4 SHCS.
 
-| ![boron-assy-12-2.png](/Projects/boron-assy-12-2.png) | ![boron-assy-13.png](/Projects/boron-assy-13.png) |
+| ![boron-assy-12-2.png](/boron-assy-12-2.png) | ![boron-assy-13.png](/boron-assy-13.png) |
 | -- | -- |
 
 ### Top corners
 
 Secure the top corners using 4x 8mm M3 FHCS (for each corner) and the MakerbeamXL nuts preloaded earlier. The 4mm M3 FHCS screws only into the plastic part and is decorative.
 
-| ![boron-assy-14.png](/Projects/boron-assy-14.png) | ![boron-assy-15.png](/Projects/boron-assy-15.png) |
+| ![boron-assy-14.png](/boron-assy-14.png) | ![boron-assy-15.png](/boron-assy-15.png) |
 | -- | -- |
 
 ## Electronics
@@ -265,13 +265,13 @@ To install the potentiometer, unscrew the included nut and put it trough the hol
 
 Secure the WAGO holder into the utility panel body using 2x 16mm M3 BHCS. To make the WAGO connectors stay in place, we can use Cyanoacrylate glue or hot glue. 
 
-| ![boron-elec-1.png](/Projects/boron-elec-1.png) | ![boron-elec-2-2.png](/Projects/boron-elec-2-2.png) |
+| ![boron-elec-1.png](/boron-elec-1.png) | ![boron-elec-2-2.png](/boron-elec-2-2.png) |
 | -- |
 
 Assemble the Shelly holder by sliding the shelly relay inside and securing it into place with its small bracket and 2x 10mm M3 BHCS. 
 Use the same glue technique as above to install the 4 WAGO connectors.
 
-| ![boron-elec-3.png](/Projects/boron-elec-3.png) |
+| ![boron-elec-3.png](/boron-elec-3.png) |
 | -- |
 
 ## Wiring
@@ -292,14 +292,14 @@ When wiring the utility panel, take extra care to ensure that the neutral line (
 
 The potentiometer has three connection points: two ends and one center tap. We will wire one single end and the center tap, wires which will go to the shelly circuit. Dimension the wire accordingly. 
 
-| ![boron-elec-4.png](/Projects/boron-elec-4.png) |
+| ![boron-elec-4.png](/boron-elec-4.png) |
 | -- |
 
 ### Shelly circuit
 
 Follow the diagram below to wire the shelly circuit.
 
-| ![boron-elec-5.png](/Projects/boron-elec-5.png) |
+| ![boron-elec-5.png](/boron-elec-5.png) |
 | -- |
 
 ### PSU
@@ -328,7 +328,7 @@ Plug in the power outlet. You should see a green light on the shelly controller.
 
 Take off the bottom three LED supports from the **back** of of the cube. The **back** is the side where we preloaded 3 more (total 7) channel nuts in the bottom extrusion. We will be using these nuts to mount the utility panel we just wired. 
 
-| ![boron-assy-16.png](/Projects/boron-assy-16.png) |
+| ![boron-assy-16.png](/boron-assy-16.png) |
 | -- |
 
 It's time to add the electronics:
@@ -337,12 +337,12 @@ It's time to add the electronics:
  * Secure the shelly carrier to the bottom cross using 2x 10mm M3 FHCS
  * Secure the utility panel to the back extrusion using 3x 40mm M3 FHCS. Use the three extra preloaded nuts.
  
-| ![boron-assy-17.png](/Projects/boron-assy-17.png) | ![boron-assy-18.png](/Projects/boron-assy-18.png) | ![boron-assy-19.png](/Projects/boron-assy-19.png) | ![boron-assy-20.png](/Projects/boron-assy-20.png) |
+| ![boron-assy-17.png](/boron-assy-17.png) | ![boron-assy-18.png](/boron-assy-18.png) | ![boron-assy-19.png](/boron-assy-19.png) | ![boron-assy-20.png](/boron-assy-20.png) |
 | -- |
 
 Install back the three LED supports you just took off to aid in electronics mounting
 
-| ![boron-assy-21.png](/Projects/boron-assy-21.png) |
+| ![boron-assy-21.png](/boron-assy-21.png) |
 | -- |
 
 ## Wrap the LED strips around the cube
@@ -352,13 +352,13 @@ Take each LED strip and direct one towards each vertical post. We will wrap each
 This is how one of the strips wrap. Repeat this pattern for all 4.
 At the bottom of the post there is a ziptie loop to help you keep the cables in place. 
 
-| ![boron-elec-leds.png](/Projects/boron-elec-leds.png) |
+| ![boron-elec-leds.png](/boron-elec-leds.png) |
 | -- |
 
 If you are having trouble keeping the strip in place at the top corners, install one of the strip clips using an 8mm M3 FHCS screw. 
 This screw threads inside a brass insert, so don't forget to install that too.
 
-| ![boron-elec-leds-retainer.png](/Projects/boron-elec-leds-retainer.png) |
+| ![boron-elec-leds-retainer.png](/boron-elec-leds-retainer.png) |
 | -- |
 
 ## Panel mounting
@@ -368,7 +368,7 @@ Loosen the 8 buried screws at the top of the vertical extrusions and take the to
 Install the 4 side panels and the top panel (the chamfered one). 
 Reassemble the `U` and `I`, but do not tighten the corners fully. Place the square in the frame and tighten everything. 
 
-| ![boron-assembly-panels-guide.png](/Projects/boron-assembly-panels-guide.png) |
+| ![boron-assembly-panels-guide.png](/boron-assembly-panels-guide.png) |
 | -- |
 
 ## You are done
@@ -378,8 +378,8 @@ Reassemble the `U` and `I`, but do not tighten the corners fully. Place the squa
 
 # Gallery
 
-| ![](https://img.shields.io/badge/B.001-Finished-brightgreen?style=for-the-badge)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=for-the-badge)| ![boron-serial-b001.png](/Projects/boron-serial-b001.png) |
-| The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the UHP PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/Projects/boron-graphic-voron-x-clock.svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/Projects/boron-graphic-natie.svg =200x200) | ^^ |
+| ![](https://img.shields.io/badge/B.001-Finished-brightgreen?style=for-the-badge)<br>![](https://img.shields.io/badge/Owner-Clockworks-orange?style=for-the-badge)| ![boron-serial-b001.png](/boron-serial-b001.png) |
+| The first Boron ever built!<br>It puts out roughly 18000 lumens without the panels installed.<br>At 24.6V we are seeing a current draw of 6A, so we have a lot of headroom on the UHP PSU. We are thinking about adding some TypeC PD chargers for the many small projects we have at our stand.<br>  ![grafica_boron_final_(clock_-_voron).svg](/boron-graphic-voron-x-clock.svg =200x200) ![grafica_boron_final_(natie_prin_educatie).svg](/boron-graphic-natie.svg =200x200) | ^^ |
 |:-- |
  
 | ![](https://img.shields.io/badge/B.002-in%20progress-red?style=for-the-badge)<br>![](https://img.shields.io/badge/Owner-TBA-purple?style=for-the-badge)|  |

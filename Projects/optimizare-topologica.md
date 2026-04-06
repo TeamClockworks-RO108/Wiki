@@ -38,7 +38,7 @@ In comparatia de mai jos putem vedea atat piesa originala cat si piesa optimizat
 
 | Piesa originala    | Modelul optimizat |
 | -------- | ------- |
-| ![](/Projects/topo-original.png)  | ![](/Projects/topo-optimized-2.png) |
+| ![](/topo-original.png)  | ![](/topo-optimized-2.png) |
 
 
 # Etape
@@ -59,7 +59,7 @@ Mai jos putem vedea piciorul de raft simulat in 3 exemple in care configuram pra
 
 | 100% | 57.6% | 32% |
 | ---- | ----- | --- |
-| ![](/Projects/topo-simulation.png) | ![](/Projects/topo-optimized-optimal.png) | ![](/Projects/topo-optimized-toomuch.png) |
+| ![](/topo-simulation.png) | ![](/topo-optimized-optimal.png) | ![](/topo-optimized-toomuch.png) |
 | Pragul de masa este 100%, deci avem chiar piesa originala. Putem vedea distributia stresului mecanic, unde peretii nu contribuie prea mult la rezistenta piesei. | La 57.6% obtinem o taiere optima. Piesa isi pastreaza structurile critice desi cantareste cu foarte putin peste jumatate din masa originala. | La 32% umplere pierdem atat structuri critice cat si structuri non-critice, rezultatul devenind neoptim.
 
 Observam ca simularile de optimizare trebuie efectuate de mai multe ori, pe mai multe cazuri, iar parametrii simularii trebuie ajustati pentru imbunatatirea rezultatelor.
@@ -112,7 +112,7 @@ De exemplu, daca dorim sa fabricam piesa originala la 60% infill, putem in schim
 
 | 60% Infill (original) | 90% Infill (optimizat) |
 | --- | --- |
-| ![topo-60-original.png](/Projects/topo-60-original.png) | ![topo-90-optimized.png](/Projects/topo-90-optimized.png) |
+| ![topo-60-original.png](/topo-60-original.png) | ![topo-90-optimized.png](/topo-90-optimized.png) |
 
 # Concluzii
 
