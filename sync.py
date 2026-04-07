@@ -496,8 +496,12 @@ def _get_page_date(md_file):
     return None
 
 
-def _commit_page(repo_root, page_id, rel_path):
-    """Stage and commit changes for a single synced page (no push)."""
+def _commit_page(repo_root, page_id, rel_path, allow_empty=False):
+    """Stage and commit changes for a single synced page (no push).
+
+    If allow_empty is True, create a dummy commit even when there are no changes
+    (used to establish a PAGEID baseline on the source side).
+    """
     now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
     msg = f"Sync for PAGEID={page_id} at {now}"
 
@@ -509,7 +513,8 @@ def _commit_page(repo_root, page_id, rel_path):
         capture_output=True,
     )
     if r.returncode == 0:
-        # Nothing changed — create an empty commit so the PAGEID baseline exists
+        if not allow_empty:
+            return  # nothing to commit
         _git('commit', '--allow-empty', '-m', msg, repo=repo_root, check=False)
     else:
         _git('commit', '-m', msg, repo=repo_root, check=False)
@@ -791,7 +796,7 @@ def sync(repo_a, repo_b):
                 src_repo = repo_a if src == info_a else repo_b
                 _commit_page(dst_repo, page_id, dst['rel_path'])
                 # Dummy baseline on source so future diffs have an anchor
-                _commit_page(src_repo, page_id, src['rel_path'])
+                _commit_page(src_repo, page_id, src['rel_path'], allow_empty=True)
 
         else:
             short_a = commit_a[:12]
