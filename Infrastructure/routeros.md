@@ -2,13 +2,13 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-06T23:45:27.377Z
+date: 2026-04-07T00:31:58.721Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
 ---
 
-# Useful scripts edited-by-A
+# Lab Router Configuration
 
 ## Firewall configuration with IRAF
 
@@ -229,6 +229,3 @@ Configure this script to run every minute or so.
 > This page is available both on the [Clockworks Wiki](https://wiki.teamclockworks.ro) and [Alacrity Wiki](https://wiki.alacrity.ro).
 > Synchronization is done automatically. Page ID: `ROUTEROS`.
 {.is-info}
-# Test change from A
-
-# Change only in A
