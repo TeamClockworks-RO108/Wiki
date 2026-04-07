@@ -1,8 +1,8 @@
 name: Relocate Images
 
 on:
-  push:
-    branches: ['**']
+  schedule:
+    - cron: '0 3 * * *'  # 6:00 AM EEST / 5:00 AM EET (Romania)
 
 jobs:
   relocate-images:

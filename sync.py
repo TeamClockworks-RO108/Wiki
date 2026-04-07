@@ -19,6 +19,9 @@ import subprocess
 import sys
 from collections import Counter
 
+# Detect ImageMagick command: v7 uses 'magick', v6 uses 'convert'
+_MAGICK_CMD = 'magick' if shutil.which('magick') else 'convert'
+
 IMAGE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.bmp', '.ico', '.tiff', '.tif'}
 
 # Regex breakdown:
@@ -218,7 +221,7 @@ def relocate_images(repo_root):
 
         print(f"CONVERT: {img_rel}  ->  {os.path.relpath(png_abs, repo_root)}")
         result = subprocess.run(
-            ['magick', img_abs, png_abs],
+            [_MAGICK_CMD, img_abs, png_abs],
             capture_output=True, text=True
         )
         if result.returncode != 0:
@@ -357,13 +360,26 @@ def find_sync_markers(repo_root):
     return results
 
 
+# Per-repo SSH key mapping: { absolute_repo_path: ssh_key_path }
+_SSH_KEYS = {}
+
+
+def _git_env(repo=None):
+    """Return an env dict with GIT_SSH_COMMAND set if an SSH key is configured for repo."""
+    env = os.environ.copy()
+    if repo and repo in _SSH_KEYS:
+        key = _SSH_KEYS[repo]
+        env['GIT_SSH_COMMAND'] = f'ssh -i {key} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new'
+    return env
+
+
 def _git(*args, repo=None, check=True):
     """Run a git command and return stdout."""
     cmd = ['git']
     if repo:
         cmd += ['-C', repo]
     cmd += list(args)
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    r = subprocess.run(cmd, capture_output=True, text=True, env=_git_env(repo))
     if check and r.returncode != 0:
         return None
     return r.stdout.strip()
@@ -705,8 +721,12 @@ def _sync_media(repo_a, repo_b, info_a, info_b, page_id):
         print(f"    Media already in sync")
 
 
-def sync(repo_a, repo_b):
+def sync(repo_a, repo_b, key_a=None, key_b=None):
     """Synchronize pages between two repositories based on sync markers."""
+    if key_a:
+        _SSH_KEYS[repo_a] = os.path.abspath(key_a)
+    if key_b:
+        _SSH_KEYS[repo_b] = os.path.abspath(key_b)
     print(f"=== WikiSync — bidirectional page sync ===\n")
     print(f"  Repo A: {repo_a}")
     print(f"  Repo B: {repo_b}\n")
@@ -715,8 +735,7 @@ def sync(repo_a, repo_b):
     for label, repo in [('A', repo_a), ('B', repo_b)]:
         print(f"  Preparing repo {label}...")
         _git('reset', '--hard', repo=repo)
-        subprocess.run(['git', '-C', repo, 'clean', '-f'],
-                        capture_output=True)
+        _git('clean', '-f', repo=repo, check=False)
         _git('pull', repo=repo, check=False)
 
     print()
@@ -889,6 +908,10 @@ def main():
                         help="Relocate images next to the markdown files that reference them")
     parser.add_argument('-s', '--sync', action='store_true',
                         help="Bidirectional page sync between two repos using PAGEID markers")
+    parser.add_argument('--key-a', metavar='PATH',
+                        help="SSH private key to use for the first repository")
+    parser.add_argument('--key-b', metavar='PATH',
+                        help="SSH private key to use for the second repository")
     args = parser.parse_args()
 
     if not args.relocate and not args.sync:
@@ -905,7 +928,7 @@ def main():
             sys.exit(1)
         repo_a = os.path.abspath(args.repos[0])
         repo_b = os.path.abspath(args.repos[1])
-        sync(repo_a, repo_b)
+        sync(repo_a, repo_b, key_a=args.key_a, key_b=args.key_b)
 
 
 if __name__ == '__main__':
