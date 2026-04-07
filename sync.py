@@ -706,6 +706,16 @@ def sync(repo_a, repo_b):
     print(f"  Repo A: {repo_a}")
     print(f"  Repo B: {repo_b}\n")
 
+    # Reset and pull both repos to ensure a clean, up-to-date state
+    for label, repo in [('A', repo_a), ('B', repo_b)]:
+        print(f"  Preparing repo {label}...")
+        _git('reset', '--hard', repo=repo)
+        subprocess.run(['git', '-C', repo, 'clean', '-f'],
+                        capture_output=True)
+        _git('pull', repo=repo, check=False)
+
+    print()
+
     markers_a = find_sync_markers(repo_a)
     markers_b = find_sync_markers(repo_b)
 
