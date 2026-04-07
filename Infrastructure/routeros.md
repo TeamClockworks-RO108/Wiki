@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-07T00:40:20.143Z
+date: 2026-04-07T00:50:12.914Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -11,6 +11,8 @@ dateCreated: 2025-05-22T15:32:34.476Z
 # Lab Router Configuration
 
 This page contains reference configuration for the Mikrotik at the lab, with a strong focus on firewall handling. 
+
+The firewall is designed to be easy to maintain. Connection tracking is used to accept all of the already established connections and onlt filter trough the bulk rules the connection opening packet. Thus, we do not need to write bidirectional rules.
 
 ## Firewall configuration with IRAF
 
