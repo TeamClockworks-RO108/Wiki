@@ -11,6 +11,7 @@ Images under /branding or /static are left untouched.
 """
 
 import argparse
+from datetime import datetime, timezone
 import re
 import os
 import shutil
@@ -296,32 +297,600 @@ def relocate_images(repo_root):
     print("\nDone.")
 
 
-def sync(repo_root):
-    """Sync operation (not yet implemented)."""
-    print("Sync is not yet implemented.")
+# ---------------------------------------------------------------------------
+# Sync: bidirectional page synchronization between two wiki repos
+# ---------------------------------------------------------------------------
+
+# Words to search for across two consecutive '>' lines to identify a sync marker.
+_SYNC_WORDS = [
+    'available', 'wiki', 'clockworks', 'alacrity',
+    'page', 'id', 'synchronization', 'automatically', 'automagically',
+]
+_SYNC_THRESHOLD = 0.6  # at least 60 % of the words must be present
+
+# Extracts the PAGEID from inside backticks on the second line.
+_PAGEID_RE = re.compile(r'`([-_a-zA-Z0-9]+)`')
+
+
+def find_sync_markers(repo_root):
+    """Scan all .md files for sync markers.
+
+    Returns a list of dicts:
+        md_file:  absolute path to the markdown file
+        rel_path: path relative to repo_root
+        page_id:  the extracted PAGEID string
+    """
+    results = []
+    for dirpath, _, filenames in os.walk(repo_root):
+        if '/.git' in dirpath or dirpath.endswith('/.git'):
+            continue
+        for fname in filenames:
+            if not fname.endswith('.md'):
+                continue
+            md_file = os.path.join(dirpath, fname)
+            with open(md_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+
+            for i in range(len(lines) - 1):
+                line1 = lines[i]
+                line2 = lines[i + 1]
+
+                if not line1.lstrip().startswith('>'):
+                    continue
+                if not line2.lstrip().startswith('>'):
+                    continue
+
+                combined = (line1 + ' ' + line2).lower()
+                found = sum(1 for w in _SYNC_WORDS if w in combined)
+                if found < len(_SYNC_WORDS) * _SYNC_THRESHOLD:
+                    continue
+
+                m = _PAGEID_RE.search(line2)
+                if not m:
+                    continue
+
+                results.append({
+                    'md_file': md_file,
+                    'rel_path': os.path.relpath(md_file, repo_root),
+                    'page_id': m.group(1),
+                })
+    return results
+
+
+def _git(*args, repo=None, check=True):
+    """Run a git command and return stdout."""
+    cmd = ['git']
+    if repo:
+        cmd += ['-C', repo]
+    cmd += list(args)
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if check and r.returncode != 0:
+        return None
+    return r.stdout.strip()
+
+
+def _find_last_sync_commit(repo_root, page_id):
+    """Return the SHA of the newest commit whose message contains PAGEID=<id>."""
+    return _git('log', '--all', '-1', '--format=%H',
+                f'--grep=PAGEID={page_id}', repo=repo_root)
+
+
+def _get_file_at_commit(repo_root, commit, rel_path):
+    """Return the contents of a file at a given commit, or None."""
+    return _git('show', f'{commit}:{rel_path}', repo=repo_root)
+
+
+def _three_way_merge(base_content, content_a, content_b, newer_side):
+    """Three-way merge of content_a and content_b with base_content as ancestor.
+
+    Uses git merge-file with diff3 style. On conflict, the side indicated by
+    newer_side ('a' or 'b') wins.
+
+    Returns (merged_content, had_conflicts).
+    """
+    import tempfile
+
+    tmp_base = tempfile.NamedTemporaryFile(mode='w', suffix='.base', delete=False)
+    tmp_a = tempfile.NamedTemporaryFile(mode='w', suffix='.a', delete=False)
+    tmp_b = tempfile.NamedTemporaryFile(mode='w', suffix='.b', delete=False)
+
+    try:
+        tmp_base.write(base_content); tmp_base.close()
+        tmp_a.write(content_a); tmp_a.close()
+        tmp_b.write(content_b); tmp_b.close()
+
+        # git merge-file modifies the first file in-place with the merge result.
+        # Return code: 0 = clean, >0 = number of conflicts, <0 = error.
+        # --diff3 gives the base in conflict markers for clarity.
+        r = subprocess.run(
+            ['git', 'merge-file', '--diff3',
+             '-L', 'A', '-L', 'BASE', '-L', 'B',
+             tmp_a.name, tmp_base.name, tmp_b.name],
+            capture_output=True, text=True,
+        )
+
+        had_conflicts = r.returncode > 0
+
+        with open(tmp_a.name, 'r', encoding='utf-8') as f:
+            merged = f.read()
+
+        if had_conflicts:
+            # Resolve conflicts by picking the newer side
+            merged = _resolve_conflicts(merged, newer_side)
+
+        return merged, had_conflicts
+
+    finally:
+        os.remove(tmp_base.name)
+        os.remove(tmp_a.name)
+        os.remove(tmp_b.name)
+
+
+def _resolve_conflicts(text, pick):
+    """Resolve diff3-style conflict markers by keeping the chosen side.
+
+    pick: 'a' keeps the A side, 'b' keeps the B side.
+    Handles both diff3 markers (with ||||||| BASE) and standard markers.
+    """
+    lines = text.splitlines(keepends=True)
+    result = []
+    in_conflict = False
+    section = None  # 'a', 'base', or 'b'
+
+    for line in lines:
+        if line.startswith('<<<<<<<'):
+            in_conflict = True
+            section = 'a'
+            continue
+        elif line.startswith('|||||||'):
+            section = 'base'
+            continue
+        elif line.startswith('=======\n') or line.rstrip() == '=======':
+            section = 'b'
+            continue
+        elif line.startswith('>>>>>>>'):
+            in_conflict = False
+            section = None
+            continue
+
+        if not in_conflict:
+            result.append(line)
+        elif section == pick:
+            result.append(line)
+
+    return ''.join(result)
+
+
+_DATE_RE = re.compile(r'^date:\s*(.+)$', re.MULTILINE)
+
+
+def _get_page_date(md_file):
+    """Extract the 'date' field from the YAML frontmatter of a markdown file.
+
+    Returns a datetime object or None if not found / unparseable.
+    """
+    with open(md_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Frontmatter must start at the very beginning with ---
+    if not content.startswith('---'):
+        return None
+    end = content.find('---', 3)
+    if end == -1:
+        return None
+    frontmatter = content[3:end]
+
+    m = _DATE_RE.search(frontmatter)
+    if not m:
+        return None
+
+    date_str = m.group(1).strip()
+    # Try ISO 8601 formats
+    for fmt in ('%Y-%m-%dT%H:%M:%S.%fZ', '%Y-%m-%dT%H:%M:%SZ',
+                '%Y-%m-%dT%H:%M:%S.%f%z', '%Y-%m-%dT%H:%M:%S%z',
+                '%Y-%m-%dT%H:%M:%S', '%Y-%m-%d'):
+        try:
+            return datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _commit_page(repo_root, page_id, rel_path):
+    """Stage and commit changes for a single synced page (no push)."""
+    now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+    msg = f"Sync for PAGEID={page_id} at {now}"
+
+    _git('add', rel_path, repo=repo_root)
+
+    # Check if there is anything staged
+    r = subprocess.run(
+        ['git', '-C', repo_root, 'diff', '--cached', '--quiet'],
+        capture_output=True,
+    )
+    if r.returncode == 0:
+        # Nothing changed — create an empty commit so the PAGEID baseline exists
+        _git('commit', '--allow-empty', '-m', msg, repo=repo_root, check=False)
+    else:
+        _git('commit', '-m', msg, repo=repo_root, check=False)
+
+    print(f"    Committed: {msg}")
+
+
+def _get_page_image_refs(md_file):
+    """Extract all image paths referenced in a single markdown file.
+
+    Returns a set of repo-relative paths (starting with /).
+    """
+    pattern = IMAGE_ANY_RE
+    refs = set()
+    with open(md_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    for m in pattern.finditer(content):
+        refs.add(m.group(2))
+    return refs
+
+
+def _file_hash(path):
+    """Return the SHA-256 hex digest of a file."""
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, 'rb') as f:
+        for chunk in iter(lambda: f.read(65536), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _last_real_change_date(repo_root, rel_path):
+    """Return the author date of the last commit that touched rel_path,
+    ignoring commits created by Sync (messages starting with 'Sync for PAGEID=').
+
+    Returns a datetime or None.
+    """
+    # Get all commits that touched this file, newest first
+    out = _git('log', '--format=%H %aI %s', '--follow', '--', rel_path,
+               repo=repo_root)
+    if not out:
+        return None
+
+    for line in out.splitlines():
+        parts = line.split(' ', 2)
+        if len(parts) < 3:
+            continue
+        _, date_str, subject = parts
+        if subject.startswith('Sync for PAGEID='):
+            continue
+        try:
+            return datetime.fromisoformat(date_str)
+        except ValueError:
+            continue
+    return None
+
+
+def _resolve_img_path(img_path, md_file, repo_root):
+    """Resolve an image path (absolute or relative) to an absolute filesystem path."""
+    if img_path.startswith('/'):
+        return os.path.join(repo_root, img_path.lstrip('/'))
+    else:
+        return os.path.normpath(os.path.join(os.path.dirname(md_file), img_path))
+
+
+def _sync_media(repo_a, repo_b, info_a, info_b, page_id):
+    """Synchronize media (images) referenced by a synced page pair.
+
+    After text sync, both pages should be identical, so their image refs match.
+    We read from one side (A) since refs are the same.
+
+    Steps:
+      1. Delete unreferenced images in both repos (repo-wide, like --relocate)
+      2. Copy missing images from the other side
+      3. For images present on both sides with different hashes, keep the one
+         with the most recent non-sync commit
+    """
+    print(f"\n  --- Media sync for PAGEID={page_id} ---")
+
+    # Pages should be identical after text sync — read refs from A
+    refs = _get_page_image_refs(info_a['md_file'])
+    if not refs:
+        print(f"    No image references in page")
+        return
+
+    print(f"    {len(refs)} image reference(s) found")
+
+    # Step 1: Delete unreferenced images in both repos
+    for label, repo, info in [('A', repo_a, info_a), ('B', repo_b, info_b)]:
+        all_repo_refs = find_image_refs(repo, absolute_only=False)
+        referenced_abs = set()
+        for ref in all_repo_refs:
+            referenced_abs.add(os.path.normpath(
+                _resolve_img_path(ref['img_path'], ref['md_file'], repo)))
+
+        all_imgs = find_all_images(repo)
+        for img_abs in all_imgs:
+            img_rel = os.path.relpath(img_abs, repo)
+            parts = img_rel.split(os.sep)
+            if parts[0] in ('branding', 'static'):
+                continue
+            if os.path.normpath(img_abs) not in referenced_abs:
+                print(f"    DELETE (unreferenced in {label}): {img_rel}")
+                os.remove(img_abs)
+
+    # Step 2: Copy missing images from the other side
+    staged_files_a = []
+    staged_files_b = []
+
+    for img_path in sorted(refs):
+        abs_a = _resolve_img_path(img_path, info_a['md_file'], repo_a)
+        abs_b = _resolve_img_path(img_path, info_b['md_file'], repo_b)
+
+        exists_a = os.path.isfile(abs_a)
+        exists_b = os.path.isfile(abs_b)
+
+        rel_a = os.path.relpath(abs_a, repo_a)
+        rel_b = os.path.relpath(abs_b, repo_b)
+
+        if not exists_a and not exists_b:
+            print(f"    WARNING: {img_path} missing on both sides")
+            continue
+
+        if not exists_a and exists_b:
+            os.makedirs(os.path.dirname(abs_a), exist_ok=True)
+            shutil.copy2(abs_b, abs_a)
+            staged_files_a.append(rel_a)
+            print(f"    COPY B -> A: {img_path}")
+            continue
+
+        if exists_a and not exists_b:
+            os.makedirs(os.path.dirname(abs_b), exist_ok=True)
+            shutil.copy2(abs_a, abs_b)
+            staged_files_b.append(rel_b)
+            print(f"    COPY A -> B: {img_path}")
+            continue
+
+        # Step 3: Both exist — compare hashes
+        hash_a = _file_hash(abs_a)
+        hash_b = _file_hash(abs_b)
+
+        if hash_a == hash_b:
+            continue  # identical
+
+        # Different content — newest non-sync commit wins
+        date_a = _last_real_change_date(repo_a, rel_a)
+        date_b = _last_real_change_date(repo_b, rel_b)
+
+        date_a_str = date_a.isoformat() if date_a else 'unknown'
+        date_b_str = date_b.isoformat() if date_b else 'unknown'
+
+        if date_a and date_b:
+            winner = 'a' if date_a >= date_b else 'b'
+        elif date_a:
+            winner = 'a'
+        elif date_b:
+            winner = 'b'
+        else:
+            winner = 'a'  # arbitrary fallback
+
+        if winner == 'a':
+            shutil.copy2(abs_a, abs_b)
+            staged_files_b.append(rel_b)
+            print(f"    OVERWRITE A -> B: {img_path}  (A: {date_a_str}, B: {date_b_str})")
+        else:
+            shutil.copy2(abs_b, abs_a)
+            staged_files_a.append(rel_a)
+            print(f"    OVERWRITE B -> A: {img_path}  (A: {date_a_str}, B: {date_b_str})")
+
+    # Commit media changes (one commit per page, not per file)
+    if staged_files_a:
+        for f in staged_files_a:
+            _git('add', f, repo=repo_a)
+        now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+        _git('commit', '-m', f"Sync media for PAGEID={page_id} at {now}",
+             repo=repo_a, check=False)
+        print(f"    Committed media changes in A")
+
+    if staged_files_b:
+        for f in staged_files_b:
+            _git('add', f, repo=repo_b)
+        now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+        _git('commit', '-m', f"Sync media for PAGEID={page_id} at {now}",
+             repo=repo_b, check=False)
+        print(f"    Committed media changes in B")
+
+    if not staged_files_a and not staged_files_b:
+        print(f"    Media already in sync")
+
+
+def sync(repo_a, repo_b):
+    """Synchronize pages between two repositories based on sync markers."""
+    print(f"=== WikiSync — bidirectional page sync ===\n")
+    print(f"  Repo A: {repo_a}")
+    print(f"  Repo B: {repo_b}\n")
+
+    markers_a = find_sync_markers(repo_a)
+    markers_b = find_sync_markers(repo_b)
+
+    by_id_a = {m['page_id']: m for m in markers_a}
+    by_id_b = {m['page_id']: m for m in markers_b}
+
+    common_ids = sorted(set(by_id_a) & set(by_id_b))
+    only_a = sorted(set(by_id_a) - set(by_id_b))
+    only_b = sorted(set(by_id_b) - set(by_id_a))
+
+    print(f"Sync markers found:")
+    print(f"  Repo A:          {len(markers_a)}")
+    print(f"  Repo B:          {len(markers_b)}")
+    print(f"  Matched pairs:   {len(common_ids)}")
+    if only_a:
+        print(f"  Only in A:       {', '.join(only_a)}")
+    if only_b:
+        print(f"  Only in B:       {', '.join(only_b)}")
+
+    if not common_ids:
+        print("\nNo pages to sync.")
+        return
+
+    for page_id in common_ids:
+        info_a = by_id_a[page_id]
+        info_b = by_id_b[page_id]
+
+        print(f"\n--- PAGEID={page_id} ---")
+        print(f"  A: {info_a['rel_path']}")
+        print(f"  B: {info_b['rel_path']}")
+
+        # Find the last sync commit in each repo
+        commit_a = _find_last_sync_commit(repo_a, page_id)
+        commit_b = _find_last_sync_commit(repo_b, page_id)
+
+        if not commit_a or not commit_b:
+            # No baseline — copy the newer page over the older one
+            date_a = _get_page_date(info_a['md_file'])
+            date_b = _get_page_date(info_b['md_file'])
+
+            date_a_str = date_a.isoformat() if date_a else 'unknown'
+            date_b_str = date_b.isoformat() if date_b else 'unknown'
+            print(f"  No baseline sync commit — initial copy by date")
+            print(f"    A date: {date_a_str}")
+            print(f"    B date: {date_b_str}")
+
+            if date_a is None and date_b is None:
+                print(f"  SKIP — no date found on either side")
+                continue
+
+            # Determine source (newer) and destination (older / no date)
+            if date_a is None:
+                src, dst = info_b, info_a
+                direction = 'B -> A'
+            elif date_b is None:
+                src, dst = info_a, info_b
+                direction = 'A -> B'
+            elif date_a >= date_b:
+                src, dst = info_a, info_b
+                direction = 'A -> B'
+            else:
+                src, dst = info_b, info_a
+                direction = 'B -> A'
+
+            # Check if files are already identical
+            import filecmp
+            if filecmp.cmp(src['md_file'], dst['md_file'], shallow=False):
+                print(f"  Already identical — nothing to do")
+            else:
+                print(f"  COPY ({direction}): {src['rel_path']}  ->  {dst['rel_path']}")
+                shutil.copy2(src['md_file'], dst['md_file'])
+                dst_repo = repo_a if dst == info_a else repo_b
+                src_repo = repo_a if src == info_a else repo_b
+                _commit_page(dst_repo, page_id, dst['rel_path'])
+                # Dummy baseline on source so future diffs have an anchor
+                _commit_page(src_repo, page_id, src['rel_path'])
+
+        else:
+            short_a = commit_a[:12]
+            short_b = commit_b[:12]
+            print(f"  Last sync commit A: {short_a}")
+            print(f"  Last sync commit B: {short_b}")
+
+            # Get the file content at the sync point (the common baseline)
+            base_a = _get_file_at_commit(repo_a, commit_a, info_a['rel_path'])
+            base_b = _get_file_at_commit(repo_b, commit_b, info_b['rel_path'])
+
+            if base_a is None:
+                print(f"  SKIP — cannot read {info_a['rel_path']} at {short_a} in repo A")
+                continue
+            if base_b is None:
+                print(f"  SKIP — cannot read {info_b['rel_path']} at {short_b} in repo B")
+                continue
+
+            # Read current working-tree content
+            with open(info_a['md_file'], 'r', encoding='utf-8') as f:
+                current_a = f.read()
+            with open(info_b['md_file'], 'r', encoding='utf-8') as f:
+                current_b = f.read()
+
+            changed_a = current_a != base_a
+            changed_b = current_b != base_b
+
+            if not changed_a and not changed_b:
+                print(f"  No changes in either repo since last sync")
+            else:
+                # Determine which side is newer (for conflict resolution)
+                date_a = _get_page_date(info_a['md_file'])
+                date_b = _get_page_date(info_b['md_file'])
+                if date_a and date_b:
+                    newer_side = 'a' if date_a >= date_b else 'b'
+                elif date_a:
+                    newer_side = 'a'
+                elif date_b:
+                    newer_side = 'b'
+                else:
+                    newer_side = 'a'  # arbitrary fallback
+
+                # Use the baseline that both sides diverged from.
+                # Since content was identical at sync time, base_a == base_b; pick either.
+                base = base_a
+
+                if changed_a and not changed_b:
+                    print(f"  Only A changed — copying A -> B")
+                    merged = current_a
+                elif changed_b and not changed_a:
+                    print(f"  Only B changed — copying B -> A")
+                    merged = current_b
+                else:
+                    print(f"  Both sides changed — three-way merge (conflicts -> {newer_side.upper()})")
+                    merged, had_conflicts = _three_way_merge(base, current_a, current_b, newer_side)
+                    if had_conflicts:
+                        print(f"    Conflicts resolved in favour of side {newer_side.upper()}")
+                    else:
+                        print(f"    Merged cleanly")
+
+                # Write merged content to both sides
+                with open(info_a['md_file'], 'w', encoding='utf-8') as f:
+                    f.write(merged)
+                with open(info_b['md_file'], 'w', encoding='utf-8') as f:
+                    f.write(merged)
+
+                _commit_page(repo_a, page_id, info_a['rel_path'])
+                _commit_page(repo_b, page_id, info_b['rel_path'])
+
+        # --- Media sync for this page ---
+        _sync_media(repo_a, repo_b, info_a, info_b, page_id)
+
+    # Push all commits at once
+    print("\n--- Pushing ---")
+    for label, repo in [('A', repo_a), ('B', repo_b)]:
+        result = _git('push', repo=repo, check=False)
+        if result is None:
+            print(f"  WARNING: push failed for repo {label} ({repo})")
+        else:
+            print(f"  Repo {label}: pushed")
+
+    print("\nSync done.")
 
 
 def main():
     parser = argparse.ArgumentParser(description="WikiSync utility")
-    parser.add_argument('repo_root', nargs='?', default=os.getcwd(),
-                        help="Path to the repository root (default: current directory)")
+    parser.add_argument('repos', nargs='*',
+                        help="Repository path(s): one for --relocate, two for --sync")
     parser.add_argument('-r', '--relocate', action='store_true',
                         help="Relocate images next to the markdown files that reference them")
     parser.add_argument('-s', '--sync', action='store_true',
-                        help="Sync operation (not yet implemented)")
+                        help="Bidirectional page sync between two repos using PAGEID markers")
     args = parser.parse_args()
-
-    repo_root = os.path.abspath(args.repo_root)
 
     if not args.relocate and not args.sync:
         parser.print_help()
         sys.exit(1)
 
     if args.relocate:
-        relocate_images(repo_root)
+        repo = os.path.abspath(args.repos[0]) if args.repos else os.getcwd()
+        relocate_images(repo)
 
     if args.sync:
-        sync(repo_root)
+        if len(args.repos) < 2:
+            print("ERROR: --sync requires two repository paths", file=sys.stderr)
+            sys.exit(1)
+        repo_a = os.path.abspath(args.repos[0])
+        repo_b = os.path.abspath(args.repos[1])
+        sync(repo_a, repo_b)
 
 
 if __name__ == '__main__':
