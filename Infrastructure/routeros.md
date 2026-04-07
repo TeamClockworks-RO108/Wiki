@@ -2,13 +2,15 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-07T00:31:58.721Z
+date: 2026-04-07T00:40:20.143Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
 ---
 
 # Lab Router Configuration
+
+This page contains reference configuration for the Mikrotik at the lab, with a strong focus on firewall handling. 
 
 ## Firewall configuration with IRAF
 
