@@ -3,6 +3,7 @@ name: Relocate Images
 on:
   schedule:
     - cron: '0 3 * * *'  # 6:00 AM EEST / 5:00 AM EET (Romania)
+  workflow_dispatch:
 
 jobs:
   relocate-images:
