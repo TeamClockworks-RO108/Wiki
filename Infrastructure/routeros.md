@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-11T02:31:44.396Z
+date: 2026-04-11T14:38:59.845Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -89,7 +89,9 @@ Create firewall bulk rules.
 /ip firewall connection tracking
 set enabled=yes udp-timeout=10s
 
+
 # Bulk of rules here
+/ip firewall filter
 add action=accept chain=input comment="Allow OOBE Winbox" dst-port=8291 \
     in-interface=client-oobe protocol=tcp
 add action=accept chain=input comment="Allow OOBE HTTP" dst-port=80 \
@@ -134,10 +136,13 @@ add action=accept chain=forward comment="Accept DSTNAT'ed" \
     connection-nat-state=dstnat dst-address-list=allowed_to_router
 
 # Each subnet routed locally can access itself
-add action=accept chain=forward dst-address-list=ip_core src-address-list=\
-    ip_core comment="Loop Core"
-add action=accept chain=forward dst-address-list=ip_alacrity src-address-list=\
-    ip_alacrity comment="Loop Alacrity"
+add action=accept chain=forward dst-address-list=ip_mgmt     src-address-list=ip_mgmt     comment="Loop Mgmt"
+add action=accept chain=forward dst-address-list=ip_clock    src-address-list=ip_clock    comment="Loop Clock"
+add action=accept chain=forward dst-address-list=ip_alacrity src-address-list=ip_alacrity comment="Loop Alacrity"
+add action=accept chain=forward dst-address-list=ip_iot      src-address-list=ip_iot      comment="Loop IoT"
+add action=accept chain=forward dst-address-list=ip_guest    src-address-list=ip_guest    comment="Loop Guest"
+add action=accept chain=forward dst-address-list=ip_jail     src-address-list=ip_jail     comment="Loop Jail"
+add action=accept chain=forward dst-address-list=ip_servers  src-address-list=ip_servers  comment="Loop Servers"
     
 # Which subnet can cross vlans and where
 # Who can do internet access
