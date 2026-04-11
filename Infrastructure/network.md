@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-03-10T02:38:04.629Z
+date: 2026-04-11T00:24:29.561Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -22,4 +22,34 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJiYWNrZ3JvdW5kOiB0
 
 
 
+
+# New Network Vlans
+
+All bridges will be called `bridge`. They will have VLAN filtering turned on.
+
+| VID | Interface Name | Network | Devices | Notes | 
+| -- |
+| 100 | VMgmt | 10.12.1.1 | Switches, Routers |  |
+| 200 | VClock | 10.12.2.1 | Clockworks printers and regular stuff |  |
+| 300 | VAlacrity | 10.12.3.1 | Alacriy regular devices |  |
+| 400 | VIoT | 10.12.4.1 | HassOS, cameras, Boron. |  |
+| 500 | VGuest | 10.12.5.1 |  | NO access to othe vlans |
+| 501 | VJail | 10.12.51.1 | Bambu's and other chatty shit | NO access between devices, NO access to other vlans |
+| 101 | VWanConsumer | Whatever digi gives | Primary Uplink | Internet Uplink PPPoE (Digi) |
+| 102 | Reserved | Provider-allocated | Future Uplink | Reserved |
+| 103 | Reserved | Provider-allocated | Future Uplink | Reserved |
+| 104 | Reserved | - | Reserved | Reserved |
+| 105 | Reserved | - | Reserved | Reserved |
+| 106 | Servers | 10.12.16.1 | Eros, Pallas, Ceres | Servers and stuff |
+
+Switches:
+* SVlad - 10.12.1.3 - trunk ether1, 106@eth5, 106@eth6, 400@eth7
+* SCore - 10.12.1.1 - trunk ether1, 
+* SHenry - 10.12.1.4 - trunk ether1,
+
+
+Servers:
+ * Eros - Instrumental: Auth, Wiki, Grafana, MQTT, Node-Red, main software services
+ * Pallas - Ex-bigd.lr: Log & telemetry collector, low-level data services.
+ * Ceres - HassOS & Z2M
 
