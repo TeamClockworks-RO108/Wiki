@@ -2,7 +2,7 @@
 title: RouterOS
 description: 
 published: true
-date: 2026-04-07T00:50:12.914Z
+date: 2026-04-11T02:31:44.396Z
 tags: infrastructure
 editor: markdown
 dateCreated: 2025-05-22T15:32:34.476Z
@@ -63,8 +63,7 @@ add address=198.51.100.0/24 comment=RFC6890 list=not_in_internet
 add address=203.0.113.0/24 comment=RFC6890 list=not_in_internet
 add address=100.64.0.0/10 comment=RFC6890 list=not_in_internet
 add address=240.0.0.0/4 comment=RFC6890 list=not_in_internet
-add address=192.88.99.0/24 comment="6to4 relay Anycast [RFC 3068]" list=\
-    not_in_internet
+add address=192.88.99.0/24 comment="6to4 relay Anycast [RFC 3068]" list=not_in_internet
 add address=10.200.0.0/16 list=iraf_int
 add address=10.95.0.0/16 list=iraf_edge
 add address=192.168.10.0/24 list=iraf_edge
