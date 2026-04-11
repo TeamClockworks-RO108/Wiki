@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-04-11T01:50:58.018Z
+date: 2026-04-11T02:23:57.339Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -13,20 +13,20 @@ dateCreated: 2025-11-29T15:04:20.683Z
 
 All bridges will be called `bridge`. They will have VLAN filtering turned on.
 
-| VID | Interface Name | Network | Devices | Notes | 
+| VID | Interface Name | Network | Devices | Notes | WiFi | 
 | -- |
-| 100 | VMgmt | 10.12.1.1 | Switches, Routers |  |
-| 200 | VClock | 10.12.2.1 | Clockworks printers and regular stuff |  |
-| 300 | VAlacrity | 10.12.3.1 | Alacriy regular devices |  |
-| 400 | VIoT | 10.12.4.1 | HassOS, cameras, Boron. |  |
-| 500 | VGuest | 10.12.5.1 |  | NO access to othe vlans |
-| 501 | VJail | 10.12.51.1 | Bambu's and other chatty shit | NO access between devices, NO access to other vlans |
-| 101 | VWanConsumer | Whatever digi gives | Primary Uplink | Internet Uplink PPPoE (Digi) |
-| 102 | Reserved | Provider-allocated | Future Uplink | Reserved |
-| 103 | Reserved | Provider-allocated | Future Uplink | Reserved |
-| 104 | Reserved | - | Reserved | Reserved |
-| 105 | Reserved | - | Reserved | Reserved |
-| 106 | Servers | 10.12.16.1 | Eros, Pallas, Ceres | Servers and stuff |
+| 100 | VMgmt | 10.12.1.1 | Switches, Routers |  | No! | 
+| 200 | VClock | 10.12.2.1 | Clockworks printers and regular stuff |  | ClockWorks |
+| 300 | VAlacrity | 10.12.3.1 | Alacriy regular devices |  | AlacrityEducation | 
+| 400 | VIoT | 10.12.4.1 | HassOS, cameras, Boron. |  | LabIoT | 
+| 500 | VGuest | 10.12.5.1 |  | NO access to othe vlans | AlacrityGuest | 
+| 501 | VJail | 10.12.51.1 | Bambu's and other chatty shit | NO access between devices, NO access to other vlans | LabIso |
+| 101 | VWanConsumer | Whatever digi gives | Primary Uplink | Internet Uplink PPPoE (Digi) | No?! | 
+| 102 | Reserved | Provider-allocated | Future Uplink | Reserved |  No?! | 
+| 103 | Reserved | Provider-allocated | Future Uplink | Reserved |  No?! | 
+| 104 | Reserved | - | Reserved | Reserved | TBD | 
+| 105 | Reserved | - | Reserved | Reserved | TBD | 
+| 106 | Servers | 10.12.16.1 | Eros, Pallas, Ceres | Servers and stuff | No! |
 
 Switches:
 * SVlad - 10.12.1.3 - trunk ether1, 106@eth5, 106@eth6, 400@eth7
