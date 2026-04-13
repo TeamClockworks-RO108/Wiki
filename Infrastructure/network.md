@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-04-11T02:26:42.519Z
+date: 2026-04-13T20:27:52.173Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -17,9 +17,9 @@ All bridges will be called `bridge`. They will have VLAN filtering turned on.
 | -- |
 | 100 | VMgmt | 10.12.1.1 | Switches, Routers |  | No! | 
 | 200 | VClock | 10.12.2.1 | Clockworks printers and regular stuff |  | ClockWorks |
-| 300 | VAlacrity | 10.12.3.1 | Alacriy regular devices |  | AlacrityEducation | 
-| 400 | VIoT | 10.12.4.1 | HassOS, cameras, Boron. |  | LabIoT | 
-| 500 | VGuest | 10.12.5.1 |  | NO access to othe vlans | AlacrityGuest | 
+| 300 | VAlacrity | 10.12.3.1 | Alacriy regular devices |  | Alacrity | 
+| 400 | VIoT | 10.12.4.1 | HassOS, cameras, Boron. |  | LabIoT (hidden) | 
+| 500 | VGuest | 10.12.5.1 |  | NO access to othe vlans | LabGuest | 
 | 501 | VJail | 10.12.51.1 | Bambu's and other chatty shit | NO access between devices, NO access to other vlans | LabIso |
 | 101 | VWanConsumer | Whatever digi gives | Primary Uplink | Internet Uplink PPPoE (Digi) | No?! | 
 | 102 | Reserved | Provider-allocated | Future Uplink | Reserved |  No?! | 
