@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-04-13T20:27:52.173Z
+date: 2026-04-13T20:28:09.051Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -29,9 +29,9 @@ All bridges will be called `bridge`. They will have VLAN filtering turned on.
 | 106 | Servers | 10.12.16.1 | Eros, Pallas, Ceres | Servers and stuff | No! |
 
 Switches:
-* SVlad - 10.12.1.3 - trunk ether1,2
+* SVlad - 10.12.1.3 - trunk ether1,10
 * SCore - 10.12.1.2 - trunk ether1
-* SHenry - 10.12.1.4 - trunk ether1,2
+* SHenry - 10.12.1.4 - trunk ether1,10
 
 
 Servers:
