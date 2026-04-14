@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-04-14T01:10:13.012Z
+date: 2026-04-14T16:58:52.937Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -33,7 +33,8 @@ Already existing wiring in the building is used to distribute trunk ports to oth
 
 The SCore switch has a display where charts of the traffic on Ether1 ports can be observed. The last 5 ports are reserved for future use with IP cameras and NVR.  
 
-| ![whatsapp_image_2026-04-14_at_12.49.40_am.png](/Infrastructure/whatsapp_image_2026-04-14_at_12.49.40_am.png) | 
+| Core Rack | Henri AP temporary mouting |
+| ![whatsapp_image_2026-04-14_at_12.49.40_am.png](/Infrastructure/whatsapp_image_2026-04-14_at_12.49.40_am.png) | ![whatsapp_image_2026-04-14_at_12.49.40_am.jpeg](/whatsapp_image_2026-04-14_at_12.49.40_am.jpeg) |
 | -- |
 
 # Servers
