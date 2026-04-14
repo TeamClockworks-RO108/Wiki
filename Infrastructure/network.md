@@ -2,7 +2,7 @@
 title: Network
 description: 
 published: true
-date: 2026-04-14T01:05:08.566Z
+date: 2026-04-14T01:10:13.012Z
 tags: programming, infrastructure, project
 editor: markdown
 dateCreated: 2025-11-29T15:04:20.683Z
@@ -31,7 +31,7 @@ The core rack is located in the entrace hallway and contains the heart of the ne
 
 Already existing wiring in the building is used to distribute trunk ports to other sections of the house, including Henri and Vlad. The reception room and classroom are connected using only access pors on the RLab router itself. 
 
-The SCore switch has a display where charts of the traffic on Ether1 ports can be observed. 
+The SCore switch has a display where charts of the traffic on Ether1 ports can be observed. The last 5 ports are reserved for future use with IP cameras and NVR.  
 
 | ![whatsapp_image_2026-04-14_at_12.49.40_am.jpeg](/whatsapp_image_2026-04-14_at_12.49.40_am.jpeg) | 
 | -- |
