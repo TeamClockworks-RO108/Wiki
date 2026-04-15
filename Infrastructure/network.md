@@ -34,7 +34,7 @@ Already existing wiring in the building is used to distribute trunk ports to oth
 The SCore switch has a display where charts of the traffic on Ether1 ports can be observed. The last 5 ports are reserved for future use with IP cameras and NVR.  
 
 | Core Rack | Henri AP temporary mouting |
-| ![whatsapp_image_2026-04-14_at_12.49.40_am.png](/Infrastructure/whatsapp_image_2026-04-14_at_12.49.40_am.png) | ![whatsapp_image_2026-04-14_at_12.49.40_am.jpeg](/whatsapp_image_2026-04-14_at_12.49.40_am.jpeg) |
+| ![whatsapp_image_2026-04-14_at_12.49.40_am.png](/Infrastructure/whatsapp_image_2026-04-14_at_12.49.40_am.png) | ![whatsapp_image_2026-04-14_at_12.49.40_am.jpeg](/Infrastructure/whatsapp_image_2026-04-14_at_12.49.40_am.jpeg) |
 | -- |
 
 # Servers

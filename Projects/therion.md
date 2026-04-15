@@ -31,7 +31,7 @@ Therion implements a modified physical vapor deposition (PVD) technique, which w
 
 ### Fast introduction in plasma physics
 
-![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
+![](/Projects/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
 
 Figure1: maxwellian distribution (following a “normal distribution” of electron thermal energies)
 
@@ -125,7 +125,7 @@ Other non-noble gases can also be used for plasma etching, an industrial applica
 
 If [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) will be incorporated instead, the pressure inside the chamber has to be kept low, about 20.000-30.000pa or high vacuum for higher trace quality. Vacuum grease would not be required, unless high vacuum is implemented, fans would replace water cooling of the stepper motors. Higher vacuum would also dramatically help lower the metal target's melting  point (because of lower pressure), thus increasing power efficiency. depositions rates are also much higher (tens of nm/min up to um/min). A downside would be the fact that thermal evaporation in atmospheric plasmas yields lower film quality, combining with oxygen to form oxides. Also, the process is line-of-sight, given the lower thermal energies of the vapor atoms, yielding lower adatom mobility (surface diffusion of atoms) and thus, lower film density.
 
-![](/gold_silver_copper_pressure_melting_temperatures.png)
+![](/Projects/gold_silver_copper_pressure_melting_temperatures.png)
 
 Figure  3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature
 
