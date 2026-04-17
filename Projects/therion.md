@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T14:47:07.133Z
+date: 2026-04-17T17:03:08.060Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -246,6 +246,21 @@ A PID algorithm modified for vacuum conditions will likely be used for controlli
 ## Electrical feedthroughs
 
 Ideally, electric feedthroughs should be leak-free, with no micro-leaks created where the copper pins have been pressed into the ceramic/plastic isolation. FR4 circuit boards have high outgassing rates because of the binding resin that they're made of, so they cannot be use \]d as a medium between vacuum and atmosphere. microscopic leaks can be managed and outpowered by the pump, provided the leaks are small and long enough to reduce conductivity and resist the pressure difference. A thick, aluminum CNC panel will be used as a back wall for the chamber, providing the electrical communication between the atmospheric and the vacuum side. D-sub connectrs as well as circular metal connectors will be mounted on the CNC panel, and their copper connections will be potted though a metal insert which has the rok of isolating the vacuum from any outside permeation or virtual leaks. The potted seal needs to be at least about 15mm thick, made out of a mix of torrseal and 832fx.
+
+## Mechanical considerations
+
+Many greases used in mechanical applications to lube bearings and gears have vapor pressures set too high for vacuum use, outgassing water vapor as well as hydrocarbon molecules, contaminating the chamber.
+
+Many vacuum-grade greases contain silicon, which is fatal for metal-on-metal mechanisms (steel ball bearings with metal casings; metal gears), wearing out fast and ultimately failing. Silicon greases are typically used only for sealing O-rings and clamps in vacuum systems.
+
+Low vapor pressure high-end greases are highly expensive, engineered specifically for vacuum. Because of this reason, fully ceramic bearings will be implemented (ceramic balls + housing).
+
+Ceramic bearings are excellent for vacuum use, to the point where they don't require lubrication, possesing high wear and thermal resistance. Moreover, PTFE (teflon) linear bearing slides are also acceptable for vacuum use, replacing metal bearing ones. 
+
+Gearboxes as well as any gear metal-on-metal systems will be avoided, transmission on belt being the norm for this project. Plastic gears will not be implented, as their outgassing rate, high backlash as well as low durability don't fulfill the purpose of this project, as both high film and 3D print part quality are desired, both requiring mechanical reliablity.
+
+Because of this reason, stepper motors will be the only type of motor used (nema stepper motors), containing only two metal bearings on top and bottom (which will be replaced with ceramic ones) and no gears (unlike servo and DC motors). Direct (or belt) coupling will therefore be the only methods of coupling used, bypassing gears entirely.
+
 
 # Filament considerations in vacuum
 
