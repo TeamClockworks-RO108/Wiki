@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T14:23:38.263Z
+date: 2026-04-17T14:47:07.133Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -163,13 +163,25 @@ The barrel will most likely be built out of some sort of ceramic (alumina or oth
 
 ## Industrial design
 
-Similiar design principles have previously been implemented in industry, making for high plasma density at relatively medium pressure levels (around 0.1pa).
+Similiar design principles have previously been implemented in industry, making for high plasma density at relatively medium pressure levels.
 
 |![](/screenshot_2026-04-14_193312.png)|
 |Plasma enhanced thermal deposition apparatus|
 |--|
 
 The metal target is brought close to its melting temperature, producing a metal vapor plume. The ECR unit ionizes the plume, achieving high ionization percentages (close to 100%), achiving high quality film.  Magnetic confimenet makes sure both the microwaves and the ions move parallel to the field lines, bombarding the substrate with metal ions. Increasing the ECR power feed also increases the plasma density of the plume, increasing quality and efficiency. a quartz crystal film monitor keeps track of film thickness by measuring the change of the resonating frequency of the crystal. This deposition technique has proven to be very efficient, yielding high film quality as well as high depotion rates (when compared to sputtering). Moreover, this technique has proven to be compatible with higher process pressures, ranging from 10^-2^ to 5*10^-1^ Pa.
+
+Therion's design implements similar principles, using induction heating to supply the necessary thermal energy to create the metal plume which starts the deposition process. The magnetron (ECR unit) supplies the microwaves which then transfer their kinetic energy to the vapor atoms in order to ionize them. An assembly of magnetic mirrors is implemented in both designs, concentrating plasma near the plume. In industrial thermal evaporation deposition processes, it has been proven challenging to deposit alloys, requiring the use of multiple targets which have to be heated to different temperatures in order to closely control the vapor production rate of each target, and thus control the composition of the deposited alloy. 
+
+In our design, coaxial inductor pairs can be implemented on the same ceramic heath, maintaing precise temperature contro of each of their individual targets.
+
+In plasma enhanced thermal evaporation deposition systems, using a process gas like Argon is not compulsory. In our design, Argon will be used to:
+   
+   1. keep the system clean by purging metal residue off the barrel walls post-deposition.
+   2. aid the deposition process by bombarding the metal surface and sputtering atoms
+   3. gas shielding from oxidation and impurities (hydrocarbon molecules) by flooding the space nearby with Argon (inert gas)
+   4. surface cleaning of the substrate before plating
+   5. Adding reactive gas (like Nitrogen) which creates complex film species (nitrates, oxides etc.)
 
 ## (A) - Argon inlet
 
