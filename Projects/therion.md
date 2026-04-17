@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T19:02:51.808Z
+date: 2026-04-17T19:45:28.588Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -270,6 +270,8 @@ Ceramic bearings are excellent for vacuum use, to the point where they don't req
 Gearboxes as well as any gear metal-on-metal systems will be avoided, transmission on belt being the norm for this project. Plastic gears will not be implented, as their outgassing rate, high backlash as well as low durability don't fulfill the purpose of this project, as both high film and 3D print part quality are desired, both requiring mechanical reliablity.
 
 Because of this reason, stepper motors will be the only type of motor used (nema stepper motors), containing only two metal bearings on top and bottom (which will be replaced with ceramic ones) and no gears (unlike servo and DC motors). Direct (or belt) coupling will therefore be the only methods of coupling used, bypassing gears entirely.
+
+metal O-rings will be made out of smooth hollow annealed copper wire which will be used to seal nearly permanent bolt connections that rarely need replacing or opening, likely structural components such as the electrical connection feedthrough, the chamber walls etc. These metal O-rings suffer from permanent plastic deformation, ulike Viton rings, limiting the number of times they can be used.
 
 
 # Filament considerations in vacuum
