@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T10:53:01.237Z
+date: 2026-04-17T10:54:21.917Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -149,7 +149,7 @@ This process is line-of-sight only if the chamber allows for collisionless depos
 
 Zone (b) is where thermal evaporation takes place. The metal-to-be deposited is placed as a ring (disk or toroid) inside a ceramic hearth between two in phase inductors placed face-to-face. The metal is heated through induction heating near its melting point, and given that in HV the boiling point is close to the melting point temperature, sublimation of surface metal atoms starts to produce. Thus, a metal atom cloud forms, which is ionised and atomized by the microwaves coming in from the ECR unit. atoms gain high temperature and kinetic energy which helps enhance the deposition process. high plasma densities can be achieved through careful design and choice of high power ECR unit. Often ionization percentages ranging between 80-90% can be achieved, drastically
 
-![therionv2-indicatii.jpg](/therionv2-indicatii.jpg)![](/therionv2-indicatii.jpg)
+![therionv2-indicatii.jpg](/therionv2-indicatii.jpg)
 
 increasing the quality of the deposited film. The in phase inductors act as one single strong inductor, interfering constructively right in the middle, where the metal disk is found. Thus, efficiency is increased and heating of the metal is achieved more effectively. The most important advantage of using two paired inductors is the ability to slide and switch the metal disk right through the “sleeve” created by the gap between the two inductors. This way, more than one metal can be plated. Stacking more pairs of inductors allows for alloy plating (the temperature within each disk being closely monitored and controlled) and lots of other applications. The metal disks will be placed on a ceramic disk hearth which will be actuated via a stepper motor, allowing for easy and precise switching between the disks.
 
