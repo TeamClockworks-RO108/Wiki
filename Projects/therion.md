@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T13:10:57.266Z
+date: 2026-04-17T14:23:38.263Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -165,9 +165,11 @@ The barrel will most likely be built out of some sort of ceramic (alumina or oth
 
 Similiar design principles have previously been implemented in industry, making for high plasma density at relatively medium pressure levels (around 0.1pa).
 
-![](/screenshot_2026-04-14_193312.png)
+|![](/screenshot_2026-04-14_193312.png)|
+|Plasma enhanced thermal deposition apparatus|
+|--|
 
-ECR discharge based ionization of evaporated copper apparatus. The copper atoms are introduced into the vacuum chamber from a thermal evaporator located underneath the chamber.
+The metal target is brought close to its melting temperature, producing a metal vapor plume. The ECR unit ionizes the plume, achieving high ionization percentages (close to 100%), achiving high quality film.  Magnetic confimenet makes sure both the microwaves and the ions move parallel to the field lines, bombarding the substrate with metal ions. Increasing the ECR power feed also increases the plasma density of the plume, increasing quality and efficiency. a quartz crystal film monitor keeps track of film thickness by measuring the change of the resonating frequency of the crystal. This deposition technique has proven to be very efficient, yielding high film quality as well as high depotion rates (when compared to sputtering). Moreover, this technique has proven to be compatible with higher process pressures, ranging from 10^-2^ to 5*10^-1^ Pa.
 
 ## (A) - Argon inlet
 
