@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T17:04:24.200Z
+date: 2026-04-17T19:02:51.808Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -45,9 +45,10 @@ First, it is important to remember a basic chemistry lesson that each of us lear
 
 electrons are knocked off orbit in processes of dissociation, excitation and dissociative ionization. Generally, when a high energy electron hits a molecule's electron, kinetic energy is transferred, exciting the electron
 
-![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
+|![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
 
-Figure 2: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.
+|Figure 2: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.|
+|--|
 
 It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.
 
@@ -245,7 +246,16 @@ A PID algorithm modified for vacuum conditions will likely be used for controlli
 
 ## Electrical feedthroughs
 
-Ideally, electric feedthroughs should be leak-free, with no micro-leaks created where the copper pins have been pressed into the ceramic/plastic isolation. FR4 circuit boards have high outgassing rates because of the binding resin that they're made of, so they cannot be use \]d as a medium between vacuum and atmosphere. microscopic leaks can be managed and outpowered by the pump, provided the leaks are small and long enough to reduce conductivity and resist the pressure difference. A thick, aluminum CNC panel will be used as a back wall for the chamber, providing the electrical communication between the atmospheric and the vacuum side. D-sub connectrs as well as circular metal connectors will be mounted on the CNC panel, and their copper connections will be potted though a metal insert which has the rok of isolating the vacuum from any outside permeation or virtual leaks. The potted seal needs to be at least about 15mm thick, made out of a mix of torrseal and 832fx.
+Ideally, electric feedthroughs should be leak-free, with no micro-leaks created where the copper pins have been pressed into the ceramic/plastic isolation. FR4 circuit boards have high outgassing rates because of the binding resin that they're made of, so they cannot be used as a medium between vacuum and atmosphere. microscopic leaks can be managed and outpowered by the pump, provided the leaks are small and long enough to reduce conductivity and resist the pressure difference. A thick, aluminum CNC panel will be used as a back wall for the chamber, providing the electrical communication between the atmospheric and the vacuum side. D-sub connectrs as well as circular metal connectors will be mounted on the CNC panel, and their copper connections will be potted though a metal insert which has the role of isolating the vacuum from any outside permeation or virtual leaks. The potted seal needs to be at least about 15mm thick, made out of a mix of torrseal and 832fx.
+
+Another option is building a two layer ceramic PCB, containing an outer copper pad connection layer on which the connecters will be soldered (vacuum side) with an inner copper trace circuit which leads to periphereal pad connections (atmospheric side), ensuring proper electrical communication.
+
+|![screenshot_2026-04-17_212935.png](/screenshot_2026-04-17_212935.png)|
+|Ceramic PCB electrical feedthough sealing with legend. The red O-ring can be made out of Buna-N or Viton, but it can also be made of hollow copper tubing given that the PCB will rarely be taken out of its socket, yielding close to zero outgassing and much better sealing quality overall|
+|--|
+
+Vias won't be used, as they can provide leak paths for air to flow through, contaminating the vacuum. A pair of O-ring seals will be placed around the connections, between the CNC panel and the ceramic PCB, sealed with silicone vacuum grease.
+
 
 ## Mechanical considerations
 
