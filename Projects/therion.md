@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T19:45:28.588Z
+date: 2026-04-17T20:39:51.003Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -243,6 +243,17 @@ For temperature measurement, an industrial IR precision sensor, with a maximum r
 Given that convection is limited in vacuum, cooling of the target would be achieved mainly through the ceramic heath, which (if made out of thermally conductive ceramic) can be water cooled to keep the temperature in check, or to change the evaporation rate of the target. 
 
 A PID algorithm modified for vacuum conditions will likely be used for controlling the power feed to the inductor, making sure the temperature of the metal doesn't raise drastically over the target temperature. Careful temperature control has to be implemented in order to keep trace quality in check - uneven metal distribution over the length of the trace can lead to hot spots during use which can damage the PCB and increase electrical resistance (lower trace quality) or it can lead to problematic signal reflections in RF circuits (unmatched impedance). 
+
+## (C) - Magnetically confined plasma barrel
+
+The barrel is where freshly ionized metal ions escape to, being magnetically directed through the length of the barrel to the substarte. A set of permanent magnets and electromagnets complete the magnetic mirror, the electromagnet aiding in the constant adjustement and proper functioning of the magnetic field lines so that plating and confinement can be done efficiently.
+
+The barrel tube will likely be made out of some kind of ceramic, probably alumina given its high compressive and thermal strength, durability, lightness and insulation properties, having no role in influencing the magnetic field lines.
+
+aluminum shielding cylinder sheets will likely be clamped wound the tube, in between the magnets to aid in microwave shielding, against the ECR unit.
+
+a metallic zero aperture iris diaghragm placed on the bottom end of the tube will adjust the width of the deposited trace, achieving widths as low as 0.1mm or lower (suitable for signal trace applications as well as power circuit applications).
+
 
 ## Electrical feedthroughs
 
