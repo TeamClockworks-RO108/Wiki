@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-18T17:24:23.262Z
+date: 2026-04-18T17:28:49.143Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -24,12 +24,13 @@ Therion implements a modified physical vapor deposition (PVD) technique, which w
 
 ## Problems Therion solves
 
-1.  Desktop multilayer PCB manufacturing is available at the press of a button.
-2.  Printed traces inside the plastic piece cuts the need for cables in most places, improving on reliability.
+1.  Quality desktop multilayer PCB manufacturing and prototyping for small and big projects
+2.  Printed traces inside the plastic parts drastically improves cable management
 3.  Metal plating allows for shielding plastic pieces against EMF radiation.
-4.  decorative metal plating
-5.  possible minor optic modification of lenses using partial-mirror plastic lenses.
-6.  easier prototyping, eliminating 3rd party PCB manufacturing altogether
+4.  Decorative metal plating
+5.  Possible minor optic modification of lenses using partial-mirror plastic lenses (tinted glass).
+6.  Easier prototyping, eliminating 3rd party PCB manufacturing altogether
+7. Future improvements can allow for high-end aerospace grade filament printing (such as [PEEK](https://3dgence.com/filaments/peek/) or PEI)
 
 ### Fast introduction in plasma physics
 
