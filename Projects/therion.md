@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-17T20:39:51.003Z
+date: 2026-04-18T17:24:23.262Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -12,13 +12,15 @@ dateCreated: 2026-01-31T10:04:25.526Z
 
 ## What is Therion?
 
-Therion represents a 3d-printing augmentation project that aims for achieving thin-film deposition capabilities on a Voron 2.4 printer, enabling at-home prototyping and quality manufacturing of complex custom-3D-printed multilayer PCBs, or printed plastic pieces with inner metal traces or shielding for reliable electric work (as a better alternative to cable-management) or emf shielding.
+Therion represents a 3d-printing augmentation project that aims for achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding. 
 
 > A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.
 
-films could be virtually made of almost any polymer, metal or ceramic, using a modified plasma gun toolhead for depositing films.  A toolchanging system will be implemented, rapidly switching between traditional printing and thin-film deposition.
+This project also aims for combining metal plating capabilities with the improved print quality and capability by tapping into the tremendous potential offered by vacuum printing.
 
-Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition. It uses induction heating for efficient excitation of surface atoms, vaporised by dense, ECR ionized gas precursor plasma for high deposition rates of dense, quality thin films.
+films could be virtually made of almost any metal or ceramic compound, using a modified plasma gun toolhead for depositing films.  A toolchanging system will be implemented, rapidly switching between traditional printing and thin-film deposition.
+
+Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition (a similar version of which already exists in industry). It uses induction heating for efficient sublimation of surface atoms and ECR microwave ionization with gas precursor plasma for high deposition rates of dense, quality thin films.
 
 ## Problems Therion solves
 
