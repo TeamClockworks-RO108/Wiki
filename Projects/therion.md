@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-18T17:28:49.143Z
+date: 2026-04-18T18:19:48.767Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -20,7 +20,7 @@ This project also aims for combining metal plating capabilities with the improve
 
 films could be virtually made of almost any metal or ceramic compound, using a modified plasma gun toolhead for depositing films.  A toolchanging system will be implemented, rapidly switching between traditional printing and thin-film deposition.
 
-Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition (a similar version of which already exists in industry). It uses induction heating for efficient sublimation of surface atoms and ECR microwave ionization with gas precursor plasma for high deposition rates of dense, quality thin films.
+Therion implements a modified physical vapor deposition (PVD) technique, which we have branded: plasma-enhanced inductive physical vapor deposition (a similar version of which already exists in industry). It uses induction heating for efficient sublimation of surface atoms and ECR microwave ionization with gas precursor plasma for high deposition rate of dense, quality thin film.
 
 ## Problems Therion solves
 
@@ -30,30 +30,40 @@ Therion implements a modified physical vapor deposition (PVD) technique, which w
 4.  Decorative metal plating
 5.  Possible minor optic modification of lenses using partial-mirror plastic lenses (tinted glass).
 6.  Easier prototyping, eliminating 3rd party PCB manufacturing altogether
-7. Future improvements can allow for high-end aerospace grade filament printing (such as [PEEK](https://3dgence.com/filaments/peek/) or PEI)
+7. Future improvements can allow for high-end aerospace grade filament printing (such as [PEEK](https://3dgence.com/filaments/peek/) or [PEI](https://3dgence.com/filaments/ultem/) ), making use of the advantages offered by vacuum additive manufacturing
+8. Minor surface modification/cleaning of the print bed or other parts using plasma cleaning/etching
+9. Modification of the plasma barrel toolhead can permit precise plasma cutting and 3 axis CNC-machining of flat aluminum and steel panels
 
-### Fast introduction in plasma physics
+## Brief introduction in plasma physics
 
-![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)
+The last couple decades has seen a dramatic increase in plasma related research. Currently, it's one of the most studied, if not the most studied field in physics and [manufacturing engineering](https://en.wikipedia.org/wiki/Manufacturing_engineering). With extensive academic research carried over the last years and wildly available study materials on the subject, there are a couple reasons why plasma has peaked in interest.
 
-Figure1: maxwellian distribution (following a “normal distribution” of electron thermal energies)
 
-The last decade has seen a dramatic increase in plasma related research. Currently, it's one of the most studied, if not the most studied field in physics. With extensive academic research carried over the last years and wildly available study materials on the subject, there are a couple reasons why plasma has peaked in interest.
 
 -   ***first,*** most manufacturing processes carried today in the PCB manufacturing industry are plasma based, with total market price of about 70-73 billion USD in 2024, projected to reach 100 billion by 2032.
--   ***second,*** fusion related research has peaked in the last couple decades, requiring extensive plasma research and innovation for further design considerations. It is projected that once fusion reactors are developed and enter the market, they will dominate any other alternative energy reactors. Plasma will also become a critical component of future space explorations project, our civilization needing plasma research to grow and evolve
--   ***third,*** and most important, it's estimated that **more than 99% of matter in our universe is made of plasma, our planet being one of the few places where plasma doesn't occur naturally.**
+-   ***second,*** fusion related research has peaked in the last couple decades, requiring extensive plasma research and innovation for further design improvement. It is projected that once fusion reactors are developed and enter the market, they will dominate any other alternative energy reactors. Plasma will also become a critical component of future space explorations project, our civilization needing plasma research to grow and evolve
+-   ***third,*** and most important, it's estimated that **more than 99% of matter in our universe is made out of plasma, our planet being one of the few places where plasma doesn't occur naturally.**
 
-First, it is important to remember a basic chemistry lesson that each of us learns during school. Most atomic elements are ions, either negative or positive ions. These elements search for other “complements” in nature so that they can form atomic compounds, reaching neutrality. Thus, by using high energy electrons, it is possible to sever these bonds, obtaining a ion. Having high percentages of ions in an atomic gas can eventually bring about the creation of a plasma.
+### What is plasma? 
 
-electrons are knocked off orbit in processes of dissociation, excitation and dissociative ionization. Generally, when a high energy electron hits a molecule's electron, kinetic energy is transferred, exciting the electron
+First, It is important to remember a fundamental natural law. Most atomic elements are ions, either negative or positive ions. These elements search for ways to form bonds with other molecules and particles, thus reaching neutrality and chemical stability. By using high energy methods, it is possible to sever these bonds, obtaining a ion, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
 
-|![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
+Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization (figure 2), producing an ion. 
+
+![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
 
 |Figure 2: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.|
 |--|
 
+Electric arc discharge as well as microwave ECR excitation represent some of the high energy methods used for creating plasma. Both methods use the transfer of kinetic energy from "hot" electrons (energetic electrons) to the gas atoms in order to excite them, a fraction of them reaching plasma state. These two methods use different energy transfer techniques, such as ohmic heating, ECR ionization etc.
+
+Plasma industrial processes, especially plasma deposition processes are non-equilibrium thermodynamic processes (the system is inconsistent in time, experiencing various forms of matter and energy exchange processes between many other sub-systems) which exploit the instability of plasma ions for various applications.
+
 It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.
+
+|![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)|
+|Figure1: maxwellian distribution (following a “normal distribution” of electron thermal energies)|
+|--|
 
 and thus bringing it into a higher energy state. Then, if the electron that hit the molecule is hot enough, the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (the molecule will become a positive ion - x^+^); ionization reaction of argon could be written as
 
