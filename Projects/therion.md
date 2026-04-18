@@ -146,13 +146,13 @@ This process is line-of-sight only if the chamber allows for collisionless depos
 
  The design incorporates a barrel-like appearance similar to that used in atmospheric plasma jet guns. Argon or other process gases are injected through an inlet (a) into the process chamber (b) where ionization happens and plasma is concentrated via a set of magnetic mirrors formed by the magnets coaxially attached to the barrel. an ECR unit (a microwave amplifier PCB or a magnetron with near ECR characteristic frequency) of high power is placed on top of the assembly, allowing for line-of-sight operation of the magnetron antenna (microwaves are coaxially directed through the barrel tube).
 
-|![therionv2-legenda.jpg](/therionv2-legenda.jpg)|
+|![therionv2-legenda.png](/Projects/therionv2-legenda.png)|
 |Design schematic and legend|
 |--|
 
 Zone (b) is where thermal evaporation takes place. The metal-to-be deposited is placed as a ring (disk or toroid) inside a ceramic hearth between two in phase inductors placed face-to-face. The metal is heated through induction heating near its melting point, and given that in HV the boiling point is close to the melting point temperature, sublimation of surface metal atoms starts to produce. Thus, a metal atom cloud forms, which is ionised and atomized by the microwaves coming in from the ECR unit. atoms gain high temperature and kinetic energy which helps enhance the deposition process. high plasma densities can be achieved through careful design and choice of high power ECR unit. Often ionization percentages ranging between 80-90% can be achieved, drastically
 
-|![therionv2-indicatii.jpg](/therionv2-indicatii.jpg)|
+|![therionv2-indicatii.png](/Projects/therionv2-indicatii.png)|
 |Process path of plasma through the apparatus. Main areas: (a)->(b)->(c)->(d). Gas enters in the assembly through area (a), ionizes the metal vapor plum in (b), gets focused in (c) and exists through (d), coating the substrate|
 |--|
 
@@ -166,7 +166,7 @@ The barrel will most likely be built out of some sort of ceramic (alumina or oth
 
 Similiar design principles have previously been implemented in industry, making for high plasma density at relatively medium pressure levels.
 
-|![](/screenshot_2026-04-14_193312.png)|
+|![](/Projects/screenshot_2026-04-14_193312.png)|
 |Plasma enhanced thermal deposition apparatus|
 |--|
 
@@ -261,7 +261,7 @@ Ideally, electric feedthroughs should be leak-free, with no micro-leaks created 
 
 Another option is building a two layer ceramic PCB, containing an outer copper pad connection layer on which the connecters will be soldered (vacuum side) with an inner copper trace circuit which leads to periphereal pad connections (atmospheric side), ensuring proper electrical communication.
 
-|![screenshot_2026-04-17_212935.png](/screenshot_2026-04-17_212935.png)|
+|![screenshot_2026-04-17_212935.png](/Projects/screenshot_2026-04-17_212935.png)|
 |Ceramic PCB electrical feedthough sealing with legend. The red O-ring can be made out of Buna-N or Viton, but it can also be made of hollow copper tubing given that the PCB will rarely be taken out of its socket, yielding close to zero outgassing and much better sealing quality overall|
 |--|
 
