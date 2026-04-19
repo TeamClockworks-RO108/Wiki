@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T04:11:13.768Z
+date: 2026-04-19T04:26:56.145Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -274,6 +274,7 @@ Another option is building a two layer ceramic PCB, containing an outer copper p
 
 Vias won't be used, as they can provide leak paths for air to flow through, contaminating the vacuum. A pair of O-ring seals will be placed around the connections, between the CNC panel and the ceramic PCB, sealed with silicone vacuum grease.
 
+At the same time, all electrical cables inside the vacuum have to be insulated with teflon tubing or kapton film, both ideal UHV and HV grade polymers that have extremely low outgassing rates. PCBs will be avoided inside the vacuum at all costs, given that resin FR4 boards can contaminate the vacuum and create a pressure floor above target. Moreover, trapped air pockets inside the component housings can burts and damage the board. Overheating of ICs would also represent an important caveat.
 
 ## Mechanical considerations
 
