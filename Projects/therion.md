@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T04:30:37.763Z
+date: 2026-04-19T20:04:28.167Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -12,7 +12,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 
 ## What is Therion?
 
-Therion represents a 3d-printing augmentation project that aims for achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding. 
+Therion represents a 3d-printing augmentation project that aims for  achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding. 
 
 > A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.
 
@@ -77,9 +77,9 @@ Not every ionic gas or fluid is considered a plasma. There are a few criterions 
 
 -   “A plasma is a quasineutral gas of charged and neutral particles which exhibits collective behavior”, a short explanation taken from “Introduction To Plasma Physics”, by F. Chen, reveals that
 
-> Consider the forces acting on a molecule of, say, ordinary air. Since the molecule is neutral, there is no net electromagnetic force on it, and the force of gravity is negligible. The molecule moves undisturbed until it makes a collision with another molecule, and these collisions control the particle’s motion. A macroscopic force applied to a neutral gas, such ass2q from a loudspeaker generating sound waves, is transmitted to the individual atoms by collisions. The situation is totally different in a plasma, which has charged particles. As these charges move around, they can generate local concentrations of positive or negative charge, which give rise to electric fields. Motion of charges also generates currents, and hence magnetic fields. These fields affect the motion of other charged particles far away.
+> Consider the forces acting on a molecule of Nitrogen. Since the molecule is neutral, there is no net electromagnetic force acting on it, and the force of gravity is negligible. The molecule moves undisturbed until it makes a collision with another molecule, and these collisions control the particle’s motion. A force applied to a neutral gas, such ass from a loudspeaker generating sound waves, is transmitted to the individual atoms by collisions. The situation is totally different in a plasma, which has charged particles. As these charges move around, they can generate local concentrations of positive or negative charge, which give rise to electric fields. Motion of charges also generates currents, and hence magnetic fields. These fields affect the motion of other charged particles far away.
 
-It is exactly these forces that the ions inside a plasma to move simultaneously with the electrons inside. These particles exert forces of attraction on eachother, giving them the ability to shield potential changes or local concentrations of charges because of these very movements and forces. Therefore giving ni = ne = n (where n stands for ni-ion density ne-electron density and n is the number representing these densities.
+It is exactly these electrostatic forces created by electric potential differences between local ion and electron concentrations that cause consistent uniform motion between ion and electron species. These particles exert forces of attraction on eachother, giving them the ability to shield potential changes or local concentrations of charges because of these very movements and forces. Therefore, equal electron and ion population densities are necessary to maintain quasi neutrality, thus ni = ne = n (where n stands for ni-ion density ne-electron density and n is the number representing these densities.
 
 -   Another criterion is that the total number of collisions between plasma particles is low enough so that the recombination rate of ions and electrons stays low. If electrons knock with positive ions, the electron will get absorbed by the ion, becoming a neutral particle once again. This is not a wanted effect, as the energy required to maintain a plasma increases exponentially with pressure. Also, plasma motion should be  mostly dominated by electrostatic forces, not usual hydrodynamic mechanics, given the high collision rate of high pressure systems.
 
@@ -148,6 +148,12 @@ Moreover, a large range of deposition speeds can be achieved and controlled, req
 Exposed structural parts inside the toolhead would have to be covered with a protection film so that deposits don't form on the surface, possibly corrosion structural elements.
 
 This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by viscous flow, producing chaotic atom travel paths, decreasing film quality and deposition speed. If the vapor is ionised (by say, an [ECR](https://en.wikipedia.org/wiki/Electron_cyclotron_resonance) unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setups.
+
+### Concepts integrated in our design
+
+Plasma-enhanced thermal evaporation deposition processes have been used in industry, implementing both thermal evaporation and plasma to augment the coating system.
+
+at pressures under about 0.5Pa, sputtering and sublimation both start to coexist inside the chamber. Using the right base target surface temperature ensures controlled, conistent sublimation, plasma aiding with addition energy needed to lauch atoms onto the substrate. For our project, both sputtering and thermal evaporation will be implemented, suiting more target types and compositions, allowing for sputtering of ceramic coatings and evaporation of metal films.
 
 ## Plasma barrel design schematic
 
