@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-18T18:19:48.767Z
+date: 2026-04-19T03:42:41.488Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -48,24 +48,24 @@ The last couple decades has seen a dramatic increase in plasma related research.
 
 First, It is important to remember a fundamental natural law. Most atomic elements are ions, either negative or positive ions. These elements search for ways to form bonds with other molecules and particles, thus reaching neutrality and chemical stability. By using high energy methods, it is possible to sever these bonds, obtaining a ion, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
 
-Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization (figure 2), producing an ion. 
+Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization, producing a positive ion x^+^ - the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (figure 1).
 
 ![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
 
-|Figure 2: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.|
+|Figure 1: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.|
 |--|
 
 Electric arc discharge as well as microwave ECR excitation represent some of the high energy methods used for creating plasma. Both methods use the transfer of kinetic energy from "hot" electrons (energetic electrons) to the gas atoms in order to excite them, a fraction of them reaching plasma state. These two methods use different energy transfer techniques, such as ohmic heating, ECR ionization etc.
 
 Plasma industrial processes, especially plasma deposition processes are non-equilibrium thermodynamic processes (the system is inconsistent in time, experiencing various forms of matter and energy exchange processes between many other sub-systems) which exploit the instability of plasma ions for various applications.
 
-It is also important for our purposes to mention that plasma free electrons generally follow a gaussian like distribution, called maxwellian distribution.
+It is important to mention that particle energies inside a plasma follow a normal distribution (a kind of a gaussian distribution), called a maxwellian distribution. The distribution curve as well as average particle temperature (energy) depends on power input, gas species as well as working pressure etc., moving either to the right or left, depending on these criterions.
 
 |![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)|
-|Figure1: maxwellian distribution (following a “normal distribution” of electron thermal energies)|
+|Figure 2: maxwellian distribution (following a “normal distribution” of electron thermal energies)|
 |--|
 
-and thus bringing it into a higher energy state. Then, if the electron that hit the molecule is hot enough, the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (the molecule will become a positive ion - x^+^); ionization reaction of argon could be written as
+The ionization process formula for one Argon atom can be written as:
 
      Ar(g) + e^\-^ → Ar^+^(g) + 2e^\-^
 
@@ -73,7 +73,7 @@ or, if the electron is energetic enough, it can remove more electrons 
 
     Ar(g) + e^\-^ → Ar^2+^(g) + 3e^\-^
 
- Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:
+Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:
 
 -   “A plasma is a quasineutral gas of charged and neutral particles which exhibits collective behavior”, a short explanation taken from “Introduction To Plasma Physics”, by F. Chen, reveals that
 
@@ -85,41 +85,36 @@ It is exactly these forces that the ions inside a plasma to move simultaneously 
 
 Plasma electrons and ions generally have very high thermal energies, in the tens of thousands of K. For this reason, plasma particles generally have low mass but high energy density, meaning that they can easily excite and vaporize surface atoms.
 
-## The main manufacturing processes used for metal film deposition
+## The main manufacturing process implemented by Therion
 
-First, as a short definition, “The formation of a condensible vapor by physical mechanisms and subsequent deposition of this material onto a substrate as a thin film or coating is referred to as physical vapor deposition (PVD) (Mahan 2000, Rossnagel 2003, Thornton 1988). The formation of a vapor refers to a phase transition of the filmforming material from a solid or liquid phase into a gaseous or plasma phase. PVD is a broad field and various processes are applied to create film-forming material and to achieve thin film deposition.” (Foundations of physical vapor deposition with plasma assistance). As it's frequently mentioned, the term vapor used here is sort of a misnomer, in comparison to vapor-gaseous state released through thermal excitation, the term refers to any subatomic gas-like conglomerate of particles that is obtained through electric-plasma/thermal excitation phenomena. 
+>“The formation of a condensible vapor by physical mechanisms and subsequent deposition of this material onto a substrate as a thin film or coating is referred to as physical vapor deposition (PVD) (Mahan 2000, Rossnagel 2003, Thornton 1988). The formation of a vapor refers to a phase transition of the filmforming material from a solid or liquid phase into a gaseous or plasma phase. PVD is a broad field and various processes are applied to create film-forming material and to achieve thin film deposition.” (Foundations of physical vapor deposition with plasma assistance). As it's frequently mentioned, the term vapor used here is sort of a misnomer, in comparison to vapor-gaseous state released through thermal excitation, the term refers to any gas-like plume of particles that is obtained through electric-plasma/thermal excitation phenomena. 
 
-The main processes are plasma ion sputtering (vacuum) and plasma jet evaporation (for atmospheric plasmas).
+The main processes are plasma ion sputtering (vacuum) and plasma jet evaporation (for atmospheric plasmas):
 
-1.  Plasma sputtering - used widely in lens production and metal film deposition, it is used for quality film production and can be scaled down to accommodate a 2.4 voron printing chamber. The concept it's quite simple: a magnetron accelerates electrons, producing plasma ions inside a vacuum sealed chamber. The plasma gas is usually argon. A strong permanent magnet positioned on top of the magnetron has the purpose of confining the electrons, and therefore (because of the quasineutral nature of the plasma) the ions in a small volume in the proximity of the metal target. The target represents the metal wafer that will be plated on top of the substrate. The ions, being accelerated near the target knock metal atoms for the crystal lattice of the metal. These atoms are hence ballistically launched radially in all directions (not line-of-sight). The deposited film is a dense, quality film, its porosity being low.
-2.  Plasma jet (thermal spraying) - used at higher pressures, typically in open atmosphere or at fractions of one atm. It typically implements a hollow cathode design, known for higher efficiency in high pressure systems. It uses hot plasma to excite and vaporize surface atoms from the target, plating it on the opposing substrate. This process is line-of-sight.
-3.  Thermal evaporation - typically used in a vacuum, due to higher efficiency and lower corresponding melting temperature. This design typically incorporates metal filaments, warmed up beyond their melting temperature, creating a vapor cloud that deposits on the opposing substrate. This process is typically line-of-sight, unless there's additional augmentation given by vapor cloud ionization techniques.
+1.  Plasma sputtering - used widely in lens production and metal film deposition, it is used for quality film production and can be scaled down to accommodate a printer. The concept it's quite simple: a magnetron accelerates electrons, producing plasma ions inside a vacuum sealed chamber. The plasma gas is usually argon. A strong permanent magnet positioned on top of the magnetron has the purpose of confining both electrons and ions within a small volume close to the target (target-usually made out of metal, represents either a wire filament or a wafer which will coat the substrate underneath), increasing their confinement time (the average  time taken by one electron to escape the magnetic confinement area). The ions, being magnetically accelerated close to the target knock metal atoms from the crystal lattice of the target. These atoms are hence ballistically launched radially in all directions, coating the substrate. The deposited film is a dense, quality film given that coating is done at atom level.
 
-The main difference between these methods is the degree of atomization of the plating medium, energetic processes (such as plasma sputtering in vacuum) yielding high atomization levels, vapor clouds being composed out of individually energetic, ballistically launched ion species, as well as energetic neutrals. films are effectively built block-by-block, causing high film mass density. The overall atomic structure of the bulk target is reproduced in high enthalpy plating methods (high-energy) on the substrate, while lower enthalpy processes cause higher oxidation (open atmosphere process), porosity and less atomic reproduction of the bulk. 
+2.  Thermal evaporation - used in vacuum, due to higher efficiency and lower corresponding melting temperature of the target, achieving surface sublimation. This design typically incorporates metal filaments, warmed up beyond their melting temperature, creating a vapor cloud that deposits on the opposing substrate. This process is typically line-of-sight, unless there's additional augmentation given by vapor cloud ionization techniques.
 
-Higher atomization also means higher power consumption (unless open-atmosphere processes are implemented, yielding low efficiency and high poer consumption), given that the energy density of the vapor cloud increases, atoms on average have higher kinetic and potential energies. Most of the time, higher power-consumption also adds the need for a vacuum-sealed chamber where the process is carried on.
+The main difference between these methods is the degree of atomization of the vapor plume, energetic processes (such as plasma sputtering in vacuum) yielding high energy levels of ion species, which creates better coatings. films are effectively built atom-by-atom, causing high, consistent film density. The overall atomic structure of the bulk target is reproduced in high enthalpy plating methods (high-energy) on the substrate, while lower enthalpy processes cause higher oxidation (open atmosphere process), porosity and less atomic reproduction of the bulk. 
 
 # Therion-concept
 
-Therion will incorporate one of the methods presented above - or a combination, depending on the pressure and power level used. We will now explore each concept and how they would affect the design.
+Therion will incorporate a combination of the methods presented above, depending on the working pressure and power feed. We will now explore each concept and how they would affect the design.
 
-## Pros and cons - design considerations
+## design concept
 
-First, we need to establish in what way the project design differs based on the concept we'll incorporate henceforth. The main difference is represented by the pressure inside the printing chamber.
+First, we need to establish in what way the project design differs based on the concept we'll incorporate henceforth. The main difference arising in project design would consist out of respective power feed used for brute ionization against working chamber pressure - in sputtering processeses, increasing power feed increases plasma density, which can overcome higher working pressure limitations, but decreases overall efficiency, while thermal evaporation works at higher working pressures with the same power feed, but at lower film quality.
+
+An important caveat of sputter chamber design is the need of lab grade vacuum pump equipment, compulsory at pressures lower than about 0.3Pa, otherwise deposition will yield lower quality film coating as well as lower deposition rate.
+
 
 ### Plasma sputtering
 
-If plasma sputtering is to be used, the pressure inside needs to stay low, about under 5pa (0.005% of atmospheric pressure). This would require the chamber to be vacuum sealed, completely isolated from the outside. 
+If plasma sputtering is to be used, the pressure inside needs to stay low, about under 0.1Pa. At high vacuum pressures, equipment gets expensive fast, much slower, outgassing starts to matter a lot more and not price optimal, overall resulting in a small increase in quality, not worth the purpose of this project.
 
-The film quality would then be much higher, requiring a vacuum pump to be tied to the chamber for air removal. The next step would require argon to be pumped inside the inner ionization chamber (inside the toolhead), creating plasma and allowing for the sputtering process to begin. 
+The ionization energy - the minimum energy required to remove the most loosely bound electron from an isolated, gaseous atom or ion - also differs with each gas precursor. This energy is inversely proportional (in noble gases) to the atomic number, Z.
 
-Careful manufacturing of such a chamber would not be easy for several reasons which will later be discussed, but it has been done before and it is possible.
-
-A few problems arising from vacuum sealing the chamber would be (amongst others): motors would have to be cooled with liquid, through teflon tubes (resistant to high vacuum), vacuum grade grease would replace any other lubricant used for bearings, filament will have to be stored in a chamber adjacent to the printing chamber, rerouting the vacuum pump input to it so as to keep the filament dry and eliminate any bubbles from the filament.
-
-The ionization energy-the minimum energy required to remove the most loosely bound electron (valence electron) from an isolated, gaseous atom or ion-also differs with each element. This energy is inversely proportional (in noble gases) to the number of electrons in the electron shell.
-
-Most common sputtering gases are noble gases, helium for specialized applications, argon for most applications and xenon, used generally for high-end applications. For our application, argon will be used. Th
+Most common sputtering gases are noble gases, thanks to their inertness and availability, Argon being widely used in aluminum welding (TIG welding). Other noble gases are either expensive or have a ionization energy set too high for the scope of our project, Argon being the most suitable gas for our apparatus. Other noble, as well as non-noble gases will be made use of in the future, giving rise to more manufacturing posibilities.
 
 |     |     |     |
 | --- | --- | --- |
@@ -131,9 +126,9 @@ Most common sputtering gases are noble gases, helium for specialized application
 | Xenon(Xe) | 54  | 12.1 |
 | Radon(Rn) | 86  | 10.7 |
 
-Other non-noble gases can also be used for plasma etching, an industrial application in which material is removed from a substrate using specific chemical reactions between plasma and the substrate, creating volatile compounds which then evaporate.
+Other non-noble gases can also be used for plasma etching, an industrial application in which material is removed from a substrate using specific chemical reactions between plasma and the substrate, making use of the plasma's instability to kick-start aggressive surface chemical interactions, creating volatile compounds which then evaporate at room temperature.
 
- This way, outgassing will be kept at a minimum. The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundred nm/min.
+The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundred nm/min, but the energy of each sputtered metal ion is really high, several eV, increasing surface adatom mobility (the ability of atoms to migrate and fill gaps and inconsistencies once absorbed on the substrate surface) and thus, surface film quality.
 
 ### Thermal evaporation
 
