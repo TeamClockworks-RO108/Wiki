@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T04:30:20.397Z
+date: 2026-04-19T04:30:37.763Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -265,7 +265,7 @@ a metallic zero aperture iris diaghragm placed on the bottom end of the tube wil
 
 A discussion on film quality control, as well as the criterions that influence film adhesion and overall electric quality will be given below, including substrate temperature and mechanical stresses.
 
-## Electrical feedthroughs
+## Electric feedthroughs
 
 Ideally, electric feedthroughs should be leak-free, with no micro-leaks created where the copper pins have been pressed into the ceramic/plastic isolation. FR4 circuit boards have high outgassing rates because of the binding resin that they're made of, so they cannot be used as a medium between vacuum and atmosphere. microscopic leaks can be managed and outpowered by the pump, provided the leaks are small and long enough to reduce conductivity and resist the pressure difference. A thick, aluminum CNC panel will be used as a back wall for the chamber, providing the electrical communication between the atmospheric and the vacuum side. D-sub connectrs as well as circular metal connectors will be mounted on the CNC panel, and their copper connections will be potted though a metal insert which has the role of isolating the vacuum from any outside permeation or virtual leaks. The potted seal needs to be at least about 15mm thick, made out of a mix of torrseal and 832fx.
 
