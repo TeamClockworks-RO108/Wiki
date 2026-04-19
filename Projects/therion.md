@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T03:42:41.488Z
+date: 2026-04-19T04:08:46.209Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -132,23 +132,22 @@ The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundre
 
 ### Thermal evaporation
 
-If [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) will be incorporated instead, the pressure inside the chamber has to be kept low, about 20.000-30.000pa or high vacuum for higher trace quality. Vacuum grease would not be required, unless high vacuum is implemented, fans would replace water cooling of the stepper motors. Higher vacuum would also dramatically help lower the metal target's melting  point (because of lower pressure), thus increasing power efficiency. depositions rates are also much higher (tens of nm/min up to um/min). A downside would be the fact that thermal evaporation in atmospheric plasmas yields lower film quality, combining with oxygen to form oxides. Also, the process is line-of-sight, given the lower thermal energies of the vapor atoms, yielding lower adatom mobility (surface diffusion of atoms) and thus, lower film density.
+For [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) deposition, pressure has to be kept in the transitional molecular flow (molecular flow - at lower pressure under about 0.5-1Pa wall collisions start to dominate, inter-molecular collisions being significantly lower which virtually excludes viscous flow) 0.1-1Pa range, reaching a maximum of 2Pa in some setups. The process is line-of-sight, yielding lower adatom mobility (surface migration of atoms) and thus, lower film density.
 
-![](/gold_silver_copper_pressure_melting_temperatures.png)
+|![](/gold_silver_copper_pressure_melting_temperatures.png)|
 
-Figure  3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature
+|Figure  3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature|
+|--|
 
-Quality can be increased by managing deposition rates (lowering them), thus increasing uniformity. This tradeoff between speed vs quality is worth it, given that even at slower rates the deposition is still much faster than it would be in sputtering systems.
+Deposition is much faster than it is in sputtering systems, implementing surface heating close to the target's melting point, which causes surface sublimation and vapor formation which will then coat the substrate (at lower energy compared to sputtering).
 
-Also, the melting temperature of most metals is proportional to the the pressure inside the chamber, decreasing dramatically with higher vacuum. Hence, lower pressure would enable thermal evaporation at higher energy efficiency, compared to atmospheric evaporation. 
+The melting temperature of most metals is proportional to the the pressure inside the chamber, decreasing by couple hundred degrees with higher vacuum. Hence, lower working pressure enables more efficient heating of the target, as well as longer mean free path, in turn increasing quality. 
 
-Moreover, a larger range of deposition speeds can be achieved and maintained.
-
-Induction heating of surface atoms, combined with hot plasma surface excitation could enable [sublimation](https://en.wikipedia.org/wiki/Sublimation_(phase_transition)) of metal atoms in our design. Controlling the power fed to the inductor and the plasma would also precisely manage the deposition rate.
+Moreover, a large range of deposition speeds can be achieved and controlled, requiring careful surface temperature monitoring.
 
 Exposed structural parts inside the toolhead would have to be covered with a protection film so that deposits don't form on the surface, possibly corrosion structural elements.
 
-This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by basic hydrodynamic interactions. If the vapor is ionised (by say, an [ECR](https://en.wikipedia.org/wiki/Electron_cyclotron_resonance) unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setup.
+This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by viscous flow, producing chaotic atom travel paths, decreasing film quality and deposition speed. If the vapor is ionised (by say, an [ECR](https://en.wikipedia.org/wiki/Electron_cyclotron_resonance) unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setups.
 
 ## Plasma barrel design schematic
 
