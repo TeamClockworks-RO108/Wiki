@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T04:26:56.145Z
+date: 2026-04-19T04:30:20.397Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -261,6 +261,9 @@ aluminum shielding cylinder sheets will likely be clamped wound the tube, in bet
 
 a metallic zero aperture iris diaghragm placed on the bottom end of the tube will adjust the width of the deposited trace, achieving widths as low as 0.1mm or lower (suitable for signal trace applications as well as power circuit applications).
 
+## (D) - Deposition area
+
+A discussion on film quality control, as well as the criterions that influence film adhesion and overall electric quality will be given below, including substrate temperature and mechanical stresses.
 
 ## Electrical feedthroughs
 
