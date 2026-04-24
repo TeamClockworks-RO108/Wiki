@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T15:07:30.834Z
+date: 2026-04-24T15:12:03.870Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -36,7 +36,7 @@ Therion implements a modified physical vapor deposition (PVD) technique, which w
 
 # Brief introduction in plasma physics
 
-The last couple decades has seen a dramatic increase in plasma related research. Currently, it's one of the most studied, if not the most studied field in physics and [manufacturing engineering](https://en.wikipedia.org/wiki/Manufacturing_engineering). With extensive academic research carried over the last years and wildly available study materials on the subject, there are a couple reasons why plasma has peaked in interest.
+The last couple decades have seen a dramatic increase in plasma related research. Currently, it's one of the most studied, if not the most studied field in physics and [manufacturing engineering](https://en.wikipedia.org/wiki/Manufacturing_engineering). With extensive academic research carried over the last years and wildly available study materials on the subject, there are a couple reasons why plasma has peaked in interest.
 
 
 
