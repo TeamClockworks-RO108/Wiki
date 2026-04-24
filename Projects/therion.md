@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T16:31:36.199Z
+date: 2026-04-24T17:40:28.670Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -296,6 +296,15 @@ Deposition energy is much more energy is much more relevant, film growth dependi
 Considering all of the above and implementing design concepts inside our own project, it is important to keep printed pieces' temperature as high as possible (a couple degrees lower than the glass transition temperature, which sits just around the right temperature in ABS, improving film microstructure) via heat transfer aided by the printer bed. Also, distance between the target and the substrate has to be kept as low as possible, improving quality, efficiency (less particle collisions results in lower energy loss) and higher deposition rates.
 
 Also, a more powerful magnetron improves energy flux, which leads to denser films and thicker coatings. Also, vapor partial pressure has to be kept low enough inside the barrel (including Argon flux) so that collisions don't dominate inside.
+
+### Close-Space Sublimation of Single-Crystal Metal Films 
+
+CSS (Close-Space Sublimation) principles and design could be implemented in Therion, using epitaxial film growth for higher deposition rates and better quality. 
+
+important tradeoffs are the need for milimeter (a maximum of about 30mm) spacing between substrate and target source, which allows for much higher quality film growth at working pressures up to about 10Pa. Plasma confinement would be a bit more challenging in these conditions, but not impossible. Another important tradeoff is the need for high substrate temperature, enabling high adatom mobility which promotes epitaxial growth. Trace thickness sits at around a couple um, which coincides with the ECR's unit microwave skin depth penetration within a metal, which is also about 1.2um. 
+A base metal layer coating could provide the necessary foundation for inductive coupling of the microwaves provided by the magnetron, and the deposited trace. Thus, induction heating of the trace skin layer can bring about substrate temperatures in the 400-600C range, sufficient for CSS deposition and crystal "seed" growth (a base seed metal crystal which promotes growth in the same crystal orientation). Thus, precise localized microwave surface heating could be enough to provide the necessary substrate temperature, without needing ABS to be heated up beyond its melting temperature-even though interface temperature between ABS and coating could sit at around 250C, despite low polymer conductivity, degrading the substrate. Thus, either a more resistant thermoplastic filament has to be used, or pulsed microwave operation needs to be implemented.
+
+Thus, ECR and CSS techniques can both be used to aid one another, in a potential design.
 
 ## Electric feedthroughs
 
