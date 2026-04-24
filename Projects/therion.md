@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-19T20:15:05.328Z
+date: 2026-04-24T15:07:30.834Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -130,7 +130,7 @@ Other non-noble gases can also be used for plasma etching, an industrial applica
 
 The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundred nm/min, but the energy of each sputtered metal ion is really high, several eV, increasing surface adatom mobility (the ability of atoms to migrate and fill gaps and inconsistencies once absorbed on the substrate surface) and thus, surface film quality.
 
-### Thermal evaporation
+### Evaporation
 
 For [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) deposition, pressure has to be kept in the transitional molecular flow (molecular flow - at lower pressure under about 0.5-1Pa wall collisions start to dominate, inter-molecular collisions being significantly lower which virtually excludes viscous flow) 0.1-1Pa range, reaching a maximum of 2Pa in some setups. The process is line-of-sight, yielding lower adatom mobility (surface migration of atoms) and thus, lower film density.
 
@@ -149,9 +149,22 @@ Exposed structural parts inside the toolhead would have to be covered with a pro
 
 This process is line-of-sight only if the chamber allows for collisionless deposition, otherwise overall atom vapor movement would be governed by viscous flow, producing chaotic atom travel paths, decreasing film quality and deposition speed. If the vapor is ionised (by say, an [ECR](https://en.wikipedia.org/wiki/Electron_cyclotron_resonance) unit-a microwave magnetron), then the thermal energy of the vapor atoms drastically increases, reaching high ionization density at efficient power consumption, especially in high-vacuum setups.
 
+Vapor pressure exhibits an exponential dependance with temperature, being approximately
+
+> p~v~ ∝ exp(*−ΔH~v~/RT*)
+{.is-info}
+
+***---where  H~v~ is the heat of evaporation and R the universal gas constant***
+
+Exponential dependence points to an important caveat in evaporation systems design - a slight variation in target temperature leads to a greater increase or decrease in vapor pressure, and thus trace thickness.
+
+For a given temperature, the sublimation
+rate increases rapidly as the operating pressure is reduced from
+atmospheric pressure [gudmensson].
+
 ### Concepts integrated in our design
 
-Plasma-enhanced thermal evaporation deposition processes have been used in industry, implementing both thermal evaporation and plasma to augment the coating system.
+Plasma-enhanced thermal evaporation deposition processes have been used in industry, implementing both evaporation and plasma to augment the system - often yielding high deposition rates similar to evaporation processes and high vapor energy, comparable to spputering.
 
 at pressures under about 0.5Pa, sputtering and sublimation both start to coexist inside the chamber. Using the right base target surface temperature ensures controlled, conistent sublimation, plasma aiding with addition energy needed to lauch atoms onto the substrate. For our project, both sputtering and thermal evaporation will be implemented, suiting more target types and compositions, allowing for sputtering of ceramic coatings and evaporation of metal films.
 
@@ -269,7 +282,8 @@ a metallic zero aperture iris diaghragm placed on the bottom end of the tube wil
 
 ## (D) - Deposition area
 
-A discussion on film quality control, as well as the criterions that influence film adhesion and overall electric quality will be given below, including substrate temperature and mechanical stresses.
+As it has already been mentioned above, film qualilty and overall microstructure depends heavily on subtrate temperature, film thickness (deposition rate), and most importantly particle potential energyn (or deposition energy for short).
+
 
 ## Electric feedthroughs
 
