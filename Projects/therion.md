@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T16:03:02.887Z
+date: 2026-04-24T16:31:36.199Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -52,7 +52,7 @@ Generally, when a high energy electron hits a molecule's electron cloud, kinetic
 
 ![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
 
-|Figure 1: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.|
+|Figure 1: diagram showing the steps in the ionization of an argon atom. From left to right: The last step from the bottom right corner shows the case in which a plasma ion recombines with a free electron, achieving yet again neutrality.| 
 |--|
 
 Electric arc discharge as well as microwave ECR excitation represent some of the high energy methods used for creating plasma. Both methods use the transfer of kinetic energy from "hot" electrons (energetic electrons) to the gas atoms in order to excite them, a fraction of them reaching plasma state. These two methods use different energy transfer techniques, such as ohmic heating, ECR ionization etc.
