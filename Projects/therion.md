@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T15:14:00.168Z
+date: 2026-04-24T16:03:02.887Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -282,8 +282,20 @@ a metallic zero aperture iris diaghragm placed on the bottom end of the tube wil
 
 ## (D) - Deposition area
 
-As it has already been mentioned above, film qualilty and overall microstructure depends heavily on subtrate temperature, film thickness (deposition rate), and most importantly particle potential energyn (or deposition energy for short).
+As it has already been mentioned above, film qualilty and overall microstructure depends heavily on subtrate temperature, film thickness (deposition rate), and most importantly particle potential energy (or deposition energy for short). Increased substrate temperature improves atom absorption, enabling deposited atoms to fill voids withing the film microstructure. High subtrate temperatures can cause more harm than good, increasing atom diffusivity within the film, creating large recrystallized (aided by low deposition energy) grain structures which make for worse film quality, often resulting in a rough finish. All substrate types start degrading and deforming mechanically after a certain temperature threshold (typically after reaching the glass transition phase), some faster than others, reducing the substrate temperature range that can be used in design.
 
+Film thickness is directly correlated to vapor energy, thick coatings and high deposition rates often indicating low atom temperature, only a few eV or lower than one eV. Evaporation is considered a high deposition rate process, given its typical low deposition energy, often below one eV, in contrast to spputering which often has a hundredfold or higher increase of that figure. Lower deposition rates allow for higher energy distribution within the vapour plume, also making for lower energy consumption and higher quality. Plasma enhanced evaporation sits anywhere in between, depending on the nature and energy of the plasma source.
+
+A generalized temperature figure is used, linking melting temperature, substrate temperature, ion current density as well as the potential energy of the deposited particles
+
+> 
+{.is-info}
+
+Deposition energy is much more energy is much more relevant, film growth depending directly on it, which allows for direct separation between microstructure types solely on it [goudsson]-low substrate temperature and deposition energy results in fragile, porous, columnar growth, typical of low energy deposition applications. Higher energy flux (E) results in a much more dense, quality thin film common in spputering. Higher substrate temperature only makes things worse from here on, deteriorating quality.
+
+Considering all of the above and implementing design concepts inside our own project, it is important to keep printed pieces' temperature as high as possible (a couple degrees lower than the glass transition temperature, which sits just around the right temperature in ABS, improving film microstructure) via heat transfer aided by the printer bed. Also, distance between the target and the substrate has to be kept as low as possible, improving quality, efficiency (less particle collisions results in lower energy loss) and higher deposition rates.
+
+Also, a more powerful magnetron improves energy flux, which leads to denser films and thicker coatings. Also, vapor partial pressure has to be kept low enough inside the barrel (including Argon flux) so that collisions don't dominate inside.
 
 ## Electric feedthroughs
 
