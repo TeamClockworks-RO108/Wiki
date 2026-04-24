@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T15:12:03.870Z
+date: 2026-04-24T15:13:01.580Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -40,7 +40,7 @@ The last couple decades have seen a dramatic increase in plasma related research
 
 
 
--   ***first,*** most manufacturing processes carried today in the PCB manufacturing industry are plasma based, with total market price of about 70-73 billion USD in 2024, projected to reach 100 billion by 2032.
+-   ***first,*** most manufacturing processes carried today in the PCB industry are plasma based, with total market price of about 70-73 billion USD in 2024, projected to reach 100 billion by 2032.
 -   ***second,*** fusion related research has peaked in the last couple decades, requiring extensive plasma research and innovation for further design improvement. It is projected that once fusion reactors are developed and enter the market, they will dominate any other alternative energy reactors. Plasma will also become a critical component of future space explorations project, our civilization needing plasma research to grow and evolve
 -   ***third,*** and most important, it's estimated that **more than 99% of matter in our universe is made out of plasma, our planet being one of the few places where plasma doesn't occur naturally.**
 
