@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-24T17:40:28.670Z
+date: 2026-04-25T05:27:00.794Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -166,7 +166,7 @@ atmospheric pressure [gudmensson].
 
 Plasma-enhanced thermal evaporation deposition processes have been used in industry, implementing both evaporation and plasma to augment the system - often yielding high deposition rates similar to evaporation processes and high vapor energy, comparable to spputering.
 
-at pressures under about 0.5Pa, sputtering and sublimation both start to coexist inside the chamber. Using the right base target surface temperature ensures controlled, conistent sublimation, plasma aiding with addition energy needed to lauch atoms onto the substrate. For our project, both sputtering and thermal evaporation will be implemented, suiting more target types and compositions, allowing for sputtering of ceramic coatings and evaporation of metal films.
+at pressures under about 0.5Pa, sputtering and sublimation both start to coexist inside the chamber. Using the right base target surface temperature ensures controlled, conistent sublimation, plasma aiding with additional energy needed to lauch atoms onto the substrate. For our project, both sputtering and thermal evaporation will be implemented, suiting more target types and compositions, allowing for sputtering of ceramic coatings and evaporation of metal films.
 
 ## Plasma barrel design schematic
 
