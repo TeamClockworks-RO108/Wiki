@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-25T05:28:31.714Z
+date: 2026-04-25T05:44:01.798Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -12,7 +12,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 
 ## What is Therion?
 
-Therion represents a 3d-printing augmentation project that aims for  achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding. 
+Therion represents a 3d-printing augmentation project that aims for  achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding.
 
 > A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.
 
@@ -136,7 +136,7 @@ For [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)
 
 |![](/gold_silver_copper_pressure_melting_temperatures.png)|
 
-|Figure  3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature|
+|Figure 3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature|
 |--|
 
 Deposition is much faster than it is in sputtering systems, implementing surface heating close to the target's melting point, which causes surface sublimation and vapor formation which will then coat the substrate (at lower energy compared to sputtering).
@@ -173,13 +173,13 @@ at pressures under about 0.5Pa, sputtering and sublimation both start to coexist
  The design incorporates a barrel-like appearance similar to that used in atmospheric plasma jet guns. Argon or other process gases are injected through an inlet (a) into the process chamber (b) where ionization happens and plasma is concentrated via a set of magnetic mirrors formed by the magnets coaxially attached to the barrel. an ECR unit (a microwave amplifier PCB or a magnetron with near ECR characteristic frequency) of high power is placed on top of the assembly, allowing for line-of-sight operation of the magnetron antenna (microwaves are coaxially directed through the barrel tube).
 
 |![therionv2-legenda.png](/Projects/therionv2-legenda.png)|
-|Design schematic and legend|
+|Figure 4: Design schematic and legend|
 |--|
 
 Zone (b) is where thermal evaporation takes place. The metal-to-be deposited is placed as a ring (disk or toroid) inside a ceramic hearth between two in phase inductors placed face-to-face. The metal is heated through induction heating near its melting point, and given that in HV the boiling point is close to the melting point temperature, sublimation of surface metal atoms starts to produce. Thus, a metal atom cloud forms, which is ionised and atomized by the microwaves coming in from the ECR unit. atoms gain high temperature and kinetic energy which helps enhance the deposition process. high plasma densities can be achieved through careful design and choice of high power ECR unit. Often ionization percentages ranging between 80-90% can be achieved, drastically
 
 |![therionv2-indicatii.png](/Projects/therionv2-indicatii.png)|
-|Process path of plasma through the apparatus. Main areas: (a)->(b)->(c)->(d). Gas enters in the assembly through area (a), ionizes the metal vapor plum in (b), gets focused in (c) and exists through (d), coating the substrate|
+|Figure 5: Process path of plasma through the apparatus. Main areas: (a)->(b)->(c)->(d). Gas enters in the assembly through area (a), ionizes the metal vapor plum in (b), gets focused in (c) and exists through (d), coating the substrate|
 |--|
 
 increasing the quality of the deposited film. The in phase inductors act as one single strong inductor, interfering constructively right in the middle, where the metal disk is found. Thus, efficiency is increased and heating of the metal is achieved more effectively. The most important advantage of using two paired inductors is the ability to slide and switch the metal disk right through the “sleeve” created by the gap between the two inductors. This way, more than one metal can be plated. Stacking more pairs of inductors allows for alloy plating (the temperature within each disk being closely monitored and controlled) and lots of other applications. The metal disks will be placed on a ceramic disk hearth which will be actuated via a stepper motor, allowing for easy and precise switching between the disks.
@@ -193,7 +193,7 @@ The barrel will most likely be built out of some sort of ceramic (alumina or oth
 Similiar design principles have previously been implemented in industry, making for high plasma density at relatively medium pressure levels.
 
 |![](/Projects/screenshot_2026-04-14_193312.png)|
-|Plasma enhanced thermal deposition apparatus|
+|Figure 6: Plasma enhanced thermal deposition apparatus|
 |--|
 
 The metal target is brought close to its melting temperature, producing a metal vapor plume. The ECR unit ionizes the plume, achieving high ionization percentages (close to 100%), achiving high quality film.  Magnetic confimenet makes sure both the microwaves and the ions move parallel to the field lines, bombarding the substrate with metal ions. Increasing the ECR power feed also increases the plasma density of the plume, increasing quality and efficiency. a quartz crystal film monitor keeps track of film thickness by measuring the change of the resonating frequency of the crystal. This deposition technique has proven to be very efficient, yielding high film quality as well as high depotion rates (when compared to sputtering). Moreover, this technique has proven to be compatible with higher process pressures, ranging from 10^-2^ to 5*10^-1^ Pa.
@@ -232,9 +232,10 @@ It is important to mention that there will be up to three individual ceramic hea
 
  The inductor coil is used in this design for precise surface heating of the metal target used. Thanks to the [skin effect](https://en.wikipedia.org/wiki/Skin_effect), most of the current induced inside the target is focused in a narrow volume, close to the surface of the conductor.
 
-![Skin effect - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Skineffect_reason.svg/250px-Skineffect_reason.svg.png)
+|![Skin effect - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Skineffect_reason.svg/250px-Skineffect_reason.svg.png)|
 
-Figure 6: diagram showing the fields induced inside a metal conductor through which AC current is circulating (image from [Skin effect](https://en.wikipedia.org/wiki/Skin_effect) - Wikipedia)
+|Figure 7: diagram showing the fields induced inside a metal conductor through which AC current is circulating (image from [Skin effect](https://en.wikipedia.org/wiki/Skin_effect) - Wikipedia)|
+|--|
 
  This effect is caused by the inability of currents and magnetic fields close to the outside of the metal to shield it from the induced current. 
 
@@ -244,9 +245,10 @@ In this specific design, induction heating could also enable easier alloying of 
 
  Given the high energy density of plasma, but low mass, only surface level heating is achieved, further managing deposition rates.
 
-![File:Example of skin effect in circular wire.png - Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/42/Example_of_skin_effect_in_circular_wire.png)
+|![File:Example of skin effect in circular wire.png - Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/42/Example_of_skin_effect_in_circular_wire.png)|
 
-Figure 7: thermal energy transition in AC coupled metal showing the effect of the skin effect in induction heating. 20kHz vs 81KHz (image [from](https://commons.wikimedia.org/wiki/File:Example_of_skin_effect_in_circular_wire.png))
+|Figure 8: thermal energy transition in AC coupled metal showing the effect of the skin effect in induction heating. 20kHz vs 81KHz (image [from](https://commons.wikimedia.org/wiki/File:Example_of_skin_effect_in_circular_wire.png))|
+|--|
 
 For efficient heating of the metal element, the distance between the target and the inductor would have to be fairly small, around couple mm. Thermal dilatation would also have to be considered. Moreover, the shape of the target would best allow field lines to sit perpendicular to the surface of the metal, for high efficiency. 
 
@@ -313,7 +315,7 @@ Ideally, electric feedthroughs should be leak-free, with no micro-leaks created 
 Another option is building a two layer ceramic PCB, containing an outer copper pad connection layer on which the connecters will be soldered (vacuum side) with an inner copper trace circuit which leads to periphereal pad connections (atmospheric side), ensuring proper electrical communication.
 
 |![screenshot_2026-04-17_212935.png](/Projects/screenshot_2026-04-17_212935.png)|
-|Ceramic PCB electrical feedthough sealing with legend. The red O-ring can be made out of Buna-N or Viton, but it can also be made of hollow copper tubing given that the PCB will rarely be taken out of its socket, yielding close to zero outgassing and much better sealing quality overall|
+|Figure 9: Ceramic PCB electrical feedthough sealing with legend. The red O-ring can be made out of Buna-N or Viton, but it can also be made of hollow copper tubing given that the PCB will rarely be taken out of its socket, yielding close to zero outgassing and much better sealing quality overall|
 |--|
 
 Vias won't be used, as they can provide leak paths for air to flow through, contaminating the vacuum. A pair of O-ring seals will be placed around the connections, between the CNC panel and the ceramic PCB, sealed with silicone vacuum grease.
@@ -349,9 +351,10 @@ Filaments that can be considered vacuum grade have low outgassing and diffusion 
 
 ABS has a lower diffusion rate when compared to PLA and PETG, sitting at around 8.1 × 10^−8^ cm^2^/s and 8.3 × 10^−8^ cm^2^/s, respectively. Water diffusion through ABS is similar to typical elastomer seals used in high-vacuum systems (viton o rings or buna-N), making it a suitable polymer that can be used in vacuum systems, especially in our project. Amorphous materials (such as plastics and glass), have a glass transition temperature, which once passed can alter structural strength, making them soft and malleable. ABS glass transition temperature sits between 105-115 C. ASA, a close polymer in chemical composition to ABS, has a slightly lower glass transition phase, a minimum of about 100 C. The same aforementioned article suggests that, ABS baked at 103 C-just under the glass transition temperature-in high vacuum for about 3 days removes almost all gas from the filament. Outgas rates depends on gas diffusion path through the inner walls of the material, which makes it easy for filament outgassing, given its small thickness.
 
-![Fig. 4](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7147/5514850/f5e40729d98f/nihms868979f4.jpg)
+|![Fig. 4](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7147/5514850/f5e40729d98f/nihms868979f4.jpg)|
 
-Figure 8: mass variation during vacuum drying of an ABS sample- rectangular cuboid of dimensions of 6.0 mm × 48.0 mm × 24.9 mm and a mass of approximately 6.5 grams (before loading with gas)
+|Figure 10: mass variation during vacuum drying of an ABS sample- rectangular cuboid of dimensions of 6.0 mm × 48.0 mm × 24.9 mm and a mass of approximately 6.5 grams (before loading with gas)|
+|--|
 
 ASA is typically considered a better alternative to ABS, having better mechanical and chemical properties, as well as generally higher resistance to environmental factors that would otherwise degrade in time most polymers. Its superior diffusion coefficient allows for higher resistance to environmental factors that would otherwise degrade other polymers, having higher moisture resistance and less gas retention, as well as better UV resistance and less release of toxic fumes during 3D-printing (such as styrene when printing with ABS) amongst others. Water reabsorption of ABS and ASA filaments sits between 0.2-0.6% by weight, depending on time of exposure, and the humidity level of the atmosphere in which the filament spools have been deposited. Therefore, it should be tested if ASA yields better results in near vacuum printing when compared to ABS.
 
