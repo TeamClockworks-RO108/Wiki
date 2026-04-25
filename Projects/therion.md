@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-25T05:44:01.798Z
+date: 2026-04-25T07:12:07.800Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -307,6 +307,12 @@ important tradeoffs are the need for milimeter (a maximum of about 30mm) spacing
 A base metal layer coating could provide the necessary foundation for inductive coupling of the microwaves provided by the magnetron, and the deposited trace. Thus, induction heating of the trace skin layer can bring about substrate temperatures in the 400-600C range, sufficient for CSS deposition and crystal "seed" growth (a base seed metal crystal which promotes growth in the same crystal orientation). Thus, precise localized microwave surface heating could be enough to provide the necessary substrate temperature, without needing ABS to be heated up beyond its melting temperature-even though interface temperature between ABS and coating could sit at around 250C, despite low polymer conductivity, degrading the substrate. Thus, either a more resistant thermoplastic filament has to be used, or pulsed microwave operation needs to be implemented.
 
 Thus, ECR and CSS techniques can both be used to aid one another, in a potential design.
+
+### Plastic substrate exposure to plasma
+
+Many polymers used in 3D printing (including ABS) suffer from surface degradation following either prolonged UV exposure (yellowing and embrittlement) or plasma ion degradation.
+
+Energetic species (such as plasma) break the bonds between molecules, creating polar compounds which promote adhesion and surface degassing. Thus, plasma surface activation and etching create a rougher surface, free of contaminants which helps with adhesion and deposition. Substrate temperature has to be kept moderate, keeping mechanical degradation and embrittlement at a minimum.
 
 ## Electric feedthroughs
 
