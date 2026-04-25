@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-04-25T07:12:07.800Z
+date: 2026-04-25T08:10:44.345Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -209,6 +209,8 @@ In plasma enhanced thermal evaporation deposition systems, using a process gas l
    3. gas shielding from oxidation and impurities (hydrocarbon molecules) by flooding the space nearby with Argon (inert gas)
    4. surface cleaning of the substrate before plating
    5. Adding reactive gas (like Nitrogen) which creates complex film species (nitrates, oxides etc.)
+   
+   Also, even though industrial settings are able to achieve high ionization, close to 100%, in order to achieve this, careful industrial design and laboratory grade equipment is required (true ECR units, not imprecise magnetrons). Therion will likely achieve ionization percentages in the 50% range, depending on geometry and magnetron power feed. Even so, 50% is still highly workable, enabling dense, quality film formation (electronics grade), leaving a lot of room for future improvements on the figure.
 
 ## (A) - Argon inlet
 
