@@ -2,7 +2,7 @@
 title: 3D Printer Usage
 description: 
 published: true
-date: 2026-04-06T23:22:17.292Z
+date: 2026-05-12T19:30:26.824Z
 tags: 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-11T18:42:21.941Z
@@ -14,7 +14,7 @@ Please read this page and follow the steps here when using the 3D Printers
 
 3D printers transform filament into functional parts by feeding the material through an extruder into a heated nozzle. The molten filament is deposited in thin layers on the build plate and fused together to form the final object.
 
-All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
+All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](https://printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
 
 | ![printer-web-menu.png](/printer-web-menu.png) |
 | --- |
