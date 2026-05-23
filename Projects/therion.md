@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-05-23T17:53:16.883Z
+date: 2026-05-23T18:02:30.795Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -53,7 +53,7 @@ The last couple decades have seen a dramatic increase in plasma related research
 
 ### What is plasma? 
 
-First, It is important to remember a fundamental natural law. Most atomic elements are negatively or positively charged, either negative or positive ions. These elements search for ways to form bonds with other molecules and particles, thus reaching neutrality and chemical stability. By using high energy methods, it is possible to sever these bonds, obtaining a ion, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
+Elements have a default neutral state, otherwise searching for ways to equalize their number of electrons and protons. By using high energy methods, it is possible to strip electrons form atom electron clouds, obtaining a ion, a positively charged particle, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
 
 Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization, producing a positive ion x^+^ - the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (figure 1).
 
