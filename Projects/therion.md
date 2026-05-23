@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-05-23T17:18:58.250Z
+date: 2026-05-23T17:53:16.883Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -53,7 +53,7 @@ The last couple decades have seen a dramatic increase in plasma related research
 
 ### What is plasma? 
 
-First, It is important to remember a fundamental natural law. Most atomic elements are ions, either negative or positive ions. These elements search for ways to form bonds with other molecules and particles, thus reaching neutrality and chemical stability. By using high energy methods, it is possible to sever these bonds, obtaining a ion, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
+First, It is important to remember a fundamental natural law. Most atomic elements are negatively or positively charged, either negative or positive ions. These elements search for ways to form bonds with other molecules and particles, thus reaching neutrality and chemical stability. By using high energy methods, it is possible to sever these bonds, obtaining a ion, a chemically and physically unstable species which is highly reactive, having the ability to strip electrons from other nearby neutral particles in order to achieve neutrality. Having a high percentage of ions in a gas cloud can eventually bring about the creation of a plasma.
 
 Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization, producing a positive ion x^+^ - the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (figure 1).
 
@@ -376,3 +376,14 @@ ASA is typically considered a better alternative to ABS, having better mechanica
 Storing and vacuum drying filament spools in controlled chambers before use could also drastically improve print quality, not just film deposition, by removing virtually all moisture from the filament. Therefore, a chamber in which filament is stored would have to be build next to the printer, bypassing the main vacuum pump to it. Also, a heater would have to be mounted inside so that filament can be baked and vacuum dried before use. 
 
 In normal printing mode, pressure inside the chamber will be kept slightly higher than in film deposition mode, given that filament is heated beyond melting temperature during printing, resulting in higher outgas rates and possible foaming in high vacuum. During film deposition, air inside the chamber will be pumped down, the temperature of the plastic printed substrate remaining lower than bed temperature, and thus lower than the temperature at which filament had been baked before use, keeping outgassing at a minimum.
+# project timeline
+1. The first functional, stationary prototype will be tested inside a nitrogen atmosphere, at atmospheric pressure. The prototype will have the ability to plate thin, rough metal surfaces (probably aluminum given its low melting point and affordability), with reduced magnetic confinement, cheap magnetron and air/fluid cooling. the substrate will likely be negatively biased metal.
+2. 3D printing will be tested inside a vacuum, evaluating styrene production rate and volume, working temperature, layer cooling techniques, nozzle temperature PID tuning, bed adhesion, filament drying time and conditions as well as the working pressure at which printing will be done
+3. vacuum sealing techniques will also be evaluated inside a real vacuum, electrical feedthroughs, mechanical feedthroughs, material wall strength etc
+4. metal plating inside a vacuum will also be tested, gas flushing, liquid cooling and magnetic confinement etc.
+5. More performant magnetron will be used and evaluated.
+6. bed heating pid will also be tested inside a vacuum
+7. linear closed loop stepper prototype will be tested and a printer will be bought, at which time a 3d printer vacuum chamber will also be tested to assess strength and outgassing from the walls. 
+8. other mechanical components will be introduced inside the printer, testing the vacuum once again and evaluating reliability.
+9. Printing and tuning will be adjusted inside the vacuum, testing different speeds and working pressures, evaluating temperature rise inside the chamber so that thermal runway can be avoided.
+10. the metal plating tool changer will be installed inside, allowing the printer to swtich between the two. More tuning more evaluation...
