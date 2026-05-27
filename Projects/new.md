@@ -2,7 +2,7 @@
 title: Drawer Organizer
 description: 
 published: true
-date: 2026-01-12T02:36:04.551Z
+date: 2026-05-27T14:25:23.017Z
 tags: 3dprinting, project
 editor: markdown
 dateCreated: 2025-11-20T16:53:45.091Z
@@ -25,4 +25,46 @@ Fiecare element este imprimat separat, ceea ce permite realizarea componentelor 
 # *Urmatorii pasi:*
 
 Urmează imprimarea baseplate-urilor, apoi a box-urilor selectate, testarea potrivirii în sertar și eventuale ajustări ale configurației pentru obținerea unei organizări optime.
+
+# Inventar-obiecte din sertar:(not finished yet)
+cleste
+folie de aluminiu
+modul de alimentare pentru panou
+cleste de sertizare borne cilindrice(marca Kashemano)
+cleste de sertizare autoajustabil model HSC8 6-4A
+driver hub battery (model-31-1876)
+cleste cu varf ascutit(marca Unior)
+conectori rapizi pentru sina DIN
+conector WAGO 221-2411
+conector WAGO 2211-415(X4)
+conector WAGO 221-413 (X10)'+222
+convertor USB'
+pistol de lipit
+mouse
+telefon clockworks(x2)
+set de tarozi(cutie)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
