@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-05-28T12:45:15.739Z
+date: 2026-05-28T12:48:05.484Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -47,7 +47,7 @@ Linear stepper closed-loop modules are not widely spread, most of them being adv
 
 ## Timeline
 
-A prototype will be build using a custom 3D printed rotor housing, in which black iron oxide (magnetite) will be placed, acting as a high permeability core for the permanent magnet and solenoid pair. Custom CNC machined steel panels will be screwed on the ends of the rotor housing (as well as the magnet mounts) for increased permeability and field continuity. Variable height hand cut steel panels bolted together can also be used as alternatives for the ends of the rotor, making for a cheaper option to be used on the prototype. 
+A prototype will be build using a custom 3D printed rotor housing, in which black iron oxide (magnetite) will be placed, acting as a high permeability core for the permanent magnet and solenoid pair, as well as a higher efficiency alternative to solid cores. Custom CNC machined steel panels will be screwed on the ends of the rotor housing (as well as the magnet mounts) for increased permeability and field continuity. Variable height hand cut steel panels bolted together can also be used as alternatives for the ends of the rotor, making for a cheaper option to be used on the prototype. 
 
 Steel bearings will be used to mount the rotor to the rail. A CNC machined platen, or hand cut variable height steel strips bolted together will also be used as the stator (platen), possibly welded on a thicker base steel strip, used for increased pemeability and lower magnetic resistance. Higher pitch teeth will be used on the prototype. Steel strips fixed on a 3D printed platen with an underlying thick base steel strip is also considered as an alternative. Tolerance between the rotor and stator will initially be set to 0, following lubing and grinding to eliminate mechanical friction between the two components, so that the air gap between the platen and rotor is kept low. 
 
