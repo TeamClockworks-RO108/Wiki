@@ -30,7 +30,7 @@ A "platen" (representing the stator) of electric steel contains small, sub-milim
 
 The rotor is composed out of three electromagnet modules, stacked in series, making for a three-phase stepper motor system. Each Module is offset by one third of teeth pitch distance from one another. Alternatively activating the modules (one at a time) creats motion (diagram 1).
 
-![screenshot_2026-05-28_144836.png](/screenshot_2026-05-28_144836.png)|
+![screenshot_2026-05-28_144836.png](/Projects/screenshot_2026-05-28_144836.png)|
 |Diagram 1 - three-phase linear closed loop stepper rotor and platen (stator). Diagram taken from [Loránd SZABÓ](https://www.researchgate.net/publication/272481795_Researches_in_the_field_of_variable_reluctance_electrical_machines_in_Technical_University_of_Cluj)|
 |--|
 
@@ -38,7 +38,7 @@ Individual modules are made from permanent magnet/solenoid pairing, the strong p
 
 The command coil is wound around a steel piece which bridges the two core (silicone steel laminated cores, for both the platen and rotor, which increases efficiency and heat dissipation) halves, and thus the two magnet poles, providing a small reluctance path for force lines to pass thorugh and reach each pole. By activating the command coil, the permanent magnet is mirrored (at a lower field intensity), thus the resulting solenoid field lines opposing the ones created by the permanent magnet (Diagram 2).
 
-|![screenshot_2026-05-28_151158.png](/screenshot_2026-05-28_151158.png)|
+|![screenshot_2026-05-28_151158.png](/Projects/screenshot_2026-05-28_151158.png)|
 |Diagram 2 - field lines passing through the module steel core a-solenoid is not active; b-solenoid is energised ([Loránd SZABÓ - RESEARCHES IN THE FIELD OF VARIABLE RELUCTANCE ELECTRICAL MACHINES IN TECHNICAL UNIVERSITY OF CLUJ](https://www.researchgate.net/publication/272481795_Researches_in_the_field_of_variable_reluctance_electrical_machines_in_Technical_University_of_Cluj)|
 |--|
 Thus, the low reluctance path becomes a high reluctance one, field lines being obliged to pass and joing through the steel platen, reaching for the closest teeth pair available to that module. As magnetic field force is inversely proportional to distance squared, small micron gap spacing between rotor teeth and stator teeth means higher field density passing through the platen teeth, and higher overall torque. Field lines will flow through the steel core, and continue through the platen in order close their path and connect the two poles, basically making for a high density, high strength, closed magnetic field toroid.
