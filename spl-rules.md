@@ -2,7 +2,7 @@
 title: SPL rules
 description: 
 published: true
-date: 2026-06-03T22:35:50.860Z
+date: 2026-06-03T22:37:06.674Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -16,7 +16,6 @@ The **Design Award** recognizes the team whose ROBOT best demonstrates a balance
 ### Required
 
 1. **Intentional design process.** The team can describe the steps taken from concept to final robot: research, sketches, CAD, prototyping, iteration, and testing. Decisions are justified, not accidental.
-2. **Holistic design.** Judging considers the full machine, not a single standout component. Subsystems must work together coherently.
 3. **Elegance, efficiency, and maintainability.** The robot is simple where it can be, executes its function reliably, and is practical to service, repair, and adjust between matches.
 4. **Clear design principles.** The team applies and can name the techniques they used — e.g., modularity, symmetry, weight distribution, center-of-gravity control, ergonomics, manufacturability, tolerance stack-up management.
 
