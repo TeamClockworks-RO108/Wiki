@@ -2,7 +2,7 @@
 title: SPL rules
 description: 
 published: true
-date: 2026-06-03T22:37:34.349Z
+date: 2026-06-03T22:39:04.549Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -25,5 +25,4 @@ The **Design Award** recognizes the team whose ROBOT best demonstrates a balance
 4. **Considered inspiration.** The design draws from a clear source — existing mechanisms, biomimicry, prior-season learnings, industrial references — and the team explains how that source shaped the result.
 5. **Strategic alignment.** The design directly serves the team's game strategy. Form follows function follows game plan.
 6. **Aesthetic identity.** The robot is visually distinctive and cohesive: consistent finish, color, wire management, and presentation. Aesthetics are treated as a design output, not an afterthought.
-7. **Iteration evidence.** The team can show what was tried, what failed, and what changed — prototypes, revisions, or data that drove design decisions.
-8. **Trade-off awareness.** The team can articulate trade-offs they accepted (e.g., speed vs. precision, complexity vs. reliability) and explain why.
+7. **Trade-off awareness.** The team can articulate trade-offs they accepted (e.g., speed vs. precision, complexity vs. reliability) and explain why.
