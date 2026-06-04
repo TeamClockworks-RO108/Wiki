@@ -44,12 +44,17 @@ With the exception of the explicitly modified rulings, SPL will carefully follow
 ### G432 - Humans only meddle with ARTIFACTS in the LOADING ZONE
 
 G432 Humans ~~only meddle with ARTIFACTS in the LOADING ZONE.~~ **Only meddle with ARTIFACTS in the LOADING ZONE AND THE ALLIANCE AREA** DRIVE TEAM members may only introduce ARTIFACTS to, remove ARTIFACTS from, or move ARTIFACTS within the LOADING ZONE **onto the robot** and only the LOADING ZONE. Actions must occur:
-A. only during TELEOP,
-B. without using a tool,
-C. without causing an ARTIFACT to enter into the LOADING ZONE from elsewhere on the FIELD, and
-D. without causing an ARTIFACT to leave the LOADING ZONE and enter the rest of the FIELD unless the ARTIFACT is CONTROLLED by a ROBOT as follows:
-i. ARTIFACT CONTROL begins when the ROBOT is in the LOADING ZONE, and
-ii. ARTIFACT is still CONTROLLED by the ROBOT when the ROBOT leaves the LOADING ZONE.
+<ol type="A">
+<li>only during TELEOP,</li>
+<li>without using a tool,</li>
+<li>without causing an ARTIFACT to enter into the LOADING ZONE from elsewhere on the FIELD, and</li>
+<li>without causing an ARTIFACT to leave the LOADING ZONE and enter the rest of the FIELD unless the ARTIFACT is CONTROLLED by a ROBOT as follows:
+<ol type="i">
+<li>ARTIFACT CONTROL begins when the ROBOT is in the LOADING ZONE, and</li>
+<li>ARTIFACT is still CONTROLLED by the ROBOT when the ROBOT leaves the LOADING ZONE.</li>
+</ol>
+</li>
+</ol>
 
 **G432 - Extension:**
 **HUMAN PLAYERS may only score ARTIFACTS into the GOAL located directly in front of the LOADING ZONE within their ALLIANCE AREA. ARTIFACTS may not be transported or placed outside of the ALLIANCE AREA at any time.**
@@ -63,9 +68,11 @@ G433 Humans may only enter SCORING ELEMENTS. DRIVE TEAM members may only enter A
 
 G422 *There is a ~~3~~ **5** -count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
 
-A. the ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds,
-B. either ROBOT has moved 2 ft. from where the PIN initiated for more than ~~3~~ **5** seconds, or
-C. the PINNING ROBOT gets PINNED.
+<ol type="A">
+<li>the ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds,</li>
+<li>either ROBOT has moved 2 ft. from where the PIN initiated for more than ~~3~~ <strong>5</strong> seconds, or</li>
+<li>the PINNING ROBOT gets PINNED.</li>
+</ol>
 
 For criteria A, the PIN count pauses once ROBOTS are separated by 2 ft. until either the PIN ends or the PINNING ROBOT moves back within 2 ft., at which point the PIN count is resumed. For criteria B, the PIN count pauses once either ROBOT has moved 2ft from where the PIN initiated until the PIN ends or until both ROBOTS move back within 2ft., at which point the PIN count is resumed.
 
