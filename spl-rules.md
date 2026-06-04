@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-04T00:49:05.098Z
+date: 2026-06-04T01:10:54.424Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -149,7 +149,7 @@ For each award, teams are scored on a scale of 0 to 5 for every criterion. Each 
 
 Each team is required to submit a portfolio consisting of no more than three (3) pages of content in A4 format, in either landscape or portrait orientation. Cover pages are excluded from the page count. In addition to the portfolio review, judges will conduct interviews at each team's pit or stand area to gather further information regarding the team's work and approach. During the pit interview, teams may present supplementary materials in any quantity or format to demonstrate their solutions. Unlike official FTC competitions, no formal interview session will be held.
 
-Portfolios must be submitted via email to contact@teamclockworks.ro. Teams may resubmit at any time; however, only the most recent submission received before 5 June at 8:00 AM (Romania Time) will be considered for judging.
+Portfolios must be submitted via email to contact@teamclockworks.ro. Teams may resubmit at any time; however, only the most recent submission received before 6 June at 10:00 AM (Romania Time) will be considered for judging.
 
 ## Control Award
 
