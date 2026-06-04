@@ -19,7 +19,6 @@ Being an off-season event means that the participating teams have been working o
 It is our main goal to facilitate the best possible FTC experience for all participating teams and audience alike. Beyond the competition itself, SPL aims to become an international educational experience, incorporating workshops and travel grants as part of a longer programme that fosters growth and collaboration across borders.
 
 
-
 # Judging Process
 
 For each award, teams are scored on a scale of 0 to 5 for every criterion. Each judge assigns a score independently, and scores are then averaged per criterion. A team's total score for an award is the sum of the per-criterion averages. Each team will receive a feedback sheet containing their scores for every judging criterion. Total scores for all teams will be published on this wiki page after the competition concludes to provide transparency. 
