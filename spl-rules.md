@@ -18,8 +18,129 @@ Being an off-season event means that the participating teams have been working o
 
 It is our main goal to facilitate the best possible FTC experience for all participating teams and audience alike. Beyond the competition itself, SPL aims to become an international educational experience, incorporating workshops and travel grants as part of a longer programme that fosters growth and collaboration across borders.
 
+## SPL 2026 Information
 
-# Judging Process
+The second edition of the South Performance League will be held on 6-7 June at the International School of Bucharest, in Bucharest, Romania. Up to 24 FTC teams will compete head-to-head to find out which is the best-performing team.
+
+## Differences from SPL 2025
+
+The following list covers the main changes from the inaugural 2025 edition of the South Performance League. It is still strongly recommended that this Handbook is read through in its entirety.
+
+- Maximum team capacity has increased from 16 to 24 (+50%).
+- Total prize pool for award winners has increased from 300 EUR to 1,200 EUR (+300%).
+- International participation has expanded from 1 to 3 countries (+200%).
+- Travel grants are now available through partnerships with local tourism firms and hotels.
+- The modified rules explained in this Handbook have been updated to match the new FTC Competition Manual for the DECODE season.
+- Scoring artifacts through human players.
+
+# Competition Format
+
+The South Performance League is, at its core, an FTC competition. Several of the standard FTC Competition Manual rules have been modified in order to create a competition format more suited to high-performance play.
+
+## Modified Rules
+
+With the exception of the explicitly modified rulings, SPL will carefully follow the official FTC rules, specifically those related to match play and scoring. This section overviews the changes applied to already existing rules from the official FTC Competition Manual. The list tries to be as comprehensive as possible, but overlaps and overlooked situations are possible. All final rulings are at the discretion of the event director.
+
+### G432 - Humans only meddle with ARTIFACTS in the LOADING ZONE
+
+G432 Humans ~~only meddle with ARTIFACTS in the LOADING ZONE.~~ **Only meddle with ARTIFACTS in the LOADING ZONE AND THE ALLIANCE AREA** DRIVE TEAM members may only introduce ARTIFACTS to, remove ARTIFACTS from, or move ARTIFACTS within the LOADING ZONE **onto the robot** and only the LOADING ZONE. Actions must occur:
+A. only during TELEOP,
+B. without using a tool,
+C. without causing an ARTIFACT to enter into the LOADING ZONE from elsewhere on the FIELD, and
+D. without causing an ARTIFACT to leave the LOADING ZONE and enter the rest of the FIELD unless the ARTIFACT is CONTROLLED by a ROBOT as follows:
+i. ARTIFACT CONTROL begins when the ROBOT is in the LOADING ZONE, and
+ii. ARTIFACT is still CONTROLLED by the ROBOT when the ROBOT leaves the LOADING ZONE.
+
+**G432 - Extension:**
+**HUMAN PLAYERS may only score ARTIFACTS into the GOAL located directly in front of the LOADING ZONE within their ALLIANCE AREA. ARTIFACTS may not be transported or placed outside of the ALLIANCE AREA at any time.**
+**Violation: a MINOR PENALTY will be assessed for every three (3) seconds per ARTIFACT found outside the ALLIANCE AREA.**
+
+### G433 - Humans may only enter SCORING ELEMENTS
+
+G433 Humans may only enter SCORING ELEMENTS. DRIVE TEAM members may only enter ARTIFACTS onto the FIELD **and into the goal during AUTO periods.**
+
+### G422 - There is a PIN count
+
+G422 *There is a ~~3~~ **5** -count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
+
+A. the ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds,
+B. either ROBOT has moved 2 ft. from where the PIN initiated for more than ~~3~~ **5** seconds, or
+C. the PINNING ROBOT gets PINNED.
+
+For criteria A, the PIN count pauses once ROBOTS are separated by 2 ft. until either the PIN ends or the PINNING ROBOT moves back within 2 ft., at which point the PIN count is resumed. For criteria B, the PIN count pauses once either ROBOT has moved 2ft from where the PIN initiated until the PIN ends or until both ROBOTS move back within 2ft., at which point the PIN count is resumed.
+
+Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which the situation is not corrected.
+
+## Extra Rules
+
+On top of the modified rules, several miscellaneous aspects are described in this section.
+
+### Robot Failures
+
+Teams should be prepared to fix any issues with their robots between the scheduled match times. No timeouts or delays will be handed out. Substituting a robot with the robot of another team, participating at SPL or not, is not allowed.
+
+While innovative strategies are strongly encouraged at SPL, any egregious attempts at damaging another team's robot will quickly escalate to yellow and red cards.
+
+### HUMAN PLAYER Scoring
+
+One exciting new rule that SPL 2026 will implement is allowing human players to score artifacts during the AUTO period.
+
+#### HUMAN PLAYER Scoring Restrictions
+
+1. HUMAN PLAYERS may only score ARTIFACTS during the AUTO Period.
+2. ARTIFACTS scored by a HUMAN PLAYER during the Tele-Op Period will result in a MINOR FOUL. The illegally scored ARTIFACT will not receive any associated PATTERN Points or scoring credit.
+3. During the AUTO Period, each ARTIFACT scored by a HUMAN PLAYER onto the RAMP as CLASSIFIED is worth:
+   - Three (3) points, and
+   - Any applicable PATTERN bonus points.
+4. ARTIFACTS scored as OVERFLOW are worth one (1) point.
+
+#### Improper HUMAN PLAYER Interaction
+
+1. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to disrupt, impede, or interfere with a ROBOT or gameplay on the FIELD.
+2. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to interfere with FIELD personnel, including REFEREES, FIELD STAFF, or other event volunteers.
+
+# Competition Day Outline
+
+## Schedule - Tentative
+
+| Time | Day 1 | Time | Day 2 |
+|------|-------|------|-------|
+| 9:00 | Check-in | 9:00 | Venue opens |
+| 10:30 | Robot inspections | 10:30 | Check-in |
+| 11:30 | Drivers' meeting | 11:30 | Qualification matches |
+| 11:50 | Opening ceremony | 12:30 | Alliance selection |
+| 12:10 | Qualification matches | 13:00 | Lunch break |
+| 13:10 | Lunch break | 14:30 | Playoff matches |
+| 14:30 | Qualification matches | 17:00 | Award ceremony |
+| 18:00 | End of Day 1 | 18:30 | Venue closes |
+
+## Match Flow
+
+An estimate of 144 matches will be played at SPL 2026. It is our goal to create the best possible FTC experience for everyone involved. This includes the teams, who should not have to wait excessively between matches; the livestream audience, who prefer a cohesive flow of matches; as well as the volunteers, who deserve to finish at a reasonable hour. It is for these reasons that the match flow will be closely monitored at SPL.
+
+All matches will be played on 2 competition fields. Match-making processes follow the organic FIRST Tech Challenge official matchmaking processes, with each team playing up to 6 matches in total.
+
+The queueing staff will call teams to matches with several matches to go. This is done due to the tightly packed schedule. A zero-tolerance policy is in place regarding queueing. If a team does not show up on time to the match or delays its start in any way, then the match will be played with only the teams present.
+
+The complete drive team should be present for matches. Every match will be introduced by the MC before the start of the game.
+
+# Application
+
+Apply by filling in the [application form](https://forms.gle/6Cpa73jTotDSTKBj7). 
+
+The application form requires basic information, including team details and eligibility information. Depending on the number of applications, a selection procedure may be applied. SPL reserves the right to deny participation of teams not in line with FIRST or SPL values.
+
+# Prizes
+
+Prizes will be awarded based on the final event ranking and judged awards. The total prize pool for SPL 2026 is 1,200 EUR. The values shown may be split between cash sums and physical items or gift vouchers from our partners.
+
+- Winning Alliance - 2,000 RON
+- Finalist Alliance - 1,000 RON
+- Innovate Award - 500 RON
+- Design Award - 250 RON
+- Control Award - 250 RON
+
+# Judging Process and Awards
 
 For each award, teams are scored on a scale of 0 to 5 for every criterion. Each judge assigns a score independently, and scores are then averaged per criterion. A team's total score for an award is the sum of the per-criterion averages. Each team will receive a feedback sheet containing their scores for every judging criterion. Total scores for all teams will be published on this wiki page after the competition concludes to provide transparency. 
 
@@ -73,3 +194,12 @@ The **Innovate Award** recognizes the team whose robot showcases a creative solu
 
 
 
+# Contact
+
+If you have any questions regarding the contents of this Handbook, or otherwise, please contact us via any of the methods listed below. This Handbook was written with the utmost care, especially when describing critical rulings. If any mistakes were found, we would be happy to correct them in the next version.
+
+Instagram: @south_performance_league
+
+**Organized by:** Clockworks - FTC Team #19075 | "Gheorghe Sincai" National College, Bucharest. Andromeda - FTC Team #20691 | International School of Bucharest.
+
+The South Performance League is registered on the official FTC platform and promoted through official FTC channels and social media.
