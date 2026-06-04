@@ -90,6 +90,8 @@ Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which 
 ### G901 (New)
 
 > HUMAN PLAYER Scoring guidelines and Restrictions
+> One exciting new rule that SPL 2026 will implement is allowing human players to score artifacts during the AUTO period.
+
 {.is-success}
 
 1. HUMAN PLAYERS may only score ARTIFACTS during the AUTO Period.
