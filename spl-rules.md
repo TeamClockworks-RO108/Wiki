@@ -37,9 +37,9 @@ The following list covers the main changes from the inaugural 2025 edition of th
 
 The South Performance League is, at its core, an FTC competition. Several of the standard FTC Competition Manual rules have been modified in order to create a competition format more suited to high-performance play.
 
-## Modified Rules {.tabset}
-
 With the exception of the explicitly modified rulings, SPL will carefully follow the official FTC rules, specifically those related to match play and scoring. This section overviews the changes applied to already existing rules from the official FTC Competition Manual. The list tries to be as comprehensive as possible, but overlaps and overlooked situations are possible. All final rulings are at the discretion of the event director.
+
+## Modified Rules {.tabset}
 
 ### G432
 
