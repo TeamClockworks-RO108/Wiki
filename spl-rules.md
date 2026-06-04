@@ -75,7 +75,7 @@ G433 Humans may only enter SCORING ELEMENTS. DRIVE TEAM members may only enter A
 > The pin count is increased from 3 seconds to 5 seconds.
 {.is-success}
 
-G422 *There is a ~~3~~ **5** second count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
+G422 There is a ~~3~~ **5** second count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
 
 <ol type="A">
 <li>the ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds,</li>
@@ -87,21 +87,10 @@ For criteria A, the PIN count pauses once ROBOTS are separated by 2 ft. until ei
 
 Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which the situation is not corrected.
 
-## Extra Rules
+### G901 (New)
 
-On top of the modified rules, several miscellaneous aspects are described in this section.
-
-### Robot Failures
-
-Teams should be prepared to fix any issues with their robots between the scheduled match times. No timeouts or delays will be handed out. Substituting a robot with the robot of another team, participating at SPL or not, is not allowed.
-
-While innovative strategies are strongly encouraged at SPL, any egregious attempts at damaging another team's robot will quickly escalate to yellow and red cards.
-
-### HUMAN PLAYER Scoring
-
-One exciting new rule that SPL 2026 will implement is allowing human players to score artifacts during the AUTO period.
-
-#### HUMAN PLAYER Scoring Restrictions
+> HUMAN PLAYER Scoring guidelines and Restrictions
+{.is-success}
 
 1. HUMAN PLAYERS may only score ARTIFACTS during the AUTO Period.
 2. ARTIFACTS scored by a HUMAN PLAYER during the Tele-Op Period will result in a MINOR FOUL. The illegally scored ARTIFACT will not receive any associated PATTERN Points or scoring credit.
@@ -110,7 +99,10 @@ One exciting new rule that SPL 2026 will implement is allowing human players to 
    - Any applicable PATTERN bonus points.
 4. ARTIFACTS scored as OVERFLOW are worth one (1) point.
 
-#### Improper HUMAN PLAYER Interaction
+### G902 (New)
+
+> Improper HUMAN PLAYER Interaction
+{.is-success}
 
 1. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to disrupt, impede, or interfere with a ROBOT or gameplay on the FIELD.
 2. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to interfere with FIELD personnel, including REFEREES, FIELD STAFF, or other event volunteers.
@@ -129,6 +121,10 @@ One exciting new rule that SPL 2026 will implement is allowing human players to 
 | 13:10 | Lunch break | 14:30 | Playoff matches |
 | 14:30 | Qualification matches | 17:00 | Award ceremony |
 | 18:00 | End of Day 1 | 18:30 | Venue closes |
+
+Teams should be prepared to fix any issues with their robots between the scheduled match times. No timeouts or delays will be handed out. Substituting a robot with the robot of another team, participating at SPL or not, is not allowed.
+
+While innovative strategies are strongly encouraged at SPL, any egregious attempts at damaging another team's robot will quickly escalate to yellow and red cards.
 
 ## Match Flow
 
