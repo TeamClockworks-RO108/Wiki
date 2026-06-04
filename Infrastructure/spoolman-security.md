@@ -2,7 +2,7 @@
 title: Spoolman Security
 description: 
 published: true
-date: 2026-03-10T02:39:23.233Z
+date: 2026-06-04T01:08:16.210Z
 tags: infrastructure, 3dprinting, project
 editor: markdown
 dateCreated: 2025-12-15T03:10:53.706Z

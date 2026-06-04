@@ -1,8 +1,8 @@
 ---
 title: Brat Robotic
-description: O combinatie intre inovatie, creativitate si progres 
+description: O combinatie intre inovatie, creativitate si progres
 published: true
-date: 2025-10-28T02:02:35.232Z
+date: 2026-06-04T01:09:12.650Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-24T17:23:06.365Z

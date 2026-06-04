@@ -2,7 +2,7 @@
 title: Dev Machine
 description: 
 published: true
-date: 2026-01-12T02:32:33.592Z
+date: 2026-06-04T01:07:42.419Z
 tags: programming, infrastructure
 editor: markdown
 dateCreated: 2025-08-02T14:25:30.841Z

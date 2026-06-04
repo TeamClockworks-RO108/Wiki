@@ -2,8 +2,8 @@
 title: SPPICE Electroplating
 description: 
 published: true
-date: 2026-03-10T02:46:50.478Z
-tags: 3dprinting, project, davidcore, research
+date: 2026-06-04T01:08:59.183Z
+tags: 3dprinting, davidcore, research, project
 editor: markdown
 dateCreated: 2025-11-28T04:20:41.717Z
 ---

@@ -2,13 +2,11 @@
 title: Mecanica
 description: 
 published: true
-date: 2025-06-03T15:11:42.865Z
+date: 2026-06-04T01:08:25.835Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-16T14:33:08.460Z
 ---
-
-
 
 # Minuta 15 Noiembrie 2024
 >Participanti :  Alex Dedu, Miruna Cătălin, Stefan Mihai, Bogdan Buzgaru, George Constantinescu, Ciprian Petre, Sasha Vovcenco, Cristi Dobrin, Alex Iercosan, Tudor Scarlat, Radu Cătălin, Iannis Voicu, Andrei Oprea. 

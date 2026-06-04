@@ -2,7 +2,7 @@
 title: Clockworks Site
 description: Detalii privind dezvoltarea site-ului echipei
 published: true
-date: 2026-01-30T20:20:20.726Z
+date: 2026-06-04T01:08:44.713Z
 tags: programming, project
 editor: markdown
 dateCreated: 2025-05-23T15:51:46.312Z

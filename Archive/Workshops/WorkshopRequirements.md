@@ -2,7 +2,7 @@
 title: Workshop Requirements
 description: This is a temporary page with instructions for the Software recruits regarding the workshops in the following week.
 published: true
-date: 2025-09-10T23:25:07.980Z
+date: 2026-06-04T01:09:10.832Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-26T10:37:54.261Z

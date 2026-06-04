@@ -2,13 +2,11 @@
 title: Pulumi
 description: 
 published: true
-date: 2026-04-06T23:26:42.076Z
+date: 2026-06-04T01:08:12.413Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-06T23:26:42.076Z
 ---
-
-
 
 # Wipe all pulumi resources by a prefix
 

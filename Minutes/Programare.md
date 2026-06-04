@@ -2,7 +2,7 @@
 title: Programare
 description: 
 published: true
-date: 2025-06-03T15:11:41.072Z
+date: 2026-06-04T01:08:27.698Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-14T15:41:24.277Z

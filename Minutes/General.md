@@ -2,7 +2,7 @@
 title: Minute Sedinte Generale
 description: 
 published: true
-date: 2025-06-03T15:11:47.426Z
+date: 2026-06-04T01:08:23.894Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T10:41:09.447Z

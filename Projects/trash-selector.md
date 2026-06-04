@@ -2,7 +2,7 @@
 title: Smart Trashcan
 description: 
 published: true
-date: 2026-01-12T02:38:14.763Z
+date: 2026-06-04T01:09:06.195Z
 tags: mechanics, 3dprinting, project, davidcore
 editor: markdown
 dateCreated: 2024-11-11T20:49:35.696Z

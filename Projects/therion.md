@@ -2,12 +2,11 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-05-23T18:02:30.795Z
+date: 2026-06-04T01:09:03.938Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
 ---
-
 
 > Page incomplete (requires further review)
 {.is-warning}

@@ -2,7 +2,7 @@
 title: Screaming Firehawk
 description: 
 published: true
-date: 2026-03-30T21:07:43.859Z
+date: 2026-06-04T01:09:19.964Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T20:47:57.922Z
