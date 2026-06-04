@@ -37,11 +37,14 @@ The following list covers the main changes from the inaugural 2025 edition of th
 
 The South Performance League is, at its core, an FTC competition. Several of the standard FTC Competition Manual rules have been modified in order to create a competition format more suited to high-performance play.
 
-## Modified Rules
+## Modified Rules {.tabset}
 
 With the exception of the explicitly modified rulings, SPL will carefully follow the official FTC rules, specifically those related to match play and scoring. This section overviews the changes applied to already existing rules from the official FTC Competition Manual. The list tries to be as comprehensive as possible, but overlaps and overlooked situations are possible. All final rulings are at the discretion of the event director.
 
-### G432 - Humans only meddle with ARTIFACTS in the LOADING ZONE
+### G432
+
+> Human players may now interact with artifacts in the Alliance Area, not just the Loading Zone. An extension rule allows human players to score into the goal in front of the Loading Zone.
+{.is-success}
 
 G432 Humans ~~only meddle with ARTIFACTS in the LOADING ZONE.~~ **Only meddle with ARTIFACTS in the LOADING ZONE AND THE ALLIANCE AREA** DRIVE TEAM members may only introduce ARTIFACTS to, remove ARTIFACTS from, or move ARTIFACTS within the LOADING ZONE **onto the robot** and only the LOADING ZONE. Actions must occur:
 <ol type="A">
@@ -60,17 +63,23 @@ G432 Humans ~~only meddle with ARTIFACTS in the LOADING ZONE.~~ **Only meddle wi
 **HUMAN PLAYERS may only score ARTIFACTS into the GOAL located directly in front of the LOADING ZONE within their ALLIANCE AREA. ARTIFACTS may not be transported or placed outside of the ALLIANCE AREA at any time.**
 **Violation: a MINOR PENALTY will be assessed for every three (3) seconds per ARTIFACT found outside the ALLIANCE AREA.**
 
-### G433 - Humans may only enter SCORING ELEMENTS
+### G433
+
+> Drive team members may now enter artifacts onto the field and into the goal during AUTO periods.
+{.is-success}
 
 G433 Humans may only enter SCORING ELEMENTS. DRIVE TEAM members may only enter ARTIFACTS onto the FIELD **and into the goal during AUTO periods.**
 
-### G422 - There is a PIN count
+### G422
 
-G422 *There is a ~~3~~ **5** -count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
+> The pin count is increased from 3 seconds to 5 seconds.
+{.is-success}
+
+G422 *There is a ~~3~~ **5** second count on PINS. A ROBOT may not PIN an opponent's ROBOT for more than ~~3~~ **5** seconds. A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move. A PIN count ends once any of the following criteria below are met:
 
 <ol type="A">
 <li>the ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds,</li>
-<li>either ROBOT has moved 2 ft. from where the PIN initiated for more than ~~3~~ <strong>5</strong> seconds, or</li>
+<li>either ROBOT has moved 2 ft. from where the PIN initiated for more than <del>3</del> <strong>5</strong> seconds, or</li>
 <li>the PINNING ROBOT gets PINNED.</li>
 </ol>
 
