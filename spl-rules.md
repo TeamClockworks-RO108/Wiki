@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-04T01:10:56.306Z
+date: 2026-06-05T03:45:10.253Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -115,7 +115,7 @@ Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which 
 | 9:00 | Check-in | 9:00 | Venue opens |
 | 10:30 | Robot inspections | 10:30 | Check-in |
 | 11:30 | Drivers' meeting | 11:30 | Qualification matches |
-| 11:50 | Opening ceremony | 12:30 | Alliance selection |
+| 11:50 | Opening ceremony & Driver's meeting | 12:30 | Alliance selection |
 | 12:10 | Qualification matches | 13:00 | Lunch break |
 | 13:10 | Lunch break | 14:30 | Playoff matches |
 | 14:30 | Qualification matches | 17:00 | Award ceremony |
