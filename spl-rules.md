@@ -107,6 +107,9 @@ Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which 
 
 1. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to disrupt, impede, or interfere with a ROBOT or gameplay on the FIELD.
 2. A TEAM will receive a MAJOR FOUL if a HUMAN PLAYER intentionally uses an ARTIFACT to interfere with FIELD personnel, including REFEREES, FIELD STAFF, or other event volunteers.
+3. HUMAN PLAYERS may not interfere with ARTIFACTS placed on Preset Lines. Interference includes, but is not limited to, removing, placing, repositioning, or otherwise altering the arrangement of any ARTIFACT on a Preset Line. A MAJOR PENALITY will be issued for each ARTIFACT removed, placed or altered.
+4. Repeated or sustained ungracious behavior by a human player will result in the issuance of a ***YELLOW CARD*** to the team.
+
 
 # Competition Day Outline
 
