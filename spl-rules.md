@@ -110,8 +110,6 @@ Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which 
 
 # Competition Day Outline
 
-## Schedule - Tentative
-
 | Time | Day 1 | Time | Day 2 |
 |------|-------|------|-------|
 | 9:00 | Check-in | 9:00 | Venue opens |
