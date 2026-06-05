@@ -210,7 +210,10 @@ The **Innovate Award** recognizes the team whose robot showcases a creative solu
 If you have any questions regarding the contents of this Handbook, or otherwise, please contact us via any of the methods listed below. This Handbook was written with the utmost care, especially when describing critical rulings. If any mistakes were found, we would be happy to correct them in the next version.
 
 Instagram: @south_performance_league
+Email: contact@teamclockworks.ro
 
-**Organized by:** Clockworks - FTC Team #19075 | "Gheorghe Sincai" National College, Bucharest. Andromeda - FTC Team #20691 | International School of Bucharest.
+**Organized by:** 
+ * Clockworks - FTC Team #19075 | "Gheorghe Sincai" National College, Bucharest.
+ * Andromeda - FTC Team #20691 | International School of Bucharest.
 
 The South Performance League is registered on the official FTC platform and promoted through official FTC channels and social media.
