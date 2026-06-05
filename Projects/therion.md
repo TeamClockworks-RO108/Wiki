@@ -67,7 +67,7 @@ Plasma industrial processes, especially plasma deposition processes are non-equi
 
 It is important to mention that particle energies inside a plasma follow a normal distribution (a kind of a gaussian distribution), called a maxwellian distribution. The distribution curve as well as average particle temperature (energy) depends on power input, gas species as well as working pressure etc., moving either to the right or left, depending on these criterions.
 
-|![](/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)|
+|![](/Projects/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)|
 |Figure 2: maxwellian distribution (following a “normal distribution” of electron thermal energies)|
 |--|
 
@@ -140,7 +140,7 @@ The deposition rate is fairly slow, ranging from 0.1 nm/min up to several hundre
 
 For [thermal evaporation](https://en.wikipedia.org/wiki/Evaporation_(deposition)) deposition, pressure has to be kept in the transitional molecular flow (molecular flow - at lower pressure under about 0.5-1Pa wall collisions start to dominate, inter-molecular collisions being significantly lower which virtually excludes viscous flow) 0.1-1Pa range, reaching a maximum of 2Pa in some setups. The process is line-of-sight, yielding lower adatom mobility (surface migration of atoms) and thus, lower film density.
 
-|![](/gold_silver_copper_pressure_melting_temperatures.png)|
+|![](/Projects/gold_silver_copper_pressure_melting_temperatures.png)|
 
 |Figure 3: pressure vs melting temperature graph; the melting temperature drastically increases with higher temperature|
 |--|
