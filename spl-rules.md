@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-05T03:45:10.253Z
+date: 2026-06-06T06:18:41.452Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -116,12 +116,12 @@ Violation: MINOR FOUL and an additional MINOR FOUL for every 3 seconds in which 
 | Time | Day 1 | Time | Day 2 |
 |------|-------|------|-------|
 | 9:00 | Check-in | 9:00 | Venue opens |
-| 10:30 | Robot inspections | 10:30 | Check-in |
-| 11:30 | Drivers' meeting | 11:30 | Qualification matches |
-| 11:50 | Opening ceremony & Driver's meeting | 12:30 | Alliance selection |
-| 12:10 | Qualification matches | 13:00 | Lunch break |
-| 13:10 | Lunch break | 14:30 | Playoff matches |
-| 14:30 | Qualification matches | 17:00 | Award ceremony |
+| 10:30 | Opening Ceremony | 10:30 | Check-in |
+| 11:00 | Judging / Inspection | 11:30 | Qualification matches |
+| 13:10 | Lunch break | 12:30 | Alliance selection |
+| 14:30 | Qualification matches | 13:00 | Lunch break |
+| || 14:30 | Playoff matches |
+| || 17:00 | Award ceremony |
 | 18:00 | End of Day 1 | 18:30 | Venue closes |
 
 Teams should be prepared to fix any issues with their robots between the scheduled match times. No timeouts or delays will be handed out. Substituting a robot with the robot of another team, participating at SPL or not, is not allowed.
@@ -161,9 +161,24 @@ For each award, teams are scored on a scale of 0 to 5 for every criterion. Each 
 > A first-place award is granted for each category and includes a monetary prize. A second-place award may be granted at the judges' discretion and does not include a monetary prize.
 {.is-info}
 
-Each team is required to submit a portfolio consisting of no more than three (3) pages of content in A4 format, in either landscape or portrait orientation. Cover pages are excluded from the page count. In addition to the portfolio review, judges will conduct interviews at each team's pit or stand area to gather further information regarding the team's work and approach. During the pit interview, teams may present supplementary materials in any quantity or format to demonstrate their solutions. Unlike official FTC competitions, no formal interview session will be held.
+Each team is required to submit a portfolio consisting of no more than three (3) pages of content in A4 format, in either landscape or portrait orientation. Cover pages are excluded from the page count. In addition to the portfolio review, judges will conduct interviews at each team's pit or stand area to gather further information regarding the team's work and approach. During the pit interview, teams may present supplementary materials in any quantity or format to demonstrate their solutions.
+
+There will also be a formal interview lasting at most 10 minutes, where teams can have up to 5 minutes to present their technical solutions to the judge panel. A further 4 minutes is reserved for questions and answers. 
 
 Portfolios must be submitted via email to contact@teamclockworks.ro. Teams may resubmit at any time; however, only the most recent submission received before 6 June at 10:00 AM (Romania Time) will be considered for judging.
+
+## Competition day judging schedule
+
+| Hour | Team |  Hour | Team | 
+| -- | -- |
+| 11:00 | NorthEastDynamics |  12:20 | PrimeTech |
+| 11:10 | NeuroX | 12:30 | InfO(1)Robotics | 
+| 11:30 | AstraDynamiX | 12:40 | Sparktech | 
+| 11:40 | Leaf Robotics | 12:50 | Velocity | 
+| 11:50 | ViCyber | 13:00 | BabyClocks | 
+| 12:00 | RoboTitans | | |
+
+
 
 ## Control Award
 
