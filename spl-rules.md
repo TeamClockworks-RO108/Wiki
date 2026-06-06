@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-06T07:37:59.728Z
+date: 2026-06-06T08:00:12.601Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -175,9 +175,9 @@ Portfolios must be submitted via email to contact@teamclockworks.ro. Teams may r
 | 11:10 | Info(1)Robotics | 12:20 | ViCyber | 
 | 11:20 | PrimeTech | 12:30 | Sparktech | 
 | 11:30 | Clockworks | 12:40 | AstaDynamiX | 
-| 11:40 | NorthEastDynamics | 12:50 | Dynasty Droids | 
-| 11:50 | Leaf Robotics | 13:00 | NeuroX |
-| 12:00 | Andromeda | 13:10 | Baby Clocks | 
+| 11:40 | NorthEastDynamics | 12:50 | NeuroX | 
+| 11:50 | Leaf Robotics | 13:00 | Baby Clocks |
+| 12:00 | Andromeda |  |  | 
 
 
 
