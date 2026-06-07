@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-06T08:00:12.601Z
+date: 2026-06-07T07:07:54.256Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -222,6 +222,11 @@ The **Innovate Award** recognizes the team whose robot showcases a creative solu
 | 7 | **Transferability** <br> *(Encouraged)* | The innovation could benefit other teams, future seasons, or different applications. The team can articulate why. |
 
 
+## Scoring results
+
+| Team | Control || Design || Innovate ||
+|^^| Avg | Stddev | Avg | Stddev | Avg | Stddev | 
+| -- |
 
 
 # Contact
