@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-07T07:07:54.256Z
+date: 2026-06-07T13:22:32.958Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
@@ -224,10 +224,44 @@ The **Innovate Award** recognizes the team whose robot showcases a creative solu
 
 ## Scoring results
 
+> <span style="font-size: 1.5em">Control Award</span>
+> Won by Team `#21087` Velocity
+>
+> Velocity has shown expertise in control techniques by leveraging advanced image processing pipelines to earn pattern points flexibly. They demonstrated that a simple sorting mechamism can go a very long way when supported by smart control algorithms. 
+<!-- {blockquote:.is-success} -->
+
+> <span style="font-size: 1.5em">Design Award</span>
+> Won by Team `#21476` ViCyber
+>
+> ViCyber's robot is a great example of clean design process. They are mindful of manufacturing techniques, additive and substractive, are capable of analisys of mechanisms and have shown great elegance in their thinking process.
+<!-- {blockquote:.is-success} -->
+
+> <span style="font-size: 1.5em">Innovate Award</span>
+> Won by Team `#15989` RoboTitans
+>
+> RoboTitans have shown an unique approach to shooting multiple balls. While having disadvantages, they worked to provide adequate mitigations and stuck with their solution thought the whole season, going trough many iterations. 
+<!-- {blockquote:.is-success} -->
+
+
+> <span style="font-size: 1.5em">Judge's Choice Award</span>
+> Won by Team `#32744` NeuroX
+>
+> NeuroX are a rookie team that have made great progress in their first year. They have been seen building trough many iterations with little resources, each time going above and beyond to find the best solutions. They show fantastic integration with the FIRST community and are always eager to learn about new technologies.   
+<!-- {blockquote:.is-success} -->
+
 | Team | Control || Design || Innovate ||
 |^^| Avg | Stddev | Avg | Stddev | Avg | Stddev | 
 | -- |
-
+| 15989 | 3.7 | 0.91 | 2.5 | 1.38 | 3.35 | 1.38 |
+| 15993 | 3.0 | 0.71 | 3.1 | 0.35 | 2.85 | 1.28 |
+| 19056 | 3.0 | 0.71 | 3.0 | 0.00 | 1.71 | 0.95 |
+| 19083 | 2.4 | 1.14 | 1.3 | 0.52 | 1.71 | 1.63 |
+| 19134 | 3.0 | 1.22 | 0.8 | 0.41 | 1.78 | 1.07 |
+| 21087 | 4.8 | 0.45 | 2.5 | 0.84 | 2.85 | 1.68 |
+| 21476 | 3.7 | 1.30 | 4.2 | 0.41 | 3.21 | 0.49 |
+| 32744 | 1.6 | 0.89 | 2.0 | 0.00 | 2.86 | 1.18 |
+| 24964 | 2.4 | 1.52 | 2.5 | 1.05 | 1.57 | 1.13 |
+| 99975 | 2.6 | 0.55 | 1.0 | 0.00 | 1.71 | 0.91 |
 
 # Contact
 
