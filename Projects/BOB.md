@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-13T18:09:25.969Z
+date: 2026-09-13T21:28:38.328Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -58,9 +58,17 @@ The magnetic core which will offer support for the three electromagnets will be 
 # Timeline
 
 - CAD for a first prototype exists
+
 - Trebuie cumparate componentem si mers la firme luna asta, ideal pana la final de septembrie se vrea sa fie gasita finantare (DAVID SI CALIN).
+
 - COIL WINDING MACHINE trebuie terminat de Calin saptamana 13-20 SEP.
+
 - Trebuie facut CAD ul pentru un test RIG ce sa testeze encoderele liniare, sistemul de detectie si codul (Calin face CAD ul, David electronica si design de pcb + teste de ambii)
+
 - Trebuie gasit om pe marketing care sa se ocupe constant atat de rescrierea documentatiei intr un mod profi, cat si redactare si scriere de cereri si emails pentru sponsori, plus promotionale logo sau orice se va mai face in viitor (pana la FINAL DE SAPTAMANA 13-20 SEP)
+
 - DUPA 	ce se face rost de finantare, se cumpara piese si se asambleaza V! (TESTE MECANICE, strength test etc.) se va face de CALIN SI DAVID.
+
 - SE TERMINA LISTA CU componente ce trebuie cumparate, atat pentru ENCODER TEST RIG, COIL WINDING MACHINE CAT SI PROTOTIP, se scrie intr un excel si se iau piese
+
+- LOGO CAD trebuie facut
