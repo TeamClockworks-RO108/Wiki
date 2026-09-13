@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-13T21:28:38.328Z
+date: 2026-09-13T21:42:00.830Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -53,6 +53,19 @@ For the prototype, self-lubricating [IGLIDUR polymer linear bushing](https://www
 The magnetic core which will offer support for the three electromagnets will be one solid "M" shaped silicon steel (also known as electrical steel) laminated core, made out of multiple thin sheet laminations, joined via screws and electrically isolated from eachother using thin insulator (kapton or electrical paper). The laminations run parallel to the magnetic field, ensuring a continuous magnetic field with little to no variations in its magnetic reluctance path. Laminated cores ensure high power efficiency and lower coefficient of core heating per watt of used power. Electrical steel also has high magnetic permeability and low [remanent magnetization](https://www.electronics-tutorials.ws/electromagnetism/magnetic-hysteresis.html) (gold standard of both transformers and stepper cores).
 
 ## Coil winding machine
+
+
+## Additional sources
+
+- https://www.researchgate.net/figure/The-three-phase-modular-hybrid-linear-stepper-motor_fig1_242444457
+
+- https://www.youtube.com/watch?v=TPCgbfWZ6IQ
+
+- https://www.youtube.com/shorts/E_I5j0IrIio
+
+- https://wiki.teamclockworks.ro/en/Projects/therion
+
+- https://www.youtube.com/watch?v=fc7UEUkDd_o
 
 
 # Timeline
