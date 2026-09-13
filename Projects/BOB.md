@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-13T13:54:48.354Z
+date: 2026-09-13T14:16:10.221Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -40,7 +40,11 @@ The linear closed-loop stepper acts as a 3-phase synchronous motor, rolled over 
 
 Compared to a classic stepper motion system, linear steppers have tooth pitches ranging from couple mm to over 10mm. a tradeoff between cost, magnet type, total magnet holding force as well as aspect rati and area/volume have to all be considered when selecting the type of magnet tooth used. Neodymium magnets have high holding force compared to their volume and mass, as well as  high commercial availability (even strong N52 types). On the other hand, they are mechanically brittle, can be expensive and they lose their holding force rapidly, experiencing maximum force at around 0C (273,15K), and dropping at a minimum around 80C (353,15K). Heat resistant types exist, but are harder to find. We found the best option for our application to be an N52 Neodymium magnet, with 10x20mm surface and 2-5mm thickness. They have a holding force ranging from 2-to 5kg per magnet.
 
-Following the inverse cube law applied to magnetic fields (B ∝ 1/d^3 ; where d - distance and B - magnetic field), we conclude that the distance between the carriage electromagnets and the platen has to be kept at a minimum (within about 1mm or less) so that torque is maintained high enough. Carriage structural rigidity needs to be maintained in order to prevent buckling caused by the attraction between the electromagnets and the permanent magnets as well as stalling (friction between the electromagnet core and the platen.
+Following the inverse cube law applied to magnetic fields (B ∝ 1/d^3 ; where d - distance and B - magnetic field), we conclude that the distance between the carriage electromagnets and the platen has to be kept at a minimum (within about 1mm or less) so that torque is maintained high enough. Carriage structural rigidity needs to be maintained in order to prevent buckling caused by the attraction between the electromagnets and the permanent magnets as well as stalling (friction between the electromagnet core and the platen).
+
+Each electromagnet tooth pitchb is approximately equal to its twin platen magnet teeth. A slight offset is applied for the spacing of the electromagnet teeth, assuring that one magnet is always perfectly aligned to one platen magnet (corresponding to one full step), while the other two teeth are both either left hand biased (closer to the platen tooth to its left) or right hand biased (closer to the platen tooth to its right). Thus, by alternating the control signal in each electromagnet, motion is achieved. Each signal is offset by about 120 electrical degrees from eachother, making for high efficiency. Field oriented control (FOC) will be used to ensure proper control of the positional accuracy, as well as speed and torque of the stepper at all times.
+
+![linearmotorprinzip.png](/linearmotorprinzip.png)
 
 Two types of encoder types will be tested, both optical and magnetic, and compared in different conditions and levels of dust, use, speeds, light, precision etc. Thus, quality will be compared against total cost and the best system will be selected and integrated. The two chips will be [AS5304B TSSOP20 LF T&RDP](https://www.digikey.at/en/products/detail/ams-osram-usa-inc/AS5304B-TSSOP20-LF-T-RDP/18769154) (magnetic) and a variant of the [AEDR-8300-1W2](https://ro.farnell.com/broadcom/aedr-8300-1w2/photointerrupter-reflective/dp/1735258) (optical). Different strips will also be tested.
 
