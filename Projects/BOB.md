@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-13T14:16:10.221Z
+date: 2026-09-13T14:41:09.745Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -47,6 +47,8 @@ Each electromagnet tooth pitchb is approximately equal to its twin platen magnet
 ![linearmotorprinzip.png](/linearmotorprinzip.png)
 
 Two types of encoder types will be tested, both optical and magnetic, and compared in different conditions and levels of dust, use, speeds, light, precision etc. Thus, quality will be compared against total cost and the best system will be selected and integrated. The two chips will be [AS5304B TSSOP20 LF T&RDP](https://www.digikey.at/en/products/detail/ams-osram-usa-inc/AS5304B-TSSOP20-LF-T-RDP/18769154) (magnetic) and a variant of the [AEDR-8300-1W2](https://ro.farnell.com/broadcom/aedr-8300-1w2/photointerrupter-reflective/dp/1735258) (optical). Different strips will also be tested.
+
+For the prototype, self-lubricating [IGLIDUR polymer linear bushing](https://www.igus.eu/plain-bearing) inserts will be used, thanks to their low maintanance requirements, high chemical resistance, optimal lubrication in all kinds of environments as well as cost and availability. These inserts will also be tested for future use in different systems and projects. In the future, custom teflon linear bearings compatible with the 2020/3030/4040 V-slot aluminum extrusions  might be implemented for use in 3D printers and other systems.
 
 
 
