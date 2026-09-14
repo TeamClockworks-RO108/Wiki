@@ -44,7 +44,7 @@ Following the inverse cube law applied to magnetic fields (B ∝ 1/d^3 ; where d
 
 Each electromagnet tooth pitchb is approximately equal to its twin platen magnet teeth. A slight offset is applied for the spacing of the electromagnet teeth, assuring that one magnet is always perfectly aligned to one platen magnet (corresponding to one full step), while the other two teeth are both either left hand biased (closer to the platen tooth to its left) or right hand biased (closer to the platen tooth to its right). Thus, by alternating the control signal in each electromagnet, motion is achieved. Each signal is offset by about 120 electrical degrees from eachother, making for high efficiency. Field oriented control (FOC) will be used to ensure proper control of the positional accuracy, as well as speed and torque of the stepper at all times.
 
-![linearmotorprinzip.png](/linearmotorprinzip.png)
+![linearmotorprinzip.png](/Projects/linearmotorprinzip.png)
 
 Two types of encoders will be tested, both optical and magnetic, and compared in different conditions and levels of dust, use, speeds, light, precision etc. Thus, quality will be compared against total cost and the best system will be selected and integrated. The two chips will be [AS5304B TSSOP20 LF T&RDP](https://www.digikey.at/en/products/detail/ams-osram-usa-inc/AS5304B-TSSOP20-LF-T-RDP/18769154) (magnetic) and a variant of the [AEDR-8300-1W2](https://ro.farnell.com/broadcom/aedr-8300-1w2/photointerrupter-reflective/dp/1735258) (optical). Different strips will also be tested.
 
