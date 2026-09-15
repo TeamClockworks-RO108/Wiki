@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-15T17:08:41.874Z
+date: 2026-09-15T17:11:14.509Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -68,15 +68,15 @@ The magnetic core which will offer support for the three electromagnets will be 
 - https://www.youtube.com/watch?v=fc7UEUkDd_o
 
 # Parts list & sourcing
-| Category | Part | Quantity | Notes | Distributor | Total cost |
+| Category | Part | Quantity | Notes | Distributor | Cost | Total cost |
 | -- | -- | -- | -- |
-|Stepper prototype| rail magnet teeth | 30 |Magnet Neodim bloc 20x10x5 mm N52; Forță de aderență: 4.90kg ; Temperatură maximă de utilizare: 60C | NeoMagnet(RO) - https://neomagnet.ro/Magnet-Neodim-bloc-20x10x5-mm-N52 | 419,66RON |
-|^^|carriage compression springs|8|Arc de compresie 1,2 mm - 20 mm|ardushop(RO) - https://ardushop.ro/ro/componente/1988-arc-compresie-12mm-20mm-6427854030238.html|^^|
-|^^|creality test compression spring| 1| Arc compresie Creality D8xL22 1.1mm| Ardushop(RO)- https://ardushop.ro/ro/creality/1237-arc-compresie-creality-d8xl22-11mm-6427854017772.html|^^|
-|^^|precision guide shaft| 2 | Axa de precizie rectificata si calita de 16mm| cnc shop(RO) - https://cnc-shop.ro/index.php?route=product/product&path=59&product_id=60 | ^^ |
-|^^|kapton tape| 1 | Bandă adezivă termorezistentă tip Kapton, 10 mm x 33 m | Ardushop(RO) - https://ardushop.ro/ro/componente/1178-banda-kapton-25m-10mm-6427854016713.html| ^^ |
-|^^| IGLIDUR polymer linear bearing| 2 | JUMO-01-16 - Insert; iglidur® J; Ø: 16mm; L: 35mm; DryLin® W | TME(EU) - https://www.tme.eu/ro/details/jumo-01-16/ghidaje-liniare/igus/ | ^^|
-|^^| aluminum 3030 V-slot extrusion| 1| Profil din aluminiu 30x30 negru - 300mm | DROT.RO - https://www.drot.ro/platforma-arduino/230749-profil-din-aluminiu-30x30-negru-300mm.html|^^|
+|Stepper prototype| rail magnet teeth | 30 |Magnet Neodim bloc 20x10x5 mm N52; Forță de aderență: 4.90kg ; Temperatură maximă de utilizare: 60C | NeoMagnet(RO) - https://neomagnet.ro/Magnet-Neodim-bloc-20x10x5-mm-N52 | 419,66RON | ~~~ |
+|^^|carriage compression springs|8|Arc de compresie 1,2 mm - 20 mm|ardushop(RO) - https://ardushop.ro/ro/componente/1988-arc-compresie-12mm-20mm-6427854030238.html|^^|^^|
+|^^|creality test compression spring| 1| Arc compresie Creality D8xL22 1.1mm| Ardushop(RO)- https://ardushop.ro/ro/creality/1237-arc-compresie-creality-d8xl22-11mm-6427854017772.html|^^|^^|
+|^^|precision guide shaft| 2 | Axa de precizie rectificata si calita de 16mm| cnc shop(RO) - https://cnc-shop.ro/index.php?route=product/product&path=59&product_id=60 | ^^ | ^^|
+|^^|kapton tape| 1 | Bandă adezivă termorezistentă tip Kapton, 10 mm x 33 m | Ardushop(RO) - https://ardushop.ro/ro/componente/1178-banda-kapton-25m-10mm-6427854016713.html| ^^ |^^|
+|^^| IGLIDUR polymer linear bearing| 2 | JUMO-01-16 - Insert; iglidur® J; Ø: 16mm; L: 35mm; DryLin® W | TME(EU) - https://www.tme.eu/ro/details/jumo-01-16/ghidaje-liniare/igus/ | ^^|^^|
+|^^| aluminum 3030 V-slot extrusion| 1| Profil din aluminiu 30x30 negru - 300mm | DROT.RO - https://www.drot.ro/platforma-arduino/230749-profil-din-aluminiu-30x30-negru-300mm.html|^^|^^|
 
 # Timeline
 
