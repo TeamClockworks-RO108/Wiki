@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-13T21:42:00.830Z
+date: 2026-09-15T16:33:25.608Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -67,6 +67,10 @@ The magnetic core which will offer support for the three electromagnets will be 
 
 - https://www.youtube.com/watch?v=fc7UEUkDd_o
 
+# Parts list & sourcing
+| Category | Part | Quantity | Notes | Distributor |
+| -- | -- | -- | -- |
+|Frame
 
 # Timeline
 
