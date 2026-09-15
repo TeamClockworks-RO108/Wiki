@@ -2,7 +2,7 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-15T17:11:14.509Z
+date: 2026-09-15T17:13:24.498Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
@@ -77,6 +77,9 @@ The magnetic core which will offer support for the three electromagnets will be 
 |^^|kapton tape| 1 | Bandă adezivă termorezistentă tip Kapton, 10 mm x 33 m | Ardushop(RO) - https://ardushop.ro/ro/componente/1178-banda-kapton-25m-10mm-6427854016713.html| ^^ |^^|
 |^^| IGLIDUR polymer linear bearing| 2 | JUMO-01-16 - Insert; iglidur® J; Ø: 16mm; L: 35mm; DryLin® W | TME(EU) - https://www.tme.eu/ro/details/jumo-01-16/ghidaje-liniare/igus/ | ^^|^^|
 |^^| aluminum 3030 V-slot extrusion| 1| Profil din aluminiu 30x30 negru - 300mm | DROT.RO - https://www.drot.ro/platforma-arduino/230749-profil-din-aluminiu-30x30-negru-300mm.html|^^|^^|
+| Coil winding machine |
+
+| Encoder test rig |
 
 # Timeline
 
