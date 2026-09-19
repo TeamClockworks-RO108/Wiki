@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-09-19T13:36:57.268Z
+date: 2026-09-19T13:38:10.420Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -65,10 +65,10 @@ Electric arc discharge as well as microwave ECR excitation represent some of the
 
 Plasma industrial processes, especially plasma deposition processes are non-equilibrium thermodynamic processes (the system is inconsistent in time, experiencing various forms of matter and energy exchange processes between many other sub-systems) which exploit the instability of plasma ions for various applications.
 
-It is important to mention that particle energies inside a plasma follow a normal distribution (a kind of a gaussian distribution), called a maxwellian distribution. The distribution curve as well as average particle temperature (energy) depends on power input, gas species as well as working pressure etc., moving either to the right or left, depending on these criterions.
+It is important to mention that particle energies inside a plasma follow a normal distribution (a kind of a gaussian distribution), called a maxwellian distribution. The distribution curve as well as average particle energy depends on power input, gas species as well as working pressure etc., moving either to the right or left, depending on these criterions.
 
 |![](/Projects/537834_post16maxwellbolzmanncurvesresources_7pptslide9_810995.png)|
-|Figure 2: maxwellian distribution (following a “normal distribution” of electron thermal energies)|
+|Figure 2: maxwellian distribution (following a “normal distribution” of electron energies)|
 |--|
 
 The ionization process formula for one Argon atom can be written as:
@@ -79,7 +79,7 @@ or, if the electron is energetic enough, it can remove more electrons 
 
     Ar(g) + e^\-^ → Ar^2+^(g) + 3e^\-^
 
-Not every ionic gas or fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:
+Not every ion containing fluid is considered a plasma. There are a few criterions that need to be fulfilled in order for a gas to be considered a plasma. These criterions are:
 
 -   “A plasma is a quasineutral gas of charged and neutral particles which exhibits collective behavior”, a short explanation taken from “Introduction To Plasma Physics”, by F. Chen, reveals that
 
