@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-09-19T13:36:05.327Z
+date: 2026-09-19T13:36:57.268Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -54,7 +54,7 @@ The last couple decades have seen a dramatic increase in plasma related research
 
 Fluids which experience a high percentage of free, non-neutral particles (such as ions and electrons) inside their composition, can be characterized as being in a plasma state, based on a few criteria which have to be fulfilled; "[Plasma](https://en.wikipedia.org/wiki/Plasma_(physics)) is a state of matter that results from one of the other three classical states (often, the gaseous one) having undergone an appreciable degree of ionization. It thus consists of a significant portion of charged particles (ions and/or electrons). While rarely encountered on Earth, it is estimated that 99.9% of all ordinary matter in the universe is plasma.[1] Stars are almost pure balls of plasma, and plasma dominates the rarefied intracluster medium and intergalactic medium.[2][3] Plasma can be artificially generated, for example, by heating a neutral gas or subjecting it to a strong electromagnetic field."
 
-Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the plasma "glow") or sometimes through processes of dissociation, excitation or dissociative ionization, producing a positive ion x^+^ - the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (figure 1).
+Generally, when a high energy electron hits a molecule's electron cloud, kinetic energy is transferred, potentially exciting one or more electrons to a higher energy level. This higher energy state lasts briefly, electrons typically losing energy via electromagnetic radiation (photons which create the "glow") or sometimes through processes of dissociation, excitation or dissociative ionization, producing a positive ion x^+^ - the molecule's electron will continue to migrate away from the nucleus, causing dissociation and, eventually, dissociative ionization (figure 1).
 
 ![Scintillation and ionization in argon. | Download Scientific Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPdvnts83-zQjT5D4aXWaWu6pFpk1AvpeA&s)
 
