@@ -2,8 +2,8 @@
 title: BOB linear stepper system
 description: A linear closed loop stepper system used as XY motion system on a 3D printer
 published: true
-date: 2026-09-15T17:13:24.498Z
-tags: 
+date: 2026-09-20T15:46:17.867Z
+tags: 3dprinting, research
 editor: markdown
 dateCreated: 2026-05-28T11:35:58.532Z
 ---
