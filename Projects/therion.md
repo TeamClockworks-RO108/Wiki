@@ -2,7 +2,7 @@
 title: Therion metal plating
 description: a Project meant for 3d printer augmentation using a modified printing head meant for metal deposition on plastic substrate (a voron augmentation initiative).
 published: true
-date: 2026-09-19T13:38:10.420Z
+date: 2026-09-21T19:35:12.385Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-31T10:04:25.526Z
@@ -17,7 +17,7 @@ dateCreated: 2026-01-31T10:04:25.526Z
 
 Therion represents a 3d-printing augmentation project that aims for  achieving thin-film deposition capabilities on a [Voron Trident printer](https://docs.vorondesign.com/hardware.html#voron-trident), enabling at-home prototyping and quality control of complex custom-3D-printed multilayer PCBs, printed plastic pieces with inner metal traces, shielding for reliable electric work (improving cable-management drastically) or emf shielding.
 
-> A theoretical research of a new technique of additively depositing conductive traces on 3D-printed substrates using plasma ion bombardment.
+> A desktop manufacturing platform that combines 3D printing with thin-film deposition.
 
 This project also aims for combining metal plating capabilities with the improved print quality and capability by tapping into the tremendous potential offered by vacuum printing.
 
