@@ -2,7 +2,7 @@
 title: Home page
 description: 
 published: true
-date: 2026-06-04T01:07:46.200Z
+date: 2026-09-23T08:20:36.463Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-30T20:25:38.275Z
@@ -10,7 +10,7 @@ dateCreated: 2026-01-30T20:25:38.275Z
 
 # Clockworks
 
-We are Team Clockworks, a robotics team from Bucharest, Romania. We compete in FTC under the international number #19085 and at various local competitions. 
+We are Team Clockworks, a robotics team from Bucharest, Romania. We compete in FTC under the international number #19075 and at various local competitions. 
 
 We are powered by [Alacrity Education](https://alacrity.education), an NGO focused on innovating informal education by creating the first open-access STEM laboratory in the heart of Bucharest. 
 
