@@ -2,7 +2,7 @@
 title: Extending Payment Registry
 description: 
 published: true
-date: 2026-06-04T01:08:07.632Z
+date: 2026-11-16T08:12:30.622Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-10T10:43:01.853Z
