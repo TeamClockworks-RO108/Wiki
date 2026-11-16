@@ -28,11 +28,11 @@ Systems with higher inertia (mass) can tolerate too high `Kd` values. Low-inerti
 The tests are done using a 4200 RPM motor attached to a AndyMark 4inch 30A compliant wheel. 
 
 | Undercompensated Kp | Undercompensated Ki (steady state error) |
-| ![screenshot_20251021_193423.png](/screenshot_20251021_193423.png) | ![screenshot_20251021_194026.png](/screenshot_20251021_194026.png) |
+| ![screenshot_20251021_193423.png](/Tutorials/screenshot_20251021_193423.png) | ![screenshot_20251021_194026.png](/Tutorials/screenshot_20251021_194026.png) |
 | -- | -- |
 
 | Better Ki but not enough | Ki, Kd induced oscillations | 
-| ![screenshot_20251021_193655.png](/screenshot_20251021_193655.png) | ![screenshot_20251021_195024.png](/screenshot_20251021_195024.png)
+| ![screenshot_20251021_193655.png](/Tutorials/screenshot_20251021_193655.png) | ![screenshot_20251021_195024.png](/Tutorials/screenshot_20251021_195024.png)
 | -- | -- |
 
 
@@ -40,7 +40,7 @@ The tests are done using a 4200 RPM motor attached to a AndyMark 4inch 30A compl
 
 
 | Almost Perfect |
-| ![screenshot_20251021_194141.png](/screenshot_20251021_194141.png) |
+| ![screenshot_20251021_194141.png](/Tutorials/screenshot_20251021_194141.png) |
 | -- |
 
 # Motor analytical performance

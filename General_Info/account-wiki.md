@@ -14,7 +14,7 @@ Your account on [auth.lucaciresearch.net](https://auth.lucaciresearch.net) is us
 
 All the services are enrolled in the [Dashboard](https://clockworks-dashboard.lucres.net) so you do not have to memorize all the URL's. Please bookmark the dashboard address!
 
-![acct-dashboard.png](/acct-dashboard.png)
+![acct-dashboard.png](/General_Info/acct-dashboard.png)
 
 When you access the dashboard, you will be asked to login. Instead of entering an username or email, login using the Discord button as shown below. You need to be present on the Discord server and have the Member role to be able to enter.
 
@@ -36,7 +36,7 @@ Once you arrive on the Authentik's page, login as usual using the Discord provid
 
 If you have configured a password and username for your account, like in the next section, you can use that on the LucaciResearch login page instead of Discord.
 
-| ![wiki-login-2.png](/wiki-login-2.png) | ![acct-wiki-1.png](/acct-wiki-1.png) |
+| ![wiki-login-2.png](/General_Info/wiki-login-2.png) | ![acct-wiki-1.png](/acct-wiki-1.png) |
 | --- | --- |
 
 
@@ -53,19 +53,19 @@ You will see a dashboard where you will be able to control your account.
 ---
 Head over to the **Settings** area
 
-![acct-password-1.png](/acct-password-1.png)
+![acct-password-1.png](/General_Info/acct-password-1.png)
 
 ---
 In the **User Details** section, take note of your **Usernamne**. This is the username you will login with. You can change it if you want to, but don't forget to click **Save**
 
 Click on the **Change password** button.
 
-![acct-password-2.png](/acct-password-2.png)
+![acct-password-2.png](/General_Info/acct-password-2.png)
 
 ---
 Enter a new password twice and click **Continue**
 
-![acct-password-3.png](/acct-password-3.png)
+![acct-password-3.png](/General_Info/acct-password-3.png)
 
 
 ## Test your new password

@@ -16,7 +16,7 @@ Please read this page and follow the steps here when using the 3D Printers
 
 All our klipper-based printers can be accessed online over the printer portal located at [printer.lucaciresearch.net](https://printer.lucaciresearch.net). This URL can also be accessed from the [Dashboard](https://clockworks-dashboard.lucres.net/). 
 
-| ![printer-web-menu.png](/printer-web-menu.png) |
+| ![printer-web-menu.png](/General_Info/printer-web-menu.png) |
 | --- |
 
 
@@ -53,7 +53,7 @@ Keep massive, warpy parts off the edges of the buildplate. Because the edges of 
 Rounding corners also helps prevent warping.
 
 |  Example: large parts as close to the center |
-| ![printer-bed-placement.png](/printer-bed-placement.png) |
+| ![printer-bed-placement.png](/General_Info/printer-bed-placement.png) |
 | -- |
 
 # Build plate
@@ -142,7 +142,7 @@ If a filament profile is not available in the slicer, it generally means that th
 Sometimes you may be required to print on the **Smooth PEI** sheet big parts. The adhesion of ABS, ASA, PC, PCCF can be destructive for the sheet if the contact surface area is very large.
 To prevent this from happening, for large objects, prefer to create a sort of pocketing feature, where only the edges of the model and significant features will touch the bed. The floating bridges should be about 2mm deep. This example below has a diameter of 280mm. The width of the touching edges is about 8-10mm and bridges are kept manageable at around maximum 30mm.
 
-| ![guide-adhesion-relief.png](/guide-adhesion-relief.png)|
+| ![guide-adhesion-relief.png](/General_Info/guide-adhesion-relief.png)|
 | -- |
 
 ## Cooling
@@ -178,12 +178,12 @@ We use spoolman to track the filament usage. Spoolman can be accessed from the D
 
 Each spool is tracked using an unique number (example: `#17`) that is written using a marker on the spool or on the spool box. If opening a new spool, **please** take the time to transfer the writing from the box to the spool itself using a suitable permanent marker. Some spools will have a sticker that you can transfer to the spool.
 
-| ![printer-spoolman-label.png](/printer-spoolman-label.png) |
+| ![printer-spoolman-label.png](/General_Info/printer-spoolman-label.png) |
 | -- |
 
 Before printing, ensure that you have enough filament on the spool. You can typically see this information inside the printer's page in the spoolman section. In this menu you can also eject the spool (`1`) (if using an untracked spool) or change the spool to another (`2`).
 
-| ![printer-spoolman-mainsail.png](/printer-spoolman-mainsail.png) | ![printer-spoolman-mainsail-annotated.png](/printer-spoolman-mainsail-annotated.png) |
+| ![printer-spoolman-mainsail.png](/General_Info/printer-spoolman-mainsail.png) | ![printer-spoolman-mainsail-annotated.png](/General_Info/printer-spoolman-mainsail-annotated.png) |
 | -- | -- |
 
 > Always change the spool configured in the printer when switching spools. If you forget, the printer will keep consuming from the old one and we'll end up with bad data in spoolman.
@@ -201,7 +201,7 @@ Palmyr has a different way to integrate with spoolman. Because there are up to 8
 Palmyr keeps track of spool ID's inside its gate map. To modify the gate map, follow the instructions below:
 
 | Locate the MMU panel and open the Edit Filaments menu inside the dots button | Click on the gate you wish to modify and enable Spoolman. Type the spool ID or click the Choose Spool button to have it auto-filled. To remove a gate from filament tracking, just disable Spoolman from that gate. 
-| ![printer-palmyr-spoolman-1.png](/printer-palmyr-spoolman-1.png) | ![printer-palmyr-spoolman-2.png](/printer-palmyr-spoolman-2.png) |
+| ![printer-palmyr-spoolman-1.png](/General_Info/printer-palmyr-spoolman-1.png) | ![printer-palmyr-spoolman-2.png](/General_Info/printer-palmyr-spoolman-2.png) |
 | -- | -- |
 
 The printer will fetch filament's details from spoolman like type, name and color. At each filament switch, the printer will set the appropiate spool ID and Moonraker will submit filament consumption to Spoolman. Selecting a gate will **not** change the current spool, only load operations.  
@@ -282,7 +282,7 @@ To print, remove the printer's USB stick and conect it to the workshop's PC, upl
 
 When the printer detects a malfunction, an error is thrown and the print is interrupted. When this situation happens, you will see an error box on the printer page like below:
 
-| ![screenshot_20260218_191526.png](/screenshot_20260218_191526.png) |
+| ![screenshot_20260218_191526.png](/General_Info/screenshot_20260218_191526.png) |
 | -- |
 
 When this happens, **PLEASE** notify us on Mechanich channels before pressing the `FIRMWARE RESTART` button. Include all the relevant details of the error, so that we can debug the issue later on. It's important to know which is the reported problem. 
@@ -299,7 +299,7 @@ After you open Grafana, you will see an empty welcome page. In the left menu, go
 
 Full history is available for analysys in Grafana. Select your time interval in the top-right box and all charts will update. You can also drag on a graph to zoom in on a time interval.
 
-![printer-grafana.png](/printer-grafana.png)
+![printer-grafana.png](/General_Info/printer-grafana.png)
 
 ## Using Grafana to investigate errors
 
@@ -311,7 +311,7 @@ In the graph below we can see that at some point in the print, the extruder temp
  
 We can also see a slight increase in chamber temperatures at that point, possibly meaning power dissipation indeed rises, caused by cooling and mis-isolation. Average power at 80% also tells us that it would be ideal to replace the heater with a bigger one.  
 
-| ![screenshot_20260219_005631.png](/screenshot_20260219_005631.png) |
+| ![screenshot_20260219_005631.png](/General_Info/screenshot_20260219_005631.png) |
 | -- |
 
 
@@ -350,7 +350,7 @@ To be able to obtain accurate values from this test, the printer's `rotation_dis
 This process should be done with **every type and brand** of filament we own. Save the value in the slicer's filament extrusion multiplier setting (scale 0-100% to 0-1).
 
 ## Reference 
-![printer-em-calibration.png](/printer-em-calibration.png)
+![printer-em-calibration.png](/General_Info/printer-em-calibration.png)
 
 # Printing small details
 

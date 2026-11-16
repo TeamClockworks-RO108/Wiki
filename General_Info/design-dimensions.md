@@ -19,7 +19,7 @@ dateCreated: 2024-11-13T00:40:19.306Z
 
 
 | Size | Socket Head | DIN 912 | ISO 4762 | Button Head | DIN 7380 | ISO 7380 | Flat Head | DIN 7991 | ISO 10642 |
-| | ![refs-din912.png](/refs-din912.png) ||| ![refs-din7380.png](/refs-din7380.png) ||| ![refs-din7991.png](/refs-din7991.png)  |||
+| | ![refs-din912.png](/General_Info/refs-din912.png) ||| ![refs-din7380.png](/General_Info/refs-din7380.png) ||| ![refs-din7991.png](/General_Info/refs-din7991.png)  |||
 |  | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) | Diameter (D) | Head diameter (dk) | Head height (k) |  
 | -- |
 | **M2** | 2^2.2^*/*~1.9~ | 3.8 | 2 | 2 |   |   | 2 | 4 | 1.2 |
@@ -36,7 +36,7 @@ dateCreated: 2024-11-13T00:40:19.306Z
 {.is-info}
 
 | Size | Hex Nut || DIN 934   || Square Nut | DIN 562 | ISO  |
-| | ![refs-hex-nuts.png](/refs-hex-nuts.png) |||| ![refs-square-nuts.png](/refs-square-nuts.png)  |||
+| | ![refs-hex-nuts.png](/General_Info/refs-hex-nuts.png) |||| ![refs-square-nuts.png](/General_Info/refs-square-nuts.png)  |||
 |  | Thread (D) | Height (k) | Outer Diameter (E) | Flat-to-Flat (S) | Thread (D) | Height (k) | Square length (E) |
 | -- |
 | **M2** | 2 | 1.6 | 4.3 | 4^4.2^ | 2 | 1.2 | 4 | 
@@ -87,7 +87,7 @@ When creating a round hole for a bearing, the slicer's seam placement algorithm 
 
 To prevent this situation, we will design bearing holes to have a "teardrop" shape. The opening of the teardrop should have 120* (or the angle of a line with the horizontal is 60*).
 
-| ![screenshot_20260128_033845.png](/screenshot_20260128_033845.png) | ![screenshot_20260128_033925.png](/screenshot_20260128_033925.png) |
+| ![screenshot_20260128_033845.png](/General_Info/screenshot_20260128_033845.png) | ![screenshot_20260128_033925.png](/General_Info/screenshot_20260128_033925.png) |
 | -- | -- |
 
 The diameter of the teardrop hole should be approximately 0.2mm over the diameter of the bearing. 
@@ -99,7 +99,7 @@ Seams and corner smoothing will create badly-dimensioned holes if modelled as st
 
 To combat this, we will include small holes (1mm) in the corners of the hexagon. To further prevent corner bulging and first layer imperfections, a small fillet (0.6mm) is added to new edged together with a small chamfer (0.3mm) to the bottom face.
 
-| ![screenshot_20260128_035629.png](/screenshot_20260128_035629.png) | ![screenshot_20260128_035803.png](/screenshot_20260128_035803.png) |
+| ![screenshot_20260128_035629.png](/General_Info/screenshot_20260128_035629.png) | ![screenshot_20260128_035803.png](/General_Info/screenshot_20260128_035803.png) |
 | -- |
 
 
@@ -114,7 +114,7 @@ Then, configure the type of screw or nut (size, length, material) and select the
 
 The fasteners are inserted as special components under the top-level **Fasteners** directory. They will be automatically rigid jointed to the selected features. 
 
-| ![guide-fusion-fastener.png](/guide-fusion-fastener.png) | ![guide-fusion-fastener-2.png](/guide-fusion-fastener-2.png) |
+| ![guide-fusion-fastener.png](/General_Info/guide-fusion-fastener.png) | ![guide-fusion-fastener-2.png](/General_Info/guide-fusion-fastener-2.png) |
 | -- | -- |
 
 # Fusion hole tool
@@ -127,7 +127,7 @@ There are multiple hole types to choose from. You can do standard, counterbores,
 
 We do not reccomend using the built-in thread and clearance tap types because we require specific tolerances on our printers. Just create your hole as you would normally.
 
-| ![guide-fusion-hole-1.png](/guide-fusion-hole-1.png) | ![guide-fusion-hole-2.png](/guide-fusion-hole-2.png) |
+| ![guide-fusion-hole-1.png](/General_Info/guide-fusion-hole-1.png) | ![guide-fusion-hole-2.png](/General_Info/guide-fusion-hole-2.png) |
 | -- | -- |
 
 # Screw Acquisition

@@ -29,6 +29,6 @@ ssh cdm.lucres.net
 
 You will be greeted with a terminal. If the icons appear broken, it's reccomended to install [this font pack](https://archlinux.org/groups/x86_64/nerd-fonts/):
 
-![cdm-image.png](/cdm-image.png)
+![cdm-image.png](/General_Info/cdm-image.png)
 
 
