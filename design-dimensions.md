@@ -2,7 +2,7 @@
 title: Design Dimensions
 description: 
 published: true
-date: 2026-06-04T01:07:40.632Z
+date: 2026-11-16T08:03:37.639Z
 tags: mechanics, 3dprinting, guide
 editor: markdown
 dateCreated: 2024-11-13T00:40:19.306Z
