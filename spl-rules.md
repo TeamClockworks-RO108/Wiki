@@ -2,7 +2,7 @@
 title: SPL 2026 Rules
 description: 
 published: true
-date: 2026-06-09T10:48:32.795Z
+date: 2026-11-16T08:09:42.751Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-03T22:32:20.642Z
